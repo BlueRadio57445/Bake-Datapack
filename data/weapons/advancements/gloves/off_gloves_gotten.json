@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "wrong_place": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arrow"
+            ],
+            "nbt": "{gloves:2b}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "weapons.gloves.holding": 0
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:reference",
+                "name": "weapons:gloves/hold_main_gloves"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:gloves/clear_off_gloves"
+  }
+}
