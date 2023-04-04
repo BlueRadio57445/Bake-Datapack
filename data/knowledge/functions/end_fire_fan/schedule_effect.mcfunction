@@ -116,6 +116,12 @@ execute at @a[scores={knowledge.end_fire_fan=10}] rotated ~0 ~ positioned ^ ^ ^3
 execute at @a[scores={knowledge.end_fire_fan=15}] rotated ~10 ~ positioned ^ ^ ^3.25 as @e[type=#mobs,distance=..2.2] run function knowledge:end_fire_fan/damage
 execute at @a[scores={knowledge.end_fire_fan=20}] rotated ~20 ~ positioned ^ ^ ^3.25 as @e[type=#mobs,distance=..2.1] run function knowledge:end_fire_fan/damage
 
+execute at @a[scores={knowledge.fire_fan=1}] run playsound minecraft:entity.blaze.shoot master @a[distance=..5] ^ ^ ^1 1 1
+execute at @a[scores={knowledge.fire_fan=5}] run playsound minecraft:block.fire.ambient master @a[distance=..5] ~ ~ ~ 1 1
+execute at @a[scores={knowledge.fire_fan=10}] run playsound minecraft:block.fire.ambient master @a[distance=..5] ~ ~ ~ 1 1
+execute at @a[scores={knowledge.fire_fan=15}] run playsound minecraft:block.fire.ambient master @a[distance=..5] ~ ~ ~ 1 1
+execute at @a[scores={knowledge.fire_fan=20}] run playsound minecraft:block.fire.ambient master @a[distance=..5] ~ ~ ~ 1 1
+
 scoreboard players add @a[scores={knowledge.end_fire_fan=1..}] knowledge.end_fire_fan 1
 scoreboard players reset @a[scores={knowledge.end_fire_fan=21}] knowledge.end_fire_fan
 
