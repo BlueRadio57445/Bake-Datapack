@@ -29,4 +29,6 @@ scoreboard objectives add knowledge.end_fire_field dummy "末火領域持續時�
 
 scoreboard objectives add knowledge.fire_ball dummy "火球持續時間"
 
+scoreboard objectives add knowledge.water_swirl dummy "水漩渦 持續時間"
+
 function knowledge:end_fire_schedule

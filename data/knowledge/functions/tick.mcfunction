@@ -22,3 +22,4 @@ execute as @e[type=armor_stand,tag=end_fire_ball] at @s run function knowledge:e
 execute as @a[scores={knowledge.fire_field=1..}] at @s run function knowledge:fire_field/tick_effect
 execute as @a[scores={knowledge.end_fire_field=1..}] at @s run function knowledge:end_fire_field/tick_effect
 execute as @e[type=marker,tag=water_bubble] at @s run function knowledge:water_bubble/tick_effect
+execute as @e[type=armor_stand,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
