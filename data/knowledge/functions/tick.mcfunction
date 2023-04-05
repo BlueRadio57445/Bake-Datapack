@@ -15,6 +15,10 @@ scoreboard players remove @a[scores={knowledge.cd.water_bubble=1..}] knowledge.c
 scoreboard players remove @a[scores={knowledge.cd.water_swim=1..}] knowledge.cd.water_swim 1
 scoreboard players remove @a[scores={knowledge.cd.water_wave=1..}] knowledge.cd.water_wave 1
 scoreboard players remove @a[scores={knowledge.cd.water_swirl=1..}] knowledge.cd.water_swirl 1
+scoreboard players remove @a[scores={knowledge.cd.earth_shield=1..}] knowledge.cd.earth_shield 1
+scoreboard players remove @a[scores={knowledge.cd.earth_field=1..}] knowledge.cd.earth_field 1
+scoreboard players remove @a[scores={knowledge.cd.earth_wall=1..}] knowledge.cd.earth_wall 1
+scoreboard players remove @a[scores={knowledge.cd.earth_pillar=1..}] knowledge.cd.earth_pillar 1
 
 
 execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_ball/tick_effect
@@ -24,3 +28,4 @@ execute as @a[scores={knowledge.end_fire_field=1..}] at @s run function knowledg
 execute as @e[type=marker,tag=water_bubble] at @s run function knowledge:water_bubble/tick_effect
 execute as @e[type=armor_stand,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
 execute as @e[type=marker,tag=water_wave] at @s run function knowledge:water_wave/tick_effect
+execute as @a[scores={knowledge.earth_shield=1..}] at @s run function knowledge:earth_shield/tick_effect
