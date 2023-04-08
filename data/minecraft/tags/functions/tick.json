@@ -1,9 +1,9 @@
 {
-        "values": [
-            "npc_system:tick",
-            "sanctuary_ench:tick",
-            "general:_gcm_/tick",
-            "knowledge:tick",
-            "weapons:tick"
-        ]
+    "values": [
+        "npc_system:tick",
+        "sanctuary_ench:tick",
+        "knowledge:tick",
+        "weapons:tick",
+        "general:_gcm_/tick"
+    ]
 }
