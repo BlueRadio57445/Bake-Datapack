@@ -3,16 +3,17 @@
 # ========================================================
 
 # 使用下列指令對 storage 進行編輯，指定欲偵測的物品
-data modify storage quest:item_check Item set value {id:"minecraft:stone",tag:{mysterious_stone:1b},exclude_tag:{not_mysterious_stone:1b},Count:56b}
+data modify storage quest_system:item_check Item set value {id:"minecraft:stone",tag:{mysterious_stone:1b},exclude_tags:[{not_mysterious_stone:1b}],Count:56b}
 # 說明:
 # - id 為必須，請以 "minecraft:..." 的格式輸入
 # - tag 為選填，其內容可少於實際物品但不可多餘
-# - exclude_tag 為選填，若於玩家背包內搜尋到符合此標籤內容的物品，將不列入計算
-# - Count 若無設定，則默認為 1
+# - exclude_tags 為選填，若於玩家背包內搜尋到的是符合此列表內任一標籤內容的物品，將不列入計算
+# - Count 若無設定，則默認為1
+# - Take 若設定為1，若物品足夠則收走，物品不足時不執行
 # - 目前並無支援 item tag
 
 tellraw @s {"color":"aqua","text":"[任務系統] 檢查中，目標物品之設定如下:"}
-tellraw @s {"color":"yellow","nbt":"Item","storage":"quest:item_check"}
+tellraw @s {"color":"yellow","nbt":"Item","storage":"quest_system:item_check"}
 
 # 指定完畢，執行下列函式開始偵測
 function quest_system:item_check
