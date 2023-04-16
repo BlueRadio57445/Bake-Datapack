@@ -1,0 +1,14 @@
+{
+    "values": [
+        "marker",
+        "interaction",
+        "item_display",
+        "block_display",
+        "text_display",
+        "#arrows",
+        "armor_stand",
+        "area_effect_cloud",
+        "snowball",
+        "egg"
+    ]
+}

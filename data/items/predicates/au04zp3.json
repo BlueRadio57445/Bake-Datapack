@@ -1,0 +1,20 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"offhand": {
+				"items": [
+					"minecraft:bone_meal"
+				],
+				"nbt": "{au04zp3:1b}"
+			},
+			"mainhand": {
+				"items": [
+					"minecraft:stick"
+				],
+				"nbt": "{e03au04ejp4:1b}"
+			}
+		}
+	}
+}
