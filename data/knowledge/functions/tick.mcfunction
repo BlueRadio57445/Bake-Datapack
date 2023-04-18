@@ -29,3 +29,5 @@ execute as @e[type=marker,tag=water_bubble] at @s run function knowledge:water_b
 execute as @e[type=armor_stand,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
 execute as @e[type=marker,tag=water_wave] at @s run function knowledge:water_wave/tick_effect
 execute as @a[scores={knowledge.earth_shield=1..}] at @s run function knowledge:earth_shield/tick_effect
+execute as @e[type=shulker,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
+execute as @e[type=block_display,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
