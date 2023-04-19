@@ -3,6 +3,7 @@
             "general:load",
             "npc_system:load",
             "quest_system:load",
+            "mobs:load",
             "sanctuary_ench:load",
             "knowledge:load",
             "weapons:load"

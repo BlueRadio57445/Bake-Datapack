@@ -1,6 +1,7 @@
 {
     "values": [
         "npc_system:tick",
+        "mobs:tick",
         "sanctuary_ench:tick",
         "knowledge:tick",
         "weapons:tick",

@@ -1,0 +1,2 @@
+summon minecraft:armor_stand ~ ~1.501 ~ {Tags:["mobs.demo.pikacnu_zombie","mobs.follow","mobs.new"],Marker:1b,Invisible:1b,Passengers:[{id:"minecraft:item_display",Tags:["mobs.demo.pikacnu_zombie","mobs.new"],item:{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"Pikacnu"}},transformation:{translation:[0f,0.5025f,0f],left_rotation:[0f,0f,0f,1f],scale:[1.01f,1.01f,1.01f],right_rotation:[0f,0f,0f,1f]}}]}
+scoreboard players set @s mobs.y_displacement 15010
