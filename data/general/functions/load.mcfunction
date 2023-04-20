@@ -1,6 +1,5 @@
 scoreboard objectives add general.id dummy
-scoreboard objectives remove general.team
-scoreboard objectives remove general.shareQuest
+scoreboard objectives add general.logged_out minecraft.custom:minecraft.leave_game
 
 # 若此記分板為空值，將其設為0
 execute unless score $playerCount general.id = $playerCount general.id run scoreboard players set $playerCount general.id 0
