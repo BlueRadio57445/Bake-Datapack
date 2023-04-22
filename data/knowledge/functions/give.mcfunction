@@ -26,13 +26,13 @@ give @s carrot_on_a_stick{knowledge:{id:"earth_wall",lvl:1},display:{Name:'"土�
 give @s carrot_on_a_stick{knowledge:{id:"earth_pillar",lvl:1},display:{Name:'"土槌"'}}
 
 # 截氣
-give @s carrot_on_a_stick{knowledge:{id:"sync_feather",lvl:1},display:{Name:'"共振羽毛"'}}
+give @s carrot_on_a_stick{knowledge:{id:"air_feather",lvl:1},display:{Name:'"共振羽毛"'}}
 
-give @s carrot_on_a_stick{knowledge:{id:"feather_cut",lvl:1},display:{Name:'"吸回"'}}
+give @s carrot_on_a_stick{knowledge:{id:"air_cut",lvl:1},display:{Name:'"吸回"'}}
 
 give @s carrot_on_a_stick{knowledge:{id:"air_run",lvl:1},display:{Name:'"風流"'}}
 
-give @s carrot_on_a_stick{knowledge:{id:"tornado",lvl:1},display:{Name:'"龍捲風"'}}
+give @s carrot_on_a_stick{knowledge:{id:"air_tornado",lvl:1},display:{Name:'"龍捲風"'}}
 
 # 火焰的知識
 give @s carrot_on_a_stick{knowledge:{id:"end_fire_ball",lvl:1},display:{Name:'"末火球"'}}

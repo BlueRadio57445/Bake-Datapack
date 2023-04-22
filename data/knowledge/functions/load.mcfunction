@@ -20,6 +20,10 @@ scoreboard objectives add knowledge.cd.earth_shield dummy "護盾 冷卻時間"
 scoreboard objectives add knowledge.cd.earth_field dummy "花園冷卻時間"
 scoreboard objectives add knowledge.cd.earth_wall dummy "土牆冷卻時間"
 scoreboard objectives add knowledge.cd.earth_pillar dummy "土槌冷卻時間"
+scoreboard objectives add knowledge.cd.air_feather dummy "羽毛 冷卻時間"
+scoreboard objectives add knowledge.cd.air_cut dummy "吸回 冷卻時間"
+scoreboard objectives add knowledge.cd.air_run dummy "風流 冷卻時間"
+scoreboard objectives add knowledge.cd.air_tornado dummy "龍捲風 冷卻時間"
 
 kill @e[type=marker,tag=fire_field]
 execute unless entity @e[type=marker,tag=fire_field] run summon marker 0 0 0 {Tags:["fire_field"]}
