@@ -4,6 +4,7 @@
         "sanctuary_ench:tick",
         "knowledge:tick",
         "weapons:tick",
+        "vehicles:tick",
         "general:_gcm_/tick"
     ]
 }

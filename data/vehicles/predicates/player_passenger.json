@@ -1,0 +1,9 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "passenger": {
+            "type": "minecraft:player"
+        }
+    },
+    "entity": "this"
+}

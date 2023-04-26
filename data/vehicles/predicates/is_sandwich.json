@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "type": "minecraft:donkey",
+        "nbt": "{Tags:[\"vehicles.sandwich\"]}"
+    },
+    "entity": "this"
+}
