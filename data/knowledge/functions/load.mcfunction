@@ -24,6 +24,8 @@ scoreboard objectives add knowledge.cd.air_feather dummy "羽毛 冷卻時間"
 scoreboard objectives add knowledge.cd.air_cut dummy "吸回 冷卻時間"
 scoreboard objectives add knowledge.cd.air_run dummy "風流 冷卻時間"
 scoreboard objectives add knowledge.cd.air_tornado dummy "龍捲風 冷卻時間"
+scoreboard objectives add knowledge.cd.lightning dummy "閃電五連鞭 冷卻時間"
+scoreboard objectives add knowledge.cd.lightning_mad dummy "怒雷 冷卻時間"
 
 kill @e[type=marker,tag=fire_field]
 execute unless entity @e[type=marker,tag=fire_field] run summon marker 0 0 0 {Tags:["fire_field"]}
@@ -46,3 +48,15 @@ scoreboard objectives add knowledge.earth_shield dummy "護盾 充能次數"
 scoreboard objectives add knowledge.earth_wall dummy "土牆持續時間"
 
 function knowledge:end_fire_schedule
+
+
+scoreboard objectives add knowledge.lightning dummy
+kill @e[type=marker,tag=bolt_dir]
+execute unless entity @e[tag=bolt_dir1] run summon marker 0 0 0 {Tags:["bolt_dir1","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir2] run summon marker 0 0 0 {Tags:["bolt_dir2","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir3] run summon marker 0 0 0 {Tags:["bolt_dir3","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir4] run summon marker 0 0 0 {Tags:["bolt_dir4","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir5] run summon marker 0 0 0 {Tags:["bolt_dir5","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir6] run summon marker 0 0 0 {Tags:["bolt_dir6","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir7] run summon marker 0 0 0 {Tags:["bolt_dir7","bolt_dir"]}
+execute unless entity @e[tag=bolt_dir8] run summon marker 0 0 0 {Tags:["bolt_dir8","bolt_dir"]}

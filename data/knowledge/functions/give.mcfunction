@@ -34,9 +34,14 @@ give @s carrot_on_a_stick{knowledge:{id:"air_run",lvl:1},display:{Name:'"風流"
 
 give @s carrot_on_a_stick{knowledge:{id:"air_tornado",lvl:1},display:{Name:'"龍捲風"'}}
 
-# 火焰的知識
+# 末火的知識
 give @s carrot_on_a_stick{knowledge:{id:"end_fire_ball",lvl:1},display:{Name:'"末火球"'}}
 
 give @s carrot_on_a_stick{knowledge:{id:"end_fire_fan",lvl:1},display:{Name:'"末火海"'}}
 
 give @s carrot_on_a_stick{knowledge:{id:"end_fire_field",lvl:1},display:{Name:'"末火領域"'}}
+
+# 閃電的知識
+give @s carrot_on_a_stick{knowledge:{id:"lightning",lvl:1},display:{Name:'"閃電五連鞭"'}}
+
+give @s carrot_on_a_stick{knowledge:{id:"lightning_mad",lvl:1},display:{Name:'"紅雷"'}}

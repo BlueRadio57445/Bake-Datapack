@@ -19,6 +19,12 @@ scoreboard players remove @a[scores={knowledge.cd.earth_shield=1..}] knowledge.c
 scoreboard players remove @a[scores={knowledge.cd.earth_field=1..}] knowledge.cd.earth_field 1
 scoreboard players remove @a[scores={knowledge.cd.earth_wall=1..}] knowledge.cd.earth_wall 1
 scoreboard players remove @a[scores={knowledge.cd.earth_pillar=1..}] knowledge.cd.earth_pillar 1
+scoreboard players remove @a[scores={knowledge.cd.air_feather=1..}] knowledge.cd.air_feather 1
+scoreboard players remove @a[scores={knowledge.cd.air_cut=1..}] knowledge.cd.air_cut 1
+scoreboard players remove @a[scores={knowledge.cd.air_run=1..}] knowledge.cd.air_run 1
+scoreboard players remove @a[scores={knowledge.cd.air_tornado=1..}] knowledge.cd.air_tornado 1
+scoreboard players remove @a[scores={knowledge.cd.lightning=1..}] knowledge.cd.lightning 1
+scoreboard players remove @a[scores={knowledge.cd.lightning_mad=1..}] knowledge.cd.lightning_mad 1
 
 
 execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_ball/tick_effect
