@@ -27,7 +27,7 @@ function general:_gcm_/setup
 
 # 三角函數專用Marker，用完記得tp回0 0 0
 kill @e[type=marker,tag=tri]
-execute unless entity @e[type=marker,tag=tri] run summon marker 0 0 0 {Tags:["tri"]}
+execute unless entity @e[type=marker,tag=tri] run summon marker 0 0 0 {Tags:["tri"],UUID:[I;0,0,0,0]}
 
 # 放一個界伏盒，用於任何需要替換玩家物品欄內容的場合
 setblock 0 16 0 yellow_shulker_box

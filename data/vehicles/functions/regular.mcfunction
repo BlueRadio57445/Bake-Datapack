@@ -1,1 +1,1 @@
-execute if score @s vehicles.rider matches 0.. run function vehicles:moving
+execute as @s[scores={vehicles.rider=0..},predicate=!vehicles:player_passenger] run function vehicles:no_passenger
