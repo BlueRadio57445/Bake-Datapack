@@ -4,7 +4,7 @@
         "condition": "minecraft:entity_properties",
         "predicate": {
             "vehicle": {
-                "nbt": "{Tags:[\"vehicles.tag\",\"vehicles.this\"]}"
+                "nbt": "{Tags:[\"vehicles.tag\"]}"
             }
         },
         "entity": "this"

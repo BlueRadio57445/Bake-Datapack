@@ -1,15 +1,18 @@
+scoreboard objectives add vehicles.id dummy
 scoreboard objectives add vehicles.const dummy
 scoreboard objectives add vehicles.state dummy
 scoreboard objectives add vehicles.rider dummy
 scoreboard objectives add vehicles.calc dummy
 scoreboard objectives add vehicles.prev_x_rot dummy
-scoreboard objectives add vehicles.prev_y_rot dummy
 scoreboard objectives add vehicles.x_mot dummy
 scoreboard objectives add vehicles.y_mot dummy
 scoreboard objectives add vehicles.z_mot dummy
 scoreboard objectives add vehicles.dir dummy
 scoreboard objectives add vehicles.accel dummy
 scoreboard objectives add vehicles.moving dummy
+scoreboard objectives add vehicles.descending dummy
+scoreboard objectives add vehicles.health dummy
+scoreboard objectives add vehicles.follow_y dummy
 
 scoreboard objectives add vehicles.sandwich.speed dummy
 scoreboard objectives add vehicles.sandwich.jump_boost dummy

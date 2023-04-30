@@ -1,4 +1,5 @@
 data modify entity @s NoAI set value 0b
+data modify entity @s FallDistance set value 0b
 scoreboard players set @s vehicles.moving 1
 
 # direction
@@ -26,7 +27,6 @@ execute if score $d.x_rot vehicles.calc matches 338..359 run scoreboard players 
 execute if score @s vehicles.dir = @s vehicles.dir unless score @s vehicles.dir = $dir vehicles.calc run scoreboard players set @s vehicles.accel 0
 scoreboard players operation @s vehicles.dir = $dir vehicles.calc
 scoreboard players operation $dir vehicles.calc %= $5 vehicles.const
-execute on owner store result score @s vehicles.prev_x_rot run data get entity @s Rotation[0]
 
 # motion
 scoreboard players operation $s.x_mot vehicles.calc = $p.x_mot vehicles.calc
