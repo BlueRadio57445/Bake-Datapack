@@ -6,8 +6,8 @@ execute store success score @s vehicles.sandwich.fly if data entity @s Items[{ta
 # 由於某種特性，直接修改驢子身上的物品資料會造成玩家GUI關閉，因此使用物品修飾器來繞過
 item replace entity @s horse.saddle with minecraft:air
 item replace entity @s weapon.mainhand with minecraft:air
-execute if data entity @s Items[{tag:{sandwich:{bag:1b}}}] run function vehicles:sandwich/update
-execute unless data entity @s Items[{tag:{sandwich:{bag:1b}}}] run function vehicles:sandwich/kill
+execute if data entity @s Items[{tag:{sandwich:{unfolded:1b}}}] run function vehicles:sandwich/update
+execute unless data entity @s Items[{tag:{sandwich:{unfolded:1b}}}] run function vehicles:sandwich/kill
 data modify storage vehicles:sandwich Items set from entity @s Items
 item replace entity @s weapon.mainhand with minecraft:stone
 item modify entity @s weapon.mainhand vehicles:sandwich_items

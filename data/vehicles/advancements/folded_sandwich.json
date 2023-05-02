@@ -1,0 +1,20 @@
+{
+    "rewards": {
+        "function": "vehicles:sandwich/item_modify"
+    },
+    "criteria": {
+        "picked_up_unfolded": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "minecraft:donkey_spawn_egg"
+                        ],
+                        "nbt": "{sandwich:{unfolded:1b}}"
+                    }
+                ]
+            }
+        }
+    }
+}
