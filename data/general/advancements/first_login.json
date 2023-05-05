@@ -1,0 +1,26 @@
+{
+    "rewards": {
+        "function": "general:player_init"
+    },
+    "criteria": {
+        "first_login": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:entity_scores",
+                            "scores": {
+                                "general.id": {
+                                    "min": 0
+                                }
+                            },
+                            "entity": "this"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
