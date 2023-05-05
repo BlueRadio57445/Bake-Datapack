@@ -1,10 +1,11 @@
 {
     "values": [
+        "general:tick_first",
         "npc_system:tick",
         "sanctuary_ench:tick",
         "knowledge:tick",
         "weapons:tick",
         "vehicles:tick",
-        "general:_gcm_/tick"
+        "general:tick_last"
     ]
 }
