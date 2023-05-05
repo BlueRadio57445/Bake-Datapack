@@ -1,0 +1,18 @@
+{
+    "rewards": {
+        "function": "vehicles:sandwich/summoned"
+    },
+    "criteria": {
+        "summoned": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:donkey_spawn_egg"
+                    ],
+                    "nbt": "{sandwich:{bag:1b}}"
+                }
+            }
+        }
+    }
+}
