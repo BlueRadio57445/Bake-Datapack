@@ -41,4 +41,4 @@ execute if score $temp vehicles.state matches 34 run item replace entity @s cont
 execute if score $temp vehicles.state matches 35 run item replace entity @s container.35 from block 0 16 0 container.0
 data remove block 0 16 0 Items[]
 advancement revoke @s only vehicles:folded_sandwich
-execute if data entity @s Inventory[{tag:{sandwich:{unfolded:1b}}}] run function vehicles:sandwich/item_modify
+execute if data entity @s Inventory[{tag:{sandwich:{unfolded:1b}}}] run function vehicles:sandwich/player_item_modify

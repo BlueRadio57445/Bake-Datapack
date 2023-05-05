@@ -5,5 +5,5 @@ scoreboard players set @e[limit=1,type=minecraft:area_effect_cloud,tag=vehicles.
 data modify entity @e[limit=1,type=minecraft:area_effect_cloud,tag=vehicles.new_display] Owner set from entity @s UUID
 tag @e[type=minecraft:area_effect_cloud,tag=vehicles.new_display] remove vehicles.new_display
 
-data merge entity @s {NoAI:1b}
+data merge entity @s {NoAI:1b,ForcedAge:0}
 function vehicles:sandwich/stuffing_check

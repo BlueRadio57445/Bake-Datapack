@@ -1,6 +1,6 @@
 {
     "rewards": {
-        "function": "vehicles:sandwich/item_modify"
+        "function": "vehicles:sandwich/player_item_modify"
     },
     "criteria": {
         "picked_up_unfolded": {
