@@ -62,8 +62,8 @@
     註: `storage general:player_data Data[{selected:1b}].Inventory` 常駐儲存著該玩家前一個 tick 的背包狀態
   
   * get_holding: 上述功能的應用，執行此函數後會將執行玩家前一個 tick 的主副手狀態儲存到 `storage general:player_data` 中的 `output.mainhand` 及 `output.offhand`
-* gcm -  Generated Commands Manager, 感謝 [__雪色__](https://github.com/xuese0513) 提供[這個 project](https://github.com/xuese0513/Generated-Commands-Manager)內的技術
+* gcm -  Generated Commands Manager, 感謝 [__雪色__](https://github.com/xuese0513) 提供此 [project](https://github.com/xuese0513/Generated-Commands-Manager) 內的技術
   * 此技術可拼接字串、拼接並執行指令、讓指定玩家執行以字串形式儲存的指令等
   * 若有認為需要使用此技術的功能，請聯絡技術總監進行評估
 
-此頁目前由技術總監: __末天__ 負責編輯
+此頁目前由技術總監: [__末天__](https://github.com/muotian) 負責編輯
