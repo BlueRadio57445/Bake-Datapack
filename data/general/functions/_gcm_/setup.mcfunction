@@ -7,9 +7,8 @@
     data modify storage general:gcm execute set value {once:[],loop:[]}
 
 # loading chunk & setup processor
-    #forceload add 29999968 20231968
-    #summon item_display 29999968.5 -64.0 20231968.5 {CustomName:'[""]',Tags:["general.gcm.op"],UUID:[I;0,0,0,1],item:{id:"book",Count:1,tag:{}},interpolation_duration:0,interpolation_start:-1,transformation:[0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f]}
+    #summon item_display 0.5 -1 0.5 {CustomName:'[""]',Tags:["general.gcm.op"],UUID:[I;0,0,0,1],item:{id:"book",Count:1,tag:{}},interpolation_duration:0,interpolation_start:-1,transformation:[0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f,0f]}
     #execute as 0000-0000-0000-0000-0001 at @s run function general:_gcm_/flattener/setup
     #execute as 0000-0000-0000-0000-0001 at @s positioned ~3 ~ ~ run function general:_gcm_/executor/once/setup
+    kill @e[tag=general.gcm.op]
     schedule function general:_gcm_/setup_1 3t
-    #execute as 0000-0000-0000-0000-0001 at @s positioned ~ ~4 ~ run function general:_gcm_/executor/loop/setup
