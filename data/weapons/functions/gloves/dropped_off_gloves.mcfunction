@@ -1,5 +1,6 @@
 scoreboard players set $temp weapons.gloves.drop 0
-execute at @s as @e[type=minecraft:item,nbt={Item:{tag:{gloves:2b}}}] store result score $temp weapons.gloves.drop run data modify entity @s Item set from entity @s Item.tag.offhand
+function general:player_data/select
+execute at @s as @e[limit=1,type=minecraft:item,distance=0..10,nbt={Item:{tag:{gloves:2b}}}] store result score $temp weapons.gloves.drop run data modify entity @s Item set from storage general:player_data Data[{selected:1b}].storedOffhand
 kill @e[type=minecraft:item,nbt={Item:{tag:{gloves:2b}}}]
-execute if score $temp weapons.gloves.drop matches 1 if predicate weapons:gloves/hold_off_gloves_single run item replace entity @s weapon.offhand with air
+execute if score $temp weapons.gloves.drop matches 1 run data modify storage general:player_data Data[{selected:1b}].storedOffhand set value {}
 scoreboard players set @s weapons.gloves.drop 0

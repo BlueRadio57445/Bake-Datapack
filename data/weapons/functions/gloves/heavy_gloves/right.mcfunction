@@ -3,7 +3,7 @@
 # 進度：一個資料夾、一個左鍵進度、一個右鍵進度
 # 另外需要什麼東西，請加到該拳套的資料夾裡
 
-advancement revoke @s only weapons:gloves/heavy_gloves/left
+advancement revoke @s only weapons:gloves/heavy_gloves/right
 
 say 1
 say 2
