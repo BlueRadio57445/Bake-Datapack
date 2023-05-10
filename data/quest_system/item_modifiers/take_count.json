@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:set_count",
+  "count": {
+    "type": "minecraft:score",
+    "score": "quest.item_check",
+    "target": {
+      "type": "minecraft:fixed",
+      "name": "$stack"
+    },
+    "scale": -1
+  },
+  "add": true
+}
