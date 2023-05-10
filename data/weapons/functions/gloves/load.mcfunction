@@ -4,3 +4,5 @@
 scoreboard objectives add weapons.gloves.holding dummy
 # 丟掉副手拳套的可能性
 scoreboard objectives add weapons.gloves.drop minecraft.dropped:minecraft.arrow
+# 紀錄 SelectedItemSlot
+scoreboard objectives add weapons.gloves.slot dummy
