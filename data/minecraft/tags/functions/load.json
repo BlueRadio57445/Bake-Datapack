@@ -5,7 +5,8 @@
             "quest_system:load",
             "sanctuary_ench:load",
             "knowledge:load",
-            "weapons:load"
+            "weapons:load",
+            "training_doll:load"
         ]
 }
     

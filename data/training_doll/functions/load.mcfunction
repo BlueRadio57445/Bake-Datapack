@@ -1,0 +1,3 @@
+scoreboard objectives add training_doll.original_health dummy
+scoreboard objectives add training_doll.got_hurt dummy
+scoreboard objectives add training_doll.damage dummy
