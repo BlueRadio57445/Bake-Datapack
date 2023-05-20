@@ -1,0 +1,1 @@
+execute as @e[tag=training_doll_1] run function training_doll:training_doll

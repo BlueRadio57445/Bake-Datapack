@@ -4,6 +4,7 @@
             "sanctuary_ench:tick",
             "general:_gcm_/tick",
             "knowledge:tick",
-            "weapons:tick"
+            "weapons:tick",
+            "training_doll:tick"
         ]
 }
