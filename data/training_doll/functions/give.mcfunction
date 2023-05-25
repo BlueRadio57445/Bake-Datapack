@@ -1,0 +1,1 @@
+give @p vindicator_spawn_egg{EntityTag:{Health:1000,NoAI:1b,Silent:1b,Tags:["training_doll_1"],Attributes:[{Name:"generic.max_health",Base:1000f}]},display:{Name:'[{"text":"訓練用人偶","italic":false}]'}} 1
