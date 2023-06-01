@@ -1,0 +1,12 @@
+{
+    "condition": "minecraft:alternative",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+                "nbt": "{Tags:[\"effects.stun\"]}"
+            },
+            "entity": "this"
+        }
+    ]
+}
