@@ -9,7 +9,17 @@
                 "storage": "general:gcm"
             },
             {
-                "nbt": "str_list[]",
+                "nbt": "str_l1[]",
+                "storage": "general:gcm",
+                "separator": ""
+            },
+            {
+                "nbt": "str_ls[]",
+                "storage": "general:gcm",
+                "separator": " "
+            },
+            {
+                "nbt": "str_l2[]",
                 "storage": "general:gcm",
                 "separator": ""
             }
