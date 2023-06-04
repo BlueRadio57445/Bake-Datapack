@@ -2,7 +2,16 @@
     {
         "function": "minecraft:set_name",
         "entity": "this",
-        "name": ["           ",{"nbt":"head","storage": "general:gcm"},{"nbt":"str","storage": "general:gcm"}]
+        "name": [
+            "           ",
+            {
+                "nbt": "head",
+                "storage": "general:gcm"
+            },
+            {
+                "nbt": "str",
+                "storage": "general:gcm"
+            }
+        ]
     }
 ]
-  
