@@ -1,8 +1,11 @@
 {
-    "values": [
-        "general:load",
-        "npc_system:load",
-        "quest_system:load",
-        "sanctuary_ench:load"
-    ]
+        "values": [
+            "general:load",
+            "npc_system:load",
+            "quest_system:load",
+            "sanctuary_ench:load",
+            "knowledge:load",
+            "weapons:load"
+        ]
 }
+    

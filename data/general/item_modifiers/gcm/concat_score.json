@@ -2,7 +2,26 @@
     {
         "function": "minecraft:set_name",
         "entity": "this",
-        "name": ["           ",{"nbt":"tmp","storage": "general:gcm"},{"nbt":"str","storage": "general:gcm"},{"score":{"objective": "general.gcm_var", "name": "$cmd.score"}}]
+        "name": [
+            "           ",
+            {
+                "nbt": "head",
+                "storage": "general:gcm"
+            },
+            {
+                "nbt": "str_s1",
+                "storage": "general:gcm"
+            },
+            {
+                "score": {
+                    "objective": "general.gcm_var", 
+                    "name": "$cmd.score"
+                }
+            },
+            {
+                "nbt": "str_s2",
+                "storage": "general:gcm"
+            }
+        ]
     }
 ]
-  

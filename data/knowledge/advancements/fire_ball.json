@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "t": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["carrot_on_a_stick"],
+                        "nbt": "{knowledge:{id:\"fire_ball\"},used:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "knowledge:fire_ball/trigger"
+    }
+}

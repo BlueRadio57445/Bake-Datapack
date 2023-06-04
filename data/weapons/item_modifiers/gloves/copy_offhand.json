@@ -1,0 +1,14 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "storage",
+        "source": "gloves"
+    },
+    "ops": [
+        {
+            "source": "offhand",
+            "target": "offhand",
+            "op": "replace"
+        }
+    ]
+}
