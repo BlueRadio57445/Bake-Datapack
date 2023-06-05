@@ -35,15 +35,16 @@
 另外如果有自訂模型或材質的需求，請去吵收音機，他還沒開資源包的共用
 
 ## 命名空間註冊表
-|ID |namespace         |
-|---|------------------|
-|0. |general           |
-|1. |knowledge         |
-|2. |sanctuary_ench    |
-|3. |weapons           |
-|4. |items             |
-|5. |npc/npc_system    |
-|6. |quest/quest_system|
+|ID |namespace          |
+|---|-------------------|
+|0. |general            |
+|1. |knowledge          |
+|2. |sanctuary_ench     |
+|3. |weapons            |
+|4. |items              |
+|5. |npc/npc_system     |
+|6. |quest/quest_system |
+|7. |effects            |
 
 ## general 命名空間下的實用函數
 
