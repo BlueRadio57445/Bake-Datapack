@@ -1,0 +1,13 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "nbt": "{Item:{tag:{grenade:1b}},HasBeenShot:0b}",
+        "distance": {
+            "absolute": {
+                "min": 0.0,
+                "max": 2.0
+            }
+        }
+    },
+    "entity": "this"
+}

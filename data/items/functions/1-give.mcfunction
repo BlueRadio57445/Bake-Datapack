@@ -1,1 +1,0 @@
-give @s chicken_spawn_egg{EntityTag: {Tags: ["alive"]}}

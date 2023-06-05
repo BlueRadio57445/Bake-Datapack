@@ -1,0 +1,21 @@
+[
+    {
+        "condition": "minecraft:entity_properties",
+        "predicate": {
+            "nbt": "{Tags:[\"items.broken_plate\"]}"
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+                "passenger": {
+                    "type": "minecraft:area_effect_cloud"
+                }
+            },
+            "entity": "this"
+        }
+    }
+]
