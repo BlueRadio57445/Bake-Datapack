@@ -44,7 +44,7 @@ scoreboard objectives add knowledge.water_swirl dummy "水漩渦 持續時間"
 scoreboard objectives add knowledge.water_wave dummy "波浪 持續時間"
 
 scoreboard objectives add knowledge.earth_shield dummy "護盾 充能次數"
-
+scoreboard objectives add knowledge.earth_field dummy "花園持續時間"
 scoreboard objectives add knowledge.earth_wall dummy "土牆持續時間"
 
 function knowledge:end_fire_schedule
