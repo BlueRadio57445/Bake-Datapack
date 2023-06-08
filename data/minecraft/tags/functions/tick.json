@@ -5,6 +5,7 @@
         "sanctuary_ench:tick",
         "knowledge:tick",
         "weapons:tick",
+        "items:tick",
         "vehicles:tick",
         "general:tick_last"
     ]

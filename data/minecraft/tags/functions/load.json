@@ -1,13 +1,13 @@
 {
-        "values": [
-            "general:load",
-            "npc_system:load",
-            "quest_system:load",
-            "effects:load",
-            "sanctuary_ench:load",
-            "knowledge:load",
-            "weapons:load",
-            "vehicles:load"
-        ]
+    "values": [
+        "general:load",
+        "npc_system:load",
+        "quest_system:load",
+        "effects:load",
+        "sanctuary_ench:load",
+        "knowledge:load",
+        "weapons:load",
+        "items:load",
+        "vehicles:load"
+    ]
 }
-    
