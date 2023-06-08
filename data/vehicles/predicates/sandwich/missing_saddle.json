@@ -1,0 +1,19 @@
+[
+    {
+        "condition": "minecraft:entity_scores",
+        "scores": {
+            "vehicles.sandwich.fly": 0
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+                "nbt": "{SaddleItem:{id:\"minecraft:saddle\",tag:{vehicle_binded:1b}}}"
+            },
+            "entity": "this"
+        }
+    }
+]
