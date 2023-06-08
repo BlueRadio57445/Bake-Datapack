@@ -15,8 +15,8 @@ particle minecraft:snowflake ^-1 ^1 ^2 0.2 0.2 0.2 0.01 2
 particle minecraft:snowflake ^2 ^1 ^2 0.2 0.2 0.2 0.01 2
 particle minecraft:snowflake ^-2 ^1 ^2 0.2 0.2 0.2 0.01 2
 
-execute positioned ~-0.4 ~-0.4 ~-0.4 as @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=0,dz=0] positioned as @s run tp @s ^ ^ ^0.5
-execute positioned ^1 ^ ^ positioned ~-0.4 ~-0.4 ~-0.4 as @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=0,dz=0] positioned as @s run tp @s ^ ^ ^0.5
-execute positioned ^-1 ^ ^ positioned ~-0.4 ~-0.4 ~-0.4 as @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=0,dz=0] positioned as @s run tp @s ^ ^ ^0.5
-execute positioned ^2 ^ ^ positioned ~-0.4 ~-0.4 ~-0.4 as @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=0,dz=0] positioned as @s run tp @s ^ ^ ^0.5
-execute positioned ^-2 ^ ^ positioned ~-0.4 ~-0.4 ~-0.4 as @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=0,dz=0] positioned as @s run tp @s ^ ^ ^0.5
+execute positioned ~-0.4 ~-1.5 ~-0.4 as @e[type=#mobs,dx=0,dy=1,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s run tp @s ^ ^ ^0.5
+execute positioned ^1 ^ ^ positioned ~-0.4 ~-1.5 ~-0.4 as @e[type=#mobs,dx=0,dy=1,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s run tp @s ^ ^ ^0.5
+execute positioned ^-1 ^ ^ positioned ~-0.4 ~-1.5 ~-0.4 as @e[type=#mobs,dx=0,dy=1,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s run tp @s ^ ^ ^0.5
+execute positioned ^2 ^ ^ positioned ~-0.4 ~-1.5 ~-0.4 as @e[type=#mobs,dx=0,dy=1,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s run tp @s ^ ^ ^0.5
+execute positioned ^-2 ^ ^ positioned ~-0.4 ~-1.5 ~-0.4 as @e[type=#mobs,dx=0,dy=1,dz=0] positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s run tp @s ^ ^ ^0.5
