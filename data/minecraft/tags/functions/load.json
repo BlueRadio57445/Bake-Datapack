@@ -7,7 +7,7 @@
         "sanctuary_ench:load",
         "knowledge:load",
         "weapons:load",
-        "items:load"
+        "items:load",
+        "vehicles:load"
     ]
 }
-    

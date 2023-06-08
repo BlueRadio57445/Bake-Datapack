@@ -2,8 +2,7 @@ scoreboard objectives add general.version dummy
 scoreboard objectives add general.id dummy
 scoreboard objectives add general.util dummy
 scoreboard objectives add general.const dummy
-scoreboard objectives remove general.team
-scoreboard objectives remove general.shareQuest
+scoreboard objectives add general.logged_out minecraft.custom:minecraft.leave_game
 
 scoreboard players set $10 general.const 10
 

@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "gloves":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["crossbow"],
+                            "nbt": "{gloves:1b,Charged:1b,gloves_id:\"first_gloves\"}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:gloves/first_gloves/left"
+    }
+}
