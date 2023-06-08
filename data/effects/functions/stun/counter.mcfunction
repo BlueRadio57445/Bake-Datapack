@@ -1,5 +1,4 @@
 scoreboard players remove @s effects.stun.duration 1
-execute store result score @s effects.stun.check_time run time query gametime
 scoreboard players add @s effects.stun.check_time 20
 execute at @s anchored eyes run particle minecraft:dust 1 1 0 1 ^ ^ ^ 0.4 0.4 0.4 0.05 5 normal
 execute if score @s effects.stun.duration matches 2.. run effect give @s minecraft:slowness 2 6 true
