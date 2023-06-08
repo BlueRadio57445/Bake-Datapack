@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "gloves":{
+            "trigger": "shot_crossbow",
+            "conditions": {
+                "item": {
+                    "nbt": "{gloves:1b,gloves_id:\"first_gloves\"}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:gloves/first_gloves/right"
+    }
+}
