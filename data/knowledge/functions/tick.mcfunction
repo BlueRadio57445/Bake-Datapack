@@ -38,3 +38,4 @@ execute as @a[scores={knowledge.earth_shield=1..}] at @s run function knowledge:
 execute as @e[type=shulker,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
 execute as @e[type=block_display,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
 execute as @e[type=interaction,tag=earth_field] at @s run function knowledge:earth_field/tick_effect
+execute as @e[type=interaction,tag=earth_pillar] at @s run function knowledge:earth_pillar/tick_effect
