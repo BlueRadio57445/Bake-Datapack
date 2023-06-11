@@ -48,6 +48,8 @@ scoreboard objectives add knowledge.earth_field dummy "花園持續時間"
 scoreboard objectives add knowledge.earth_wall dummy "土牆持續時間"
 scoreboard objectives add knowledge.earth_pillar dummy "土垂 持續時間"
 
+scoreboard objectives add knowledge.air_feather dummy "羽毛 持續時間"
+
 function knowledge:end_fire_schedule
 
 
