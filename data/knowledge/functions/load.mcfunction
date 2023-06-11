@@ -49,9 +49,12 @@ scoreboard objectives add knowledge.earth_wall dummy "土牆持續時間"
 scoreboard objectives add knowledge.earth_pillar dummy "土垂 持續時間"
 
 scoreboard objectives add knowledge.air_feather dummy "羽毛 持續時間"
+scoreboard objectives add knowledge.air_run dummy "風流 持續時間 "
+scoreboard objectives add knowledge.step minecraft.custom:minecraft.walk_one_cm "步伐"
+scoreboard players set $50 knowledge.step 50
 
 function knowledge:end_fire_schedule
-
+function knowledge:air_run_schedule
 
 scoreboard objectives add knowledge.lightning dummy
 kill @e[type=marker,tag=bolt_dir]
