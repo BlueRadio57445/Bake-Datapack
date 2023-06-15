@@ -7,3 +7,6 @@ tag @e[tag=npc.demo.radio] add npc.this
 
 # 2. 執行對話過程之通用函式
 function npc_system:common/next
+
+# 3. 移除所有this標籤
+tag @e[tag=npc.this] remove npc.this 
