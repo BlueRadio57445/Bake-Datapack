@@ -4,6 +4,13 @@ scoreboard objectives add general.util dummy
 scoreboard objectives add general.const dummy
 scoreboard objectives add general.logged_out minecraft.custom:minecraft.leave_game
 
+scoreboard objectives add general.player.health health
+scoreboard objectives add general.player.armor armor
+scoreboard objectives add general.player.food food
+scoreboard objectives add general.player.air air
+scoreboard objectives add general.player.level level
+scoreboard objectives add general.player.xp xp
+
 scoreboard players set $10 general.const 10
 
 # 若此記分板為空值，將其設為0
