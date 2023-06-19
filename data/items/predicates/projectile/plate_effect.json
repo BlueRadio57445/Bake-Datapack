@@ -1,0 +1,23 @@
+[  
+    {
+        "condition": "minecraft:entity_properties",
+        "predicate": {
+            "effects": {
+                "luck": {
+                    "amplifier": 0
+                }
+            }
+        },
+        "entity": "this"
+    },
+    {
+        "condition": "minecraft:inverted",
+        "term": {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+                "nbt": "{Tags:[\"effects.bleed\"]}"
+            },
+            "entity": "this"
+        }
+    }
+]

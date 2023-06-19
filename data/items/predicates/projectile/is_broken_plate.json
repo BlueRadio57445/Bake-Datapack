@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "nbt": "{Tags:[\"items.broken_plate\"]}"
+    },
+    "entity": "this"
+}

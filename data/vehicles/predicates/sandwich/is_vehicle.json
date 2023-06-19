@@ -1,0 +1,10 @@
+{
+    "condition": "minecraft:entity_scores",
+    "scores": {
+        "vehicles.sandwich.fly": {
+            "min": 0,
+            "max": 1
+        }
+    },
+    "entity": "this"
+}

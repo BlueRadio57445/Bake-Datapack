@@ -1,0 +1,48 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "nbt": "SelectedItem.tag.display.Name",
+                                "entity": "@s",
+                                "interpret": true,
+                                "extra": [
+                                    {
+                                        "text": " - 副手"
+                                    }
+                                ]
+                            },
+                            "entity": "this"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{gloves:2b}"
+                        },
+                        {
+                            "function": "minecraft:copy_nbt",
+                            "source": {
+                                "type": "minecraft:context",
+                                "target": "this"
+                            },
+                            "ops": [
+                                {
+                                    "op": "replace",
+                                    "source": "SelectedItem.tag.CustomModelData",
+                                    "target": "CustomModelData"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
