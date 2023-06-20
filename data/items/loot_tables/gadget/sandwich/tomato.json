@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "番茄"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "三明治之中常見的配料"
+                },
+                {
+                  "color": "gray",
+                  "text": "有著清爽的酸甜味"
+                },
+                {
+                  "color": "gray",
+                  "text": "也許世界上有活著的三明治?"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{sandwich:{health_boost:1b},CustomModelData:1026}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

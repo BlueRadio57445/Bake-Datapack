@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "生蛋"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{raw_egg:1b,CustomModelData:1539}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
