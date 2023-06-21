@@ -1,0 +1,1 @@
+execute as @s[tag=!universe.1] run function universe:test_universe1/disable_effect
