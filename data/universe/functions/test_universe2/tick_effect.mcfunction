@@ -1,0 +1,1 @@
+execute as @e[distance=..7,type=creeper] run data merge entity @s {Fuse:1000s}
