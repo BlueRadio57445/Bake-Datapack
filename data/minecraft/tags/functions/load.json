@@ -8,6 +8,7 @@
         "knowledge:load",
         "weapons:load",
         "items:load",
-        "vehicles:load"
+        "vehicles:load",
+        "universe:load"
     ]
 }
