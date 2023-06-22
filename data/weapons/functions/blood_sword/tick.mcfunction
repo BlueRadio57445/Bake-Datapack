@@ -4,4 +4,7 @@ execute as @a run scoreboard players operation @s weapons.use_health = @s genera
 execute as @a run scoreboard players operation @s weapons.use_health *= $100 weapons.use_health
 execute as @a run scoreboard players operation @s weapons.use_health /= @s weapons.player.max.health
 
+function weapons:blood_sword/damage
+function weapons:blood_sword/restart
+
 
