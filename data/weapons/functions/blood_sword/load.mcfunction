@@ -1,4 +1,3 @@
-scoreboard objectives add player_health health
-scoreboard objectives add player_max_health dummy
-scoreboard objectives add use_health dummy
-
+scoreboard objectives add weapons.player.max.health dummy
+scoreboard objectives add weapons.use_health dummy
+scoreboard players set 100 weapons.use_health 100
