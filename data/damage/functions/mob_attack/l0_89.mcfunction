@@ -1,0 +1,8 @@
+execute if score $amount damage matches 89 run damage @s 89 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 90 run damage @s 90 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 91 run damage @s 91 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 92 run damage @s 92 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 93 run damage @s 93 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 94 run damage @s 94 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 95 run damage @s 95 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 96 run damage @s 96 minecraft:mob_attack by @e[tag=attacker,limit=1]
