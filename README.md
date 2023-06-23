@@ -46,6 +46,7 @@
 |6. |quest/quest_system |
 |7. |effects            |
 |8. |universe           |
+|9. |damage             |
 
 ## general 命名空間下的實用函數
 

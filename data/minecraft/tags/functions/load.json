@@ -9,6 +9,7 @@
         "weapons:load",
         "items:load",
         "vehicles:load",
-        "universe:load"
+        "universe:load",
+        "damage:load"
     ]
 }
