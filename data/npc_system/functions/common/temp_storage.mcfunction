@@ -11,3 +11,6 @@ data modify entity @s data.Sell set from storage npc_system:common This.Sell
 data modify entity @s data.Rotation set from entity @e[limit=1,tag=npc.figure,tag=npc.this] Rotation
 data modify entity @s data.Rotation set from entity @e[limit=1,type=minecraft:marker,tag=npc.old] data.Rotation
 kill @e[type=minecraft:marker,tag=npc.old]
+
+execute if data storage npc_system:common This.Buy[].buy.Name run function npc_system:trader/interpret/queue
+execute unless data storage npc_system:common This.Buy[].buy.Name if data storage npc_system:common This.Sell[].buy.Name run function npc_system:trader/interpret/queue
