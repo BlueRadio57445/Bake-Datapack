@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "起司"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "由上好的牛奶製成"
+                },
+                {
+                  "color": "gray",
+                  "text": "很適合為三明治提供鹹味"
+                },
+                {
+                  "color": "gray",
+                  "text": "也許哪天三明治會跑步?"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{sandwich:{speed:1b},CustomModelData:1027}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

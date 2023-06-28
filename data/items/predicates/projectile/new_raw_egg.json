@@ -1,7 +1,7 @@
 {
     "condition": "minecraft:entity_properties",
     "predicate": {
-        "nbt": "{Item:{tag:{plate:1b}},HasBeenShot:0b}",
+        "nbt": "{Item:{tag:{raw_egg:1b}},HasBeenShot:0b}",
         "distance": {
             "absolute": {
                 "min": 0.0,

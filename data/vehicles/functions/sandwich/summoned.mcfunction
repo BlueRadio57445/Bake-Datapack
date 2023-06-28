@@ -6,3 +6,4 @@ execute store result score $temp vehicles.state if data storage general:player_d
 execute if score $temp vehicles.state matches 1 run data modify storage vehicles:sandwich temp set from storage general:player_data output.mainhand
 execute if score $temp vehicles.state matches 0 run data modify storage vehicles:sandwich temp set from storage general:player_data output.offhand
 execute if data storage vehicles:sandwich temp.tag.cooldown run function vehicles:sandwich/cooldown_check
+execute unless data storage vehicles:sandwich temp.tag.cooldown run function vehicles:sandwich/summon_succeeded
