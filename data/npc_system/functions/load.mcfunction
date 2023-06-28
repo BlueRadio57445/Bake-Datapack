@@ -1,6 +1,7 @@
 scoreboard objectives add npc.user dummy
 scoreboard objectives add npc.occupied dummy
 scoreboard objectives add npc.state dummy
+scoreboard objectives add npc.count dummy
 scoreboard objectives add npc.quest dummy
 scoreboard objectives add npc.trader dummy
 scoreboard objectives add npc.option dummy

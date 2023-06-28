@@ -5,7 +5,9 @@ data modify entity @s data.Texts set from storage npc_system:common This.Dialogu
 data modify entity @s data.Options set from storage npc_system:common This.Dialogue.Options
 data modify entity @s data.Quest set from storage npc_system:common This.Dialogue.Quest
 data modify entity @s data.Extra set from storage npc_system:common This.Dialogue.Extra
-data modify entity @s data.TraderNormal set from storage npc_system:common This.Dialogue.TraderNormal
+data modify entity @s data.TraderNormal set from storage npc_system:common This.TraderNormal
+data modify entity @s data.TraderNormalRandom set from storage npc_system:common This.TraderNormalRandom
+data modify entity @s data.Exit set from storage npc_system:common This.Exit
 data modify entity @s data.Buy set from storage npc_system:common This.Buy
 data modify entity @s data.Sell set from storage npc_system:common This.Sell
 data modify entity @s data.Rotation set from entity @e[limit=1,tag=npc.figure,tag=npc.this] Rotation

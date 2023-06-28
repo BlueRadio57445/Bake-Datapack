@@ -1,3 +1,4 @@
+execute if data entity @s data{TraderNormalRandom:1b} run function npc_system:trader/random/generate
 data modify entity @s data.Texts set from entity @s data.TraderNormal[0].Texts
 data modify entity @s data.Options set from entity @s data.TraderNormal[0].Options
 data modify entity @s data.Quest set from entity @s data.TraderNormal[0].Quest
