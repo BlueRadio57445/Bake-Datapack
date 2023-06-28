@@ -31,13 +31,16 @@ execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_
 execute as @e[type=armor_stand,tag=end_fire_ball] at @s run function knowledge:end_fire_ball/tick_effect
 execute as @a[scores={knowledge.fire_field=1..}] at @s run function knowledge:fire_field/tick_effect
 execute as @a[scores={knowledge.end_fire_field=1..}] at @s run function knowledge:end_fire_field/tick_effect
+
 execute as @e[type=marker,tag=water_bubble] at @s run function knowledge:water_bubble/tick_effect
 execute as @e[type=armor_stand,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
 execute as @e[type=marker,tag=water_wave] at @s run function knowledge:water_wave/tick_effect
+
 execute as @a[scores={knowledge.earth_shield=1..}] at @s run function knowledge:earth_shield/tick_effect
 execute as @e[type=shulker,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
 execute as @e[type=block_display,tag=earth_wall] at @s run function knowledge:earth_wall/tick_effect
 execute as @e[type=interaction,tag=earth_field] at @s run function knowledge:earth_field/tick_effect
 execute as @e[type=interaction,tag=earth_pillar] at @s run function knowledge:earth_pillar/tick_effect
+
 execute as @e[type=item_display,tag=air_feather] at @s run function knowledge:air_feather/tick_effect
 execute as @a[scores={knowledge.air_run=1..}] at @s run function knowledge:air_run/tick_effect
