@@ -1,0 +1,18 @@
+{
+  "rewards": {
+    "function": "items:gadget/magnet"
+  },
+  "criteria": {
+    "using_magnet": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:ender_eye"
+          ],
+          "nbt": "{magnet:1b}"
+        }
+      }
+    }
+  }
+}

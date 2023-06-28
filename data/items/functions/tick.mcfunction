@@ -6,13 +6,5 @@ execute as @a[scores={items.used.lingering_potion=1..}] run function items:proje
 
 #gadget
 
-function items:gadget/flour
-function items:gadget/magnet
 
 scoreboard players set @a items.used.warped_fungus_on_a_stick 0
-
-
-
-#Other Setting
-
-##CustomModelData-Now : 10011
