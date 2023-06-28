@@ -22,7 +22,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{plate:1b,upgrade:1b,CustomPotionColor:11974326,CustomModelData:1538}"
+              "tag": "{plate:1b,upgrade:1b,CustomPotionColor:11974326,CustomModelData:1154}"
             }
           ]
         }
