@@ -1,0 +1,27 @@
+{
+  "function": "minecraft:set_stew_effect",
+  "effects": [
+    {
+      "type": "minecraft:instant_health",
+      "duration": {
+        "type": "minecraft:uniform",
+        "min": {
+          "type": "minecraft:score",
+          "score": "general.utils",
+          "target": {
+            "type": "fixed",
+            "name": "$uniform_min"
+          }
+        },
+        "max": {
+          "type": "minecraft:score",
+          "score": "general.utils",
+          "target": {
+            "type": "fixed",
+            "name": "$uniform_max"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -21,6 +21,6 @@ function quest_system:item_check
 
 tellraw @s {"color":"aqua","text":"[任務系統] 檢查完畢，結果如下:"}
 execute if score $output quest.item_check matches 0 run tellraw @s {"color":"red","text":"[任務系統] 指定物品數量不足，目標為 ","extra":[{"score":{"name":"$target","objective":"quest.item_check"}},{"text":" 個，但只在您身上搜尋到 "},{"score":{"name":"$count","objective":"quest.item_check"}},{"text":" 個"}]}
-execute if score $output quest.item_check matches 0 run tellraw @s {"color":"gray","text":"[任務系統] 若要獲得指定之偵測物品，請","extra":[{"color":"white","underlined":true,"text":"點此","clickEvent":{"action":"run_command","value":"/loot give @s loot quest:mysterious_stone_stack"}}]}
+execute if score $output quest.item_check matches 0 run tellraw @s {"color":"gray","text":"[任務系統] 若要獲得指定之偵測物品，請","extra":[{"color":"white","underlined":true,"text":"點此","clickEvent":{"action":"run_command","value":"/loot give @s loot items:demo/mysterious_stone_stack"}}]}
 # 這裡順便展示使用 loot table 進行道具設計的方式，遊戲裡應該不會讓玩家使用聊天室的點擊事件來執行 /loot 指令，因為這需要權限
 execute if score $output quest.item_check matches 1 run tellraw @s {"color":"aqua","text":"[任務系統] 指定物品數量足夠，目標為 ","extra":[{"score":{"name":"$target","objective":"quest.item_check"}},{"text":" 個，而您身上至少有 "},{"score":{"name":"$count","objective":"quest.item_check"}},{"text":" 個"}]}

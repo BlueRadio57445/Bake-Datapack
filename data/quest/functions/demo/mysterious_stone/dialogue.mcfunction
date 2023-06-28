@@ -5,7 +5,7 @@ data modify storage quest:demo mysterious_stone.Start set value {Texts:['{"text"
 data modify storage quest:demo mysterious_stone.Start_Remind set value {Texts:['{"text":"記得要去找 ","extra":[{"underlined":true,"text":"測試用末天機器人"},{"text":" 喔"}]}']}
 
 # 階段為2時，由 "demo.endsky" 觸發，結束後將階段設為3，並給予道具
-data modify storage quest:demo mysterious_stone.Ask set value {Texts:['{"text":"神奇石頭?"}','{"text":"我當然有啊"}','{"text":"而且現在特價中喔"}','{"text":"一顆只賣你新台幣1000元--"}','{"text":"--當然是開玩笑的"}','{"text":"按照規定這東西我得直接給你"}','{"italic":true,"text":"不然你以為我有多不想說剛剛是開玩笑的啊"}','{"text":"唉...你就拿去吧"}'],Extra:{Command:"function quest:demo/mysterious_stone/give"}}
+data modify storage quest:demo mysterious_stone.Ask set value {Texts:['{"text":"神奇石頭?"}','{"text":"我當然有啊"}','{"text":"而且現在特價中喔"}','{"text":"一顆只賣你新台幣一千元--"}','{"text":"--當然是開玩笑的"}','{"text":"按照規定這東西我得直接給你"}','{"italic":true,"text":"不然你以為我有多不想說剛剛是開玩笑的啊"}','{"text":"唉...你就拿去吧"}'],Extra:{Command:"function quest:demo/mysterious_stone/give"}}
 
 # 階段為3時，由 "demo.endsky" 觸發
 data modify storage quest:demo mysterious_stone.Ask_Remind set value {Texts:['{"text":"把神奇石頭拿去給 ","extra":[{"underlined":true,"text":"收音機器人"},{"text":" 吧"}]}','{"text":"弄丟了我可不補發喔"}']}
