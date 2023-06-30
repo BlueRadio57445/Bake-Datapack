@@ -10,6 +10,7 @@
         "items:load",
         "vehicles:load",
         "universe:load",
-        "damage:load"
+        "damage:load",
+        "enemy:load"
     ]
 }

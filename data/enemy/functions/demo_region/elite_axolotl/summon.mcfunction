@@ -1,0 +1,1 @@
+summon axolotl ~ ~1 ~ {Health:30f,Variant:4,Tags:["enemy","enemy.elite_axolotl"],CustomName:'{"text":"波瀾蠑螈","color":"dark_aqua"}',Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.attack_damage",Base:8}]}
