@@ -1,0 +1,1 @@
+summon axolotl ~ ~ ~ {id:"minecraft:axolotl",Tags:["enemy"],Health:8f,Attributes:[{Name:"generic.max_health",Base:8}]}
