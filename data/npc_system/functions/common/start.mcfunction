@@ -8,7 +8,8 @@ execute if data storage npc_system:common This{NormalRandom:1b} run function npc
 data modify storage npc_system:common This.Dialogue set from storage npc_system:common This.Normal[0]
 execute unless data storage npc_system:common This.Normal[0].Once run data modify storage npc_system:common This.Normal append from storage npc_system:common This.Normal[0]
 data remove storage npc_system:common This.Normal[0]
-execute as @e[limit=1,tag=npc.figure,tag=npc.this] on passengers run tag @s add npc.old
+kill @e[tag=npc.idle,tag=npc.this]
+tag @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] add npc.old
 execute as @e[limit=1,tag=npc.figure,tag=npc.this] at @s anchored eyes positioned ^ ^ ^ summon minecraft:marker run function npc_system:common/summon/temp_storage
 execute as @e[limit=1,type=minecraft:text_display,tag=npc.this] at @s summon minecraft:text_display run function npc_system:common/summon/text_display
 data merge entity @e[limit=1,type=minecraft:text_display,tag=npc.name,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"CustomName","entity":"@e[limit=1,tag=npc.figure,tag=npc.this]","interpret":true},{"text":":"}]}',start_interpolation:0,interpolation_duration:2,transformation:{translation:[0.0f,0.05f,0.0f]}}
