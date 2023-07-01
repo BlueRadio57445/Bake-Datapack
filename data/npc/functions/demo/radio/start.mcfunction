@@ -5,7 +5,7 @@ advancement revoke @s only npc:demo/radio_start
 # 1. 將所有屬於同一個NPC的實體標上this標籤
 tag @e[tag=npc.demo.radio] add npc.this
 
-# 2. 將storage裡儲存在<NPC_ID>的對話放到This，方便後續的通用函式使用
+# 2. 將當前的對話設定載入到指定位置，方便後續的通用函式使用
 data modify storage npc_system:common This set from storage npc:demo radio
 
 # 3. 若有符合特殊對話之條件(例如任務說明與交付等)，將於此處偵測並成為接下來的對話，順序越前面優先度越高
