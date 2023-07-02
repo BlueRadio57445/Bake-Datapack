@@ -11,6 +11,7 @@
         "vehicles:load",
         "universe:load",
         "damage:load",
-        "enemy:load"
+        "enemy:load",
+        "boss:load"
     ]
 }
