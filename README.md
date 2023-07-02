@@ -48,6 +48,7 @@
 |8. |universe           |
 |9. |damage             |
 |10.|enemy              |
+|11.|boss               |
 
 ## general 命名空間下的實用函數
 
