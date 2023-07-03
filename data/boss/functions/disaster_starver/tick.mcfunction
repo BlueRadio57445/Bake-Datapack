@@ -11,8 +11,8 @@ execute unless entity @e[tag=boss.disaster_starver] run function boss:disaster_s
 
 scoreboard players add @e[tag=boss.disaster_starver] boss.time0 1
 
-execute as @e[tag=boss.disaster_starver,scores={boss.time0=100}] at @s run function boss:disaster_starver/skill1/cast
-execute as @e[tag=boss.disaster_starver,scores={boss.time0=300}] at @s run function boss:disaster_starver/skill2/cast
-execute as @e[tag=boss.disaster_starver,scores={boss.time0=400}] at @s run function boss:disaster_starver/skill3/cast
-execute as @e[tag=boss.disaster_starver,scores={boss.time0=500}] at @s run function boss:disaster_starver/skill2/cast
+#execute as @e[tag=boss.disaster_starver,scores={boss.time0=100}] at @s run function boss:disaster_starver/skill1/cast
+#execute as @e[tag=boss.disaster_starver,scores={boss.time0=300}] at @s run function boss:disaster_starver/skill2/cast
+#execute as @e[tag=boss.disaster_starver,scores={boss.time0=400}] at @s run function boss:disaster_starver/skill3/cast
+#execute as @e[tag=boss.disaster_starver,scores={boss.time0=500}] at @s run function boss:disaster_starver/skill2/cast
 scoreboard players set @e[tag=boss.disaster_starver,scores={boss.time0=500}] boss.time0 0

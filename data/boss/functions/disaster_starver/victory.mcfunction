@@ -7,6 +7,7 @@ execute at @a[tag=bossfight_0] run summon firework_rocket ~ ~3 ~ {FireworksItem:
 kill @e[tag=disaster_starver.starver]
 kill @e[tag=disaster_starver.spit]
 kill @e[tag=disaster_starver.random]
+kill @e[tag=disaster_starver.villager]
 schedule clear boss:disaster_starver/tick
 bossbar remove boss:disaster_starver
 
