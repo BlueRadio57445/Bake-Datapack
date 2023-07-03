@@ -1,3 +1,6 @@
+team add boss.no_collide "不會碰撞的隊伍"
+team modify boss.no_collide collisionRule never
+
 scoreboard objectives add boss dummy "Boss算數學"
 scoreboard players set $3 boss 3
 
