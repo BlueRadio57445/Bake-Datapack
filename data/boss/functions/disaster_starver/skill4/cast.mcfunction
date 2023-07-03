@@ -1,4 +1,6 @@
 # 執行者、執行位置是災厄餓死鬼
+tag @s add disaster_starver.clawing
+
 # 考慮新增一個不會碰撞的隊伍
 summon minecraft:villager ~ ~-3 ~ {Tags:["disaster_starver.villager"],NoAI:1b,Silent:1b,ActiveEffects:[{Id:14,Duration:1000,ShowParticles:false}],Attributes:[{Name:"minecraft:generic.max_health",Base:100d}],Health:100f}
 execute as @e[type=minecraft:villager,tag=disaster_starver.villager] run tp @s ^ ^ ^1
