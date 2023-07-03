@@ -1,4 +1,5 @@
 scoreboard objectives add boss dummy "Boss算數學"
+scoreboard players set $3 boss 3
 
 scoreboard objectives add boss.death_in_boss deathCount "在Boss戰之中死亡"
 

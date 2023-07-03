@@ -12,4 +12,3 @@ execute at @a[tag=bossfight_0] run playsound minecraft:entity.ender_dragon.growl
 
 function boss:disaster_starver/summon
 function boss:disaster_starver/tick
-function boss:disaster_starver/skill2/random_step
