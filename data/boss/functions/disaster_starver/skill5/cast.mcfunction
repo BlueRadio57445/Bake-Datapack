@@ -5,5 +5,7 @@ tp 00000000-0000-0000-0000-000000000000 0.0 0.0 0.0
 
 tag @s add disaster_starver.jumping
 
+playsound item.trident.riptide_2 master @a[distance=..10]
+
 scoreboard players set @s boss.time1 0
 function boss:disaster_starver/skill5/jumping_detect
