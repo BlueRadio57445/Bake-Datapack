@@ -1,0 +1,37 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "golden_axe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"飢怒李維", "color": "dark_red", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "飢餓狀態時，獲得力量I的效果。","color": "blue", "italic": false},
+                                {"text": "聽說人餓肚子的時候都會很易怒？","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sharpness":1,
+                                "smite":1
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{hunangry:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
