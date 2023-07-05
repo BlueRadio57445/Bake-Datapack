@@ -5,7 +5,7 @@ scoreboard players operation @e[tag=npc.this] npc.user = @s general.id
 execute store result score @s npc.quest if data storage npc_system:common This.Dialogue
 execute store result score @s npc.trader run data get storage npc_system:common This.Trader
 execute if data storage npc_system:common This{NormalRandom:1b} run function npc_system:common/random/generate
-data modify storage npc_system:common This.Dialogue set from storage npc_system:common This.Normal[0]
+execute unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage npc_system:common This.Normal[0]
 execute unless data storage npc_system:common This.Normal[0].Once run data modify storage npc_system:common This.Normal append from storage npc_system:common This.Normal[0]
 data remove storage npc_system:common This.Normal[0]
 kill @e[tag=npc.idle,tag=npc.this]
