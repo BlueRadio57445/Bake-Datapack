@@ -4,7 +4,7 @@ scoreboard players operation @a quest.version = $system quest.version
 advancement grant @a only quest:demo/dying_warrior/finish
 
 kill @e[tag=npc.demo.warrior,tag=!npc.figure]
-data merge entity @e[limit=1,tag=npc.figure,tag=npc.demo.warrior] {ArmorItems:[{},{},{},{id:"skeleton_skull",Count:1b}]}
+data merge entity @e[limit=1,tag=npc.figure,tag=npc.demo.warrior] {ArmorItems:[{},{},{},{id:"skeleton_skull",Count:1b}],DisabledSlots:1048623}
 tag @e[tag=npc.demo.warrior] remove npc.figure
 tag @e[tag=npc.demo.warrior] remove npc.demo.warrior
 
