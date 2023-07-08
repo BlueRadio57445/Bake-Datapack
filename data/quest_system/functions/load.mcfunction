@@ -1,5 +1,3 @@
-scoreboard objectives add quest.item_check dummy
-
 scoreboard objectives add quest.state dummy
 # 用於同步所有玩家的進度
 scoreboard objectives add quest.version dummy
