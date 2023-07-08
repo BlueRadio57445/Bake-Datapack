@@ -5,5 +5,5 @@
 
 advancement revoke @s only weapons:gloves/heavy_gloves/right
 
-say 1
-say 2
+function weapons:gloves/heavy_gloves/cast
+

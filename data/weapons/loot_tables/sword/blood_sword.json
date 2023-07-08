@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "鮮血榮譽", "color": "#ff0000", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "血量越低，攻擊越高", "color": "blue", "italic": false},
+                                {"text": "那絕美的豔紅之花阿", "color": "gray"},
+                                {"text": "侍奉你是我的榮幸", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking": 3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{blood_sword:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
