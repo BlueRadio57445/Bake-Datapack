@@ -12,7 +12,8 @@ data modify storage npc_system:common This set from storage npc:demo radio
 # execute if score $<region>.<quest_ID> quest.state matches # unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:dialogue <quest_ID>.<stage>
 execute if score $demo.mysterious_stone quest.state matches 1 unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:demo mysterious_stone.Start
 execute if score $demo.mysterious_stone quest.state matches 2 unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:demo mysterious_stone.Start_Remind
-execute if score $demo.mysterious_stone quest.state matches 3 unless data storage npc_system:common This.Dialogue run function npc_system:special/demo/radio/check_stone
+execute if score $demo.mysterious_stone quest.state matches 3 unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:demo mysterious_stone.Turn_In
+execute if score $demo.mysterious_stone quest.state matches 4 unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:demo mysterious_stone.Reward
 
 # 4. 執行開始對話之通用函式
 function npc_system:common/start
