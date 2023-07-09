@@ -1,0 +1,29 @@
+[
+    {
+        "condition": "entity_properties",
+        "entity": "this",
+        "predicate": {
+            "type_specific": {
+                "type": "player",
+                "looking_at": {
+                    "type": "#mobs"
+                }
+            }
+        }
+    },
+    {
+        "condition": "inverted",
+        "term": {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+                "type_specific": {
+                    "type": "player",
+                    "looking_at": {
+                        "nbt": "{HurtTime:0s}"
+                    }
+                }
+            }
+        }
+    }
+]
