@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "hit_box": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"scythe.box\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:scythe/hit_box"
+    }
+}
