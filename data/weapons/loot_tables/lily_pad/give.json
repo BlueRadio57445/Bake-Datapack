@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "warped_fungus_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "dark_green",
+                                "bold": true,
+                                "italic": false,
+                                "text": "+10荷葉"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{+10:1b}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                              {
+                                "attribute": "minecraft:generic.attack_damage",
+                                "name": "attack",
+                                "amount": 10,
+                                "operation": "addition",
+                                "id": "00000000-0000-0000-0000-000000000305",
+                                "slot": "mainhand"
+                              }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
