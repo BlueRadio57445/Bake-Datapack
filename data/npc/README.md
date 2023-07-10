@@ -223,23 +223,23 @@ NPC的基本函數如下列所示:
 
 * Normal (list of components) - 可儲存多個通常對話，預設按照順序觸發
   * Texts (list of json strings) - 必填，包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
-  * Once (boolin) - 選填，若設為 `1b`，此對話觸發後將從 `storage` 中刪除，無法再次顯示
+  * Once (boolean) - 選填，若設為 `1b`，此對話觸發後將從 `storage` 中刪除，無法再次顯示
   * Options (list of components) - 選填，於通常對話或選項對話結束後將會進入選項階段，最多四個選項 (會多顯示一個「離開」選項)
     * Option (json string) - 顯示於選項之文字
     * React (list of json strings) - 包含多個 "json string" 的列表，該選項對話之多行內容，按順序觸發
     * Condition (component) - 選項條件，若玩家不符合條件將無法觸發該選項
       * Item (data format of an item) 條件物品 (目前只有這項，其他的有需要再說)
-    * End (boolin) - 若設為 `1b`，此選項對話結束後將不會回到選項
+    * End (boolean) - 若設為 `1b`，此選項對話結束後將不會回到選項
     * Extra (component) - 額外區域，目前用於儲存選項的回呼函數設定，多用於任務系統
       * Start_Command (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
       * End_Command (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
       * Leave_Command (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
-  * Quest (boolin) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
+  * Quest (boolean) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
   * Extra (component) - 額外區域，目前用於儲存通常對話的回呼函數設定，多用於任務系統
     * Start_Command (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
     * End_Command (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
     * Leave_Command (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
-* NormalRandom (boolin) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
+* NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
 * Exit (component) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
   * Texts (list of json strings) - 包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
 * Idle (list of components) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
@@ -251,10 +251,10 @@ NPC的基本函數如下列所示:
 
 ### 商店設定
 
-* Trader (boolin) - 若設為 `1b`，此NPC將被轉換成商店，並在通常對話結束後進入交易選項
+* Trader (boolean) - 若設為 `1b`，此NPC將被轉換成商店，並在通常對話結束後進入交易選項
 * TraderNormal (list of components) - 商店必填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
   * 與Normal之內容相同
-* TraderNormalRandom (boolin) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
+* TraderNormalRandom (boolean) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
 * Buy (list of components) - 「購入」內的交易選項，基本與村民之交易選項相同
   * buy (component) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
   * buyB (component) - 玩家應交付的物品，格式同上
@@ -273,7 +273,7 @@ NPC的基本函數如下列所示:
 ### 回呼函數
 
 於NPC對話中，更新任務記分板、給予任務道具、給予任務獎勵及顯示任務提示之功能 (給予有顯示的進度) 皆由回呼函數所達成。  
-回呼函數觸發的時機取決於[所設定的方式](#L237)。
+回呼函數觸發的時機取決於[所設定的方式](#通常設定)。
 若任務相關之回呼函數有對 `quest.state` 之假玩家分數作改動，其應包含下列兩行指令，以便系統於多人模式時同步任務提示。
 ```java
 scoreboard players add $system quest.version 1
@@ -284,7 +284,7 @@ scoreboard players operation @a quest.version = $system quest.version
 
 一個任務的所有相關對話應於 `data/quest/functions/<region_id>/<quest_id>/dialogues.mcfunction` 中設定。  
 儲存一段對話所建議的 `storage` 位置為 `quest:demo` 中的 `<quest_id>.<state>` 底下，並且使用NPC中單項Normal的格式 ("state" 只要有辦法辨識即可)。  
-於此設定的對話可在各NPC的"start"函數中以任務進度分數為條件觸發，[寫法見此](#L180)。  
+於此設定的對話可在各NPC的"start"函數中以任務進度分數為條件觸發，[寫法見此](#函數)。  
 <u>**應註解**</u>每段對話觸發時的NPC及分數條件，以下為其中一個範例:  
 
 ```java
