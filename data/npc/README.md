@@ -10,6 +10,10 @@
   - [互動設定](#互動設定)
     - [通常設定](#通常設定)
     - [商店設定](#商店設定)
+  - [任務流程](#任務流程)
+    - [回呼函數](#回呼函數)
+    - [任務對話](#任務對話)
+    - [任務提示](#任務提示)
 
 ## 命名空間
 
@@ -27,7 +31,7 @@ NPC系統使用了以下四個命名空間:
 ## 基本檔案
 
 在這個系統中，一個最簡單的NPC由至少6個檔案所組成。  
-此6個檔案分別為2個進度與4個函數，並依照NPC所在的區域來分類。  
+此6個檔案分別為2個進度與4個函數，並依照NPC所在的區域來分資料夾。  
 以下提供各檔案之模板，使用模板時請將 `<region_id>` 替換成地區代號、`<npc_id>` 替換成NPC代號 (請全部使用英文小寫字母及英文底線)。    
 
 ### 進度
@@ -230,7 +234,7 @@ NPC的基本函數如下列所示:
       * Start_Command (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
       * End_Command (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
       * Leave_Command (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
-  * Quest (boolin) - 選填，於Options存在時才有效果，若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
+  * Quest (boolin) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
   * Extra (component) - 額外區域，目前用於儲存通常對話的回呼函數設定，多用於任務系統
     * Start_Command (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
     * End_Command (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
@@ -241,11 +245,9 @@ NPC的基本函數如下列所示:
 * Idle (list of components) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
   * Text (json string) - 顯示的文字
   * Duration (component or interger) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
-    * max (interger) - 隨機(uniform)的上界，應大於min
-    * min (interger) - 隨機(uniform)的下界，不得小於0
-  * Rest (component or interger) - 距離下次文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
-    * max (interger) - 隨機(uniform)的上界，應大於min
-    * min (interger) - 隨機(uniform)的下界，不得小於0
+    * max (interger) - 隨機數 (uniform) 的上界，應大於min
+    * min (interger) - 隨機數 (uniform) 的下界，不得小於0
+  * Rest (component or interger) - 距離下次文字顯示的秒數，格式同上
 
 ### 商店設定
 
@@ -260,3 +262,56 @@ NPC的基本函數如下列所示:
   * maxUses (interger) - 玩家可交易的次數，設定成2147483647就好
 * Sell (list of components) - 「售出」內的交易選項，基本與村民之交易選項相同
   * 格式同上
+
+## 任務流程
+
+任務同樣以區域來分資料夾，如果要設計跨區域的任務，以任務開始的區域為準。  
+每個任務要分配一個代號(`quest_id`)，例如: `mysterious_stone`。  
+同一個任務相關的函數應儲存在此路徑: `data/quest/functions/<region_id>/<quest_id>/`。  
+且應將記分板 `quest.state` 在假玩家 `$<region_id>.<quest_id>` 底下的分數作為任務進度之紀錄。  
+
+### 回呼函數
+
+於NPC對話中，更新任務記分板、給予任務道具、給予任務獎勵及顯示任務提示之功能 (給予有顯示的進度) 皆由回呼函數所達成。  
+回呼函數觸發的時機取決於[所設定的方式](#L237)。
+若任務相關之回呼函數有對 `quest.state` 之假玩家分數作改動，其應包含下列兩行指令，以便系統於多人模式時同步任務提示。
+```java
+scoreboard players add $system quest.version 1
+scoreboard players operation @a quest.version = $system quest.version
+```
+
+### 任務對話
+
+一個任務的所有相關對話應於 `data/quest/functions/<region_id>/<quest_id>/dialogues.mcfunction` 中設定。  
+儲存一段對話所建議的 `storage` 位置為 `quest:demo` 中的 `<quest_id>.<state>` 底下，並且使用NPC中單項Normal的格式 ("state" 只要有辦法辨識即可)。  
+於此設定的對話可在各NPC的"start"函數中以任務進度分數為條件觸發，[寫法見此](#L180)。  
+<u>**應註解**</u>每段對話觸發時的NPC及分數條件，以下為其中一個範例:  
+
+```java
+# 此為 data/quest/functions/demo/mysterious_stone/dialogues.mcfunction
+
+data remove storage quest:demo mysterious_stone
+
+# 階段為1時，由 "demo.radio" 觸發，選擇選項1後將階段設為2
+data modify storage quest:demo mysterious_stone.Start set value {Texts:[...],Options:[{Option:'{"text":"接受任務"}',React:[...],Extra:{End_Command:"function quest:demo/mysterious_stone/start"}},{Option:'{"text":"拒絕任務"}',React:[...]}],Quest:1b}
+
+# 階段為2時，由 "demo.radio" 觸發
+data modify storage quest:demo mysterious_stone.Start_Remind set value {Texts:[...]}
+
+# 階段為2時，由 "demo.endsky" 觸發，結束後將階段設為3，並給予道具
+data modify storage quest:demo mysterious_stone.Ask set value {Texts:[...],Extra:{End_Command:"function quest:demo/mysterious_stone/give"}}
+
+# 階段為3時，由 "demo.endsky" 觸發
+data modify storage quest:demo mysterious_stone.Ask_Remind set value {Texts:[...]}
+
+# 階段為3且玩家持有指定道具時，由 "demo.radio" 觸發`，玩家選擇是否提交任務道具，若選是，收走指定道具，將階段設為4，結束時給予獎勵道具將階段設為5
+data modify storage quest:demo mysterious_stone.Turn_In set value {Texts:[...],Options:[{Option:'{"text":"交出石頭"}',React:[...],Condition:{Item:{id:"minecraft:stone",tag:{mysterious_stone:1b},Count:1b}},Extra:{Start_Command:"function quest:demo/mysterious_stone/take",End_Command:"function quest:demo/mysterious_stone/finish"}},{Option:'{"text":"暫時不交出石頭"}',React:[...]}],Quest:1b}
+
+# 階段為4時，由 "demo.radio" 觸發，補發獎勵道具，並將階段設為5
+data modify storage quest:demo mysterious_stone.Reward set value {Texts:[...],Extra:{Start_Command:"function quest:demo/mysterious_stone/finish"}}
+```
+
+### 任務提示
+
+任務進度之提示以「進度」功能達成，預計同一個區域的任務會共用同一個根進度。  
+任務提示的顯示格式待定。  
