@@ -9,12 +9,12 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {"text":"飢怒李維", "color": "dark_red", "italic": false}
+                            "name": {"text":"≺ 飢怒李維 ≻", "color": "dark_red", "italic": false, "bold": true}
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "飢餓狀態時，獲得力量I的效果。","color": "blue", "italic": false},
+                                {"text": "飢餓狀態時，獲得力量I的效果。","color": "yellow", "italic": false},
                                 {"text": "聽說人餓肚子的時候都會很易怒？","color":"gray"}
                             ]
                         },

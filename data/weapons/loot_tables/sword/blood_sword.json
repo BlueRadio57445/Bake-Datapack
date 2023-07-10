@@ -10,13 +10,13 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "鮮血榮譽", "color": "#ff0000", "bold": true, "italic": false}
+                            "name": {"text": "≺ 鮮血榮譽 ≻", "color": "#ff0000", "bold": true, "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
-                                {"text": "血量越低，攻擊越高", "color": "blue", "italic": false},
+                                {"text": "血量越低，攻擊越高", "color": "yellow", "italic": false},
                                 {"text": "那絕美的豔紅之花阿", "color": "gray"},
                                 {"text": "侍奉你是我的榮幸", "color": "gray"}
                             ]
