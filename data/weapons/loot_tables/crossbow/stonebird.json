@@ -9,12 +9,12 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {"text":"一石多鳥", "color": "dark_aqua", "italic": false}
+                            "name": {"text":"≺ 一石多鳥 ≻", "color": "dark_aqua", "italic": false, "bold": true}
                         },
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "裝填時，附近的怪物獲得緩速II。","color": "blue", "italic": false},
+                                {"text": "裝填時，附近的怪物獲得緩速II。","color": "yellow", "italic": false},
                                 {"text": "現在沒有人可以阻止你裝填箭矢了！","color":"gray"}
                             ]
                         },
