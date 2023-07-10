@@ -12,7 +12,7 @@ data modify storage quest:demo mysterious_stone.Ask set value {Texts:['{"text":"
 # 階段為3時，由 "demo.endsky" 觸發
 data modify storage quest:demo mysterious_stone.Ask_Remind set value {Texts:['{"text":"把神奇石頭拿去給 ","extra":[{"underlined":true,"text":"收音機器人"},{"text":" 吧"}]}','{"text":"弄丟了我可不補發喔"}']}
 
-# 階段為3且玩家持有指定道具時，由 "demo.radio" 觸發`，玩家選擇是否提交任務道具，若選是，收走指定道具，將階段設為4，結束時給予獎勵道具將階段設為5
+# 階段為3時，由 "demo.radio" 觸發`，玩家選擇是否提交任務道具，若選是且玩家持有該道具，收走指定道具，將階段設為4，結束時給予獎勵道具並將階段設為5
 data modify storage quest:demo mysterious_stone.Turn_In set value {Texts:['{"text":"你拿到神奇石頭了嗎"}'],Options:[{Option:'{"text":"交出石頭"}',React:['{"text":"喔~有了!"}','{"text":"真的是太感謝你了"}','{"text":"雖然算不上什麼謝禮"}','{"text":"不過還請你收下這個吧"}'],Condition:{Item:{id:"minecraft:stone",tag:{mysterious_stone:1b},Count:1b}},Extra:{Start_Command:"function quest:demo/mysterious_stone/take",End_Command:"function quest:demo/mysterious_stone/finish"}},{Option:'{"text":"暫時不交出石頭"}',React:['{"text":"還沒拿到嗎"}','{"text":"我在這裡等你喔"}']}],Quest:1b}
 
 # 階段為4時，由 "demo.radio" 觸發，補發獎勵道具，並將階段設為5

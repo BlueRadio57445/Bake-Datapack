@@ -304,7 +304,7 @@ data modify storage quest:demo mysterious_stone.Ask set value {Texts:[...],Extra
 # 階段為3時，由 "demo.endsky" 觸發
 data modify storage quest:demo mysterious_stone.Ask_Remind set value {Texts:[...]}
 
-# 階段為3且玩家持有指定道具時，由 "demo.radio" 觸發`，玩家選擇是否提交任務道具，若選是，收走指定道具，將階段設為4，結束時給予獎勵道具將階段設為5
+# 階段為3時，由 "demo.radio" 觸發`，玩家選擇是否提交任務道具，若選是且玩家持有該道具，收走指定道具，將階段設為4，結束時給予獎勵道具並將階段設為5
 data modify storage quest:demo mysterious_stone.Turn_In set value {Texts:[...],Options:[{Option:'{"text":"交出石頭"}',React:[...],Condition:{Item:{id:"minecraft:stone",tag:{mysterious_stone:1b},Count:1b}},Extra:{Start_Command:"function quest:demo/mysterious_stone/take",End_Command:"function quest:demo/mysterious_stone/finish"}},{Option:'{"text":"暫時不交出石頭"}',React:[...]}],Quest:1b}
 
 # 階段為4時，由 "demo.radio" 觸發，補發獎勵道具，並將階段設為5
@@ -313,5 +313,7 @@ data modify storage quest:demo mysterious_stone.Reward set value {Texts:[...],Ex
 
 ### 任務提示
 
-任務進度之提示以「進度」功能達成，預計同一個區域的任務會共用同一個根進度。  
-任務提示的顯示格式待定。  
+任務進度之提示以「進度」功能達成，預計同一個區域的任務會共用同一個根進度，並且同一個任務的進度提示要串起來，形成明顯的先後關係。  
+任務提示全部設定為隱藏進度 (觸發後才會顯示)，顯示格式待定。  
+
+更多關於
