@@ -1,3 +1,4 @@
+tag @s add boss.casting
 tag @s add disaster_starver.tping
 
 summon marker ~ ~3 ~ {Tags:["disaster_starver.random"]}
@@ -14,5 +15,3 @@ data merge entity @s {Invulnerable:1b}
 item replace entity @s armor.head with air
 item replace entity @s armor.chest with air
 item replace entity @s weapon.mainhand with air
-
-schedule function boss:disaster_starver/skill2/tping 2t

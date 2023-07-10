@@ -1,3 +1,4 @@
+tag @s remove boss.casting
 tag @s remove disaster_starver.tping
 kill @e[tag=disaster_starver.random]
 
