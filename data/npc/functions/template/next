@@ -1,0 +1,17 @@
+# 0. 消除觸發此函式的進度，使其能重複觸發
+advancement revoke @s only npc:<region_id>/<npc_id>_next
+
+# 1. 將所有屬於同一個NPC的實體標上this標籤
+tag @e[tag=npc.<region_id>.<npc_id>] add npc.this
+
+# 2. 執行對話過程之通用函式
+function npc_system:common/next
+
+# 3. 此段為商人NPC運行時需要觸發的指令，對於非商人NPC並無任何影響
+execute if score @s npc.state matches 3 run data modify storage npc:<region_id> <npc_id>.TraderNormal set from entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.TraderNormal
+execute if score @s npc.trader_interpret matches 1 run data modify storage npc:<region_id> <npc_id>.Buy set from entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Buy
+execute if score @s npc.trader_interpret matches 1 run data modify storage npc:<region_id> <npc_id>.Sell set from entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Sell
+scoreboard players reset @s npc.trader_interpret
+
+# 4. 移除所有this標籤
+tag @e[tag=npc.this] remove npc.this
