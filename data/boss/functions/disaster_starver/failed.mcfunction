@@ -7,6 +7,7 @@ kill @e[tag=boss.disaster_starver]
 kill @e[tag=disaster_starver.starver]
 kill @e[tag=disaster_starver.spit]
 kill @e[tag=disaster_starver.random]
+kill @e[tag=disaster_starver.villager]
 bossbar remove boss:disaster_starver
 schedule clear boss:disaster_starver/tick
 

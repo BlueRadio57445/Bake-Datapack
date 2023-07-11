@@ -1,5 +1,6 @@
+tag @s remove boss.casting
 tag @s remove disaster_starver.tping
-kill @e[tag=disaster_starver.chosen]
+kill @e[tag=disaster_starver.random]
 
 playsound entity.enderman.teleport block @a[distance=..10] ~ ~ ~ 100 1
 effect clear @s invisibility

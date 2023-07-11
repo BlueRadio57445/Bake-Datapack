@@ -1,4 +1,8 @@
+team add boss.no_collide "不會碰撞的隊伍"
+team modify boss.no_collide collisionRule never
+
 scoreboard objectives add boss dummy "Boss算數學"
+scoreboard players set $3 boss 3
 
 scoreboard objectives add boss.death_in_boss deathCount "在Boss戰之中死亡"
 
