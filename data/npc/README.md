@@ -64,6 +64,11 @@ NPC的基本函數如下列所示:
 
 以下提供各檔案之模板，請於複製到目標檔案夾後更改檔案名稱及後綴，將 `<region_id>` 替換成地區代號、`<npc_id>` 替換成NPC代號 (請全部使用英文小寫字母及英文底線)。  
 * "summon" 函數之[模板](functions/template/summon)
+  * 此函數中應召喚三種實體
+    1. 顯示本體: 通常為盔甲架或村民，亦可使用其他實體。會於對話中持續面向啟動對話的玩家，對話結束後將轉回初始設定的轉向。其CustomName用於儲存顯示的NPC名稱。
+       * 可召喚其他顯示用實體，應有的tag有 `"npc.tag"` 及 `"npc.<redion_id>.<npc_id>"`。
+    2. 互動實體: 用於偵測玩家互動，觸發進度。其碰撞箱大小設定應包覆整個顯示本體，或是符合玩家的直覺。
+    3. 特製名條: 本系統使用文字顯示實體來替代傳統的實體名條，他會在進入和離開對話時移動位置。一般來說這個只需要調整其召喚之相對高度即可 (建議為顯示本體碰撞箱高度+0.475)，其餘NBT不須調整。
 * "dialogue" 函數之[普通模板](functions/template/dialogue_common)及[商店模板](functions/template/dialogue_trader)，寫法將在[互動設定](#互動設定)中詳細說明
 * "start" 函數之[模板](functions/template/start)
 * "next" 函數之[模板](functions/template/next)
@@ -72,7 +77,7 @@ NPC的基本函數如下列所示:
 
 所有跟NPC互動時的對話、選項等，可在 "dialogue" 函數中設定，設定方法為對該NPC所擁有的「指令空間 (command storage)」進行編輯。  
 (因此請先確保自己能夠操作 `/data modify` 指令的相關基礎功能再來喔。)  
-每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 項，這些位置底下的元素會影響該NPC的行為，以下將列出有效的鍵值。  
+每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 標籤，這些位置底下的元素會影響該NPC的行為，以下將列出有效的子標籤。  
 
 ### 通常設定
 
