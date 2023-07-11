@@ -1,21 +1,12 @@
-# 0. 消除觸發此函式的進度，使其能重複觸發
 advancement revoke @s only npc:<region_id>/<npc_id>_start
 
-# 1. 將所有屬於同一個NPC的實體標上this標籤
 tag @e[tag=npc.<region_id>.<npc_id>] add npc.this
-
-# 2. 將當前的對話設定載入到指定位置，方便後續的通用函式使用
 data modify storage npc_system:common This set from storage npc:<region_id> <npc_id>
 
-# 3. 若有符合特殊對話之條件(例如任務說明與交付等)，將於此處偵測並覆蓋接下來的對話，順序越前面優先度越高，若無則請無視此段
-#execute if score $<region>.<quest_id> quest.state matches <number> unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:dialogue <quest_id>.<dialogue_name>
+# 若有符合特殊對話之條件(例如任務說明與交付等)，將於此處偵測並覆蓋接下來的對話，順序越前面優先度越高，若無則請無視此段
+#execute if score $<region>.<quest_id> quest.state matches <a_number> unless data storage npc_system:common This.Dialogue run data modify storage npc_system:common This.Dialogue set from storage quest:dialogue <quest_id>.<dialogue_name>
 #...
 
-# 4. 執行開始對話之通用函式
 function npc_system:common/start
-
-# 5. 將通用函式中所更新的資料儲存回對話設定中
 data modify storage npc:<region_id> <npc_id>.Normal set from storage npc_system:common This.Normal
-
-# 6. 移除所有this標籤
 tag @e[tag=npc.this] remove npc.this
