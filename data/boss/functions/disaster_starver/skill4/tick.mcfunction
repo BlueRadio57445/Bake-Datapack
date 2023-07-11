@@ -13,4 +13,4 @@ execute as @e[type=villager,tag=disaster_starver.villager] at @s at @e[sort=near
 execute if entity @e[type=villager,tag=disaster_starver.villager,nbt={HurtTime:9s}] run function boss:disaster_starver/skill4/claw
 execute if entity @e[type=villager,tag=disaster_starver.villager,nbt={HurtTime:9s}] run scoreboard players add @s boss.count0 1
 
-execute as @s[scores={boss.count0=5..}] run function boss:disaster_starver/skill4/end
+execute as @s[scores={boss.count0=6..}] run function boss:disaster_starver/skill4/end

@@ -6,6 +6,6 @@ tp 00000000-0000-0000-0000-000000000000 0.0 0.0 0.0
 tag @s add boss.casting
 tag @s add disaster_starver.jumping
 
-playsound item.trident.riptide_2 master @a[distance=..10]
+playsound item.trident.riptide_2 master @a[distance=..15]
 
 scoreboard players set @s boss.time1 0
