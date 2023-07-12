@@ -2,7 +2,8 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "nbt": "{OnGround:1b}"
+      "nbt": "{HurtTime:10s}"
     }
   }
+  
   

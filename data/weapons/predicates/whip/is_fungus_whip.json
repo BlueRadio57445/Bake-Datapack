@@ -2,11 +2,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "equipment": {
-        "mainhand": {
-          "nbt": "{whip:1b}"
-        }
-      }
+      "nbt": "{Item:{tag:{fungus_whip:1b}}}"
     }
   }
   

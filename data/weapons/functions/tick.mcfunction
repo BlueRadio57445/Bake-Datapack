@@ -5,5 +5,5 @@ function weapons:blood_sword/tick
 function weapons:gloves/heavy_gloves/tick
 function weapons:sacred_bow/tick
 function weapons:lily_pad/tick
-
+function weapons:whip/fungus_whip/tick
 

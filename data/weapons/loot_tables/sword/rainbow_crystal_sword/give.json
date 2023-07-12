@@ -1,0 +1,32 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "aqua",
+                                "italic": false,
+                                "text": "虹晶劍"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{rainbow_crystal_sword:1b}"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{CustomModelData:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

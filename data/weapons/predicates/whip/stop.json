@@ -2,7 +2,7 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-      "type": "minecraft:fishing_bobber",
-      "nbt": "{Motion:[0.0d,0.0d,0.0d]}"
+      "nbt": "{Motion:[0.0,0.0,0.0]}"
     }
   }
+  
