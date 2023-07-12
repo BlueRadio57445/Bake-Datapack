@@ -6,7 +6,7 @@ tp @s[tag=weapons.lily_pad.forward] ^ ^ ^1.5
 
 # 前進轉倒退
 execute unless entity @a[tag=this,distance=..20] run tag @s remove weapons.lily_pad.forward
-execute unless entity @a[tag=this,distance=..20] run tag @s add weapons.lily_pad.backward
+execute unless entity @a[tag=this,distance=..20] run tag @s add weapons.lily_pad.bacwkard
 
 # 倒退
 tp @s[tag=weapons.lily_pad.backward] ^ ^ ^1.5 facing entity @p[tag=this] eyes
