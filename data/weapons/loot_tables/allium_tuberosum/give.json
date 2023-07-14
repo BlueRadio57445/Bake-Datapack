@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gray",
+                                "italic": false,
+                                "text": "割韭菜鐮刀"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{allium_tuberosum:1b,CustomModelData:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
