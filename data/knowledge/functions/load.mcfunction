@@ -28,7 +28,7 @@ scoreboard objectives add knowledge.cd.lightning dummy "閃電五連鞭 冷卻�
 scoreboard objectives add knowledge.cd.lightning_mad dummy "怒雷 冷卻時間"
 
 kill @e[type=marker,tag=fire_field]
-execute unless entity @e[type=marker,tag=fire_field] run summon marker 0 0 0 {Tags:["fire_field"]}
+execute unless entity @e[type=marker,tag=fire_field] run summon marker 0 0 0 {Tags:["fire_field"],UUID:[I;0,0,0,256]}
 
 scoreboard objectives add knowledge.fire_fan dummy "火焰扇 動畫幀"
 scoreboard objectives add knowledge.fire_field dummy "火焰領域持續時間"
@@ -38,18 +38,14 @@ scoreboard objectives add knowledge.end_fire dummy "末火狀態 持續時間"
 scoreboard objectives add knowledge.end_fire_fan dummy "末火扇 動畫幀"
 scoreboard objectives add knowledge.end_fire_field dummy "末火領域持續時間"
 
-scoreboard objectives add knowledge.fire_ball dummy "火球持續時間"
-
-scoreboard objectives add knowledge.water_swirl dummy "水漩渦 持續時間"
-scoreboard objectives add knowledge.water_wave dummy "波浪 持續時間"
-
 scoreboard objectives add knowledge.earth_shield dummy "護盾 充能次數"
-scoreboard objectives add knowledge.earth_field dummy "花園持續時間"
-scoreboard objectives add knowledge.earth_wall dummy "土牆持續時間"
-scoreboard objectives add knowledge.earth_pillar dummy "土垂 持續時間"
+
+scoreboard objectives add knowledge.air_run dummy "風流 持續時間 "
+
+scoreboard objectives add knowledge.object_duration dummy "物件持續時間"
 
 function knowledge:end_fire_schedule
-
+function knowledge:air_run_schedule
 
 scoreboard objectives add knowledge.lightning dummy
 kill @e[type=marker,tag=bolt_dir]
