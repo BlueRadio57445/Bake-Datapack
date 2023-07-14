@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hury_player": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"enemy.starver_heavy\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "enemy:demo_region/starver_heavy/skill"
+    }
+}

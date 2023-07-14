@@ -1,0 +1,8 @@
+execute if score $amount damage matches 57 run damage @s 57 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 58 run damage @s 58 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 59 run damage @s 59 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 60 run damage @s 60 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 61 run damage @s 61 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 62 run damage @s 62 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 63 run damage @s 63 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 64 run damage @s 64 minecraft:mob_attack by @e[tag=attacker,limit=1]

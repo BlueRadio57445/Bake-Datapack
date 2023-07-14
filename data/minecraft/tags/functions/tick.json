@@ -7,6 +7,8 @@
         "weapons:tick",
         "items:tick",
         "vehicles:tick",
+        "universe:tick",
+        "enemy:tick",
         "general:tick_last"
     ]
 }

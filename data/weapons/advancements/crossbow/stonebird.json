@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "stonebird": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{stonebird:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:crossbow/stonebird"
+    }
+}
