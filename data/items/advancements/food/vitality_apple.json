@@ -10,6 +10,6 @@
         }
     },
     "rewards": {
-        "function": "items:gadget/vitality_apple/eat"
+        "function": "items:food/vitality_apple/eat"
     }
 }

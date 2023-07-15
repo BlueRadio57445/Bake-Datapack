@@ -18,11 +18,31 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "color": "gray",
+                  "text": "就是個普通的盤子，"
+                },
+                {
+                  "color": "gray",
+                  "text": "一般用途是盛裝食物。"
+                },
+                {
+                  "color": "gray",
+                  "text": "但有些人卻是拿來舒壓--"
+                },
+                {
+                  "color": "gray",
+                  "text": "摔爛它!"
+                },
+                {
+                  "color": "dark_gray",
+                  "text": "要小心碎片就是了..."
+                }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{plate:1b,CustomPotionColor:16382457,CustomModelData:1153}"
+              "tag": "{plate:1b,CustomPotionColor:11974326,HideFlags:32,CustomModelData:1153}"
             }
           ]
         }
