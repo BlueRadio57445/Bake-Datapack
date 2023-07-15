@@ -1,0 +1,28 @@
+{
+    "parent": "quest:hunger_cave/root",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "display": {
+      "icon": {
+        "item": "minecraft:clay_ball"
+      },
+      "title": "咆嘯亨利的酷石頭-任務開始",
+      "description": {
+        "text": "追尋奇怪的知識？\n",
+        "extra": [
+          {
+            "color": "gray",
+            "text": "提示：石頭長得像貓便便"
+          }
+        ]
+      },
+      "announce_to_chat": false,
+      "frame": "goal",
+      "hidden": true,
+      "show_toast": true
+    }
+  }
+  
