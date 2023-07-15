@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "demo": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:pointed_dripstone"
+    },
+    "title": "歡迎來到飢餓洞窟",
+    "description": {
+      "text": "一切的故事都有個起始",
+      "italic": true
+    },
+    "announce_to_chat": false,
+    "frame": "task",
+    "hidden": false,
+    "show_toast": false,
+    "background": "minecraft:textures/block/dripstone_block.png"
+  }
+}

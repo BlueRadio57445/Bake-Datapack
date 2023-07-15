@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "crit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "dealt": {
+            "max": 1,
+            "min": 0
+          }
+        }
+      }
+    }
+  }
+}

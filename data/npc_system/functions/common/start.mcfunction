@@ -12,6 +12,6 @@ kill @e[tag=npc.idle,tag=npc.this]
 tag @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] add npc.old
 execute as @e[limit=1,tag=npc.figure,tag=npc.this] at @s anchored eyes positioned ^ ^ ^ summon minecraft:marker run function npc_system:common/summon/temp_storage
 execute as @e[limit=1,type=minecraft:text_display,tag=npc.this] at @s summon minecraft:text_display run function npc_system:common/summon/text_display
-data merge entity @e[limit=1,type=minecraft:text_display,tag=npc.name,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"CustomName","entity":"@e[limit=1,tag=npc.figure,tag=npc.this]","interpret":true},{"text":":"}]}',start_interpolation:0,interpolation_duration:2,transformation:{translation:[0.0f,0.05f,0.0f]}}
+data merge entity @e[limit=1,type=minecraft:text_display,tag=npc.name,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"CustomName","entity":"@e[limit=1,tag=npc.figure,tag=npc.this]","interpret":true},{"text":":"}]}',start_interpolation:0,interpolation_duration:2,transformation:{translation:[0.0f,0.355f,0.0f]}}
 execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Extra.Start_Command run function npc_system:common/extra/start_command
 function npc_system:common/display_text

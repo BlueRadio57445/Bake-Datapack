@@ -1,0 +1,28 @@
+{
+    "parent": "quest:hunger_cave/root",
+    "criteria": {
+      "impossible": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "display": {
+      "icon": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "title": "將死的沙灘戰士-任務開始",
+      "description": {
+        "text": "幫他找項鍊\n",
+        "extra": [
+          {
+            "color": "gray",
+            "text": "提示：項鍊在水裡"
+          }
+        ]
+      },
+      "announce_to_chat": false,
+      "frame": "goal",
+      "hidden": true,
+      "show_toast": true
+    }
+  }
+  
