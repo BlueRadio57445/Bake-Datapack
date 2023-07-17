@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:donkey_spawn_egg",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "三明治袋"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "被施下了複雜的法術"
+                },
+                {
+                  "color": "gray",
+                  "text": "可以將龐大的三明治隨身攜帶的便利道具"
+                },
+                {
+                  "color": "dark_gray",
+                  "text": "狀態: 裝著三明治驢"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{sandwich:{bag:1b},CustomModelData:1024,EntityTag:{Tags:[\"vehicles.tag\",\"vehicles.sandwich\"],NoAI:1b,Tame:1b,ChestedHorse:1b,Age:2147483647,ForcedAge:-1,CustomName:'{\"text\":\"三明治驢\"}',Health:20.0f,Attributes:[{Name:\"minecraft:generic.max_health\",Base:20.0d}]}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

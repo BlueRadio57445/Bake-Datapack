@@ -2,7 +2,7 @@
   "function": "minecraft:set_count",
   "count": {
     "type": "minecraft:score",
-    "score": "quest.item_check",
+    "score": "general.utils",
     "target": {
       "type": "minecraft:fixed",
       "name": "$stack"

@@ -1,0 +1,22 @@
+===============
+自訂傷害使用說明
+===============
+
+這是一個能夠使用記分板給予自訂傷害的系統，你只需要這樣打，就能給予傷害。
+
+scoreboard players set <受傷的實體> damage <傷害量>
+tag <受傷的實體> add damage.<傷害類型>
+function damage:<傷害類型>
+
+範例：
+
+scoreboard players set @e damage 26
+tag <受傷的實體> add damage.in_fire
+function damage:in_fire
+
+注意事項：
+
+1. damage.<傷害類型>這個tag可以不用拔，系統會自己幫你拔。
+2. 實體的damage記分板也會自己重置。
+3. 傷害量的範圍必須是整數，並且落在1~200之間。
+4. mob_attack 這個類型還要指定攻擊者，範例晚點補。
