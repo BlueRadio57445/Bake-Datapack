@@ -18,7 +18,7 @@
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能射出羽毛，羽毛能與其他之是共鳴。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間1秒", "color": "yellow", "italic": false},
+                                {"text": "冷卻時間2秒", "color": "yellow", "italic": false},
                                 {"text": "聽說毛毛虎的毛是鳥毛。", "color": "gray"}
                             ]
                         },
