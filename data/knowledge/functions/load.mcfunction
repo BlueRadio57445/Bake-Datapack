@@ -1,10 +1,13 @@
 scoreboard objectives add knowledge dummy "知識算數學用記分板"
+scoreboard players set $20 knowledge 20
 scoreboard objectives add knowledge.use minecraft.used:minecraft.carrot_on_a_stick "使用知識"
 scoreboard objectives add knowledge.mainhand dummy "主手拿知識"
 scoreboard objectives add knowledge.offhand dummy "副手拿知識"
 scoreboard objectives add knowledge.is_pay_off dummy "扣經驗值了沒"
 scoreboard objectives add knowledge.id dummy "知識的ID"
 
+scoreboard objectives add knowledge.cd.mainhand dummy "主手冷卻時間"
+scoreboard objectives add knowledge.cd.offhand dummy "副手冷卻時間"
 scoreboard objectives add knowledge.cd.fire_ball dummy "火球冷卻時間"
 scoreboard objectives add knowledge.cd.fire_fan dummy "火焰扇冷卻時間"
 scoreboard objectives add knowledge.cd.fire_field dummy "火焰領域冷卻時間"
@@ -46,6 +49,7 @@ scoreboard objectives add knowledge.object_duration dummy "物件持續時間"
 
 function knowledge:end_fire_schedule
 function knowledge:air_run_schedule
+function knowledge:cool_down/schedule
 
 scoreboard objectives add knowledge.lightning dummy
 kill @e[type=marker,tag=bolt_dir]
