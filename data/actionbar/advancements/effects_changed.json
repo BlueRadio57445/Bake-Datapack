@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "effects_changed": {
+      "trigger": "minecraft:effects_changed"
+    }
+  }
+}

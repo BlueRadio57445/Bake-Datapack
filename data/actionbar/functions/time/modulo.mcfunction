@@ -1,0 +1,10 @@
+scoreboard players operation $s1 actionbar.time = $input actionbar.time
+scoreboard players operation $s2 actionbar.time = $input actionbar.time
+scoreboard players operation $m1 actionbar.time = $input actionbar.time
+scoreboard players operation $s2 actionbar.time %= $10 general.const
+scoreboard players operation $s1 actionbar.time %= $60 general.const
+scoreboard players operation $s1 actionbar.time /= $10 general.const
+scoreboard players operation $m1 actionbar.time /= $60 general.const
+scoreboard players operation $m2 actionbar.time = $m1 actionbar.time
+scoreboard players operation $m1 actionbar.time /= $10 general.const
+scoreboard players operation $m2 actionbar.time %= $10 general.const
