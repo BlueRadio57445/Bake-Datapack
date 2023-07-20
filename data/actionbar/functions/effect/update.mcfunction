@@ -5,6 +5,7 @@ scoreboard players operation $effect.duration actionbar.state /= $20 general.con
 scoreboard players operation $input actionbar.time = $effect.duration actionbar.state
 function actionbar:time/m1s2
 data modify storage actionbar:player Effects[0].Time set from storage actionbar:time Output
+
 execute if score $effect.id actionbar.state matches 1 run function actionbar:effect/positive/speed
 execute if score $effect.id actionbar.state matches 2 run function actionbar:effect/negative/slowness
 execute if score $effect.id actionbar.state matches 3 run function actionbar:effect/positive/haste

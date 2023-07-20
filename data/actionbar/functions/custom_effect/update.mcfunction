@@ -1,3 +1,4 @@
+scoreboard players set @s actionbar.custom_effect 0
 function general:player_data/select
 data modify storage actionbar:player Data set value {}
 data modify storage actionbar:player Data set from storage general:player_data Data[{selected:1b}].Actionbar
