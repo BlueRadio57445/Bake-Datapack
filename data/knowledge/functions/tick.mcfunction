@@ -26,6 +26,8 @@ scoreboard players remove @a[scores={knowledge.cd.air_tornado=1..}] knowledge.cd
 scoreboard players remove @a[scores={knowledge.cd.lightning=1..}] knowledge.cd.lightning 1
 scoreboard players remove @a[scores={knowledge.cd.lightning_mad=1..}] knowledge.cd.lightning_mad 1
 
+# 滑鼠滾輪
+execute as @a run function knowledge:cooldown/scroll
 
 execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_ball/tick_effect
 execute as @e[type=armor_stand,tag=end_fire_ball] at @s run function knowledge:end_fire_ball/tick_effect
