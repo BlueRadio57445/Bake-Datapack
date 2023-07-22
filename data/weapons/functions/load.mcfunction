@@ -15,6 +15,7 @@ scoreboard objectives add scythe.id dummy "鐮刀用的ID"
 
 # === 劍 ===
 function weapons:sword/blood_sword/load
+data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 
 # === 三叉戟 ===
 
