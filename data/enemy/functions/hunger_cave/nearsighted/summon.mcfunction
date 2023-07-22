@@ -1,0 +1,1 @@
+summon creeper ~ ~ ~ {Health:20f,Tags:["enemy"],ExplosionRadius:2b,Fuse:50,CustomName:'{"text":"近視眼","color":"gray"}',Attributes:[{Name:"generic.max_health",Base:20},{Name:"generic.follow_range",Base:8},{Name:"generic.movement_speed",Base:0.3}]}
