@@ -1,4 +1,5 @@
 scoreboard objectives add knowledge dummy "知識算數學用記分板"
+scoreboard players set $10 knowledge 10
 scoreboard players set $20 knowledge 20
 scoreboard objectives add knowledge.use minecraft.used:minecraft.carrot_on_a_stick "使用知識"
 scoreboard objectives add knowledge.mainhand dummy "主手拿知識"
