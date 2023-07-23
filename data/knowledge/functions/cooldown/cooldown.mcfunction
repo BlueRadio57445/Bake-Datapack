@@ -4,5 +4,5 @@ execute if predicate knowledge:hold_knowledge1 run function knowledge:cooldown/m
 execute if predicate knowledge:hold_knowledge2 run function knowledge:cooldown/offhand
 function knowledge:cooldown/show_actionbar
 
-execute if score @s knowledge.cd.mainhand matches 1.. store result score $temp knowledge.cd.time_step run schedule function knowledge:cooldown/schedule 20t append
-execute if score @s knowledge.cd.offhand matches 1.. store result score $temp knowledge.cd.time_step run schedule function knowledge:cooldown/schedule 20t append
+execute if score @s knowledge.cd.mainhand matches 1.. run schedule function knowledge:cooldown/schedule 20t append
+execute if score @s knowledge.cd.offhand matches 1.. run schedule function knowledge:cooldown/schedule 20t append
