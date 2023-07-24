@@ -10,6 +10,11 @@ clone -252 97 898 -252 97 898 -252 101 898
 clone -195 102 946 -195 102 946 -195 104 946
 clone -209 98 917 -209 98 917 -209 100 917
 
+# 重裝活力蘋果
+loot replace block -186 102 947 container.13 loot items:gadget/vitality_apple
+loot replace block -223 98 889 container.13 loot items:gadget/vitality_apple
+loot replace block -308 108 913 container.13 loot items:gadget/vitality_apple
+
 #重置開箱紀錄分數
 scoreboard players set $chest1 region.hunger_cave.crit.hp 0
 scoreboard players set $chest2 region.hunger_cave.crit.hp 0
