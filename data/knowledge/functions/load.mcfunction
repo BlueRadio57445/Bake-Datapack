@@ -10,6 +10,13 @@ scoreboard objectives add knowledge.scroll dummy "滾輪位置"
 
 scoreboard objectives add knowledge.cd.mainhand dummy "主手冷卻時間"
 scoreboard objectives add knowledge.cd.offhand dummy "副手冷卻時間"
+
+scoreboard objectives add knowledge.cd.mainhand_sec1 dummy "主手冷卻時間"
+scoreboard objectives add knowledge.cd.offhand_sec1 dummy "副手冷卻時間"
+
+scoreboard objectives add knowledge.cd.mainhand_sec2 dummy "主手冷卻時間"
+scoreboard objectives add knowledge.cd.offhand_sec2 dummy "副手冷卻時間"
+
 scoreboard objectives add knowledge.cd.time_step dummy "冷卻schedule"
 scoreboard objectives add knowledge.cd.fire_ball dummy "火球冷卻時間"
 scoreboard objectives add knowledge.cd.fire_fan dummy "火焰扇冷卻時間"
