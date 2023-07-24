@@ -8,3 +8,5 @@ scoreboard objectives add effects.bleed.amplifier dummy
 scoreboard objectives add effects.bleed.duration dummy
 scoreboard objectives add effects.bleed.check_time dummy
 scoreboard objectives add effects.bleed.applied dummy
+
+scoreboard objectives add effects.died deathCount
