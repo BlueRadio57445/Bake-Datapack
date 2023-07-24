@@ -18,7 +18,7 @@
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能召喚可以阻擋敵人的土牆。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間5秒", "color": "yellow", "italic": false},
+                                {"text": "冷卻時間10秒", "color": "yellow", "italic": false},
                                 {"text": "「土遁，土流壁！」", "color": "gray"}
                             ]
                         },

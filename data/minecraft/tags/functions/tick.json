@@ -10,6 +10,7 @@
         "vehicles:tick",
         "universe:tick",
         "enemy:tick",
+        "region:tick",
         "actionbar:tick",
         "general:tick_last"
     ]

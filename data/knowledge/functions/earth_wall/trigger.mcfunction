@@ -6,7 +6,7 @@ execute if score $cd_ok knowledge matches 1 run xp add @s -3 points
 execute if score $cd_ok knowledge matches 1 run function knowledge:earth_wall/cast
 
 # 重置&冷卻
-execute if score $cd_ok knowledge matches 1 run scoreboard players set @s knowledge.cd.earth_wall 20
+execute if score $cd_ok knowledge matches 1 run scoreboard players set @s knowledge.cd.earth_wall 200
 advancement revoke @s only knowledge:earth_wall
 
 item modify entity @s[scores={knowledge.mainhand=1}] weapon.mainhand knowledge:clear_use

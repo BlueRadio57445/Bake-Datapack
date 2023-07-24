@@ -5,13 +5,13 @@
             "conditions": {
                 "damage": {
                     "source_entity": {
-                        "nbt": "{Tags:[\"enemy.starver_heavy\"]}"
+                        "nbt": "{Tags:[\"enemy.heavy_starver\"]}"
                     }
                 }
             }
         }
     },
     "rewards": {
-        "function": "enemy:demo_region/starver_heavy/skill"
+        "function": "enemy:demo_region/heavy_starver/skill"
     }
 }

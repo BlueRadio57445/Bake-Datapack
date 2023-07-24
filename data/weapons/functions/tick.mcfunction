@@ -14,6 +14,7 @@ function weapons:scythe/tick
 
 # === 劍 ===
 function weapons:sword/blood_sword/tick
+function weapons:sword/fat_sword/tick
 
 # === 三叉戟 ===
 
