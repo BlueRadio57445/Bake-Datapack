@@ -1,4 +1,4 @@
-summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["items.raw_egg.cloud","items.new"],Particle:"minecraft:dust 0.75 0.75 0.75 0.5",Effects:[{Id:2,Amplifier:2,Duration:21,ShowIcon:0b,ShowParticles:0b}],Duration:200,DurationOnUse:0,Radius:2f,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:20}
+summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["items.raw_egg.cloud","items.new"],Particle:"minecraft:dust 0.75 0.75 0.75 0.5",Effects:[{Id:2,Amplifier:2,Duration:21,ShowIcon:1b,ShowParticles:0b}],Duration:200,DurationOnUse:0,Radius:2f,RadiusOnUse:0f,RadiusPerTick:0f,ReapplicationDelay:20}
 summon minecraft:area_effect_cloud ~ ~ ~ {Tags:["items.temp"],Duration:0}
 data modify entity @e[limit=1,type=minecraft:area_effect_cloud,tag=items.temp] Owner set from entity @s data.Owner
 execute as @e[limit=1,type=minecraft:area_effect_cloud,tag=items.temp] on origin run tag @s add items.this

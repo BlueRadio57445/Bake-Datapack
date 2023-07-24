@@ -1,0 +1,34 @@
+{
+  "function": "minecraft:set_name",
+  "name": [
+    " ",
+    {
+      "score": {
+        "name": "$m1",
+        "objective": "actionbar.time"
+      }
+    },
+    {
+      "score": {
+        "name": "$m2",
+        "objective": "actionbar.time"
+      }
+    },
+    {
+      "text": ":"
+    },
+    {
+      "score": {
+        "name": "$s1",
+        "objective": "actionbar.time"
+      }
+    },
+    {
+      "score": {
+        "name": "$s2",
+        "objective": "actionbar.time"
+      }
+    }
+  ],
+  "entity": "this"
+}

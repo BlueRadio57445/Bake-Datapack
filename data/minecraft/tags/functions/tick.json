@@ -2,6 +2,7 @@
     "values": [
         "general:tick_first",
         "npc_system:tick",
+        "effects:tick",
         "sanctuary_ench:tick",
         "knowledge:tick",
         "weapons:tick",
@@ -10,6 +11,7 @@
         "universe:tick",
         "enemy:tick",
         "region:tick",
+        "actionbar:tick",
         "general:tick_last"
     ]
 }

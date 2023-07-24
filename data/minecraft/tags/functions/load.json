@@ -12,7 +12,8 @@
         "universe:load",
         "damage:load",
         "enemy:load",
+        "boss:load",
         "region:load",
-        "boss:load"
+        "actionbar:load"
     ]
 }
