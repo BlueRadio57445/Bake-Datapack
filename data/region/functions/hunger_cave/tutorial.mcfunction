@@ -19,4 +19,9 @@ scoreboard players set $chest3 region.hunger_cave.crit.hp 0
 summon zombie -188 94 984 {PersistenceRequired:1b,NoAI:1b,Tags:["region.hunger_cave.mob","region.hunger_cave.zombie1"]}
 summon creeper -292.00 110.00 895.00 {PersistenceRequired:1b,NoAI:1b,Tags:["region.hunger_cave.mob","region.hunger_cave.creeper1"]}
 
-tp @a -193 95 1013
+#玩家設定
+gamemode adventure @a[gamemode=survival]
+clear @a[gamemode=adventure]
+
+#傳送至起點
+tp @a[gamemode=adventure] -193 95 1013
