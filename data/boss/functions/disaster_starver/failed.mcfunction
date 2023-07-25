@@ -11,8 +11,9 @@ kill @e[tag=disaster_starver.villager]
 bossbar remove boss:disaster_starver
 schedule clear boss:disaster_starver/tick
 
-# 記得加幾行處理玩家重生點的東西
-# 並且把玩家的模式改回來
+execute if score $hunger_cave region matches 0 run function region:hunger_cave/boss1_defeat
+execute if score $hunger_cave region matches 3 run tp @a[tag=bossfight_0] 125 7 965
+execute if score $hunger_cave region matches 3 run gamemode survival @a[tag=bossfight_0]
 execute as @a[tag=bossfight_0] run function boss:clear_negative_effect
 
 tag @a remove bossfight_0

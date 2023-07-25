@@ -24,4 +24,6 @@ scoreboard players set $chest3 region.hunger_cave.crit.hp 0
 summon zombie -188 94 984 {PersistenceRequired:1b,NoAI:1b,Tags:["region.hunger_cave.mob","region.hunger_cave.zombie1"]}
 summon creeper -292.00 110.00 895.00 {PersistenceRequired:1b,NoAI:1b,Tags:["region.hunger_cave.mob","region.hunger_cave.creeper1"]}
 
+spawnpoint @a -193 95 1013
 tp @a -193 95 1013
+scoreboard players set $tutorial region 0
