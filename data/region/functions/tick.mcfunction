@@ -25,7 +25,10 @@ execute if score $tutorial region matches 2 positioned -305 115 895 if entity @a
 execute as @a[tag=region.hunger_cave.defeat] run attribute @s generic.max_health modifier add 00000000-0000-0000-0000-000000001200 "boss1_defeat" -18 add
 
 # 合成鑰匙碎片
-execute as @e[type=item,predicate=region:craft_key] at @s run function region:hunger_cave/key/craft_key
+execute as @e[type=item,predicate=region:hunger_cave/craft_key] at @s run function region:hunger_cave/key/craft_key
+
+# 鑰匙開門
+execute as @e[type=item_frame,tag=region.hunger_cave.key_frame,predicate=region:hunger_cave/key_in_frame] run function region:hunger_cave/key/open_gate
 
 # 初見贏的傳送門
 execute at @e[tag=region.hunber_cave.portal] as @a[distance=..1] run tp @s 343 17 936
