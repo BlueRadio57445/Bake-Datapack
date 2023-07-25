@@ -8,4 +8,4 @@ execute as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data
 kill @e[type=minecraft:text_display,tag=npc.text,tag=npc.this]
 tp @e[type=minecraft:villager,tag=npc.option,tag=npc.this] ~ -100 ~
 kill @e[tag=npc.option,tag=npc.this]
-title @s actionbar {"color":"aqua","text":"對話結束"}
+function npc_system:actionbar/state_0
