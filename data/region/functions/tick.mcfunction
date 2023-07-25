@@ -26,3 +26,6 @@ execute as @a[tag=region.hunger_cave.defeat] run attribute @s generic.max_health
 
 # 合成鑰匙碎片
 execute as @e[type=item,predicate=region:craft_key] at @s run function region:hunger_cave/key/craft_key
+
+# 初見贏的傳送門
+execute at @e[tag=region.hunber_cave.portal] as @a[distance=..1] run tp @s 343 17 936

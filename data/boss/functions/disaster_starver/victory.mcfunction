@@ -15,8 +15,8 @@ bossbar remove boss:disaster_starver
 tp @a[gamemode=spectator,tag=bossfight_0] @p[gamemode=!spectator,tag=bossfight_0]
 gamemode adventure @a[gamemode=spectator,tag=bossfight_0]
 execute as @a[tag=bossfight_0] run function boss:clear_negative_effect
+execute if score $hunger_cave region matches 3 run say 不是第0階段打贏
 execute if score $hunger_cave region matches 0 run function region:hunger_cave/boss1_victory
-execute unless score $hunger_cave region matches 0 run say 不是第0階段打贏
 
 tag @a remove bossfight_0
 scoreboard players reset @a boss.death_in_boss
