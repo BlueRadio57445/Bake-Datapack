@@ -1,0 +1,14 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "effects": {
+            "hunger":{}
+        },
+        "equipment": {
+            "mainhand": {
+                "nbt": "{hunangry:1b}"
+            }
+        }
+    }
+}

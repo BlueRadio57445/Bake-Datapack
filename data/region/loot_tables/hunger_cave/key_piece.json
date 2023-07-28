@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "prismarine_crystals",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text": "鑰匙碎片", "color": "gold", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "把三個鑰匙碎片按Q丟在地上", "color": "yellow", "italic": false},
+                                {"text": "就能合成出一把完整的鑰匙", "color": "yellow", "italic": false},
+                                {"text": "好像是完整鑰匙的一部分。", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{key_piece:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

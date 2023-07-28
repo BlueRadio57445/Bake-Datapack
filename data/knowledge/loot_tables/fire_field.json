@@ -1,0 +1,34 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "火的Lemma - 火焰領域", "color": "red", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "右鍵能啟動火焰領域。", "color": "yellow", "italic": false},
+                                {"text": "冷卻時間30秒", "color": "yellow", "italic": false},
+                                {"text": "將靠近的邪惡焚燒殆盡!", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{knowledge:{id:\"fire_field\",lvl:1}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

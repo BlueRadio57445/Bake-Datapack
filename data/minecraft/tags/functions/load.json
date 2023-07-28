@@ -9,6 +9,11 @@
         "weapons:load",
         "items:load",
         "vehicles:load",
-        "universe:load"
+        "universe:load",
+        "damage:load",
+        "enemy:load",
+        "boss:load",
+        "region:load",
+        "actionbar:load"
     ]
 }
