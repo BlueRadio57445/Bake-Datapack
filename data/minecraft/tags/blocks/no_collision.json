@@ -1,0 +1,27 @@
+{
+  "values": [
+    "#minecraft:banners",
+    "#minecraft:bee_growables",
+    "#minecraft:buttons",
+    "#minecraft:cave_vines",
+    "#minecraft:wool_carpets",
+    "#minecraft:corals_except_blocks",
+    "#minecraft:flowers",
+    "#minecraft:maintains_farmland",
+    "#minecraft:nether_vines",
+    "#minecraft:pressure_plates",
+    "#minecraft:rails",
+    "#minecraft:replaceable",
+    "#minecraft:saplings",
+    "#minecraft:signs",
+    "#minecraft:torches",
+    "minecraft:brown_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:lever",
+    "minecraft:moss_carpet",
+    "minecraft:red_mushroom",
+    "minecraft:redstone_wire",
+    "minecraft:sculk_vein",
+    "minecraft:warped_fungus"
+  ]
+}
