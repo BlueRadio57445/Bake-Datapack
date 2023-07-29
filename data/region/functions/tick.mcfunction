@@ -11,7 +11,7 @@ execute positioned -252 101 898 if entity @a[gamemode=adventure,distance=..7] if
 execute if score $hunger_cave region matches 1 positioned -331 70 933 if entity @a[distance=..33,gamemode=adventure] run scoreboard players set $hunger_cave region 2
 execute positioned -331 70 933 run spawnpoint @a[distance=..33,gamemode=adventure] -339 -21 988
 execute positioned -331 70 933 run gamemode survival @a[distance=..33,gamemode=adventure]
-execute positioned -331 70 933 as @a[distance=..33] run tp @s -343 35 971
+execute positioned -331 70 933 as @a[distance=..33,gamemode=!spectator] run tp @s -343 35 971
 
 # 在上一個活力蘋果重生
 execute if score $tutorial region matches 0 positioned -178 102 943 if entity @a[distance=..3] run spawnpoint @a -183 102 947
