@@ -31,4 +31,4 @@ execute as @e[type=item,predicate=region:hunger_cave/craft_key] at @s run functi
 execute as @e[type=item_frame,tag=region.hunger_cave.key_frame,predicate=region:hunger_cave/key_in_frame] run function region:hunger_cave/key/open_gate
 
 # 初見贏的傳送門
-execute at @e[tag=region.hunber_cave.portal] as @a[distance=..1] run tp @s 343 17 936
+#execute at @e[tag=region.hunber_cave.portal] as @a[distance=..1] run tp @s 343 17 936
