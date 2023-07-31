@@ -1,0 +1,46 @@
+{
+  "rewards": {
+    "function": "effects:strong_gravity/player_shoot"
+  },
+  "criteria": {
+    "shot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "effects.strong_gravity.shot_bow": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "effects.strong_gravity.shot_crossbow": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "effects.strong_gravity.shot_trident": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
