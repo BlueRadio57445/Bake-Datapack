@@ -69,7 +69,7 @@ NPC的基本函數如下列所示:
        * 可召喚其他顯示用實體，應有的tag有 `"npc.tag"` 及 `"npc.<redion_id>.<npc_id>"`。
     2. 互動實體: 用於偵測玩家互動，觸發進度。其碰撞箱大小設定應包覆整個顯示本體，或是符合玩家的直覺。
     3. 特製名條: 本系統使用文字顯示實體來替代傳統的實體名條，他會在進入和離開對話時移動位置。一般來說這個只需要調整其召喚之相對高度即可 (建議為顯示本體碰撞箱高度+0.475)，其餘NBT不須調整。
-* "dialogue" 函數之[普通模板](functions/template/dialogue_common)及[商店模板](functions/template/dialogue_trader)，寫法將在[互動設定](#互動設定)中詳細說明
+* "dialogue" 函數之[普通模板](functions/template/dialogues%20(common))及[商店模板](functions/template/dialogues%20(trader))，寫法將在[互動設定](#互動設定)中詳細說明
 * "start" 函數之[模板](functions/template/start)
 * "next" 函數之[模板](functions/template/next)
 
