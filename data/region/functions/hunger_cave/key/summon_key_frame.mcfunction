@@ -1,1 +1,1 @@
-summon minecraft:item_frame 125.5 8.03125 965.5 {Facing:1b,Invulnerable:0b,TileX:125,TileY:8,TileZ:965,Tags:["region.hunger_cave.key_frame"]}
+summon minecraft:item_frame 125.5 8.03125 965.5 {Facing:1b,Invulnerable:1b,TileX:125,TileY:8,TileZ:965,Tags:["region.hunger_cave.key_frame"]}
