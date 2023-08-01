@@ -3,6 +3,9 @@
 #刪除所有新手教學區怪物
 kill @e[tag=region.hunger_cave.mob]
 
+# 放生怪磚
+setblock -210 100 904 minecraft:spawner{Delay:0s,MinSpawnDelay:160s,MaxSpawnDelay:320,SpawnCount:1,RequiredPlayerRange:8s,SpawnData:{entity:{id:"skeleton",CustomName:'{"text": "骨包皮","color": "gray"}',HandItems:[],Tags:["region.hunger_cave.mob"]}}} destroy
+
 #重置箱子
 clone -167 94 971 -167 94 971 -167 98 971
 clone -163 94 947 -163 94 947 -163 98 947

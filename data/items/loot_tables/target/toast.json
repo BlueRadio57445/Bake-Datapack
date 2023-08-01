@@ -24,7 +24,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{CustomModelData:1,target:1b,HideFlags:32}"
+                            "tag": "{CustomModelData:1,target:1b,HideFlags:32,CanPlaceOn:[\"jukebox\"]}"
                         }
                     ]
                 }

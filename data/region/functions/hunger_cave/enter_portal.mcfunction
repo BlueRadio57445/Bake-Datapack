@@ -1,3 +1,3 @@
 # 由進度觸發
-advancement revoke @s only region:hunger_cave/portal
-tp @s 343 17 936
+schedule function region:hunger_cave/portal_teleport 1t append
+say hiasjffffffffffffff
