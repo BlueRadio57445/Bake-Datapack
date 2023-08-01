@@ -15,6 +15,7 @@ bossbar remove boss:disaster_starver
 tp @a[gamemode=spectator,tag=bossfight_0] @p[gamemode=!spectator,tag=bossfight_0]
 gamemode adventure @a[gamemode=spectator,tag=bossfight_0]
 execute as @a[tag=bossfight_0] run function boss:clear_negative_effect
+function region:hunger_cave/boss/victory
 
 tag @a remove bossfight_0
 scoreboard players reset @a boss.death_in_boss

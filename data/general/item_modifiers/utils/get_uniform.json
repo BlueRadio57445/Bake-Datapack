@@ -10,7 +10,7 @@
           "score": "general.utils",
           "target": {
             "type": "fixed",
-            "name": "$uniform_min"
+            "name": "$uniform.min"
           }
         },
         "max": {
@@ -18,7 +18,7 @@
           "score": "general.utils",
           "target": {
             "type": "fixed",
-            "name": "$uniform_max"
+            "name": "$uniform.max"
           }
         }
       }

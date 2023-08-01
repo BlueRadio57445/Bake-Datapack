@@ -7,4 +7,5 @@ tag @s add effects.stun
 scoreboard players operation @s effects.stun.duration = $set effects.duration
 execute store result score @s effects.stun.check_time run time query gametime
 scoreboard players add @s effects.stun.check_time 20
+scoreboard players set @s actionbar.custom_effect 1
 schedule function effects:stun/check 20t append

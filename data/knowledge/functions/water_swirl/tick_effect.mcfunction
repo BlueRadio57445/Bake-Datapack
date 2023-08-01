@@ -7,5 +7,5 @@ execute as @e[type=#mobs,distance=0.1..3] facing entity @s feet rotated ~180 ~ p
 
 execute as @e[distance=..1] run damage @s 1 minecraft:drown
 
-scoreboard players remove @s knowledge.water_swirl 1
-kill @s[scores={knowledge.water_swirl=..0}]
+scoreboard players remove @s knowledge.object_duration 1
+kill @s[scores={knowledge.object_duration=..0}]

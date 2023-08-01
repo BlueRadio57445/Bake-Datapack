@@ -1,0 +1,36 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "crossbow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 一石多鳥 ≻", "color": "dark_aqua", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "裝填時，附近的怪物獲得緩速II。","color": "yellow", "italic": false},
+                                {"text": "現在沒有人可以阻止你裝填箭矢了！","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "piercing":2
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{stonebird:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "in_portal": {
+            "trigger": "enter_block",
+            "conditions": {
+                "block": "end_gateway",
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {"min": -288.0, "max": -287.0},
+                            "y": {"min": 110.0, "max": 113.0},
+                            "z": {"min": 991.0, "max": 992.0}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "region:hunger_cave/enter_portal"
+    }
+}
