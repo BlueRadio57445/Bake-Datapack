@@ -9,7 +9,5 @@ bossbar set boss:disaster_starver visible true
 bossbar set boss:disaster_starver players @a[tag=bossfight_0]
 gamerule doImmediateRespawn true
 
-execute at @a[tag=bossfight_0] run playsound minecraft:entity.ender_dragon.growl master @p ~ ~ ~
-
 scoreboard players set $disaster_starver boss.count_down 3
 function boss:disaster_starver/count_down
