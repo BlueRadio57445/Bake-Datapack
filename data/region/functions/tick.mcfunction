@@ -1,6 +1,6 @@
 #通道偵測(無開箱生怪)
-execute if entity @a[x=-197,y=97,z=998,gamemode=adventure] run data modify entity @e[type=minecraft:zombie,tag=region.hunger_cave.zombie1,limit=1] NoAI set value 0
-execute if entity @a[x=-279,y=113,z=898,gamemode=adventure] run data modify entity @e[type=minecraft:creeper,tag=region.hunger_cave.creeper1,limit=1] NoAI set value 0
+execute if entity @a[x=-197,y=97,z=998,gamemode=adventure,dx=0,dy=0,dz=0] run data modify entity @e[type=minecraft:zombie,tag=region.hunger_cave.zombie1,limit=1] NoAI set value 0
+execute if entity @a[x=-279,y=113,z=898,gamemode=adventure,dx=0,dy=0,dz=0] run data modify entity @e[type=minecraft:creeper,tag=region.hunger_cave.creeper1,limit=1] NoAI set value 0
 
 #開箱偵測
 execute positioned -167 98 971 if entity @a[gamemode=adventure,distance=..7] if score $chest1 region.hunger_cave.crit.hp matches 0 unless blocks -167 98 971 -167 98 971 -167 94 971 all run function region:hunger_cave/chest1
