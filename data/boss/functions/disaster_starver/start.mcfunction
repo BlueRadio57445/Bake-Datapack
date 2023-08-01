@@ -11,5 +11,5 @@ gamerule doImmediateRespawn true
 
 execute at @a[tag=bossfight_0] run playsound minecraft:entity.ender_dragon.growl master @p ~ ~ ~
 
-function boss:disaster_starver/summon
-function boss:disaster_starver/tick
+scoreboard players set $disaster_starver boss.count_down 3
+function boss:disaster_starver/count_down
