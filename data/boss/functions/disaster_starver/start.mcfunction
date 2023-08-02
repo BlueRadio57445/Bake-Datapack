@@ -1,6 +1,7 @@
 scoreboard players reset @a boss.death_in_boss
 tag @a[distance=..30] add bossfight_0
 spawnpoint @a[distance=..30] ~ ~ ~
+gamemode adventure @a[tag=bossfight_0]
 
 bossbar add boss:disaster_starver "災厄餓死鬼"
 bossbar set boss:disaster_starver color yellow
