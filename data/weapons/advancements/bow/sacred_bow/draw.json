@@ -13,6 +13,6 @@
       }
     },
     "rewards": {
-      "function": "weapons:sacred_bow/dwar"
+      "function": "weapons:bow/sacred_bow/draw"
     }
   }

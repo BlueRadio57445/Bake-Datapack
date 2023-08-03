@@ -1,6 +1,9 @@
+scoreboard objectives add weapons dummy "武器算數學"
+
 # === 斧頭 ===
 
 # === 弓 ===
+scoreboard objectives add weapons.bow.shoot minecraft.used:minecraft.bow "發射箭矢"
 function weapons:bow/sacred_bow/load
 
 # === 弩 ===

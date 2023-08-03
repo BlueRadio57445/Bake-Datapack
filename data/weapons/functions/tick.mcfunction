@@ -1,6 +1,8 @@
 # === 斧頭 ===
 function weapons:axe/hunangry
+
 # === 弓 ===
+function weapons:bow/tick
 function weapons:bow/sacred_bow/tick
 
 # === 弩 ===
