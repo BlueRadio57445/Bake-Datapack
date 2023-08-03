@@ -37,7 +37,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "items:gadget/vitality_apple"
+                    "name": "items:food/vitality_apple"
                 }
             ]
         },
