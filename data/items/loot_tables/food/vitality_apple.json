@@ -19,12 +19,12 @@
                             "lore": [
                                 {"text": "吃下去能增加最大生命。", "italic": false, "color": "yellow"},
                                 {"text": "傳說中在米木各的時代能治百病，", "color": "gray"},
-                                {"text": "現在只剩下一個效果。", "color": "gray"}
+                                {"text": "如今只剩一個效果。", "color": "gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{vitality_apple:1b,CustomModelData:1}"
+                            "tag": "{vitality_apple:1b,CustomModelData:1216}"
                         }
                     ]
                 }

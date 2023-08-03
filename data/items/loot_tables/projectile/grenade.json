@@ -18,6 +18,19 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "color": "gray",
+                  "text": "如果一顆解決不了問題--"
+                },
+                {
+                  "color": "gray",
+                  "text": "就再丟一顆。"
+                },
+                {
+                  "italic": false,
+                  "color": "dark_red",
+                  "text": "擲出滿三秒後將會爆炸。"
+                }
               ]
             },
             {

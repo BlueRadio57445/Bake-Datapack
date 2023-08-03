@@ -12,6 +12,7 @@
               "function": "minecraft:set_name",
               "name": {
                 "italic": false,
+                "color": "aqua",
                 "text": "神秘麵包磁鐵"
               }
             },
@@ -19,20 +20,29 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "color": "gray",
-                  "text": "以麵包之力驅動的謎之道具"
+                  "italic": false,
+                  "color": "yellow",
+                  "text": "長按",
+                  "extra": [
+                    {
+                      "keybind": "key.use"
+                    },
+                    {
+                      "text": "以吸引附近的物品。"
+                    }
+                  ]
                 },
                 {
                   "color": "gray",
-                  "text": "依照一張古老的藍圖所製成"
+                  "text": "依照一張古老的藍圖所製成，"
                 },
                 {
                   "color": "gray",
-                  "text": "使用時可以吸引附近的物品"
+                  "text": "以麵包之力驅動的謎之裝置。"
                 },
                 {
                   "color": "gray",
-                  "text": "其精妙的設計據稱出自麵包仙人之手"
+                  "text": "其精妙的設計據稱出自麵包仙人之手。"
                 }
               ]
             },
