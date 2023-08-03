@@ -11,9 +11,7 @@ kill @e[tag=disaster_starver.villager]
 bossbar remove boss:disaster_starver
 schedule clear boss:disaster_starver/tick
 
-execute if score $hunger_cave region matches 0 run function region:hunger_cave/boss1_defeat
-execute if score $hunger_cave region matches 3 run tp @a[tag=bossfight_0] 125 7 965
-execute if score $hunger_cave region matches 3 run gamemode survival @a[tag=bossfight_0]
+function region:hunger_cave/boss/defeat
 execute as @a[tag=bossfight_0] run function boss:clear_negative_effect
 
 tag @a remove bossfight_0

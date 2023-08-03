@@ -4,6 +4,8 @@ team modify boss.no_collide collisionRule never
 scoreboard objectives add boss dummy "Boss算數學"
 scoreboard players set $3 boss 3
 
+scoreboard objectives add boss.count_down dummy "Boss倒數計時"
+
 scoreboard objectives add boss.death_in_boss deathCount "在Boss戰之中死亡"
 
 scoreboard objectives add boss.time0 dummy "Boss用的計時器0"

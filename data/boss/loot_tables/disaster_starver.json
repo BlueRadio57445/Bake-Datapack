@@ -1,0 +1,71 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "items:target/toast"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "score": "region",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$hunger_cave"
+                        }
+                    },
+                    "range": 3
+                },
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "items:gadget/vitality_apple"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "score": "region",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$hunger_cave"
+                        }
+                    },
+                    "range": 0
+                },
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:sword/fat_sword"
+                }
+            ]
+        }
+    ]
+}

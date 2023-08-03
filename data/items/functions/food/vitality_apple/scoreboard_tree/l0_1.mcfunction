@@ -1,3 +1,4 @@
+execute if score $amount items.vitality_apple matches 0 as @a run attribute @s minecraft:generic.max_health base set 20
 execute if score $amount items.vitality_apple matches 1 as @a run attribute @s minecraft:generic.max_health base set 22
 execute if score $amount items.vitality_apple matches 2 as @a run attribute @s minecraft:generic.max_health base set 24
 execute if score $amount items.vitality_apple matches 3 as @a run attribute @s minecraft:generic.max_health base set 26
