@@ -14,7 +14,7 @@
       }
     },
     "rewards": {
-      "function": "weapons:allium_tuberosum/cast"
+      "function": "weapons:allium_tuberosum/start"
     }
   }
   

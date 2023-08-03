@@ -1,7 +1,4 @@
-advancement revoke @s only weapons:allium_tuberosum/attack
-
-execute at @s anchored eyes positioned ^ ^ ^1.5 positioned ~-1 ~ ~-1 if entity @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~1 ~-2.45 ~1 as @e[type=#mobs,distance=..1] run damage @s 18 arrow 
-execute at @s anchored eyes positioned ^ ^ ^1.5 positioned ~-1 ~ ~-1 if entity @e[type=#mobs,dx=0,dy=0,dz=0] positioned ~1 ~-2.45 ~1 as @e[type=#mobs,distance=..1] at @s run particle block redstone_block ~ ~2 ~ .3 .3 .3 0 40
-
-
-
+execute positioned ~-0.1 ~-0.1 ~-0.1 as @e[type=#mobs,dx=0,dy=0,dz=0,tag=!self] positioned ~-0.7 ~-0.7 ~-0.7 if entity @s[dx=0,dy=0,dz=0] run tag @s add this
+execute positioned ^ ^ ^0.1 as @e[tag=this] run function weapons:allium_tuberosum/hit
+execute if entity @s[distance=..6] unless entity @e[type=#mobs,tag=this] if block ~ ~ ~ air positioned ^ ^ ^0.1 run function weapons:allium_tuberosum/cast
+tag @e[tag=this] remove this
