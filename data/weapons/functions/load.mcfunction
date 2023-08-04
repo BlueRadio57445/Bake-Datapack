@@ -23,7 +23,7 @@ data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 # === 三叉戟 ===
 
 # === 鞭子 ===
-scoreboard objectives add weapons.whip.1 dummy
+scoreboard objectives add weapons.whip.time dummy "魚鉤勾住的時間"
 
 
 

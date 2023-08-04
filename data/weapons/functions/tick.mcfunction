@@ -22,5 +22,4 @@ function weapons:sword/fat_sword/tick
 # === 三叉戟 ===
 
 # === 鞭子 ===
-execute as @e[type=minecraft:fishing_bobber] run function weapons:whip/select_whip
-function weapons:whip/whip/damage
+function weapons:whip/tick
