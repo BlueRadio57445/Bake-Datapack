@@ -29,6 +29,7 @@ execute as @e[type=item,predicate=region:hunger_cave/craft_key] at @s run functi
 
 # 鑰匙開門
 execute as @e[type=item_frame,tag=region.hunger_cave.key_frame,predicate=region:hunger_cave/key_in_frame] run function region:hunger_cave/key/open_gate
+execute as @e[type=item_frame,tag=region.hunger_cave.key_frame] if data entity @s Item unless predicate region:hunger_cave/key_in_frame at @s run function region:hunger_cave/key/pop_out
 
 # 初見贏的傳送門
 #execute at @e[tag=region.hunber_cave.portal] as @a[distance=..1] run tp @s 343 17 936
