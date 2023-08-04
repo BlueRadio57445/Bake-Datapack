@@ -1,0 +1,48 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:axe/hunangry"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:bow/light_bow"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:crossbow/stonebird"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:whip/poison_whip"
+                }
+            ]
+        }
+    ],
+    
+    "functions": [
+        {
+            "function": "set_nbt",
+            "tag": "{demo:1b}"
+        }
+    ]
+}

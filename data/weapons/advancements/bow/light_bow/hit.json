@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "hit": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "nbt": "{Tags:[\"arrow.light_bow\"]}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:bow/light_bow/hit"
+    }
+}

@@ -1,1 +1,0 @@
-give @s bow{sacred_bow:1b}
