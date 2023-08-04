@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_13",
+            "nbt": "{CustomModelData:7}"
+        },
+        "title": "奶油",
+        "description": ""
+    },
+    "parent": "target:display/root",
+    "criteria": {
+        "imposible": {
+            "trigger": "impossible"
+        }
+    }
+}
