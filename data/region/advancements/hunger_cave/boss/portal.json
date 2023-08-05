@@ -17,6 +17,6 @@
         }
     },
     "rewards": {
-        "function": "region:hunger_cave/enter_portal"
+        "function": "region:hunger_cave/boss/enter_portal"
     }
 }

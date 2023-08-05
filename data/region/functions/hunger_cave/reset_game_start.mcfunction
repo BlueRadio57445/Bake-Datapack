@@ -12,3 +12,6 @@ function region:hunger_cave/boss/reset_gate
 # Boss寶箱重製
 setblock -281 110 991 air
 setblock 226 -1 965 air
+
+# 重製紀念碑
+function target:reset_all

@@ -38,4 +38,4 @@ tag @e[type=zombie,tag=region.hunger_cave.onlycrit] remove region.hunger_cave.cr
 execute as @e[type=zombie,tag=region.hunger_cave.onlycrit] run data modify entity @s Health set value 200
 
 #重置advancement
-advancement revoke @s only region:hunger_cave/crithit
+advancement revoke @s only region:hunger_cave/tutorial/crithit

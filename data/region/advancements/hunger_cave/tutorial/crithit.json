@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "region:hunger_cave/crit"
+    "function": "region:hunger_cave/tutorial/crit"
   }
 }
