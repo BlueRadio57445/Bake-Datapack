@@ -3,7 +3,7 @@ schedule function boss:disaster_starver/tick 1t
 
 function boss:disaster_starver/bossbar
 function boss:disaster_starver/death
-execute unless entity @e[tag=boss.disaster_starver] if entity @a[gamemode=!spectator,tag=bossfight_0] run function boss:disaster_starver/victory
+execute at @a[gamemode=!spectator,tag=bossfight_0] if loaded ~ ~ ~ unless entity @e[tag=boss.disaster_starver] run function boss:disaster_starver/victory
 
 # Boss的AI
 
