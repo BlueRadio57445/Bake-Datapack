@@ -1,0 +1,38 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "crossbow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 風暴拳 ≻", "color": "##97e2f7", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "長按右鍵蓄力","color": "yellow", "italic": false},
+                                {"text": "蓄力後左鍵，對單體施放風暴","color": "yellow", "italic": false},
+                                {"text": "蓄力後右鍵，對群體施放風暴","color": "yellow", "italic": false},
+                                {"text": "據說是來自史東威爾的拳套。","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sharpness":2
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{gloves:1b,gloves_id:\"storm_gloves\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
