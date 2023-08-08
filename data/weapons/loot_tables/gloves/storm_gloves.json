@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{gloves:1b,gloves_id:\"storm_gloves\"}"
+                            "tag": "{gloves:1b,gloves_id:\"storm_gloves\",CustomModelData:10}"
                         }
                     ]
                 }
