@@ -36,6 +36,15 @@
                     "name": "weapons:whip/poison_whip"
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:gloves/storm_gloves"
+                }
+            ]
         }
     ],
     
