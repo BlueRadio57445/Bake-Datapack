@@ -1,3 +1,0 @@
-data modify storage quest:hunger_cave monster.Got set value {Texts:['{"text":"拿到繩子了嗎?"}','{"text":"快拿給我吧!"}'],Options:[{Option:'{"text":"給他繩子"}',React:['{"text":"總算能出來了"}','{"text":"不過我肚子好餓啊...要不然"}','{"text":"你就給我好人做到底吧!"}'],Condition:{Item:{id:"minecraft:lead",Count:1b,tag:{rope:1b}}},Extra:{End_Command:"function quest:hunger_cave/monster/give_rope"},End:1b},{Option:'{"text":"不給"}',React:['{"text":"快點把繩子給我!!!"}']}]}
-
-data modify storage quest:hunger_cave monster.Start_Remind set value {Texts:['{"text":"繩子就在附近的屍體上"}','{"text":"快拿給我吧!"}']}

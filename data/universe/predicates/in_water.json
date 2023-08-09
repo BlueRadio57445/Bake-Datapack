@@ -1,0 +1,21 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "location_check",
+            "predicate": {
+                "fluid": {
+                    "fluid": "water"
+                }
+            }
+        },
+        {
+            "condition": "location_check",
+            "predicate": {
+                "fluid": {
+                    "fluid": "flowing_water"
+                }
+            }
+        }
+    ]
+}
