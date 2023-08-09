@@ -15,8 +15,8 @@ data modify storage npc:hunger_cave pang.TraderNormalRandom set value 0b
 
 # 清空列表
 data modify storage npc:hunger_cave pang.TraderNormal set value []
-data modify storage npc:hunger_cave pang.TraderNormal append value {Texts:['{"text":"商人NPC獨有的功能"}','{"text":"在商店選項點選交談後"}','{"text":"會出現的對話"}','{"text":"這部分就可以長一些"}']}
-data modify storage npc:hunger_cave pang.TraderNormal append value {Texts:['{"text":"這邊同樣可以用append的方式"}','{"text":"新增對話"}']}
+#data modify storage npc:hunger_cave pang.TraderNormal append value {Texts:['{"text":"商人NPC獨有的功能"}','{"text":"在商店選項點選交談後"}','{"text":"會出現的對話"}','{"text":"這部分就可以長一些"}']}
+#data modify storage npc:hunger_cave pang.TraderNormal append value {Texts:['{"text":"這邊同樣可以用append的方式"}','{"text":"新增對話"}']}
 # ...
 
 data modify storage npc:hunger_cave pang.Exit set value {Texts:['{"text":"謝謝惠顧!"}']}
@@ -40,7 +40,7 @@ data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:8b},sell:{Name:"weapons:scythe/ordinary_scythe",Count:1b},maxUses:2147483647}
 # @末天
 # 如果沒有下面這一行貨幣的話，那上面的普通鐮刀會變空氣
-data modify storage npc:hunger_cave pang.Buy append value {buy:{Name:"items:demo/demo_currency",Count:12b},sell:{Name:"items:demo/mysterious_stone",Count:1b},maxUses:2147483647}
+#data modify storage npc:hunger_cave pang.Buy append value {buy:{Name:"items:demo/demo_currency",Count:12b},sell:{Name:"items:demo/mysterious_stone",Count:1b},maxUses:2147483647}
 # ...
 
 # 清空列表
