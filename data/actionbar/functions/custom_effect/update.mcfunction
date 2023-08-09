@@ -7,6 +7,7 @@ data modify storage actionbar:player Data.NegativeEffects[{custom:1b}].updated s
 
 execute if score @s effects.bleed.duration matches 1.. run function actionbar:custom_effect/negative/bleed
 execute if score @s effects.stun.duration matches 1.. run function actionbar:custom_effect/negative/stun
+execute if score @s effects.strong_gravity.duration matches 1.. run function actionbar:custom_effect/negative/strong_gravity
 
 data remove storage actionbar:player Data.PositiveEffects[{updated:0b}]
 data remove storage actionbar:player Data.NegativeEffects[{updated:0b}]

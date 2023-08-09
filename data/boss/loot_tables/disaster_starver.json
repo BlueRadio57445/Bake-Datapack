@@ -6,12 +6,7 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "items:target/toast"
-                }
-            ],
-            "conditions": [
-                {
-                    "condition": "killed_by_player"
+                    "name": "target:toast"
                 }
             ]
         },
@@ -29,15 +24,12 @@
                         }
                     },
                     "range": 3
-                },
-                {
-                    "condition": "killed_by_player"
                 }
             ],
             "entries": [
                 {
                     "type": "loot_table",
-                    "name": "items:gadget/vitality_apple"
+                    "name": "items:food/vitality_apple"
                 }
             ]
         },
@@ -55,9 +47,6 @@
                         }
                     },
                     "range": 0
-                },
-                {
-                    "condition": "killed_by_player"
                 }
             ],
             "entries": [

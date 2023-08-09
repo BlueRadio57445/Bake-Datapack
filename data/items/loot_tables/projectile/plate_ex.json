@@ -12,17 +12,37 @@
               "function": "minecraft:set_name",
               "name": {
                 "italic": false,
-                "text": "玻璃盤子"
+                "text": "精美的陶瓷盤子"
               }
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "color": "gray",
+                  "text": "精美而珍貴的盤子，"
+                },
+                {
+                  "color": "gray",
+                  "text": "比起盛裝食物更適合用作觀賞。"
+                },
+                {
+                  "color": "gray",
+                  "text": "藉由把它摔碎來舒解壓力的人，"
+                },
+                {
+                  "color": "gray",
+                  "text": "真的不知道在想什麼。"
+                },
+                {
+                  "color": "dark_gray",
+                  "text": "碎片似乎會飛挺遠的..."
+                }
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{plate:1b,upgrade:1b,CustomPotionColor:11974326,CustomModelData:1154}"
+              "tag": "{plate:1b,upgrade:1b,CustomPotionColor:16382457,HideFlags:32,CustomModelData:1154}"
             }
           ]
         }

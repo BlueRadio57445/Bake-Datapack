@@ -1,11 +1,11 @@
 # 按下開始遊戲會發生的事情
 # 送大家去打Boss
-execute unless score $hunger_cave region matches 0.. run tp @a[distance=..50] -262 110 991
+execute unless score $hunger_cave region matches 0.. run tp @a[distance=..50] -262 110 991 90 0
 execute unless score $hunger_cave region matches 0.. run schedule function region:hunger_cave/boss/boss1 1s
 execute unless score $hunger_cave region matches 0.. run scoreboard players set $hunger_cave region 0
 
 execute if score $hunger_cave region matches 0 run spawnpoint @a[distance=..50] -271 110 991
-execute if score $hunger_cave region matches 0 run tp @a[distance=..50] -262 110 991
+execute if score $hunger_cave region matches 0 run tp @a[distance=..50] -262 110 991 90 0
 
 execute if score $hunger_cave region matches 1 run spawnpoint @a[distance=..50] -193 95 1013
 execute if score $hunger_cave region matches 1 run tp @a[distance=..50] -193 95 1013

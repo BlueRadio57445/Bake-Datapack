@@ -9,6 +9,7 @@ data modify entity @s data.Extra set from storage npc_system:common This.Dialogu
 data modify entity @s data.TraderNormal set from storage npc_system:common This.TraderNormal
 data modify entity @s data.TraderNormalRandom set from storage npc_system:common This.TraderNormalRandom
 data modify entity @s data.Exit set from storage npc_system:common This.Exit
+data modify entity @s data.NoExit set from storage npc_system:common This.NoExit
 data modify entity @s data.Buy set from storage npc_system:common This.Buy
 data modify entity @s data.Sell set from storage npc_system:common This.Sell
 data modify entity @s data.Idle set from storage npc_system:common This.Idle

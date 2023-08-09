@@ -1,0 +1,23 @@
+advancement revoke @s only target:display/toast
+advancement revoke @s only target:display/egg_and_milk
+advancement revoke @s only target:display/salt
+advancement revoke @s only target:display/yeast
+advancement revoke @s only target:display/water
+advancement revoke @s only target:display/flour
+advancement revoke @s only target:display/butter
+advancement revoke @s only target:display/sugar
+advancement revoke @s only target:display/three_color_bean
+advancement revoke @s only target:display/chocolate
+advancement revoke @s only target:display/coriandrum_sativum
+
+scoreboard players reset $toast target
+scoreboard players reset $egg_and_milk target
+scoreboard players reset $salt target
+scoreboard players reset $yeast target
+scoreboard players reset $water target
+scoreboard players reset $flour target
+scoreboard players reset $butter target
+scoreboard players reset $sugar target
+scoreboard players reset $three_color_bean target
+scoreboard players reset $chocolate target
+scoreboard players reset $coriandrum_sativum target
