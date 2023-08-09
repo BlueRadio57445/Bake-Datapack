@@ -9,4 +9,3 @@ execute unless entity @e[tag=quest.hunger_cave.monster,type=zombie] run summon z
 loot replace entity @e[tag=quest.hunger_cave.monster] weapon.mainhand loot weapons:sword/blood_sword
 
 kill @e[tag=npc.hunger_cave.monster]
-# @末天 我希望給繩子之後，殺人魔直接跳出來，然後刪掉這個NPC
