@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bundle",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "宇宙袋", "color": "#a856e3", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "容量由宇貓價值所決定","color": "yellow", "italic": false},
+                                {"text": "能夠容納許多宇宙，","color": "gray"},
+                                {"text": "並讓宇宙發揮效果。","color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{universe_bundle:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
