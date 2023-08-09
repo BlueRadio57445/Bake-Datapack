@@ -1,6 +1,7 @@
 # 普通NPC的模板
 
 data modify storage npc:hunger_cave monster.NormalRandom set value 0b
+data modify storage npc:hunger_cave monster.NoExit set value 1b
 
 # 清空列表
 data modify storage npc:hunger_cave monster.Normal set value []
