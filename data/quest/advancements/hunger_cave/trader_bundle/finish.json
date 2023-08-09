@@ -11,7 +11,8 @@
       },
       "title": "最後的烘焙勇者-任務完成",
       "description": {
-        "text": "未來還會有怎樣的冒險呢?"
+        "text": "未來還會有怎樣的冒險呢?",
+        "color": "gray"
       },
       "announce_to_chat": false,
       "frame": "goal",

@@ -6,11 +6,12 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:pointed_dripstone"
+      "item": "minecraft:andesite"
     },
-    "title": "歡迎來到飢餓洞窟",
+    "title": "飢餓洞窟",
     "description": {
-      "text": "一切的故事都有個起始",
+      "text": "一切的故事都有個開始",
+      "color": "gray",
       "italic": true
     },
     "announce_to_chat": false,
