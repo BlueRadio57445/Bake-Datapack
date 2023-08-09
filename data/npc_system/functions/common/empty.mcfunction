@@ -1,5 +1,6 @@
 execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Extra.End_Command run function npc_system:common/extra/end_command
 execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.this] data{End:1b} run function npc_system:common/end
+execute if score @s npc.state matches 1 as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data.Extra.Hidden run data modify entity @s data.Extra set from entity @s data.Extra.Hidden
 execute if score @s npc.state matches 1 if score @s npc.trader matches 1 unless data entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Options[] at @e[limit=1,tag=npc.figure,tag=npc.this] rotated ~ 0 run function npc_system:trader/options
 execute if score @s npc.state matches 1 if score @s npc.trader matches 0 unless data entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Options[] run function npc_system:common/end
 execute if score @s npc.state matches 1 at @e[limit=1,tag=npc.figure,tag=npc.this] run function npc_system:common/options
