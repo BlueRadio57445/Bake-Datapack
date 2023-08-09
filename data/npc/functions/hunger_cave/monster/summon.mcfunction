@@ -3,7 +3,7 @@ kill @e[tag=npc.hunger_cave.monster]
 # 1. 召喚顯示本體，可為盔甲架或其他實體(如: 村民、貓等)
 #    NPC顯示名稱將取用CustomName之內容
 #    每次對話結束時NPC將轉回初始Rotation
-summon minecraft:armor_stand ~ ~ ~ {Tags:["npc.this","npc.tag","npc.figure","npc.hunger_cave.monster"],Rotation:[90.0f,0.0f],CustomName:'{"text":"井裡的呼救聲"}',ShowArms:1b,NoBasePlate:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:0}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:0}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"Steve"}}]}
+summon minecraft:armor_stand ~ ~ ~ {Tags:["npc.this","npc.tag","npc.figure","npc.hunger_cave.monster"],Invisible:1b,Rotation:[90.0f,0.0f],CustomName:'{"text":"井裡的呼救聲"}',ShowArms:1b,NoBasePlate:1b,NoGravity:1b,Invulnerable:1b}
 
 summon minecraft:interaction ~ ~-0.05 ~ {Tags:["npc.this","npc.tag","npc.hunger_cave.monster"],width:0.6f,height:2.1f}
 
