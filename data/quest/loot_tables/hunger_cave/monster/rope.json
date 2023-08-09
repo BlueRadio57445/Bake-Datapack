@@ -1,0 +1,32 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "lead",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text": "繩子", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "一條很破舊的繩子。", "color": "gray"},
+                                {"text": "旁邊的紙條寫著：", "color": "gray"},
+                                {"text": "「不要...信食%&*魔。」", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{rope:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
