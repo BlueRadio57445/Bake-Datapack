@@ -1,7 +1,6 @@
 # 重製任務的函數
 scoreboard players reset $hunger_cave.cool_stone quest.state
-advancement revoke @a only quest:hunger_cave/cool_stone/start
-advancement revoke @a only quest:hunger_cave/cool_stone/finish
+advancement revoke @a from quest:hunger_cave/cool_stone/start
 
 setblock 38 -3 1001 barrel{CustomName:'{"text":"宇宙貓貓的考驗"}'}
 data merge block 38 -3 1001 {Items:[]}

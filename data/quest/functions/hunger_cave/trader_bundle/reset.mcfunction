@@ -1,7 +1,6 @@
 # 重製任務的函數
 scoreboard players reset $hunger_cave.trader_bundle quest.state
-advancement revoke @a only quest:hunger_cave/trader_bundle/start
-advancement revoke @a only quest:hunger_cave/trader_bundle/finish
+advancement revoke @a from quest:hunger_cave/trader_bundle/start
 
 setblock -261 7 1008 chest
 data merge block -261 7 1008 {Items:[]}
