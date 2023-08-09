@@ -17,13 +17,13 @@
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
-                                {"text": "一顆招財貓石頭，貓爪不斷在揮舞。", "italic": false, "color": "gray"},
-                                {"text": "你很確定你在商店看過一模一樣的東西。", "italic": false, "color": "gray"}
+                                {"text": "一顆招財貓石頭，貓爪不斷在揮舞。", "color": "gray"},
+                                {"text": "你很確定你在商店看過一模一樣的東西。", "color": "gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{cool_stone:1b}"
+                            "tag": "{cool_stone:1b,CustomModelData:6000}"
                         }
                     ]
                 }
