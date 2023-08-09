@@ -1,0 +1,33 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "clay_ball",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "招財貓石頭", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "一顆招財貓石頭，貓爪不斷在揮舞。", "italic": false, "color": "gray"},
+                                {"text": "你很確定你在商店看過一模一樣的東西。", "italic": false, "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{cool_stone:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

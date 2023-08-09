@@ -7,16 +7,16 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:clay_ball"
+      "item": "minecraft:lead"
     },
-    "title": "咆嘯亨利的酷石頭-任務開始",
+    "title": "古井-任務開始",
     "description": {
-      "text": "追尋奇怪的知識?\n",
+      "text": "真是會使喚人\n",
       "color": "gray",
       "extra": [
         {
           "color": "dark_gray",
-          "text": "提示：石頭長得像貓便便"
+          "text": "提示：在屍體附近尋找繩子"
         }
       ]
     },
@@ -26,3 +26,4 @@
     "show_toast": true
   }
 }
+  
