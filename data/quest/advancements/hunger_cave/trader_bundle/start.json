@@ -1,29 +1,28 @@
 {
-    "parent": "quest:hunger_cave/root",
-    "criteria": {
-      "impossible": {
-        "trigger": "minecraft:impossible"
-      }
-    },
-    "display": {
-      "icon": {
-        "item": "minecraft:bundle"
-      },
-      "title": "最後的烘焙勇者-任務開始",
-      "description": {
-        "text": "看起來是個好人呢\n",
-        "color": "gray",
-        "extra": [
-          {
-            "color": "dark_gray",
-            "text": "提示：袋子在洞窟裡"
-          }
-        ]
-      },
-      "announce_to_chat": false,
-      "frame": "goal",
-      "hidden": true,
-      "show_toast": true
+  "parent": "quest:hunger_cave/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:bundle"
+    },
+    "title": "最後的烘焙勇者-任務開始",
+    "description": {
+      "text": "看起來是個好人呢\n",
+      "color": "gray",
+      "extra": [
+        {
+          "color": "dark_gray",
+          "text": "提示：到洞窟裡尋找袋子"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
   }
-  
+}
