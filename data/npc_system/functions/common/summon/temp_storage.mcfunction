@@ -17,5 +17,6 @@ data modify entity @s data.Rotation set from entity @e[limit=1,tag=npc.figure,ta
 data modify entity @s data.Rotation set from entity @e[limit=1,type=minecraft:marker,tag=npc.old] data.Rotation
 kill @e[type=minecraft:marker,tag=npc.old]
 
-execute if data storage npc_system:common This.Buy[].buy.Name run function npc_system:trader/interpret/queue
-execute unless data storage npc_system:common This.Buy[].buy.Name if data storage npc_system:common This.Sell[].buy.Name run function npc_system:trader/interpret/queue
+scoreboard players set $temp npc.state 1
+execute unless data storage npc_system:common This.Buy[].buy.Name unless data storage npc_system:common This.Buy[].sell.Name unless data storage npc_system:common This.Sell[].buy.Name unless data storage npc_system:common This.Sell[].sell.Name run scoreboard players set $temp npc.state 0
+execute if score $temp npc.state matches 1 run function npc_system:trader/interpret/queue
