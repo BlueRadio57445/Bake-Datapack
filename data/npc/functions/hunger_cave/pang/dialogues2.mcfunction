@@ -30,14 +30,15 @@ data modify storage npc:hunger_cave pang.Buy set value []
 # Buy和Sell列表的內容，會直接被填入開啟商店介面時召喚的村民，因此當作村民的nbt來填寫即可，除此之外可用Name引用戰利品表的內容(建議為單項物品之戰利品表)來取代id和tag
 # 關於maxUses，當前版本填上2147483647就好，因當前並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:1b},sell:{id:"carrot",Count:1b},maxUses:2147483647}
-data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"bone",Count:2b},sell:{id:"cooked_mutton",Count:1b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"bone",Count:4b},sell:{id:"cooked_mutton",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:2b},buyB:{id:"bone",Count:1b},sell:{id:"leather_helmet",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:4b},buyB:{id:"bone",Count:1b},sell:{id:"leather_chestplate",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:3b},buyB:{id:"bone",Count:1b},sell:{id:"leather_leggings",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:1b},buyB:{id:"bone",Count:1b},sell:{id:"leather_boots",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:2b},sell:{id:"wooden_sword",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:3b},sell:{id:"wooden_axe",Count:1b},maxUses:2147483647}
-data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:8b},sell:{Name:"weapons:scythe/ordinary_scythe",Count:1b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:3b},sell:{id:"wooden_pickaxe",Count:1b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:8b},buyB:{id:"bone",Count:2b},sell:{Name:"weapons:scythe/ordinary_scythe",Count:1b},maxUses:2147483647}
 # @末天
 # 如果沒有下面這一行貨幣的話，那上面的普通鐮刀會變空氣
 #data modify storage npc:hunger_cave pang.Buy append value {buy:{Name:"items:demo/demo_currency",Count:12b},sell:{Name:"items:demo/mysterious_stone",Count:1b},maxUses:2147483647}
