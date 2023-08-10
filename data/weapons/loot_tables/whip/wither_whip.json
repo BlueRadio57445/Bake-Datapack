@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "fishing_rod",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 黑玫瑰鞭 ≻", "color": "gray", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "鞭笞敵人時，使敵人凋零。", "color": "yellow", "italic": false},
+                                {"text": "世界上只有一種玫瑰是黑色的。", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{wither_whip:1b,Unbreakable:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
