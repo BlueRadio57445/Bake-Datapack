@@ -7,3 +7,5 @@ execute unless entity @e[tag=quest.hunger_cave.monster,type=zombie] run summon z
 loot replace entity @e[tag=quest.hunger_cave.monster] weapon.mainhand loot weapons:sword/blood_sword
 
 kill @e[tag=npc.hunger_cave.monster]
+
+clear @s lead{rope:1b} 1
