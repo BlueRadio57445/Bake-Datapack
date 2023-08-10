@@ -1,0 +1,111 @@
+[
+    {
+        "function": "set_damage",
+        "damage": -0.017,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["wooden_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_damage",
+        "damage": -0.0077,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["stone_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_damage",
+        "damage": -0.004,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["iron_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_damage",
+        "damage": -0.03125,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["golden_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_damage",
+        "damage": -0.00065,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["diamond_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "function": "set_damage",
+        "damage": -0.0005,
+        "add": true,
+        "conditions": [
+            {
+                "condition": "entity_properties",
+                "entity": "this",
+                "predicate": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": ["netherite_hoe"]
+                        }
+                    }
+                }
+            }
+        ]
+    }
+    
+]
