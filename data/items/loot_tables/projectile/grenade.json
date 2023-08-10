@@ -35,7 +35,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{grenade:1b,CustomModelData:1152}"
+              "tag": "{grenade:1b,CustomModelData:4500}"
             }
           ]
         }

@@ -43,7 +43,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{flour:1b,CustomModelData:1030}"
+              "tag": "{flour:1b,CustomModelData:4006}"
             }
           ]
         }

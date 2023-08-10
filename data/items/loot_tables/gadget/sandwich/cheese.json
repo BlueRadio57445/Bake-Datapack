@@ -34,7 +34,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{speed:1b},CustomModelData:1027}"
+              "tag": "{sandwich:{speed:1b},CustomModelData:4003}"
             }
           ]
         }
