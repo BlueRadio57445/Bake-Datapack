@@ -9,3 +9,5 @@ tag @e[tag=find_looking.result] remove find_looking.result
 
 playsound block.lantern.fall master @a[distance=..10] ~ ~ ~ 0.5 2
 execute anchored eyes run particle explosion ^ ^-0.26 ^1 1751 0 6137 0.001 0
+
+item modify entity @s weapon.mainhand weapons:scythe/durability
