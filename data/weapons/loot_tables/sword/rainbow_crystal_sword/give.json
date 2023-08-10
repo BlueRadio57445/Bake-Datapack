@@ -10,11 +10,17 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {
-                                "color": "aqua",
-                                "italic": false,
-                                "text": "虹晶劍"
-                            }
+                            "entity": "this",
+                            "name": {"text": "≺ 虹精劍 ≻", "color": "aqua", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "砍怪會使其燃燒、緩速、發光", "color": "yellow", "italic": false},
+                                {"text": "晶體之間混沌不分", "color": "gray"},
+                                {"text": "擦出燃盡一切的火花", "color": "gray"}
+                            ]
                         },
                         {
                             "function": "set_nbt",
