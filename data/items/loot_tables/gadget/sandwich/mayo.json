@@ -30,7 +30,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{fly:1b},CustomModelData:1029}"
+              "tag": "{sandwich:{fly:1b},CustomModelData:4005}"
             }
           ]
         }
