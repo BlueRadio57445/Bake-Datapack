@@ -7,11 +7,11 @@ kill @e[tag=boss.disaster_starver]
 kill @e[tag=disaster_starver.starver]
 kill @e[tag=disaster_starver.spit]
 kill @e[tag=disaster_starver.random]
+kill @e[tag=disaster_starver.villager]
 bossbar remove boss:disaster_starver
 schedule clear boss:disaster_starver/tick
 
-# 記得加幾行處理玩家重生點的東西
-# 並且把玩家的模式改回來
+function region:hunger_cave/boss/defeat
 execute as @a[tag=bossfight_0] run function boss:clear_negative_effect
 
 tag @a remove bossfight_0

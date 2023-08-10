@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hurt_player": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"boss.disaster_starver\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "boss:disaster_starver/skill6/hurt_player"
+    }
+}

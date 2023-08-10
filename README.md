@@ -49,6 +49,8 @@
 |9. |damage             |
 |10.|enemy              |
 |11.|boss               |
+|12.|actionbar          |
+|13.|region             |
 
 ## general 命名空間下的實用函數
 

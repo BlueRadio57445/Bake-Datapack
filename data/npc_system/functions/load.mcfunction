@@ -21,9 +21,3 @@ team modify npc.trader collisionRule never
 
 scoreboard players set @e[type=minecraft:marker,tag=npc.idle] npc.idle -1
 schedule function npc_system:idle/check 9t
-
-# 暫時放在這裡
-function npc:demo/radio/dialouges
-function npc:demo/endsky/dialouges
-function npc:demo/howhow/dialouges
-function npc:demo/davleek/dialouges

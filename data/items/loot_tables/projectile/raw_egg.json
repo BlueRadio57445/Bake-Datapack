@@ -18,6 +18,10 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                {
+                  "color": "gray",
+                  "text": "噁...蛋清黏黏的..."
+                }
               ]
             },
             {
