@@ -29,7 +29,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{blood_sword:1b}"
+                            "tag": "{blood_sword:1b,Unbreakable:1b}"
                         }
                     ]
                 }
