@@ -1,0 +1,20 @@
+[
+    {
+        "function": "copy_nbt",
+        "source": {
+            "type": "storage",
+            "source": "weapons:sword"
+        },
+        "ops": [
+            {
+                "op": "replace",
+                "source": "fat_sword.Amount[0]",
+                "target": "AttributeModifiers[{Name:\"fat_sword\"}].Amount"
+            }
+        ]
+    },
+    {
+        "function": "set_nbt",
+        "tag": "{CustomModelData:3000}"
+    }
+]

@@ -1,6 +1,6 @@
 scoreboard objectives add general.version dummy
 scoreboard objectives add general.id dummy
-scoreboard objectives add general.util dummy
+scoreboard objectives add general.utils dummy
 scoreboard objectives add general.const dummy
 scoreboard objectives add general.logged_out minecraft.custom:minecraft.leave_game
 
@@ -11,20 +11,18 @@ scoreboard objectives add general.player.air air
 scoreboard objectives add general.player.level level
 scoreboard objectives add general.player.xp xp
 
+scoreboard players set $0 general.const 0
+scoreboard players set $1 general.const 1
+scoreboard players set $2 general.const 2
 scoreboard players set $10 general.const 10
+scoreboard players set $20 general.const 20
+scoreboard players set $60 general.const 60
+scoreboard players set $100 general.const 100
 
 # 若此記分板為空值，將其設為0
 execute unless score $playerCount general.id = $playerCount general.id run scoreboard players set $playerCount general.id 0
 
 # 設定區
-
-data remove storage npc_system:quest Players
-data remove storage npc_system:dialogue test_radio
-data remove storage npc_system:dialogue test_endsky
-data remove storage npc_system:dialogue This
-data remove storage quest:dialogue demo
-kill @e[tag=npc.test_radio]
-kill @e[tag=npc.test_endsky]
 
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0

@@ -1,0 +1,1 @@
+scoreboard objectives add weapons.sacred_bow.draw_time dummy

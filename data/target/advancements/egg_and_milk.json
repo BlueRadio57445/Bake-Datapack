@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "d":{
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 0.5,
+                                "y": 0.5,
+                                "z": 0.5
+                            },
+                            "block": {
+                                "blocks": ["jukebox"],
+                                "nbt": "{RecordItem:{tag:{target:2b}}}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "target:put_in/egg_and_milk"
+    }
+}

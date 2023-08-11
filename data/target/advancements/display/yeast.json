@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:music_disc_13",
+            "nbt": "{CustomModelData:4}"
+        },
+        "title": "酵母",
+        "description": ""
+    },
+    "parent": "target:display/root",
+    "criteria": {
+        "imposible": {
+            "trigger": "impossible"
+        }
+    }
+}

@@ -1,0 +1,8 @@
+execute if score $amount damage matches 145 run damage @s 145 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 146 run damage @s 146 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 147 run damage @s 147 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 148 run damage @s 148 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 149 run damage @s 149 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 150 run damage @s 150 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 151 run damage @s 151 minecraft:mob_attack by @e[tag=attacker,limit=1]
+execute if score $amount damage matches 152 run damage @s 152 minecraft:mob_attack by @e[tag=attacker,limit=1]

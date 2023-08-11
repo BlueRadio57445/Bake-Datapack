@@ -1,0 +1,28 @@
+{
+    "criteria": {
+        "d":{
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "position": {
+                                "x": 460.5,
+                                "y": 40.5,
+                                "z": 960.5
+                            },
+                            "block": {
+                                "blocks": ["jukebox"],
+                                "nbt": "{RecordItem:{tag:{target:1b}}}"
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "target:put_in/toast"
+    }
+}

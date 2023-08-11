@@ -1,0 +1,13 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "weapons:bow/sacred_bow/selected_main"
+        },
+        {
+            "condition": "reference",
+            "name": "weapons:bow/sacred_bow/selected_off"
+        }
+    ]
+}

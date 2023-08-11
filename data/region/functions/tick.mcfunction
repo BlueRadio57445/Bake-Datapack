@@ -1,0 +1,1 @@
+function region:hunger_cave/tick

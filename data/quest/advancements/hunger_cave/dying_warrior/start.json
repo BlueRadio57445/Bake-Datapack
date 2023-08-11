@@ -1,0 +1,28 @@
+{
+  "parent": "quest:hunger_cave/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "title": "將死的沙灘戰士-任務開始",
+    "description": {
+      "text": "這個人還能撐得住嗎?\n",
+      "color": "gray",
+      "extra": [
+        {
+          "color": "dark_gray",
+          "text": "提示：項鍊掉進水裡了"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}

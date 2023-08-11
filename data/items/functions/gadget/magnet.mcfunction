@@ -1,1 +1,4 @@
-execute as @a[predicate=items:gp6au4j4qup3-margnet,scores={items.used.warped_fungus_on_a_stick=1..}] at @s as @e[type=item,distance=..5] facing ~ ~ ~ run tp @s ^ ^ ^.5
+advancement revoke @s only items:gadget/magnet
+tag @s add items.this
+execute at @s positioned ~ ~1 ~ as @e[type=minecraft:item,distance=..15] run function items:gadget/magnet/motion
+tag @s remove items.this

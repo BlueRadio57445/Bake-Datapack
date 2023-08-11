@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:snowball",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "手榴彈"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "如果一顆解決不了問題--"
+                },
+                {
+                  "color": "gray",
+                  "text": "就再丟一顆。"
+                },
+                {
+                  "italic": false,
+                  "color": "dark_red",
+                  "text": "擲出滿三秒後將會爆炸。"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{grenade:1b,CustomModelData:4500}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
