@@ -1,3 +1,4 @@
+say 4
 effect give @s minecraft:saturation 1 5
 item replace entity @s weapon.offhand with air
 playsound minecraft:item.goat_horn.sound.7 master @s ~ ~ ~ 100

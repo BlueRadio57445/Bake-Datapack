@@ -23,3 +23,7 @@ function weapons:sword/fat_sword/tick
 
 # === 鞭子 ===
 function weapons:whip/tick
+
+# === 雜項 ===
+function weapons:misc/lily_pad/tick
+function weapons:misc/honey_horn/tick

@@ -7,7 +7,7 @@
         "items": [
           "minecraft:warped_fungus_on_a_stick"
         ],
-        "nbt": "{+10:1b}"
+        "nbt": "{lily_pad:1b}"
       }
     }
   }

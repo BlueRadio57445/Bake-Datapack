@@ -25,6 +25,10 @@ data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 # === 鞭子 ===
 scoreboard objectives add weapons.whip.time dummy "魚鉤勾住的時間"
 
+# === 雜項 ===
+function weapons:misc/lily_pad/load
+function weapons:misc/honey_horn/load
+
 
 
 

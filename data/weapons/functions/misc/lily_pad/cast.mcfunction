@@ -3,8 +3,8 @@ scoreboard players operation @e[tag=weapons.lily_pad.new] weapons.lily_pad.id = 
 execute as @e[tag=weapons.lily_pad.new] at @s rotated as @p run tp @s ~ ~ ~ ~ ~
 tag @e[tag=weapons.lily_pad.new] remove weapons.lily_pad.new
 
-execute unless predicate weapons:lily_pad/selected_main run item replace entity @s weapon.offhand with air
-execute if predicate weapons:lily_pad/selected_main run item replace entity @s weapon.mainhand with air
+execute unless predicate weapons:misc/lily_pad/selected_main run item replace entity @s weapon.offhand with air
+execute if predicate weapons:misc/lily_pad/selected_main run item replace entity @s weapon.mainhand with air
 
 
-scoreboard players reset @s weapons.+10.use
+scoreboard players reset @s weapons.lily_pad.use
