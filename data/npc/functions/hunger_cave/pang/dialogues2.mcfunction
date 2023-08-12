@@ -39,12 +39,9 @@ data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:3b},sell:{id:"wooden_axe",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:3b},sell:{id:"wooden_pickaxe",Count:1b},maxUses:2147483647}
 data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh",Count:8b},buyB:{id:"bone",Count:2b},sell:{Name:"weapons:scythe/ordinary_scythe",Count:1b},maxUses:2147483647}
-# @末天
-# 如果沒有下面這一行貨幣的話，那上面的普通鐮刀會變空氣
-#data modify storage npc:hunger_cave pang.Buy append value {buy:{Name:"items:demo/demo_currency",Count:12b},sell:{Name:"items:demo/mysterious_stone",Count:1b},maxUses:2147483647}
 # ...
 
 # 清空列表
 data modify storage npc:hunger_cave pang.Sell set value []
-#data modify storage npc:hunger_cave pang.Sell append value {buy:{id:"minecraft:leather",Count:4b},sell:{Name:"items:demo/demo_currency",Count:1b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Sell append value {buy:{id:"emerald",Count:1b},sell:{id:"rotten_flesh",Count:10b},maxUses:2147483647}
 # ...
