@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "clay_ball",
+                    "name": "prismarine_crystals",
                     "functions": [
                         {
                             "function": "set_name",

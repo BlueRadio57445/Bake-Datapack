@@ -7,7 +7,8 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:prismarine_crystals"
+      "item": "minecraft:prismarine_crystals",
+      "nbt": "{CustomModelData:6001}"
     },
     "title": "將死的沙灘戰士-任務開始",
     "description": {
