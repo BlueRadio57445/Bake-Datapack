@@ -1,4 +1,4 @@
-execute if score $amount items.vitality_apple matches 1..8 run function items:food/vitality_apple/scoreboard_tree/l0_1
+execute if score $amount items.vitality_apple matches 0..8 run function items:food/vitality_apple/scoreboard_tree/l0_1
 execute if score $amount items.vitality_apple matches 9..16 run function items:food/vitality_apple/scoreboard_tree/l0_9
 execute if score $amount items.vitality_apple matches 17..24 run function items:food/vitality_apple/scoreboard_tree/l0_17
 execute if score $amount items.vitality_apple matches 25..32 run function items:food/vitality_apple/scoreboard_tree/l0_25

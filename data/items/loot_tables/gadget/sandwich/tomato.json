@@ -34,7 +34,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{health_boost:1b},CustomModelData:1026}"
+              "tag": "{sandwich:{health_boost:1b},CustomModelData:4002}"
             }
           ]
         }

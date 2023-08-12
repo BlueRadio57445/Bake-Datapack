@@ -1,22 +1,22 @@
 {
-    "parent": "quest:hunger_cave/dying_warrior/start",
-    "criteria": {
-      "impossible": {
-        "trigger": "minecraft:impossible"
-      }
-    },
-    "display": {
-      "icon": {
-        "item": "minecraft:nautilus_shell"
-      },
-      "title": "將死的沙灘戰士-任務完成",
-      "description": {
-        "text": "那片美麗的沙灘在哪裡呢?"
-      },
-      "announce_to_chat": false,
-      "frame": "goal",
-      "hidden": true,
-      "show_toast": true
+  "parent": "quest:hunger_cave/dying_warrior/start",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
     }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "title": "將死的沙灘戰士-任務完成",
+    "description": {
+      "text": "那片美麗的沙灘在哪裡呢?",
+      "color": "gray"
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
   }
-  
+}

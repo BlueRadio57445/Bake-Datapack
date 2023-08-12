@@ -26,7 +26,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{raw_egg:1b,CustomModelData:1155}"
+              "tag": "{raw_egg:1b,CustomModelData:4503}"
             }
           ]
         }

@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:jukebox"
+        },
+        "title": "烘焙勇者 紀念碑",
+        "description": "烘焙勇者的所有紀念碑",
+        "announce_to_chat": false,
+        "show_toast": false,
+        "background": "minecraft:textures/block/bone_block_side.png"
+    },
+    "criteria": {
+        "root": {
+            "trigger": "tick"
+        }
+    }
+}

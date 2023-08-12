@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{key_piece:1b}"
+                            "tag": "{key_piece:1b,CustomModelData:13000}"
                         }
                     ]
                 }

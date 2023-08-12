@@ -52,7 +52,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{magnet:1b,HideFlags:2,CustomModelData:1031}"
+              "tag": "{magnet:1b,HideFlags:2,CustomModelData:4007}"
             }
           ]
         }

@@ -26,7 +26,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{stonebird:1b}"
+                            "tag": "{stonebird:1b,Unbreakable:1b}"
                         }
                     ]
                 }
