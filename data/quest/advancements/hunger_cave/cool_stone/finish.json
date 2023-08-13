@@ -7,7 +7,8 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:bundle"
+      "item": "minecraft:nautilus_shell",
+      "nbt": "{CustomModelData:8002}"
     },
     "title": "咆嘯亨利的酷石頭-任務完成",
     "description": {

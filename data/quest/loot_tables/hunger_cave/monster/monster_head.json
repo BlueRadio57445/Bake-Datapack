@@ -6,24 +6,22 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "prismarine_crystals",
+                    "name": "player_head",
                     "functions": [
                         {
                             "function": "set_name",
-                            "entity": "this",
-                            "name": {"text": "商袋", "italic": false}
+                            "name": {"text": "食人魔的頭", "italic": false}
                         },
                         {
                             "function": "set_lore",
-                            "entity": "this",
                             "lore": [
-                                {"text": "一個神奇的袋子，貌似只有主人能使用。", "italic": false, "color": "gray"},
-                                {"text": "不知道是哪個商人遺留下來的?", "italic": false, "color": "gray"}
+                                {"text": "終於把這禍害除掉了!", "color": "gray"},
+                                {"text": "不知道這顆頭能幹嘛?", "color": "gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{trader_bundle:1b,CustomModelData:6002}"
+                            "tag": "{monster_head:1b,SkullOwner:{Id:[I;1105608875,236079132,-1972655936,947067796],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTY2NzFiNGI0OTA5ZmJhMWQ5ZDM0ZjNkZmE1M2Q5MzFiYjFjZWI4MTc1MDAzYTI1MzU4NmE4ZTgwYmY1NTE2OCJ9fX0=\"}]}}}"
                         }
                     ]
                 }
