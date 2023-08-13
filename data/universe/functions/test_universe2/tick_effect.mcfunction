@@ -1,4 +1,4 @@
-effect give @s night_vision 10 0 true
+effect give @s night_vision 11 0 true
 effect give @s haste 1 0 true
 
 # 苦力怕防爆，晚點補
