@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "italic": false,
+                "text": "卡拉雞"
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "color": "gray",
+                  "text": "早餐店中一定會有的三明治口味"
+                },
+                {
+                  "color": "gray",
+                  "text": "讓人高興的想要跳起來"
+                },
+                {
+                  "color": "gray",
+                  "text": "三明治也會跳嗎?"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{sandwich:{jump_boost:1b},CustomModelData:4004}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

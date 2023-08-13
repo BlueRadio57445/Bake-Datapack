@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "predicate": {
+        "nbt": "{Tags:[\"items.raw_egg.cloud\",\"items.raw_egg.follow\"]}"
+    },
+    "entity": "this"
+}

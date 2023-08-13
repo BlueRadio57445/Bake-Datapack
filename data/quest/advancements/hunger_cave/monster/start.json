@@ -1,0 +1,29 @@
+{
+  "parent": "quest:hunger_cave/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "icon": {
+      "item": "minecraft:lead"
+    },
+    "title": "古井-任務開始",
+    "description": {
+      "text": "真是會使喚人\n",
+      "color": "gray",
+      "extra": [
+        {
+          "color": "dark_gray",
+          "text": "提示：在屍體附近尋找繩子"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}
+  

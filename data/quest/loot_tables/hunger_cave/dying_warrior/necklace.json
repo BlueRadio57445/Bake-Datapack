@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type":"minecraft:item",
+            "name": "minecraft:prismarine_crystals",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "italic": false,
+                  "text": "結晶項鍊"
+                }
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "color": "gray",
+                    "text": "好像對某個人很重要，"
+                  },
+                  {
+                    "color": "gray",
+                    "text": "或許該物歸原主。"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_nbt",
+                "tag": "{warrior_necklace:1b,CustomModelData:6001}"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

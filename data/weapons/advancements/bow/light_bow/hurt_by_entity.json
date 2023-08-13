@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "hurt_by_entity": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "#arrows"
+                        },
+                        "source_entity": {
+                            "equipment": {
+                                "mainhand": {
+                                    "nbt": "{light_bow:1b}"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:bow/light_bow/hurt_by_entity"
+    }
+}

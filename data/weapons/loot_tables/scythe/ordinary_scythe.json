@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_hoe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 普通鐮刀 ≻", "color": "white", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "鐮刀可以連點，無視紅紅的無敵時間。","color": "yellow", "italic": false},
+                                {"text": "一把普通的鐮刀，會把使用者的手操廢。","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

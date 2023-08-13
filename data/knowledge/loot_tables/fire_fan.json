@@ -1,0 +1,35 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "火的Property - 炎扇", "color": "red", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "右鍵能噴出扇形火焰", "color": "yellow", "italic": false},
+                                {"text": "冷卻時間5秒", "color": "yellow", "italic": false},
+                                {"text": "老師能言善道；", "color": "gray"},
+                                {"text": "學生被炎扇到。", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{knowledge:{id:\"fire_fan\",lvl:1}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

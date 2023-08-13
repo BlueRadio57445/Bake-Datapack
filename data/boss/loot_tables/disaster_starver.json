@@ -1,0 +1,60 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "target:toast"
+                }
+            ]
+        },
+        {
+            "rolls": 3,
+            "conditions": [
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "score": "region",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$hunger_cave"
+                        }
+                    },
+                    "range": 3
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "items:food/vitality_apple"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "value_check",
+                    "value": {
+                        "type": "score",
+                        "score": "region",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$hunger_cave"
+                        }
+                    },
+                    "range": 0
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weapons:sword/fat_sword"
+                }
+            ]
+        }
+    ]
+}

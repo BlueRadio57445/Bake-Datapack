@@ -7,7 +7,7 @@ execute if score $cd_ok knowledge matches 1 run function knowledge:fire_cannon/c
 
 
 # 重置&冷卻
-execute if score $cd_ok knowledge matches 1 run scoreboard players set @s knowledge.cd.fire_cannon 20
+execute if score $cd_ok knowledge matches 1 run scoreboard players set @s knowledge.cd.fire_cannon 1200
 advancement revoke @s only knowledge:fire_cannon
 
 item modify entity @s[scores={knowledge.mainhand=1}] weapon.mainhand knowledge:clear_use

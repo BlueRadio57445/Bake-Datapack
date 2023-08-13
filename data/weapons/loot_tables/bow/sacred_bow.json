@@ -1,0 +1,31 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 神聖麵包之弓 ≻", "color": "gold", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "拉弓越久，傷害越高。","color": "yellow", "italic": false},
+                                {"text": "由神聖麵包樹的枝條與無數麵包蟲吐出的絲線製成，","color":"gray"},
+                                {"text": "已經失傳的古老神秘技術使其得以儲存巨大的能量。","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sacred_bow:1b,Unbreakable:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
