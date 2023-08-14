@@ -24,8 +24,14 @@
     },
     "title": "古井-任務完成",
     "description": {
-      "text": "原來他就是食人魔啊",
-      "color": "gray"
+      "text": "原來他就是食人魔啊\n",
+      "color": "gray",
+      "extra": [
+        {
+          "text": "掉落物：武器-鮮血榮譽x1、食人魔的頭x1",
+          "color": "dark_gray"
+        }
+      ]
     },
     "announce_to_chat": false,
     "frame": "goal",
