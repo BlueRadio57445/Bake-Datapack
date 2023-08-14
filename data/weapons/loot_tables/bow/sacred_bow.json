@@ -21,7 +21,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{sacred_bow:1b}"
+                            "tag": "{sacred_bow:1b,Unbreakable:1b}"
                         }
                     ]
                 }

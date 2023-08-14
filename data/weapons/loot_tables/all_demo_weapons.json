@@ -42,6 +42,15 @@
             "entries": [
                 {
                     "type": "loot_table",
+                    "name": "weapons:whip/wither_whip"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
                     "name": "weapons:gloves/storm_gloves"
                 }
             ]

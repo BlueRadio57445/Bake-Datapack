@@ -15,12 +15,12 @@
                             "function": "set_lore",
                             "lore": [
                                 {"text": "鐮刀可以連點，無視紅紅的無敵時間。","color": "yellow", "italic": false},
-                                {"text": "一把超級普通的鐮刀，不知道為何不會壞。","color":"gray"}
+                                {"text": "一把普通的鐮刀，會把使用者的手操廢。","color":"gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{Unbreakable:1b}"
+                            "tag": "{}"
                         }
                     ]
                 }

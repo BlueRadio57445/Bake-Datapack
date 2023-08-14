@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{universe:2b,CustomModelData:12}"
+                            "tag": "{universe:2b,CustomModelData:8002}"
                         }
                     ]
                 }

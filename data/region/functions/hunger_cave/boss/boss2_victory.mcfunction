@@ -1,3 +1,4 @@
+data merge block 226 -1 965 {Items:[]}
 setblock 226 -1 965 trapped_chest[facing=west] destroy
 loot insert 226 -1 965 loot boss:disaster_starver
 particle minecraft:end_rod 226 -1 965 0.1 0.1 0.1 0.2 30
