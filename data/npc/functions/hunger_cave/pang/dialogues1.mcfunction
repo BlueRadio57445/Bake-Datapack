@@ -1,3 +1,5 @@
+data modify storage npc:hunger_cave pang set value {}
+
 # 普通NPC的模板
 
 data modify storage npc:hunger_cave pang.NormalRandom set value 0b

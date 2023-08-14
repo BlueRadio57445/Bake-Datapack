@@ -1,3 +1,5 @@
+data modify storage npc:hunger_cave pang set value {}
+
 # 設定為商人NPC，商人會比一般NPC多一些設定可以操作
 data modify storage npc:hunger_cave pang.Trader set value 1b
 

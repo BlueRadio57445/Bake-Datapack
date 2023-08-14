@@ -11,8 +11,14 @@
     },
     "title": "將死的沙灘戰士-任務完成",
     "description": {
-      "text": "那片美麗的沙灘在哪裡呢?",
-      "color": "gray"
+      "text": "那片美麗的沙灘在哪裡呢?\n",
+      "color": "gray",
+      "extra": [
+        {
+          "text": "獎勵：沙灘戰士盔甲全套",
+          "color": "dark_gray"
+        }
+      ]
     },
     "announce_to_chat": false,
     "frame": "goal",

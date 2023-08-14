@@ -12,8 +12,14 @@
     },
     "title": "咆嘯亨利的酷石頭-任務完成",
     "description": {
-      "text": "宇宙貓貓教團?\n真是奇怪的組織",
-      "color": "gray"
+      "text": "宇宙貓貓教團?\n真是奇怪的組織\n",
+      "color": "gray",
+      "extra": [
+        {
+          "text": "獎勵：宇宙袋x1、水清目明的宇宙x1",
+          "color": "dark_gray"
+        }
+      ]
     },
     "announce_to_chat": false,
     "frame": "goal",
