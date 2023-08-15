@@ -16,4 +16,4 @@ function general:gcm/push/server/string
 data modify storage npc_system:trader Interpreted.Sell append from storage npc_system:trader Interpret.Sell[0]
 data remove storage npc_system:trader Interpret.Sell[0]
 
-execute if data storage npc_system:trader Interpret.Sell[0] run function npc_system:trader/interpret/buy_push
+execute if data storage npc_system:trader Interpret.Sell[0] run function npc_system:trader/interpret/sell_push
