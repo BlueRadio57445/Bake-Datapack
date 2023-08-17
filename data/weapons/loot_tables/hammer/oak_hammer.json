@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "warped_fungus_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 橡木錘 ≻", "color": "green", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "錘地板對周圍怪物造成傷害，但會獲得緩速","color": "yellow", "italic": false},
+                                {"text": "經典木錘","color":"gray"}
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{hammer:1b,hammer_id:\"oak_hammer\",CustomModelData:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
