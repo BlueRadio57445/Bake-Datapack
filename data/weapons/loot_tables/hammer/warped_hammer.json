@@ -9,24 +9,24 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {"text":"≺ 橡木錘 ≻", "color": "green", "italic": false, "bold": true}
+                            "name": {"text":"≺ 扭曲木錘 ≻", "color": "green", "italic": false, "bold": true}
                         },
                         {
                             "function": "set_lore",
                             "lore": [
                                 {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
-                                {"text": "錘地板對周圍怪物造成傷害，但會獲得緩速","color": "yellow", "italic": false},
-                                {"text": "經典木錘","color":"gray"}
+                                {"text": "錘地板會召喚一排蕈菇，但會獲得噁心、虛弱","color": "yellow", "italic": false},
+                                {"text": "源自於收音機的爛笑話。","color":"gray"}
                                 
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{hammer:1b,hammer_id:\"oak_hammer\",CustomModelData:1}"
+                            "tag": "{hammer:1b,hammer_id:\"warped_hammer\",CustomModelData:1}"
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{EntityTag:{id:\"marker\",Tags:[\"hammer\",\"hammer.oak_hammer\"]}}"
+                            "tag": "{EntityTag:{id:\"marker\",Tags:[\"hammer\",\"hammer.warped_hammer\"]}}"
                         }
                     ]
                 }
