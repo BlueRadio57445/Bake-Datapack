@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {"text":"≺ 扭曲木錘 ≻", "color": "green", "italic": false, "bold": true}
+                            "name": {"text":"≺ 扭曲木錘 ≻", "color": "#59e3a7", "italic": false, "bold": true}
                         },
                         {
                             "function": "set_lore",

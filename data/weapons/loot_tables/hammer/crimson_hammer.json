@@ -9,7 +9,7 @@
                     "functions": [
                         {
                             "function": "set_name",
-                            "name": {"text":"≺ 緋紅木錘 ≻", "color": "green", "italic": false, "bold": true}
+                            "name": {"text":"≺ 緋紅木錘 ≻", "color": "#e346a7", "italic": false, "bold": true}
                         },
                         {
                             "function": "set_lore",
