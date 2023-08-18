@@ -7,7 +7,7 @@
                     {
                         "condition": "match_tool",
                         "predicate": {
-                            "items": ["pig_spawn_egg"],
+                            "items": ["ghast_spawn_egg"],
                             "nbt": "{hammer:1b,hammer_id:\"oak_hammer\"}"
                         }
                     }

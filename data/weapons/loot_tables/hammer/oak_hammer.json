@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "pig_spawn_egg",
+                    "name": "ghast_spawn_egg",
                     "functions": [
                         {
                             "function": "set_name",
@@ -22,7 +22,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{hammer:1b,hammer_id:\"oak_hammer\",CustomModelData:1}"
+                            "tag": "{hammer:1b,hammer_id:\"oak_hammer\",CustomModelData:3100}"
                         },
                         {
                             "function": "set_nbt",
