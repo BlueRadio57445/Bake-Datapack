@@ -8,3 +8,4 @@ scoreboard players set $toast target 1
 
 scoreboard players set $hunger_cave region 4
 function region:hunger_cave/monument/detect_health
+function region:hunger_cave/monument/open_gate

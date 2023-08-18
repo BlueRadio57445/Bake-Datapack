@@ -8,6 +8,7 @@ spawnpoint @s -77 27 15
 execute unless entity @e[type=item_frame,tag=region.hunger_cave.key_frame] run function region:hunger_cave/key/summon_key_frame
 function region:hunger_cave/key/reset_gate
 function region:hunger_cave/boss/reset_gate
+function region:hunger_cave/monument/reset_gate
 
 # 支線任務重製
 function quest:hunger_cave/cool_stone/reset

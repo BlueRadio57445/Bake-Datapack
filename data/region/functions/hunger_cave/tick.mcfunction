@@ -31,6 +31,9 @@ execute as @e[type=item,predicate=region:hunger_cave/craft_key] at @s run functi
 execute as @e[type=item_frame,tag=region.hunger_cave.key_frame,predicate=region:hunger_cave/key_in_frame] run function region:hunger_cave/key/open_gate
 execute as @e[type=item_frame,tag=region.hunger_cave.key_frame] if data entity @s Item unless predicate region:hunger_cave/key_in_frame at @s run function region:hunger_cave/key/pop_out
 
+# Demo完結
+execute positioned 476 43 960 as @a[distance=..4] at @s if block ~ ~-1 ~ beacon run function region:hunger_cave/monument/tp_shelter
+
 # 支線任務
 # 食人魔 - 眺井&出井
 execute positioned -161 -52 975 as @a[distance=..3] at @s if block ~ ~-1 ~ barrier run function quest:hunger_cave/monster/jump_well

@@ -16,3 +16,6 @@ scoreboard players reset $D3 general.id
 
 scoreboard players add $playerCount general.id 1
 scoreboard players set @s npc.state 0
+
+spawnpoint @s -77 27 16
+tp @s -77 27 16

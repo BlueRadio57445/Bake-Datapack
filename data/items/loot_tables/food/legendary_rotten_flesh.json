@@ -1,0 +1,38 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "≺ 傳奇腐肉 ≻",
+                "color": "gold",
+                "italic": false
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "傳說中超級稀有的腐肉，",
+                  "color": "yellow",
+                  "italic": false
+                },
+                {
+                  "text": "其價值即是稀有本身。",
+                  "color": "yellow",
+                  "italic": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

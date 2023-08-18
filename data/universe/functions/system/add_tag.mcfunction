@@ -6,4 +6,4 @@ execute if data storage universe:bundle Items[0].tag{universe:5b} run tag @s add
 
 
 data remove storage universe:bundle Items[0]
-scoreboard players remove $level universe 1
+scoreboard players remove $temp universe 1

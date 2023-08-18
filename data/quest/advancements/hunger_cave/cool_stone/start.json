@@ -7,7 +7,8 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:clay_ball"
+      "item": "minecraft:prismarine_crystals",
+      "nbt": "{CustomModelData:6000}"
     },
     "title": "咆嘯亨利的酷石頭-任務開始",
     "description": {

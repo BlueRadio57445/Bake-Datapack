@@ -19,12 +19,19 @@
   },
   "display": {
     "icon": {
-      "item": "minecraft:prismarine_crystals"
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner:{Id:[I;1105608875,236079132,-1972655936,947067796],Properties:{textures:[{Value:\"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTY2NzFiNGI0OTA5ZmJhMWQ5ZDM0ZjNkZmE1M2Q5MzFiYjFjZWI4MTc1MDAzYTI1MzU4NmE4ZTgwYmY1NTE2OCJ9fX0=\"}]}}}"
     },
     "title": "古井-任務完成",
     "description": {
-      "text": "原來他就是食人魔啊",
-      "color": "gray"
+      "text": "原來他就是食人魔啊\n",
+      "color": "gray",
+      "extra": [
+        {
+          "text": "掉落物：武器-鮮血榮譽x1、食人魔的頭x1",
+          "color": "dark_gray"
+        }
+      ]
     },
     "announce_to_chat": false,
     "frame": "goal",
