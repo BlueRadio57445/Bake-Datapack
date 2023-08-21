@@ -16,7 +16,8 @@
                             "lore": [
                                 {"text": "按右鍵可以投擲荷葉","color": "yellow", "italic": false},
                                 {"text": "會自動回到玩家手中","color": "yellow", "italic": false},
-                                {"text": "在造船技術還不發達的時代","color":"gray"},
+                                {"text": "惡名昭彰的荷葉。","color":"gray"},
+                                {"text": "在造船技術還不發達的時代，","color":"gray"},
                                 {"text": "曾造成許多沉船事件。","color": "gray"},
                                 {"text": "念想著往日的輝煌事蹟，","color":"gray"},
                                 {"text": "它下定決心此生要再闖盪一番!","color":"gray"}

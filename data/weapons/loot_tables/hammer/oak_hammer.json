@@ -16,7 +16,7 @@
                             "lore": [
                                 {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
                                 {"text": "錘地板對周圍怪物造成傷害，但會獲得緩速","color": "yellow", "italic": false},
-                                {"text": "經典木錘","color":"gray"}
+                                {"text": "經典木錘!","color":"gray"}
                                 
                             ]
                         },
