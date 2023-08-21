@@ -14,7 +14,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "攻擊100%暴擊，按右鍵可以錘地板","color": "yellow", "italic": false},
                                 {"text": "錘地板會引發爆炸，小心別炸到自己","color": "yellow", "italic": false},
                                 {"text": "怎麼會有這麼坑的東西?","color":"gray"}
                                 

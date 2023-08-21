@@ -14,7 +14,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "攻擊100%暴擊，按右鍵可以錘地板","color": "yellow", "italic": false},
                                 {"text": "錘地板會召喚一排蕈菇，但會獲得噁心、虛弱","color": "yellow", "italic": false},
                                 {"text": "源自於收音機的爛笑話。","color":"gray"}
                                 

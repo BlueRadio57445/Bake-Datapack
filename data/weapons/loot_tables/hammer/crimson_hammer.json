@@ -14,7 +14,7 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "攻擊100%暴擊，按右鍵可以錘地板","color": "yellow", "italic": false},
                                 {"text": "錘地板可以消耗血量召喚嗜血怪物","color": "yellow", "italic": false},
                                 {"text": "「小心點，牠可不是你養的。」","color":"gray"}
                                 
