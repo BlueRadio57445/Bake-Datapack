@@ -1,8 +1,42 @@
 {
   "parent": "quest:hunger_cave/root",
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "general.logged_out": 0
+              },
+              "entity": "this"
+            }
+          },
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$hunger_cave.monster"
+              }
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
     }
   },
   "display": {

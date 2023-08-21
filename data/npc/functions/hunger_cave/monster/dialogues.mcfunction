@@ -12,4 +12,4 @@ data modify storage npc:hunger_cave monster.Normal append value {Texts:['{"text"
 
 # 清空列表
 data modify storage npc:hunger_cave monster.Idle set value []
-data modify storage npc:hunger_cave monster.Idle append value {Text:'{"text":"喂!有人聽到嗎?"}',Duration:2,Rest:{min:10,max:20}}
+data modify storage npc:hunger_cave monster.Idle append value {Text:'{"text":"喂!有人聽到嗎?"}',Duration:2,Rest:{min:4,max:10}}
