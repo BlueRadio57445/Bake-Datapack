@@ -14,5 +14,5 @@ data modify storage npc:hunger_cave pang.Exit set value {Texts:['{"text":"我的
 # 清空列表
 data modify storage npc:hunger_cave pang.Idle set value []
 data modify storage npc:hunger_cave pang.Idle append value {Text:'{"text":"不在這...也不在這裡..."}',Duration:3,Rest:{min:10,max:20}}
-data modify storage npc:hunger_cave pang.Idle append value {Text:'{"text":"我到底在這裡幹嘛啊?"}',Duration:{min:3,max:5},Rest:40}
+data modify storage npc:hunger_cave pang.Idle append value {Text:'{"text":"我到底在這裡幹嘛啊?"}',Duration:{min:3,max:5},Rest:{min:10,max:20}}
 # ...
