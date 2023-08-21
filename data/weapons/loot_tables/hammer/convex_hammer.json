@@ -1,0 +1,36 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 凸錘 ≻", "color": "yellow", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "錘地板可以讓地板凸起來","color": "yellow", "italic": false},
+                                {"text": "awa..","color":"gray"}
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{hammer:1b,hammer_id:\"convex_hammer\",CustomModelData:3106}"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"marker\",Tags:[\"hammer\",\"hammer.convex_hammer\"]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

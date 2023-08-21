@@ -32,4 +32,5 @@ CustomModelData 錘子註冊表
 |3103.  |crimson_hammer |
 |3104.  |obsidian_hammer|
 |3105.  |ender_pearl_hammer|
+|3106.  |convex_hammer  |
 |       |               |
