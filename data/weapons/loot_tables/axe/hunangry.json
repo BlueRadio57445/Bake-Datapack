@@ -27,7 +27,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{hunangry:1b}"
+                            "tag": "{hunangry:1b,Unbreakable:1b}"
                         }
                     ]
                 }
