@@ -1,5 +1,21 @@
 [
     {
+        "function": "set_lore",
+        "entity": "this",
+        "lore": [
+            {"text": "武器 - 劍類", "color": "dark_gray", "italic": false},
+            {"text": "如果飢餓值全滿，能夠造成兩倍傷害。", "color": "yellow", "italic": false},
+            {"text": "吃飽時能發揮強大的力量，", "color": "gray"},
+            {"text": "可惜餓死鬼無法發揮它的實力。", "color": "gray"},
+            "",
+            {"text": "攻擊傷害 4.0", "color": "dark_aqua", "italic": false},
+            {"text": "攻擊速度 1.6", "color": "dark_aqua", "italic": false},
+            {"text": "在慣用手時:", "color": "gray", "italic": false},
+            {"text": "傷害加成 +100%", "color": "dark_purple", "italic":false}
+        ],
+        "replace": true
+    },
+    {
         "function": "copy_nbt",
         "source": {
             "type": "storage",

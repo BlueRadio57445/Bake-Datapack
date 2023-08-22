@@ -16,9 +16,13 @@
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
-                                {"text": "血量越低，攻擊越高", "color": "yellow", "italic": false},
+                                {"text": "武器 - 劍類", "color": "dark_gray", "italic": false},
+                                {"text": "血量越低，傷害越高。", "color": "yellow", "italic": false},
                                 {"text": "那絕美的豔紅之花阿，", "color": "gray"},
-                                {"text": "侍奉你是我的榮幸!", "color": "gray"}
+                                {"text": "侍奉你是我的榮幸!", "color": "gray"},
+                                "",
+                                {"text": "攻擊傷害 4.0", "color": "dark_aqua", "italic": false},
+                                {"text": "攻擊速度 1.6", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
@@ -29,7 +33,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{blood_sword:1b,Unbreakable:1b, CustomModelData:3001}"
+                            "tag": "{blood_sword:1b,Unbreakable:1b,CustomModelData:3001,HideFlags:2}"
                         }
                     ]
                 }

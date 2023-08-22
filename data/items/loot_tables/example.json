@@ -1,0 +1,44 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "神奇小木棍", "color": "gold", "italic": false, "bold": true}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text": "護符(假的)", "color": "dark_gray", "italic": false},
+                {"text": "用來展示物品的格式，實際並無任何功能。", "color": "yellow", "italic": false},
+                {"text": "從前從前，末天花了一整個下午的時間，", "color": "gray"},
+                {"text": "只做出了這根木棍。", "color": "gray"},
+                "",
+                {"text": "攻擊傷害 1.0", "color": "dark_aqua", "italic": false},
+                {"text": "攻擊速度 4.0", "color": "dark_aqua", "italic": false},
+                {"text": "生命上限 +10%", "color": "dark_purple", "italic": false},
+                {"text": "移動速度 -10%", "color": "dark_red", "italic": false}
+              ]
+            },
+            {
+              "function": "set_enchantments",
+              "enchantments": {
+                "minecraft:fortune": 3
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Unbreakable:1b,HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
