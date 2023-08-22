@@ -16,7 +16,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 "",
-                {"text": "護符 - 假的", "color": "dark_gray", "italic": false},
+                {"text": "武器 - 假的", "color": "dark_gray", "italic": false},
                 {"text": "用來展示物品的格式，實際並無任何功能。", "color": "yellow", "italic": false},
                 {"text": "從前從前，末天花了一整個下午的時間，", "color": "gray"},
                 {"text": "只做出了這根木棍。", "color": "gray"},

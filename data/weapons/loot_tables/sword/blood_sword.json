@@ -16,6 +16,7 @@
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
+                                "",
                                 {"text": "武器 - 劍類", "color": "dark_gray", "italic": false},
                                 {"text": "血量越低，傷害越高。", "color": "yellow", "italic": false},
                                 {"text": "那絕美的豔紅之花阿，", "color": "gray"},
