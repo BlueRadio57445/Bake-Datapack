@@ -14,8 +14,13 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "飢餓藥水效果時，獲得力量I的效果。","color": "yellow", "italic": false},
-                                {"text": "聽說人餓肚子的時候都會很易怒？","color":"gray"}
+                                "",
+                                {"text": "受到飢餓效果時，獲得力量I。","color": "yellow", "italic": false},
+                                {"text": "聽說人餓肚子的時候都會很易怒？","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 斧類", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊傷害§f 8.0", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊速度§f 1.0", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
@@ -27,7 +32,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{hunangry:1b,Unbreakable:1b}"
+                            "tag": "{hunangry:1b,Unbreakable:1b,HideFlags:2}"
                         }
                     ]
                 }

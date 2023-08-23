@@ -17,13 +17,13 @@
                             "entity": "this",
                             "lore": [
                                 "",
-                                {"text": "武器 - 劍類", "color": "dark_gray", "italic": false},
                                 {"text": "血量越低，傷害越高。", "color": "yellow", "italic": false},
                                 {"text": "那絕美的豔紅之花阿，", "color": "gray"},
                                 {"text": "侍奉你是我的榮幸!", "color": "gray"},
                                 "",
-                                {"text": "攻擊傷害 4.0", "color": "dark_aqua", "italic": false},
-                                {"text": "攻擊速度 1.6", "color": "dark_aqua", "italic": false}
+                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

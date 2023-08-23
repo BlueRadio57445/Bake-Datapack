@@ -6,25 +6,23 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
+          "name": "minecraft:wooden_sword",
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"text": "神奇小木棍", "color": "gold", "italic": false, "bold": true}
+              "name": {"text": "神奇小木劍", "color": "gold", "italic": false, "bold": true}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
                 "",
-                {"text": "武器 - 假的", "color": "dark_gray", "italic": false},
                 {"text": "用來展示物品的格式，實際並無任何功能。", "color": "yellow", "italic": false},
-                {"text": "從前從前，末天花了一整個下午的時間，", "color": "gray"},
-                {"text": "只做出了這根木棍。", "color": "gray"},
+                {"text": "從前從前，末天花了三分鐘的時間，", "color": "gray"},
+                {"text": "把木棍變成了木劍。", "color": "gray"},
                 "",
-                {"text": "攻擊傷害 1.0", "color": "dark_aqua", "italic": false},
-                {"text": "攻擊速度 4.0", "color": "dark_aqua", "italic": false},
-                {"text": "生命上限 +10%", "color": "dark_green", "italic": false},
-                {"text": "移動速度 -10%", "color": "dark_red", "italic": false}
+                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
               ]
             },
             {
