@@ -11,16 +11,18 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "水的Example - 泡泡", "color": "aqua", "italic": false}
+                            "name": {"text": "📖 水的Example - 泡泡 📖", "color": "aqua", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能發射泡泡，碰到泡泡會漂浮", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間1秒", "color": "yellow", "italic": false},
                                 {"text": "「這是單連通、緊緻的二維流形。」", "color": "gray"},
-                                {"text": "「蛤?」", "color": "gray"}
+                                {"text": "「蛤?」", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

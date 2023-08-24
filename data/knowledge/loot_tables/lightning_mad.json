@@ -11,15 +11,17 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "雷的Theorem - 怒雷", "color": "aqua", "italic": false}
+                            "name": {"text": "📖 雷的Theorem - 怒雷 📖", "color": "aqua", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能招喚閃電", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間1秒", "color": "yellow", "italic": false},
-                                {"text": "收音機生氣的時候才會使出的招式。", "color": "gray"}
+                                {"text": "收音機生氣的時候才會使出的招式。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

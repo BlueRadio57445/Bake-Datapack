@@ -11,16 +11,18 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "火的Theorem - 末火大砲", "color": "red", "italic": false}
+                            "name": {"text": "📖 火的Theorem - 末火大砲 📖", "color": "red", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能發射末火大砲", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間60秒", "color": "yellow", "italic": false},
                                 {"text": "沒有甚麼是羅必達-烈火定理無法解決的。", "color": "gray"},
-                                {"text": "如果有，那就羅兩次。", "color": "gray"}
+                                {"text": "如果有，那就羅兩次。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 60秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
