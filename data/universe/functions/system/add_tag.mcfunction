@@ -9,5 +9,5 @@ execute store success score $is_universe universe if data storage universe:bundl
 execute if score $is_universe universe matches 1 run scoreboard players remove $temp universe 1
 execute if score $is_universe universe matches 1 run data remove storage universe:bundle Items[0]
 execute if score $is_universe universe matches 0 run data remove storage universe:bundle Items[0]
-execute if score $is_universe universe matches 0 run function universe:system/add_tag
+execute if score $is_universe universe matches 0 if data storage universe:bundle Items[0] run function universe:system/add_tag
 
