@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "麵粉", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "與擀麵棍搭配使用時可發揮特殊功能。", "color": "yellow", "italic": false},
+                {"text": "製做麵包的基本材料。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
+                {"text": "在手上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +1", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": 1.0,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "items:flour_mainhand",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "id": "00000400-0000-0400-0000-040000000400"
+                },
+                {
+                  "amount": 1.0,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "items:flour_offhand",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "id": "00000401-0000-0401-0000-040100000401"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{flour:1b, CustomModelData:4250, HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

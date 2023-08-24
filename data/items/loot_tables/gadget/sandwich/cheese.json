@@ -10,26 +10,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "起司"
-              }
+              "name": {"text": "起司", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "由上好的牛奶製成"
-                },
-                {
-                  "color": "gray",
-                  "text": "很適合為三明治提供鹹味"
-                },
-                {
-                  "color": "gray",
-                  "text": "也許哪天三明治會跑步?"
-                }
+                "",
+                {"text": "為三明治驢增加移動速度。", "color": "yellow", "italic": false},
+                {"text": "由上好的牛奶製成，", "color": "gray"},
+                {"text": "很適合為三明治提供鹹味。", "color": "gray"},
+                {"text": "也許哪天三明治會跑步?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
               ]
             },
             {
