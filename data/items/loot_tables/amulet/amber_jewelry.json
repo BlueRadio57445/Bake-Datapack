@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "琥珀首飾", "color": "gold", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "隱約散發著溫暖能量的首飾。", "color": "gray"},
+                {"text": "「琥珀象徵耐心及熱情」", "color": "gray"},
+                {"text": "其背面所黏著的紙條上寫了這些。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
+                {"text": "在手上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 生命上限§f +3.0", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": 3.0,
+                  "attribute": "minecraft:generic.max_health",
+                  "name": "items:amber_jewelry_mainhand",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "id": "00004008-0000-4008-0000-400800004008"
+                },
+                {
+                  "amount": 3.0,
+                  "attribute": "minecraft:generic.max_health",
+                  "name": "items:amber_jewelry_offhand",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "id": "00004009-0000-4009-0000-400900004009"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4254, HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
