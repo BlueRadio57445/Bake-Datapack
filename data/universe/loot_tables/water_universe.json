@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{universe:2b,CustomModelData:8002}"
+                            "tag": "{is_universe:1b,universe:{id:\"water_universe\"},CustomModelData:8002}"
                         }
                     ]
                 }
