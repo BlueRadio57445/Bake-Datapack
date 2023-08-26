@@ -20,7 +20,10 @@
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "在水中獲得夜視、挖掘加速效果", "color": "yellow", "italic": false},
                                 {"text": "貓咪的眼如水面般清澈；", "color": "gray"},
-                                {"text": "並且身段如液體般柔軟。", "color": "gray"}
+                                {"text": "並且身段如液體般柔軟。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+
                             ]
                         },
                         {

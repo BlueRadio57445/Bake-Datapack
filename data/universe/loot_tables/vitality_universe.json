@@ -11,7 +11,7 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 充滿活力的宇宙I 🌌", "color": "aqua", "italic": false}
+                            "name": {"text":"🌌 充滿活力的宇宙I 🌌", "color": "red", "italic": false}
                         },
                         {
                             "function": "set_lore",
@@ -20,7 +20,9 @@
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "提升最大生命值", "color": "yellow", "italic": false},
                                 {"text": "「貓咪愛狗，就如宇貓愛著世人。」", "color": "gray"},
-                                {"text": "——《貓砂福音》", "color": "gray"}
+                                {"text": "——《貓砂福音》", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

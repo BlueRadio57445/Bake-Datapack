@@ -11,7 +11,7 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 外神贈與的宇宙 🌌", "color": "aqua", "italic": false}
+                            "name": {"text":"🌌 外神贈與的宇宙 🌌", "color": "gold", "italic": false}
                         },
                         {
                             "function": "set_lore",
@@ -19,7 +19,10 @@
                             "lore": [
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "每10分鐘，獲得3秒飽食效果。", "color": "yellow", "italic": false},
-                                {"text": "據說外神贈與的食物，被改造成這個宇宙。", "color": "gray"}
+                                {"text": "據說外神贈與的食物，", "color": "gray"},
+                                {"text": "被改造成這個宇宙。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
                                 
                             ]
                         },
