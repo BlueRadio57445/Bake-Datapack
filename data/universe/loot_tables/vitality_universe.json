@@ -11,21 +11,21 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 水清目明的宇宙 🌌", "color": "aqua", "italic": false}
+                            "name": {"text":"🌌 充滿活力的宇宙I 🌌", "color": "aqua", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
-                                {"text": "在水中獲得夜視、挖掘加速效果", "color": "yellow", "italic": false},
-                                {"text": "貓咪的眼如水面般清澈；", "color": "gray"},
-                                {"text": "並且身段如液體般柔軟。", "color": "gray"}
+                                {"text": "提升最大生命值", "color": "yellow", "italic": false},
+                                {"text": "「貓咪愛狗，就如宇貓愛著世人。」", "color": "gray"},
+                                {"text": "——《貓砂福音》", "color": "gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"water_universe\"},CustomModelData:8003}"
+                            "tag": "{is_universe:1b,universe:{id:\"vitality_universe\"},CustomModelData:8000}"
                         }
                     ]
                 }
