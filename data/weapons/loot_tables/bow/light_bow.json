@@ -21,7 +21,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{light_bow:1b,Unbreakable:1b}"
+                            "tag": "{light_bow:1b,Unbreakable:1b,CustomModelData:3200}"
                         }
                     ]
                 }

@@ -8,6 +8,7 @@ CustomModelData 註冊表
 |31xx.  |Axes           |
 |       |               |
 |32xx.  |Bows           |
+|3200.  |light_bow      |
 |       |               |
 |33xx.  |Crossbows      |
 |       |               |
