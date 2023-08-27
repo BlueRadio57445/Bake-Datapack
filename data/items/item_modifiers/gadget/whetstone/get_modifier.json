@@ -1,0 +1,33 @@
+{
+  "function": "minecraft:set_name",
+  "name": {
+    "text": " 󐀁☬󐀁 傷害加成§f +",
+    "color": "light_purple",
+    "italic": false,
+    "extra": [
+      {
+        "score": {
+          "name": "$modifier",
+          "objective": "items.whetstone"
+          },
+        "color": "white"
+      },
+      {
+        "text": "% §c(",
+        "color": "white"
+      },
+      {
+        "score": {
+          "name": "$times",
+          "objective": "items.whetstone"
+        },
+        "color": "red"
+      },
+      {
+        "text": "次攻擊後消失)",
+        "color": "red"
+      }
+    ]
+  },
+  "entity": "this"
+}

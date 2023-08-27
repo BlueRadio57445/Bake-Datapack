@@ -25,12 +25,8 @@
               ]
             },
             {
-              "function": "minecraft:reference",
-              "name": "items:random_uuid"
-            },
-            {
               "function": "minecraft:set_nbt",
-              "tag": "{magnet:1b,HideFlags:2,CustomModelData:4007}"
+              "tag": "{magnet:1b,HideFlags:2,no_stacking:1b,CustomModelData:4007}"
             }
           ]
         }
