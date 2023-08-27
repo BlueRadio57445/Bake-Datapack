@@ -21,7 +21,7 @@
                 "",
                 {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
                 {"text": "在手上時:", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 盔甲數值§f +2.0", "color": "light_purple", "italic": false}
+                {"text": " 󐀁☬󐀁 護甲值　§f +2.0", "color": "light_purple", "italic": false}
               ]
             },
             {
