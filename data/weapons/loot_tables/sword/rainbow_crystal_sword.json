@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 虹晶劍 ≻", "color": "light_purple", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "砍怪會使其燃燒、緩速、發光", "color": "yellow", "italic": false},
+                                {"text": "雖然晶體之間仍然混沌不分，", "color": "gray"},
+                                {"text": "卻能完整體現所有晶體的特性，", "color": "gray"},
+                                {"text": "是技術高超之人才能做出的作品。", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{rainbow_crystal_sword:1b,CustomModelData:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -14,14 +14,14 @@
                         {
                             "function": "set_lore",
                             "lore": [
-                                {"text": "射到的地方會產生火焰。","color": "yellow", "italic": false},
+                                {"text": "射到的地方會產生火焰或火把。","color": "yellow", "italic": false},
                                 {"text": "聽說是由光明會造出的弓，","color":"gray"},
                                 {"text": "為您的內心帶來「光明」。","color":"gray"}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{light_bow:1b,Unbreakable:1b}"
+                            "tag": "{light_bow:1b,Unbreakable:1b,CustomModelData:3200}"
                         }
                     ]
                 }
