@@ -1,0 +1,2 @@
+execute at @a[tag=universe.light_universe,predicate=universe:hold_torch] unless entity @e[type=marker,distance=..1,tag=light_universe.marker] run function universe:light_universe/summon_marker
+execute as @e[tag=light_universe.marker] at @s unless entity @p[distance=..1.5,tag=universe.light_universe,predicate=universe:hold_torch] run function universe:light_universe/kill_marker

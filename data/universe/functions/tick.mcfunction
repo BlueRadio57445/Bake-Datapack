@@ -4,3 +4,4 @@ scoreboard players remove @a[scores={universe.cd.test_universe2=1..}] universe.c
 # 宇宙效果
 
 execute as @a[tag=universe.water_universe] run function universe:water_universe/tick_effect
+function universe:light_universe/tick_effect
