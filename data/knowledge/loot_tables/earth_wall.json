@@ -26,7 +26,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"earth_wall\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"earth_wall\",lvl:1}}"
                         }
                     ]
                 }

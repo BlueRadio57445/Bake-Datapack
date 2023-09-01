@@ -27,7 +27,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"fire_fan\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"fire_fan\",lvl:1}}"
                         }
                     ]
                 }
