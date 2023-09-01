@@ -6,7 +6,7 @@ CustomModelData 註冊表
 |8002.  |furry_universe         |
 |8003.  |water_universe         |
 |8004.  |mg_universe            |
-|       |                       |
+|8005.  |xp_universe            |
 |       |                       |
 |       |                       |
 |       |                       |

@@ -5,3 +5,4 @@ tag @s remove universe.orichalcum_universe
 tag @s remove universe.furry_universe
 tag @s remove universe.mg_universe
 tag @s remove universe.light_universe
+tag @s remove universe.xp_universe
