@@ -14,7 +14,7 @@
                             "equipment": {
                                 "mainhand": {
                                     "items": ["ghast_spawn_egg"],
-                                    "nbt": "{hammer:1b}"
+                                    "nbt": "{is_hammer:1b}"
                                 }
                             }
                         }

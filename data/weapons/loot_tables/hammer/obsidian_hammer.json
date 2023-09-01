@@ -26,7 +26,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{hammer:1b,hammer_id:\"obsidian_hammer\",CustomModelData:3104,HideFlags:2}"
+                            "tag": "{is_hammer:1b,hammer:{id:\"obsidian_hammer\"},CustomModelData:3104,HideFlags:2}"
                         },
                         {
                             "function": "set_nbt",
