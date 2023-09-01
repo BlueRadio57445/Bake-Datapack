@@ -1,2 +1,2 @@
-execute store result score $system effects.bleed.check_time run time query gametime
+scoreboard players operation $system effects.bleed.check_time = $gametime general.utils
 execute as @e[type=#minecraft:mobs] if score @s effects.bleed.check_time = $system effects.bleed.check_time run function effects:bleed/switch

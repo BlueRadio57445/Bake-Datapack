@@ -8,7 +8,7 @@ function general:player_data/store {path:"Actionbar",target:"storage actionbar:p
 advancement grant @s only actionbar:effects_changed
 
 # Custom effects
-execute store result score $nextSec actionbar.time run time query gametime
+scoreboard players operation $nextSec actionbar.time = $gametime general.utils
 scoreboard players add $nextSec actionbar.time 20
 execute if score @s effects.bleed.duration matches 0.. run scoreboard players operation @s effects.bleed.check_time = $nextSec actionbar.time
 execute if score @s effects.bleed.duration matches 0.. run schedule function effects:bleed/check 20t
