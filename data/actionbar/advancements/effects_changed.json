@@ -3,5 +3,10 @@
     "effects_changed": {
       "trigger": "minecraft:effects_changed"
     }
-  }
+  },
+  "requirements": [
+    [
+      "effects_changed"
+    ]
+  ]
 }

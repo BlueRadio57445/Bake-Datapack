@@ -41,5 +41,5 @@ execute unless entity @e[type=marker,tag=tri] run summon marker 0 0 0 {Tags:["tr
 setblock 0 16 0 yellow_shulker_box
 
 # 開發者專用功能: 若於此資料夾新增了需要進行初始化的功能，此分數將被技術總監加1
-scoreboard players set $datapack general.version 1
+scoreboard players set $datapack general.version 2
 execute unless score $world general.version = $datapack general.version run function general:player_reset
