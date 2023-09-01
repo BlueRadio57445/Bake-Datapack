@@ -24,6 +24,10 @@ function weapons:sword/fat_sword/tick
 # === 鞭子 ===
 function weapons:whip/tick
 
+# === 錘子 ===
+# 為了防止點水面錘子會消失的BUG
+execute at @e[type=marker,tag=hammer] as @a[distance=..10] run function weapons:hammer/system/return_hammer
+
 # === 雜項 ===
 function weapons:misc/lily_pad/tick
 function weapons:misc/honey_horn/tick
