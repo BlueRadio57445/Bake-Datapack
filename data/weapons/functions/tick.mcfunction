@@ -5,6 +5,7 @@ function weapons:axe/hunangry
 function weapons:bow/tick
 function weapons:bow/sacred_bow/tick
 function weapons:bow/light_bow/tick
+function weapons:bow/bouncing_bow/tick
 
 # === 弩 ===
 

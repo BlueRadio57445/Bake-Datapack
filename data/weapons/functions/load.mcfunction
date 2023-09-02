@@ -4,6 +4,8 @@ scoreboard objectives add weapons dummy "武器算數學"
 
 # === 弓 ===
 scoreboard objectives add weapons.bow.shoot minecraft.used:minecraft.bow "發射箭矢"
+data modify storage weapons:bow bouncing_bow.inGround set value 0b
+scoreboard objectives add weapons.bow.bounce_times dummy "彈跳次數"
 function weapons:bow/sacred_bow/load
 
 # === 弩 ===
