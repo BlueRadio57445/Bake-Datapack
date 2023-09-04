@@ -1,0 +1,1 @@
+attribute @s[predicate=universe:hold_sword] minecraft:generic.attack_damage modifier add 00000000-0000-0000-0000-000000000800 "sword_universe" 0.05 multiply
