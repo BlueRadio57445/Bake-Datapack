@@ -1,0 +1,1 @@
+execute positioned ~-0.6 ~-0.6 ~-0.6 if entity @s[dx=0,dy=1,dz=0] positioned as @s if block ^ ^ ^0.5 #no_collision run tp @s ^ ^ ^0.5

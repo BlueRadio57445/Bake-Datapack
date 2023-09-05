@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "place_hammer": {
+            "trigger": "item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "match_tool",
+                        "predicate": {
+                            "items": ["ghast_spawn_egg"],
+                            "nbt": "{is_hammer:1b,hammer:{id:\"ender_pearl_hammer\"}}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:hammer/ender_pearl_hammer/trigger"
+    }
+}

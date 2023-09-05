@@ -1,3 +1,5 @@
+data modify storage npc:hunger_cave pang set value {}
+
 # 設定為商人NPC，商人會比一般NPC多一些設定可以操作
 data modify storage npc:hunger_cave pang.Trader set value 1b
 
@@ -44,4 +46,6 @@ data modify storage npc:hunger_cave pang.Buy append value {buy:{id:"rotten_flesh
 # 清空列表
 data modify storage npc:hunger_cave pang.Sell set value []
 data modify storage npc:hunger_cave pang.Sell append value {buy:{id:"emerald",Count:1b},sell:{id:"rotten_flesh",Count:10b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Sell append value {buy:{id:"poisonous_potato",Count:3b},sell:{id:"rotten_flesh",Count:1b},maxUses:2147483647}
+data modify storage npc:hunger_cave pang.Sell append value {buy:{id:"wheat",Count:5b},sell:{id:"bread",Count:1b},maxUses:2147483647}
 # ...

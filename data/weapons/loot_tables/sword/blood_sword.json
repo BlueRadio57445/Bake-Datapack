@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "iron_sword",
+                    "name": "wooden_sword",
                     "functions": [
                         {
                             "function": "set_name",
@@ -16,9 +16,14 @@
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
-                                {"text": "血量越低，攻擊越高", "color": "yellow", "italic": false},
-                                {"text": "那絕美的豔紅之花阿", "color": "gray"},
-                                {"text": "侍奉你是我的榮幸", "color": "gray"}
+                                "",
+                                {"text": "血量越低，傷害越高。", "color": "yellow", "italic": false},
+                                {"text": "那絕美的豔紅之花阿，", "color": "gray"},
+                                {"text": "侍奉你是我的榮幸!", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
@@ -29,7 +34,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{blood_sword:1b,Unbreakable:1b}"
+                            "tag": "{blood_sword:1b,Unbreakable:1b,CustomModelData:3001,HideFlags:2}"
                         }
                     ]
                 }

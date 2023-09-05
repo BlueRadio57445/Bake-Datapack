@@ -1,0 +1,13 @@
+{
+  "condition": "any_of",
+  "terms": [
+    {
+      "condition": "reference",
+      "name": "weapons:misc/lily_pad/selected_main"
+    },
+    {
+      "condition": "reference",
+      "name": "weapons:misc/lily_pad/selected_off"
+    }
+  ]
+}
