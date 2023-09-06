@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_scores",
+    "scores": {
+      "general.player.food": {
+        "max": {
+          "type": "minecraft:score",
+          "score": "general.utils.food",
+          "target": "this"
+        },
+        "min": {
+          "type": "minecraft:score",
+          "score": "general.utils.food",
+          "target": "this"
+        }
+      }
+    },
+    "entity": "this"
+  }
+}

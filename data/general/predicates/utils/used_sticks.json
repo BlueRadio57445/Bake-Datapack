@@ -1,0 +1,23 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "scores": {
+        "general.used_carrot_stick": {
+          "min": 1
+        }
+      },
+      "entity": "this"
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "scores": {
+        "general.used_fungus_stick": {
+          "min": 1
+        }
+      },
+      "entity": "this"
+    }
+  ]
+}

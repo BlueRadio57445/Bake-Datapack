@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_scores",
+    "scores": {
+      "general.player.selected_slot": {
+        "max": {
+          "type": "minecraft:score",
+          "score": "general.utils.selected_slot",
+          "target": "this"
+        },
+        "min": {
+          "type": "minecraft:score",
+          "score": "general.utils.selected_slot",
+          "target": "this"
+        }
+      }
+    },
+    "entity": "this"
+  }
+}
