@@ -1,3 +1,4 @@
+data modify storage npc:demo davleek set value {}
 # 商人NPC的格式較普通NPC略有差別
 data modify storage npc:demo davleek.Trader set value 1b
 data modify storage npc:demo davleek.NormalRandom set value 1b

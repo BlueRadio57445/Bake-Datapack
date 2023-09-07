@@ -7,5 +7,7 @@ execute at @e[limit=1,type=minecraft:text_display,tag=npc.this] summon minecraft
 
 # 流水編號，方便得知哪些實體屬於同一個NPC
 scoreboard players operation @e[tag=npc.this] npc.id = $npcCount npc.id
+scoreboard players operation @e[limit=1,type=minecraft:marker,tag=npc.this] npc.split = $npcCount npc.id
+scoreboard players operation @e[limit=1,type=minecraft:marker,tag=npc.this] npc.split %= $20 general.const
 scoreboard players add $npcCount npc.id 1
 tag @e[tag=npc.this] remove npc.this
