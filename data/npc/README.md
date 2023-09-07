@@ -87,19 +87,23 @@ NPC的基本函數如下列所示:
   * Options (list of components) - 選填，於通常對話或選項對話結束後將會進入選項階段，最多四個選項 (會多顯示一個「離開」選項)
     * Option (json string) - 顯示於選項之文字
     * React (list of json strings) - 包含多個 "json string" 的列表，該選項對話之多行內容，按順序觸發 (同Texts之寫法)
-    * Condition (component) - 選項條件，若玩家不符合條件將無法觸發該選項
-      * Item (data format of an item) 條件物品 (目前只有這項，其他的有需要再說)
+    * Condition (component) - 選項條件，若玩家不符合條件將無法觸發該選項(以下皆以觸發玩家為執行者及執行位置)
+      * Type (string) 條件種類，可為 "item"、"score" 或是 "command"
+      * Value
+        * Type為 "item" 的情況下，以 `{id,Count(,tag)}` 的形式填入欲偵測的物品。`Count` 為數量下限，若有多餘的資料會影響判斷。
+        * Type為 "score" 的情況下，以 `{score,target,range}` 的形式填入欲偵測的分數及範圍。其中 `range` 可為單純的整數或是 `"a..b"` 的形式。
+        * Type為 "command" 的情況下，以字串的形式填入完整的指令。若指令執行的結果不為0則通過。
     * End (boolean) - 若設為 `1b`，此選項對話結束後將不會回到選項
     * Extra (component) - 額外區域，目前用於儲存選項的回呼函數設定，多用於任務系統
-      * Start_Command (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
-      * End_Command (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
-      * Leave_Command (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+      * StartCommand (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
+      * EndCommand (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
+      * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
   * Quest (boolean) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
   * NoExit (boolean) - 選填，若設為 `1b`，進入選項時將不會出現「離開」選項 (選項對話結束時會再次回到選項)。
   * Extra (component) - 額外區域，目前用於儲存通常對話的回呼函數設定，多用於任務系統
-    * Start_Command (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
-    * End_Command (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
-    * Leave_Command (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+    * StartCommand (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
+    * EndCommand (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
+    * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
 * NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
 * Exit (component) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
   * Texts (list of json strings) - 包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
@@ -160,8 +164,8 @@ NPC的基本函數如下列所示:
 ### 回呼函數
 
 如果要在與NPC對話時觸發一個任務節點，應使用NPC系統中的「回呼函數」功能 (參見[通常設定](#通常設定)的Extra標籤)。  
-Extra標籤中的Start_Command、End_Command、Leave_Command應設為一個合法指令的字串，通常該指令為呼叫函數的指令 `function xxx:ooo`，執行者為與該NPC對話中的玩家。  
-使用場合範例: 於「接受任務」選項中放入End_Command，將在該對話結束後執行「開始任務」的函數。  
+Extra標籤中的StartCommand、EndCommand、LeaveCommand應設為一個合法指令的字串，通常該指令為呼叫函數的指令 `function xxx:ooo`，執行者為與該NPC對話中的玩家。  
+使用場合範例: 於「接受任務」選項中放入EndCommand，將在該對話結束後執行「開始任務」的函數。  
 於此提供一個回呼函數的[模板](../quest/functions/template/callback)。  
 
 亦可不由NPC觸發任務節點，此時直接呼叫其中一個函數即可

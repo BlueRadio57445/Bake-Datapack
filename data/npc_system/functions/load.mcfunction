@@ -20,4 +20,4 @@ team add npc.trader
 team modify npc.trader collisionRule never
 
 scoreboard players set @e[type=minecraft:marker,tag=npc.idle] npc.idle -1
-schedule function npc_system:idle/check 9t
+#schedule function npc_system:idle/check 9t
