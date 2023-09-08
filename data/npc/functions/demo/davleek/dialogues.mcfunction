@@ -9,7 +9,6 @@ data modify storage npc:demo davleek.Normal append value {Texts:['{"text":"天�
 data modify storage npc:demo davleek.Normal append value {Texts:['{"text":"咳......"}','{"text":"沒事w"}']}
 
 data modify storage npc:demo davleek.TraderNormal set value []
-data modify storage npc:demo davleek.TraderNormal append value {Texts:['{"text":"天天開勳~~"}']}
 
 data modify storage npc:demo davleek.Exit set value {Texts:['{"text":"要再來喔"}']}
 

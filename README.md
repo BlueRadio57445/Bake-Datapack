@@ -88,4 +88,7 @@
   * `general:utils/hunger_changed`: 於玩家飢餓度數值變動時觸發，可在此函數內新增任何其他函數的執行條件。
   * `general:utils/selected_slot_changed`: 於玩家快捷欄選擇欄位改變時觸發，可在此函數內新增任何其他函數的執行條件。
 
+## NPC 系統使用說明
+[點此跳轉](data/npc/README.md)
+
 此頁目前由技術總監: [__末天__](https://github.com/muotian) 負責編輯

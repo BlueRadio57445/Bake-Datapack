@@ -53,16 +53,19 @@ NPC的基本進度如下列所示:
 NPC的基本函數如下列所示:
 
 * `data/npc/functions/<region_id>/<npc_id>/summon.mcfunction`
-* `data/npc/functions/<region_id>/<npc_id>/dialogue.mcfunction`
+* `data/npc/functions/<region_id>/<npc_id>/dialogues.mcfunction`
 * `data/npc/functions/<region_id>/<npc_id>/start.mcfunction`
 * `data/npc/functions/<region_id>/<npc_id>/next.mcfunction`
+* `data/npc/functions/<region_id>/<npc_id>/override.mcfunction`
 
-此四個函數可分為「設定類」及「執行類」。  
-設定類包含 "summon" 及 "dialogue" 函數，其中 "summon" 用於設定外觀及原地召喚該NPC，"dialogue" 負責所有通常對話相關事務。  
+此五個函數可分為「設定類」及「執行類」。  
+設定類包含 "summon" 及 "dialogues" 函數，其中 "summon" 用於設定外觀及原地召喚該NPC，"dialogues" 負責所有通常對話相關事務。  
 (設定類函數應由區域管理系統呼叫。亦可撰寫多個版本的設定類函數，使NPC能在遊戲不同階段產生變化。)  
-執行類包含 "start" 及 "next" 函數，其中 "start" 用於回應 "start" 進度的呼叫以及開啟NPC對話，"next" 則用於回應 "next" 進度及推進對話過程。  
+執行類包含 "start"、"next" 及 "override" 函數，其中 "start" 用於回應 "start" 進度的呼叫以及開啟NPC對話，"next" 則用於回應 "next" 進度及推進對話過程。  
+而 "override" 函數是任務系統得以運作的關鍵，其功能是在符合相關條件時以指定的對話取代通常對話，若無相關任務對話可省略此函數。(普通NPC的觸發時機為觸發對話時，商店NPC的觸發時機為進入選單後。)  
 
-以下提供各檔案之模板，請於複製到目標檔案夾後更改檔案名稱及後綴，將 `<region_id>` 替換成地區代號、`<npc_id>` 替換成NPC代號 (請全部使用英文小寫字母及英文底線)。  
+
+以下提供各檔案之模板，請於複製到目標檔案夾後更改檔案名稱及後綴，將 `<region_id>` 替換成地區代號、`<npc_id>` 替換成NPC代號 (請全部使用英文小寫字母及英文底線，不接受空格)。  
 * "summon" 函數之[模板](functions/template/summon)
   * 此函數中應召喚三種實體
     1. 顯示本體: 通常為盔甲架或村民，亦可使用其他實體。會於對話中持續面向啟動對話的玩家，對話結束後將轉回初始設定的轉向。其CustomName用於儲存顯示的NPC名稱。
@@ -72,6 +75,7 @@ NPC的基本函數如下列所示:
 * "dialogue" 函數之[普通模板](functions/template/dialogues%20(common))及[商店模板](functions/template/dialogues%20(trader))，寫法將在[互動設定](#互動設定)中詳細說明
 * "start" 函數之[模板](functions/template/start)
 * "next" 函數之[模板](functions/template/next)
+* "override" 函數之[模板](functions/template/override)
 
 ## 互動設定
 

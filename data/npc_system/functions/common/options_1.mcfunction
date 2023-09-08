@@ -1,3 +1,4 @@
+data modify entity @s data.Dialogue.Option set value 1b
 execute store result score $count npc.option if data entity @s data.Dialogue.Options[]
 execute if score $count npc.option matches 1 run function npc_system:common/option/summon_1
 execute if score $count npc.option matches 2 run function npc_system:common/option/summon_2

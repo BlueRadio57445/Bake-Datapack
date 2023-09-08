@@ -6,5 +6,3 @@ $data modify entity @s data merge from storage npc:$(region) $(npc)
 data modify entity @s data.Rotation set from entity @e[limit=1,tag=npc.figure,tag=npc.this] Rotation
 
 execute if data entity @s data.Idle[] run function npc_system:idle/marker
-
-execute if data entity @s data{Trader:1b} run function npc_system:trader/interpret
