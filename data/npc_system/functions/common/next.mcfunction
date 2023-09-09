@@ -1,4 +1,3 @@
-#execute if entity @e[limit=1,type=minecraft:marker,tag=npc.this,scores={npc.trader_interpret=-2}] run function npc_system:trader/interpret/update
 tag @s add npc.user
 scoreboard players set $next npc.state 1
 execute as @e[limit=1,type=minecraft:marker,tag=npc.this] run function npc_system:common/next_1
