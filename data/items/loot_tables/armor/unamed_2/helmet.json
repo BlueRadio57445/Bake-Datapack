@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 2
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 護甲值　§f 2.0", "color": "dark_aqua", "italic": false},
+                {"text": "裝備在身上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 移動速度§c -10%", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 2.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:unamed_2_helmet_armor",
+                  "operation": "addition",
+                  "slot": "head",
+                  "id": "00004214-0000-4214-0000-421400004214"
+                },
+                {
+                  "amount": -0.1,
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "items:unamed_2_helmet_movement_speed",
+                  "operation": "multiply_total",
+                  "slot": "head",
+                  "id": "00004215-0000-4215-0000-421500004215"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:5066061},HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

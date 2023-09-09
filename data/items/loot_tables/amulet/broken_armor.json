@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "金屬盔甲殘片", "color": "#d6d6d6", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "一副金屬盔甲的部分殘骸。", "color": "gray"},
+                {"text": "無法穿在身上，拿在手上卻也有種安心感。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
+                {"text": "在手上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 護甲值　§f +2.0", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": 2.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:broken_armor_mainhand",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "id": "00004006-0000-4006-0000-400600004006"
+                },
+                {
+                  "amount": 2.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:broken_armor_offhand",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "id": "00004007-0000-4007-0000-400700004007"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4253, HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

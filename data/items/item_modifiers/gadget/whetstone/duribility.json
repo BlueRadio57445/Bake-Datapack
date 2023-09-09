@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "items:whetstone"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "LoreDurability",
+        "target": "display.Lore[-3]"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "items:whetstone"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "Durability",
+        "target": "durability"
+      }
+    ]
+  }
+]

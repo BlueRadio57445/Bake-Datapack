@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_helmet",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 護甲值　§c 0.0", "color": "dark_aqua", "italic": false},
+                {"text": "裝備在身上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +1.0", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 0.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:unamed_1_helmet_armor",
+                  "operation": "addition",
+                  "slot": "head",
+                  "id": "00004206-0000-4206-0000-420600004206"
+                },
+                {
+                  "amount": 1.0,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "items:unamed_1_helmet_attack_damage",
+                  "operation": "addition",
+                  "slot": "head",
+                  "id": "00004207-0000-4207-0000-420700004207"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:14680154},HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

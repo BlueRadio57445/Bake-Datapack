@@ -10,26 +10,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "卡拉雞"
-              }
+              "name": {"text": "卡拉雞", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "早餐店中一定會有的三明治口味"
-                },
-                {
-                  "color": "gray",
-                  "text": "讓人高興的想要跳起來"
-                },
-                {
-                  "color": "gray",
-                  "text": "三明治也會跳嗎?"
-                }
+                "",
+                {"text": "為三明治驢增加跳躍高度。", "color": "yellow", "italic": false},
+                {"text": "早餐店中一定會有的三明治內餡選擇。", "color": "gray"},
+                {"text": "酥脆可口，令人雀躍。", "color": "gray"},
+                {"text": "三明治也會跳嗎?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
               ]
             },
             {

@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 護甲值　§f 1.0", "color": "dark_aqua", "italic": false},
+                {"text": "裝備在身上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +0.5", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 1.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:unamed_1_chestplate_armor",
+                  "operation": "addition",
+                  "slot": "chest",
+                  "id": "00004204-0000-4204-0000-420400004204"
+                },
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "items:unamed_1_chestplate_attack_damage",
+                  "operation": "addition",
+                  "slot": "chest",
+                  "id": "00004205-0000-4205-0000-420500004205"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:14680154},HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

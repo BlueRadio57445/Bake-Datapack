@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": 1,
+                "minecraft:unbreaking": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
+                {"text": " ✒ 護甲值　§c 0.0", "color": "dark_aqua", "italic": false},
+                {"text": "裝備在身上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +0.5", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 0.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "items:unamed_1_boots_armor",
+                  "operation": "addition",
+                  "slot": "feet",
+                  "id": "00004200-0000-4200-0000-420000004200"
+                },
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "items:unamed_1_boots_attack_damage",
+                  "operation": "addition",
+                  "slot": "feet",
+                  "id": "00004201-0000-4201-0000-420100004201"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:14680154},HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

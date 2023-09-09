@@ -1,0 +1,37 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "amount": {
+        "type": "minecraft:score",
+        "score": "items.whetstone",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$damage"
+        },
+        "scale": 0.01
+      },
+      "attribute": "minecraft:generic.attack_damage",
+      "name": "items:weapon_base_damage",
+      "operation": "addition",
+      "slot": "mainhand",
+      "id": "00004901-0000-4901-0000-490100004901"
+    },
+    {
+      "amount": {
+        "type": "minecraft:score",
+        "score": "items.whetstone",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$speed"
+        },
+        "scale": 0.01
+      },
+      "attribute": "minecraft:generic.attack_speed",
+      "name": "items:weapon_base_speed",
+      "operation": "addition",
+      "slot": "mainhand",
+      "id": "00004902-0000-4902-0000-490200004902"
+    }
+  ]
+}
