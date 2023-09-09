@@ -11,21 +11,23 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "土的Lemma - 花園領域", "color": "green", "italic": false}
+                            "name": {"text": "📖 土的Lemma - 花園領域 📖", "color": "green", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能召喚花園領域，站在內部可以回血。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間35秒", "color": "yellow", "italic": false},
                                 {"text": "封閉有界的花園，", "color": "gray"},
-                                {"text": "不代表它就是緊緻的花園。", "color": "gray"}
+                                {"text": "不代表它就是緊緻的花園。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 35秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"earth_field\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"earth_field\",lvl:1}}"
                         }
                     ]
                 }

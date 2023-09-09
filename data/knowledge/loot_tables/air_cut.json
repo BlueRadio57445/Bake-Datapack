@@ -11,20 +11,22 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "氣的Lemma - 切割", "color": "white", "italic": false}
+                            "name": {"text": "📖 氣的Lemma - 切割 📖", "color": "white", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵發動，站在羽毛和你中間的怪物會被切割。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間4秒", "color": "yellow", "italic": false},
-                                {"text": "切割切割切割切割!~", "color": "gray"}
+                                {"text": "切割切割切割切割!~", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 4秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"air_cut\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"air_cut\",lvl:1}}"
                         }
                     ]
                 }

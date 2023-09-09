@@ -11,20 +11,22 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "氣的Theorem - 龍捲風", "color": "white", "italic": false}
+                            "name": {"text": "📖 氣的Theorem - 龍捲風 📖", "color": "white", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵可以召喚一個龍捲風。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間60秒", "color": "yellow", "italic": false},
-                                {"text": "龍捲風", "color": "gray"}
+                                {"text": "龍捲風", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 60秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"air_tornado\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"air_tornado\",lvl:1}}"
                         }
                     ]
                 }
