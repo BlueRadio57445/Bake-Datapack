@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "enemy:demo_region/heavy_starver/skill"
+        "function": "enemy:hunger_cave/heavy_starver/skill"
     }
 }
