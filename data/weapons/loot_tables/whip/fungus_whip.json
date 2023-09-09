@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "fishing_rod",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 菌絲之觸 ≻", "color": "green", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "鞭笞敵人時，使敵人中毒。", "color": "yellow", "italic": false},
+                                {"text": "剉冰沒寫物品說明uwu", "color": "gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{fungus_whip:1b,Unbreakable:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

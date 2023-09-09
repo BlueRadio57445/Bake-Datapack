@@ -1,0 +1,243 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "honeycomb",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gold",
+                                "italic": false,
+                                "text": "鼓舞之蜜"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{honey:1b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+
+                                {
+                                    "text": "鼓舞之蜜發出的香氣可以鼓舞人心",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "讓附近玩家獲得力量I 回復II 抗性I 15秒",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "[ 夢蜜 ]",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "※冷卻 40秒",
+                                    "italic": false,
+                                    "color": "green"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "honeycomb",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gold",
+                                "italic": false,
+                                "text": "純香之蜜"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{honey:2b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+
+                                {
+                                    "text": "香甜的滋味令人元氣滿滿",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "自己回復血量",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "[ 夢蜜 ]",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "※一次性使用",
+                                    "italic": false,
+                                    "color": "green"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "honeycomb",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gold",
+                                "italic": false,
+                                "text": "夢泉"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{honey:3b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+
+                                {
+                                    "text": "夢幻的力量提升隊友的士氣",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "持續讓附近玩家獲得回復II 抗性I 30秒",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "[ 夢蜜 ]",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "※冷卻 40秒",
+                                    "italic": false,
+                                    "color": "green"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "honeycomb",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gold",
+                                "italic": false,
+                                "text": "金泉蜜"
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{honey:4b}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+
+                                {
+                                    "text": "香甜的味道令人飽足",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "自己回復飽食度",
+                                    "italic": false,
+                                    "color": "gray"
+                                },
+                                {
+                                    "text": "[ 夢蜜 ]",
+                                    "italic": false,
+                                    "color": "gold"
+                                },
+                                {
+                                    "text": "※一次性使用",
+                                    "italic": false,
+                                    "color": "green"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        
+        {
+            "rolls": 1,
+            "entries": [
+
+                {
+                    "type": "minecraft:item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {
+                                "color": "gold",
+                                "italic": false,
+                                "text": "夢蜜號角",
+                                "bold": true
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{honey_horn:1b,CustomModelData:1}"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                
+                                {
+                                    "text": "右鍵發動技能",
+                                    "italic": false,
+                                    "color": "gray"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+
+
+
