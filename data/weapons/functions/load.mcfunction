@@ -20,6 +20,7 @@ scoreboard objectives add scythe.id dummy "鐮刀用的ID"
 
 # === 劍 ===
 function weapons:sword/blood_sword/load
+scoreboard objectives add weapons.sword dummy "劍也要算數學"
 data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 
 # === 三叉戟 ===

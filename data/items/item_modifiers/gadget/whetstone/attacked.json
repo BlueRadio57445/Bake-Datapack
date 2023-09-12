@@ -8,8 +8,8 @@
     "ops": [
       {
         "op": "replace",
-        "source": "LoreModifier",
-        "target": "display.Lore[-1]"
+        "source": "Weapon.tag.display.Lore",
+        "target": "display.Lore"
       }
     ]
   },
@@ -22,7 +22,7 @@
     "ops": [
       {
         "op": "replace",
-        "source": "Sharpen",
+        "source": "Weapon.tag.sharpened",
         "target": "sharpened"
       }
     ]

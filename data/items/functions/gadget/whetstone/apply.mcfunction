@@ -21,8 +21,8 @@ item modify block 0 16 0 container.0 items:gadget/whetstone/get_durability
 data modify storage items:whetstone LoreDurability set from block 0 16 0 Items[0].tag.display.Name
 data modify block 0 16 0 Items set value []
 
-execute if score $hand items.whetstone matches 1 unless data entity @s Inventory[{Slot:-106b}].tag.AttributeModifiers[] run function items:gadget/whetstone/base_attributes
-execute if score $hand items.whetstone matches -1 unless data entity @s SelectedItem.tag.AttributeModifiers[] run function items:gadget/whetstone/base_attributes
+execute if score $hand items.whetstone matches 1 unless data entity @s Inventory[{Slot:-106b}].tag.AttributeModifiers[] run function items:gadget/whetstone/base_attributes with entity @s Inventory[{Slot:-106b}]
+execute if score $hand items.whetstone matches -1 unless data entity @s SelectedItem.tag.AttributeModifiers[] run function items:gadget/whetstone/base_attributes with entity @s SelectedItem
 
 execute if score $durability items.whetstone matches 1.. if score $hand items.whetstone matches 1 run item modify entity @s weapon.mainhand items:gadget/whetstone/duribility
 execute if score $durability items.whetstone matches 1.. if score $hand items.whetstone matches -1 run item modify entity @s weapon.offhand items:gadget/whetstone/duribility
