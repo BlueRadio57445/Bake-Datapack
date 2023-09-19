@@ -18,13 +18,12 @@
               "function": "minecraft:set_lore",
               "lore": [
                 "",
-                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
-                {"text": " ✒ 護甲值　§f 3.0", "color": "dark_aqua", "italic": false}
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{color:10412248},HideFlags:2}"
+              "tag": "{display:{color:10412248},HideFlags:2,LoreUpdate:1b}"
             }
           ]
         }

@@ -22,9 +22,7 @@
                 {"text": "但是普通的麵粉只能做出普通的麵包，", "color": "gray"},
                 {"text": "還不如灑向敵人，影響他們的視線!", "color": "gray"},
                 "",
-                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
-                {"text": "在手上時:", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 傷害加成§f +1.0", "color": "light_purple", "italic": false}
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
               ]
             },
             {
@@ -33,7 +31,7 @@
                 {
                   "amount": 1.0,
                   "attribute": "minecraft:generic.attack_damage",
-                  "name": "items:flour_mainhand",
+                  "name": "attack_damage.hand",
                   "operation": "addition",
                   "slot": "mainhand",
                   "id": "00004000-0000-4000-0000-400000004000"
@@ -41,7 +39,7 @@
                 {
                   "amount": 1.0,
                   "attribute": "minecraft:generic.attack_damage",
-                  "name": "items:flour_offhand",
+                  "name": "attack_damage.hand",
                   "operation": "addition",
                   "slot": "offhand",
                   "id": "00004001-0000-4001-0000-400100004001"
@@ -50,7 +48,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{flour:1b, CustomModelData:4250, HideFlags:2}"
+              "tag": "{flour:1b,CustomModelData:4250,HideFlags:2,LoreUpdate:1b}"
             }
           ]
         }

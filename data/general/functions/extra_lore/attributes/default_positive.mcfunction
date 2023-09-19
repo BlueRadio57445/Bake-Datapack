@@ -1,0 +1,1 @@
+$data modify storage general:extra_lore Item.tag.display.Lore append value '{"italic":false,"color":"dark_aqua","text":"$(text)","extra":[{"color":"white","text":"$(amount_sign)$(amount_int).$(amount_dec)$(amount_suf)"}]}'

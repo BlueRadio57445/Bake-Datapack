@@ -19,9 +19,7 @@
                 {"text": "似乎有些眼熟的魔法羽毛。", "color": "gray"},
                 {"text": "只是拿著便能感受到微風吹拂。", "color": "gray"},
                 "",
-                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
-                {"text": "在手上時:", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 移動速度§f +20%", "color": "light_purple", "italic": false}
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
               ]
             },
             {
@@ -30,16 +28,16 @@
                 {
                   "amount": 0.2,
                   "attribute": "minecraft:generic.movement_speed",
-                  "name": "items:breeze_feather_mainhand",
-                  "operation": "multiply_total",
+                  "name": "movement_speed.hand",
+                  "operation": "multiply_base",
                   "slot": "mainhand",
                   "id": "00004010-0000-4010-0000-401000004010"
                 },
                 {
                   "amount": 0.2,
                   "attribute": "minecraft:generic.movement_speed",
-                  "name": "items:breeze_feather_offhand",
-                  "operation": "multiply_total",
+                  "name": "movement_speed.hand",
+                  "operation": "multiply_base",
                   "slot": "offhand",
                   "id": "00004011-0000-4011-0000-401100004011"
                 }
@@ -47,7 +45,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{Enchantments:[{}],CustomModelData:4255, HideFlags:2}"
+              "tag": "{Enchantments:[{}],CustomModelData:4255,HideFlags:2,LoreUpdate:1b}"
             }
           ]
         }
