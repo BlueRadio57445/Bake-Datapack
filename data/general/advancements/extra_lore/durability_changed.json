@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "durability_changed": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "item": {
+          "tag": "minecraft:has_durability",
+          "nbt": "{DurabilityUpdate:1b}"
+        }
+      }
+    }
+  }
+}

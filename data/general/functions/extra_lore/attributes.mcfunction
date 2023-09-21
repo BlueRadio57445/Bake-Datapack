@@ -1,4 +1,5 @@
 scoreboard players reset * general.extra_lore.modifier_type
+data modify storage general:extra_lore Attributes set value []
 
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"attack_damage.default"}] run function general:extra_lore/attributes/set {name:"attack_damage",type:"default"}
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"attack_speed.default"}] run function general:extra_lore/attributes/set {name:"attack_speed",type:"default"}
