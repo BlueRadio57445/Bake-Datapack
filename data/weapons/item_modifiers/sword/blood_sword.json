@@ -3,13 +3,13 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "items:whetstone"
+      "source": "weapons:sword"
     },
     "ops": [
       {
         "op": "replace",
-        "source": "LoreDurability",
-        "target": "display.Lore[-1]"
+        "source": "blood_sword.Damage",
+        "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
       }
     ]
   },
@@ -17,14 +17,18 @@
     "function": "minecraft:copy_nbt",
     "source": {
       "type": "minecraft:storage",
-      "source": "items:whetstone"
+      "source": "weapons:sword"
     },
     "ops": [
       {
         "op": "replace",
-        "source": "Whetstone.tag.durability.current",
-        "target": "durability.current"
+        "source": "blood_sword.Health",
+        "target": "Health"
       }
     ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LoreUpdate:1b}"
   }
 ]

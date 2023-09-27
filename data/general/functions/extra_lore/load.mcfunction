@@ -1,3 +1,5 @@
+#declare storage general:extra_lore
+
 data modify storage general:extra_lore has_durability set value []
 loot replace block 0 16 0 container.0 27 loot general:extra_lore/get_armors
 data modify storage general:extra_lore has_durability append from block 0 16 0 Items[]
@@ -68,10 +70,10 @@ data modify storage general:extra_lore has_durability[{id:"minecraft:netherite_s
 data modify storage general:extra_lore has_durability[{id:"minecraft:trident"}].attributes set value {attack_damage:8.0d,attack_speed:-2.9d}
 
 data modify storage general:extra_lore modifier_texts set value []
-data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"hand",text:"在手上時:"}
-data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"mainhand",text:"在慣用手上時:"}
-data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"offhand",text:"在非慣用手上時:"}
-data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"body",text:"裝備在身上時:"}
+data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"hand",text:"在手上時："}
+data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"mainhand",text:"在慣用手上時："}
+data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"offhand",text:"在非慣用手上時："}
+data modify storage general:extra_lore modifier_texts append value {name:"slot",type:"body",text:"裝備在身上時："}
 
 data modify storage general:extra_lore modifier_texts append value {name:"attack_damage",type:"default",text:" ✒ 攻擊傷害 "}
 data modify storage general:extra_lore modifier_texts append value {name:"attack_speed",type:"default",text:" ✒ 攻擊速度 "}

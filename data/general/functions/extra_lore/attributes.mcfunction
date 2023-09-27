@@ -23,6 +23,8 @@ execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"ar
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"knockback_resistance.mainhand"}] run function general:extra_lore/attributes/set {name:"knockback_resistance",type:"mainhand"}
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"movement_speed.mainhand"}] run function general:extra_lore/attributes/set {name:"movement_speed",type:"mainhand"}
 
+execute if data storage general:extra_lore Item.tag.sharpened run function general:extra_lore/attributes/custom/whetstone with storage general:extra_lore Item.tag.sharpened
+
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"max_health.offhand"}] run function general:extra_lore/attributes/set {name:"max_health",type:"offhand"}
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"attack_damage.offhand"}] run function general:extra_lore/attributes/set {name:"attack_damage",type:"offhand"}
 execute if data storage general:extra_lore Item.tag.AttributeModifiers[{Name:"attack_speed.offhand"}] run function general:extra_lore/attributes/set {name:"attack_speed",type:"offhand"}

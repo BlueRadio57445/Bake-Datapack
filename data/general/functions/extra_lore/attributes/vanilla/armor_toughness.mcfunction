@@ -1,4 +1,4 @@
-data modify storage general:extra_lore Modifier set value {name:"armor_toughness",type:"default",text:'',operation:0,amount_sign:"",amount_int:0,amount_dec:0,amount_suf:""}
+data modify storage general:extra_lore Modifier set value {name:"armor_toughness",type:"default",text:'',operation:0,amount_sign:"",amount_int:0,amount_dec:0,amount_suf:"",extra_text:""}
 data modify storage general:extra_lore Modifier.text set from storage general:extra_lore modifier_texts[{name:"armor_toughness",type:"default"}].text
 execute store result score $modifier.amount_int general.extra_lore run data get storage general:extra_lore attributes.armor_toughness 10
 scoreboard players operation $modifier.amount_dec general.extra_lore = $modifier.amount_int general.extra_lore

@@ -1,5 +1,5 @@
 $execute unless data storage general:extra_lore Attributes[] run data modify storage general:extra_lore Attributes append from storage general:extra_lore Item.tag.AttributeModifiers[{Name:"$(name).$(type)"}]
-$data modify storage general:extra_lore Modifier set value {name:"$(name)",type:"$(type)",text:"",operation:0,amount_sign:"+",amount_int:0,amount_dec:0,amount_suf:""}
+$data modify storage general:extra_lore Modifier set value {name:"$(name)",type:"$(type)",text:"",operation:0,amount_sign:"+",amount_int:0,amount_dec:0,amount_suf:"",extra_text:""}
 execute if data storage general:extra_lore Modifier{type:"hand"} run data remove storage general:extra_lore Attributes[{Slot:"offhand"}]
 execute store result score $modifier.operation general.extra_lore run data get storage general:extra_lore Attributes[0].Operation
 execute store result score $modifier.amount general.extra_lore run data get storage general:extra_lore Attributes[0].Amount 10000

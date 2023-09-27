@@ -1,4 +1,7 @@
 scoreboard objectives add weapons dummy "武器算數學"
+scoreboard objectives add weapons.max_health dummy
+scoreboard objectives add weapons.use_health dummy
+scoreboard players set $100 weapons.use_health 100
 
 # === 斧頭 ===
 
@@ -19,8 +22,8 @@ scoreboard players set $2 scythe 2
 scoreboard objectives add scythe.id dummy "鐮刀用的ID"
 
 # === 劍 ===
-function weapons:sword/blood_sword/load
 scoreboard objectives add weapons.sword dummy "劍也要算數學"
+#declare storage weapons:sword
 data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 
 # === 三叉戟 ===
