@@ -26,7 +26,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_knowledge:1b,knowledge:{id:\"lightning\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"lightning\",damage:7,cooldown:20},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }
