@@ -5,7 +5,7 @@ execute rotated as @s as @e[tag=miner_chain,tag=new] positioned as @s run tp @s 
 scoreboard players set @e[tag=miner_chain,tag=new] enemy.miner.skill.chain_life 15
 
 tag @e[tag=miner_chain,tag=new] remove new
-playsound minecraft:block.chain.place master @a[distance=..15] ~ ~ ~ 1 1
+playsound minecraft:block.chain.place master @a[distance=..15] ~ ~ ~ 0.8 1
 
 
 

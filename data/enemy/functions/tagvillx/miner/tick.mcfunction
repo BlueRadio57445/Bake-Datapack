@@ -12,7 +12,7 @@ execute as @e[type=#mobs,tag=miner,scores={enemy.miner.skill.prepare=1..}] run s
 execute as @e[type=block_display,tag=miner_chain] run scoreboard players remove @s enemy.miner.skill.chain_life 1
 
 #刪除
-execute as @e[type=block_display,tag=miner_chain,scores={enemy.miner.skill.chain_life=..0}] at @s run playsound block.chain.place master @a[distance=..6] ~ ~ ~ 1 2
+execute as @e[type=block_display,tag=miner_chain,scores={enemy.miner.skill.chain_life=..0}] at @s run playsound block.chain.place master @a[distance=..6] ~ ~ ~ 0.8 2
 execute as @e[type=block_display,tag=miner_chain,scores={enemy.miner.skill.chain_life=..0}] at @s run kill @s
 
 
