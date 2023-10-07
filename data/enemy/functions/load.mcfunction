@@ -1,3 +1,5 @@
+function enemy:tagvillx/load
+
 scoreboard objectives add enemy dummy "怪物算數學"
 
 # ==== Demo版的區域 ==== #
