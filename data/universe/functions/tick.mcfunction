@@ -1,3 +1,6 @@
+# 丟袋子，清理分數寫在check_universe函數裡面
+execute as @a[scores={universe.drop_bundle=1..}] run function universe:system/check_universe
+
 # 冷卻時間
 scoreboard players remove @a[scores={universe.cd.test_universe2=1..}] universe.cd.test_universe2 1
 
