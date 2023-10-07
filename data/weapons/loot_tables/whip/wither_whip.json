@@ -22,7 +22,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{wither_whip:1b,Unbreakable:1b}"
+                            "tag": "{is_whip:1b,wither_whip:1b,Unbreakable:1b}"
                         }
                     ]
                 }

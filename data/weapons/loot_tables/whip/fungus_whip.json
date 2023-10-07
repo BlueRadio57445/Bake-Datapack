@@ -22,7 +22,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{fungus_whip:1b,Unbreakable:1b}"
+                            "tag": "{is_whip:1b,fungus_whip:1b,Unbreakable:1b}"
                         }
                     ]
                 }

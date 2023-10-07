@@ -23,7 +23,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{poison_whip:1b,Unbreakable:1b}"
+                            "tag": "{is_whip:1b,poison_whip:1b,Unbreakable:1b}"
                         }
                     ]
                 }
