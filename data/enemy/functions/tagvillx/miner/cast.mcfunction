@@ -8,7 +8,6 @@ scoreboard players operation @s enemy.miner.skill.move_to_chain.id = $index enem
 scoreboard players operation @e[tag=miner_chain_tp,tag=new] enemy.miner.skill.move_to_chain.id = @s enemy.miner.skill.move_to_chain.id
 scoreboard players add $index enemy.miner.skill.move_to_chain.id 1
 
-#execute store result score $store enemy.miner.skill.move_to_chain.id run scoreboard players get @s enemy.miner.skill.move_to_chain.id
 
 tag @e[tag=miner_chain_tp,tag=new] remove new
 

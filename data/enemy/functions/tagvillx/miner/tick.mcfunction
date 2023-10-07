@@ -1,5 +1,7 @@
-execute as @e[tag=miner,scores={enemy.miner.skill.cd=0}] at @s if entity @a[distance=..15] run function enemy:tagvillx/miner/prepar
+execute as @e[tag=miner,scores={enemy.miner.skill.cd=0}] at @s run function enemy:tagvillx/miner/prepar
+execute as @e[tag=miner_chain_tp] at @s unless entity @e[tag=miner,distance=..30] run kill @s
 #技能預備
+
 execute as @e[tag=miner,scores={enemy.miner.skill.prepar=5..}] at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
 #技能發動
 execute as @e[tag=miner,scores={enemy.miner.skill.prepar=1}] at @s anchored eyes run function enemy:tagvillx/miner/cast
@@ -24,6 +26,5 @@ execute as @e[tag=miner_chain,scores={enemy.miner.skill.chain_life=..0}] at @s r
 
 #移動
 #execute as @e[tag=miner] at @s facing entity @e[tag=miner_tp_tag,limit=1,sort=nearest] feet run tp @s ^ ^ ^0.8
-execute as @e[tag=miner_tp_tag] at @s if entity @e[tag=miner,distance=..0.5] run kill @s
-execute as @e[tag=miner] at @s run function enemy:tagvillx/miner/tp
+
 
