@@ -1,10 +1,10 @@
-execute as @e[tag=miner,scores={enemy.miner.skill.cd=0}] at @s run function enemy:tagvillx/miner/prepar
+execute as @e[tag=miner,scores={enemy.miner.skill.cd=0}] at @s run function enemy:tagvillx/miner/prepare
 execute as @e[tag=miner_chain_tp] at @s unless entity @e[tag=miner,distance=..30] run kill @s
 #技能預備
 
-execute as @e[tag=miner,scores={enemy.miner.skill.prepar=5..}] at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
+execute as @e[tag=miner,scores={enemy.miner.skill.prepare=5..}] at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
 #技能發動
-execute as @e[tag=miner,scores={enemy.miner.skill.prepar=1}] at @s anchored eyes run function enemy:tagvillx/miner/cast
+execute as @e[tag=miner,scores={enemy.miner.skill.prepare=1}] at @s anchored eyes run function enemy:tagvillx/miner/cast
 execute as @e[tag=miner_chain_tp] at @s anchored eyes if block ^ ^ ^0.5 air if entity @a[distance=..15] if score @s enemy.miner.skill.chain_delay matches 0 positioned ~-.5 ~ ~-.5 unless entity @a[dx=0,dy=0,dz=0] positioned ~.5 ~ ~.5 run function enemy:tagvillx/miner/chain_tag_tp
 execute as @e[tag=miner_chain_tp] at @s anchored eyes unless block ^ ^ ^0.5 air run function enemy:tagvillx/miner/hit_wall
 execute as @e[tag=miner_chain_tp] at @s positioned ~-.5 ~ ~-.5 if entity @a[dx=0,dy=0,dz=0] run function enemy:tagvillx/miner/hit_player
@@ -13,7 +13,7 @@ execute as @e[tag=miner_chain_tp] at @s positioned ~-.5 ~ ~-.5 if entity @a[dx=0
 
 #記分板扣分
 execute as @e[tag=miner,scores={enemy.miner.skill.cd=1..}] run scoreboard players remove @s enemy.miner.skill.cd 1
-execute as @e[tag=miner,scores={enemy.miner.skill.prepar=1..}] run scoreboard players remove @s enemy.miner.skill.prepar 1
+execute as @e[tag=miner,scores={enemy.miner.skill.prepare=1..}] run scoreboard players remove @s enemy.miner.skill.prepare 1
 execute as @e[tag=miner_chain_tp,scores={enemy.miner.skill.chain_delay=1..}] run scoreboard players remove @s enemy.miner.skill.chain_delay 1
 execute as @e[tag=miner_chain] run scoreboard players remove @s enemy.miner.skill.chain_life 1
 
