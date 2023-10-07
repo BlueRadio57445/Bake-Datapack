@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"furry_universe\"},CustomModelData:8002}"
+                            "tag": "{is_universe:1b,universe:{id:\"furry_universe\", lvl:1},CustomModelData:8002}"
                         }
                     ]
                 }

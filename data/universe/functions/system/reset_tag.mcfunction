@@ -12,3 +12,5 @@ tag @s remove universe.axe_universe
 tag @s remove universe.trident_universe
 tag @s remove universe.hammer_universe
 tag @s remove universe.scythe_universe
+tag @s remove universe.whip_universe
+tag @s remove universe.gloves_universe

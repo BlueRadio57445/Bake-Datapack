@@ -11,8 +11,14 @@ execute as @a[predicate=universe:hold_sword,tag=universe.sword_universe] run fun
 execute as @a[predicate=universe:hold_axe,tag=universe.axe_universe] run function universe:axe_universe/enable_effect
 execute as @a[predicate=universe:hold_trident,tag=universe.trident_universe] run function universe:trident_universe/enable_effect
 execute as @a[predicate=universe:hold_hammer,tag=universe.hammer_universe] run function universe:hammer_universe/enable_effect
+execute as @a[predicate=universe:hold_scythe,tag=universe.scythe_universe] run function universe:scythe_universe/enable_effect
+execute as @a[predicate=universe:hold_whip,tag=universe.whip_universe] run function universe:whip_universe/enable_effect
+execute as @a[predicate=universe:hold_gloves,tag=universe.gloves_universe] run function universe:gloves_universe/enable_effect
 
-execute as @a unless entity @s[predicate=universe:hold_sword,tag=universe.sword_universe] run function universe:sword_universe/disable_effect
-execute as @a unless entity @s[predicate=universe:hold_axe,tag=universe.axe_universe] run function universe:axe_universe/disable_effect
-execute as @a unless entity @s[predicate=universe:hold_trident,tag=universe.trident_universe] run function universe:trident_universe/disable_effect
-execute as @a unless entity @s[predicate=universe:hold_hammer,tag=universe.hammer_universe] run function universe:hammer_universe/disable_effect
+execute as @a[tag=universe.sword_universe] unless entity @s[predicate=universe:hold_sword] run function universe:sword_universe/disable_effect
+execute as @a[tag=universe.axe_universe] unless entity @s[predicate=universe:hold_axe] run function universe:axe_universe/disable_effect
+execute as @a[tag=universe.trident_universe] unless entity @s[predicate=universe:hold_trident] run function universe:trident_universe/disable_effect
+execute as @a[tag=universe.hammer_universe] unless entity @s[predicate=universe:hold_hammer] run function universe:hammer_universe/disable_effect
+execute as @a[tag=universe.scythe_universe] unless entity @s[predicate=universe:hold_scythe] run function universe:scythe_universe/disable_effect
+execute as @a[tag=universe.whip_universe] unless entity @s[predicate=universe:hold_whip] run function universe:whip_universe/disable_effect
+execute as @a[tag=universe.gloves_universe] unless entity @s[predicate=universe:hold_gloves] run function universe:gloves_universe/disable_effect
