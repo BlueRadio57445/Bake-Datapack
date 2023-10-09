@@ -8,6 +8,7 @@ scoreboard players remove @a[scores={universe.cd.test_universe2=1..}] universe.c
 
 execute as @a[tag=universe.water_universe] run function universe:water_universe/tick_effect
 function universe:light_universe/tick_effect
+function universe:cat_universe/tick_effect
 
 # 加攻擊傷害的宇宙(寫得很爛，之後還需要改)
 execute as @a[predicate=universe:hold_sword,tag=universe.sword_universe] run function universe:sword_universe/enable_effect

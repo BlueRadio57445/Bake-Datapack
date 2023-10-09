@@ -6,6 +6,7 @@ tag @s remove universe.furry_universe
 tag @s remove universe.mg_universe
 tag @s remove universe.light_universe
 tag @s remove universe.xp_universe
+tag @s remove universe.cat_universe
 
 tag @s remove universe.sword_universe
 tag @s remove universe.axe_universe
