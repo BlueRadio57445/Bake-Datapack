@@ -17,12 +17,27 @@
                             "entity": "this",
                             "lore": [
                                 {"text": "鞭笞敵人時，使敵人中毒。", "color": "yellow", "italic": false},
-                                {"text": "剉冰沒寫物品說明uwu", "color": "gray"}
+                                {"text": "剉冰沒寫物品說明uwu", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鞭子", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_whip:1b,fungus_whip:1b,Unbreakable:1b}"
+                            "tag": "{is_whip:1b,fungus_whip:1b,Unbreakable:1b,HideFlags:2,LoreUpdate:1b}"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 3,
+                                    "attribute": "generic.attack_damage",
+                                    "name": "attack_damage.default",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "4aaca1e9-a685-4e22-8905-d631575fb08e"
+                                }
+                            ]
                         }
                     ]
                 }
