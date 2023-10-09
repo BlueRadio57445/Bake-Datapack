@@ -4,6 +4,7 @@ CustomModelData 註冊表
 |30xx.  |Swords         |
 |3000.  |fat_sword(big) |
 |3001.  |blood_sword    |
+|3002.  |rainbow_crystal|
 |       |               |
 |31xx.  |Axes           |
 |       |               |

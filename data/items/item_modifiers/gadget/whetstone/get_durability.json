@@ -1,18 +1,23 @@
 {
   "function": "minecraft:set_name",
   "name": {
-    "text": " ✒ 剩餘使用次數 ",
-    "color": "dark_aqua",
-    "italic": false,
-    "extra": [
+    "translate": "item.durability",
+    "with": [
       {
         "score": {
-          "name": "$durability",
+          "name": "$durability.current",
           "objective": "items.whetstone"
-          },
-        "color": "white"
+        }
+      },
+      {
+        "score": {
+          "name": "$durability.max",
+          "objective": "items.whetstone"
+        }
       }
-    ]
+    ],
+    "color": "dark_gray",
+    "italic": false
   },
   "entity": "this"
 }
