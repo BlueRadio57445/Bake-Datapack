@@ -11,7 +11,7 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 原味毛毛的宇宙I 🌌", "color": "#ffeeba", "italic": false}
+                            "name": {"text":"🌌 原味毛毛的宇宙III 🌌", "color": "#ffeeba", "italic": false}
                         },
                         {
                             "function": "set_lore",
