@@ -6,5 +6,4 @@ summon item ~ ~1 ~0.372 {NoGravity:1b,Age:-32768,PickupDelay:32767,Tags:["npc.th
 summon item ~ ~1 ~-0.372 {NoGravity:1b,Age:-32768,PickupDelay:32767,Tags:["npc.this","npc.tag","npc.boss.disaster_starver"],Item:{id:"minecraft:quartz_slab",Count:1b}}
 summon item ~0.372 ~1 ~ {NoGravity:1b,Age:-32768,PickupDelay:32767,Tags:["npc.this","npc.tag","npc.boss.disaster_starver"],Item:{id:"minecraft:quartz_slab",Count:1b}}
 summon item ~-0.372 ~1 ~ {NoGravity:1b,Age:-32768,PickupDelay:32767,Tags:["npc.this","npc.tag","npc.boss.disaster_starver"],Item:{id:"minecraft:quartz_slab",Count:1b}}
-data modify storage npc_system:common This set from storage npc:boss disaster_starver
-function npc_system:common/summon
+function npc_system:common/summon {region:"boss",npc:"disaster_starver"}

@@ -10,12 +10,11 @@ scoreboard objectives add items.magnet.pos dummy
 scoreboard objectives add items.magnet.dis dummy
 scoreboard objectives add items.magnet.mot dummy
 
+scoreboard objectives add items.whetstone dummy
+scoreboard objectives add items.whetstone.using dummy
+
 scoreboard objectives add items.vitality_apple dummy "吃過幾顆活力蘋果"
 scoreboard objectives add items.vitality_apple.death deathCount "死亡次數"
 function items:food/vitality_apple/schedule
 
-scoreboard objectives remove items.index
-scoreboard objectives remove item.index
-scoreboard objectives remove au04zp3.cooldown
-scoreboard objectives remove q06y7.cooldown
-scoreboard objectives remove lay-egg.cooldown
+function items:gadget/whetstone/load

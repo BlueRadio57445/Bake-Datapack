@@ -1,18 +1,17 @@
 [
     {
-        "function": "set_lore",
-        "entity": "this",
-        "lore": [
-            "",
-            {"text": "如果飢餓值全滿，能夠造成兩倍傷害。", "color": "yellow", "italic": false},
-            {"text": "吃飽時能發揮強大的力量，", "color": "gray"},
-            {"text": "可惜餓死鬼無法發揮它的實力。", "color": "gray"},
-            "",
-            {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
-            {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
-            {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
-        ],
-        "replace": true
+        "function": "copy_nbt",
+        "source": {
+            "type": "storage",
+            "source": "weapons:sword"
+        },
+        "ops": [
+            {
+                "op": "replace",
+                "source": "fat_sword.Lore",
+                "target": "display.Lore"
+            }
+        ]
     },
     {
         "function": "copy_nbt",

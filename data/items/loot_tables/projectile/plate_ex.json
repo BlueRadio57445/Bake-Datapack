@@ -10,34 +10,20 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "精美的陶瓷盤子"
-              }
+              "name": {"text": "精美的陶瓷盤子", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "精美而珍貴的盤子，"
-                },
-                {
-                  "color": "gray",
-                  "text": "比起盛裝食物更適合用作觀賞。"
-                },
-                {
-                  "color": "gray",
-                  "text": "藉由把它摔碎來舒解壓力的人，"
-                },
-                {
-                  "color": "gray",
-                  "text": "真的不知道在想什麼。"
-                },
-                {
-                  "color": "dark_gray",
-                  "text": "碎片似乎會飛挺遠的..."
-                }
+                "",
+                {"text": "持續對中等範圍的生物造成緩速及出血。", "color": "yellow", "italic": false},
+                {"text": "精美而珍貴的盤子，", "color": "gray"},
+                {"text": "比起盛裝食物更適合用作觀賞。", "color": "gray"},
+                {"text": "藉由把它摔碎來舒解壓力的人，", "color": "gray"},
+                {"text": "真的不知道在想什麼。", "color": "gray"},
+                {"text": "碎片似乎會飛挺遠的...", "color": "dark_gray"},
+                "",
+                {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
               ]
             },
             {

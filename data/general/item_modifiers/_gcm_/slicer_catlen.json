@@ -1,8 +1,0 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "name": ["data modify storage general:gcm execute[-1].command set string block ~-1 ~ ~1 LastOutput 100 ",{"score":{"objective": "general.gcm_var", "name": "$str.length"}}]
-    }
-]
-  

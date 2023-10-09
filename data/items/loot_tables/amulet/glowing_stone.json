@@ -1,0 +1,57 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "發光石頭", "color": "#abab80", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "一顆石頭在黑暗中發出了微弱的螢光，", "color": "gray"},
+                {"text": "難道就只是想要引人注目嗎?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false},
+                {"text": "在手上時:", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 攻速加成§f +0.5", "color": "light_purple", "italic": false}
+              ]
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "items:gloing_stone_mainhand",
+                  "operation": "addition",
+                  "slot": "mainhand",
+                  "id": "00004004-0000-4004-0000-400400004004"
+                },
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_speed",
+                  "name": "items:gloing_stone_offhand",
+                  "operation": "addition",
+                  "slot": "offhand",
+                  "id": "00004005-0000-4005-0000-400500004005"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomModelData:4252, HideFlags:2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

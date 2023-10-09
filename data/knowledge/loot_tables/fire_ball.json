@@ -11,21 +11,23 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "火的Example - 火球", "color": "red", "italic": false}
+                            "name": {"text": "📖 火的Example - 火球 📖", "color": "red", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能發射小火球", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間1秒", "color": "yellow", "italic": false},
                                 {"text": "火焰最簡單的型態。", "color": "gray"},
-                                {"text": "難道還有更複雜的型態?", "color": "gray"}
+                                {"text": "難道還有更複雜的型態?", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"fire_ball\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"fire_ball\",lvl:1}}"
                         }
                     ]
                 }

@@ -2,20 +2,19 @@ advancement revoke @s only actionbar:effects_changed
 scoreboard players operation $nextSec actionbar.time = $gametime general.utils
 scoreboard players add $nextSec actionbar.time 20
 
-function general:player_data/select
 data modify storage actionbar:player Data set value {}
-data modify storage actionbar:player Data set from storage general:player_data Data[{selected:1b}].Actionbar
-data modify storage actionbar:player Data.PositiveEffects[{custom:0b}].updated set value 0b
-data modify storage actionbar:player Data.NegativeEffects[{custom:0b}].updated set value 0b
+function general:player_data/get {path:"Actionbar",target:"storage actionbar:player Data"}
+data modify storage actionbar:player Data.positive_effects[{custom:0b}].updated set value 0b
+data modify storage actionbar:player Data.negative_effects[{custom:0b}].updated set value 0b
 
 data modify storage actionbar:player Effects set value []
-data modify storage actionbar:player Effects set from entity @s ActiveEffects
+data modify storage actionbar:player Effects set from entity @s active_effects
 execute if data storage actionbar:player Effects[] run function actionbar:effect/check
 
-data remove storage actionbar:player Data.PositiveEffects[{updated:0b}]
-data remove storage actionbar:player Data.NegativeEffects[{updated:0b}]
+data remove storage actionbar:player Data.positive_effects[{updated:0b}]
+data remove storage actionbar:player Data.negative_effects[{updated:0b}]
 
-execute store result score @s actionbar.effect.update_time run data get storage actionbar:player Data.EffectSchedule[0].Time
+execute store result score @s actionbar.effect.update_time run data get storage actionbar:player Data.effect_schedule[0].time
 
-data modify storage general:player_data Data[{selected:1b}].Actionbar set from storage actionbar:player Data
+function general:player_data/store {path:"Actionbar",target:"storage actionbar:player Data"}
 function actionbar:update

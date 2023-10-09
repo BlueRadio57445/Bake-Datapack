@@ -1,8 +1,30 @@
 {
   "parent": "quest:demo/mysterious_stone/endsky",
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$demo.mysterious_stone"
+              }
+            },
+            "range": 5
+          }
+        ]
+      }
     }
   },
   "display": {

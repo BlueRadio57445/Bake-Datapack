@@ -1,24 +1,29 @@
 {
-    "rewards": {
-        "function": "general:login_update"
-    },
-    "criteria": {
-        "logged_in": {
-            "trigger": "minecraft:tick",
-            "conditions": {
-                "player": [
-                    {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:entity_scores",
-                            "scores": {
-                                "general.logged_out": 0
-                            },
-                            "entity": "this"
-                        }
-                    }
-                ]
+  "rewards": {
+      "function": "general:login_update"
+  },
+  "criteria": {
+    "logged_in": {
+      "trigger": "minecraft:tick",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_scores",
+              "scores": {
+                "general.logged_out": 0
+              },
+              "entity": "this"
             }
-        }
+          }
+        ]
+      }
     }
+  },
+  "requirements": [
+    [
+      "logged_in"
+    ]
+  ]
 }

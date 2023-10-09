@@ -1,5 +1,8 @@
-#execute if data storage npc_system:common Condition.Item run function npc_system:common/option/condition/item
+# executed by marker
+data modify storage npc_system:common Condition set value {}
+$data modify storage npc_system:common Condition set from entity @s data.Dialogue.Options[$(index)].Condition
 
-data modify storage general:utils Item set from storage npc_system:common Condition.Item
-function general:utils/item_check
-scoreboard players operation $condition npc.state = $output general.utils
+execute if data storage npc_system:common Condition{Type:"item"} unless data storage npc_system:common Condition.Value.tag run function npc_system:common/option/condition/item with storage npc_system:common Condition.Value
+execute if data storage npc_system:common Condition{Type:"item"} if data storage npc_system:common Condition.Value.tag run function npc_system:common/option/condition/item_nbt with storage npc_system:common Condition.Value
+execute if data storage npc_system:common Condition{Type:"score"} run function npc_system:common/option/condition/score with storage npc_system:common Condition.Value
+execute if data storage npc_system:common Condition{Type:"command"} run function npc_system:common/option/condition/command with storage npc_system:common Condition

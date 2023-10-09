@@ -10,22 +10,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "美乃滋"
-              }
+              "name": {"text": "美乃滋", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "好ㄘ的美乃滋"
-                },
-                {
-                  "color": "gray",
-                  "text": "如果哪天三明治會飛?"
-                }
+                "",
+                {"text": "為三明治驢附加飛行功能。", "color": "yellow", "italic": false},
+                {"text": "沒加美乃滋的三明治，", "color": "gray"},
+                {"text": "就像失去翅膀的鳥兒。", "color": "gray"},
+                {"text": "難道三明治其實會飛?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
               ]
             },
             {

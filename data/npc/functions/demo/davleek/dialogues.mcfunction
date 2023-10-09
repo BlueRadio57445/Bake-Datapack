@@ -1,3 +1,4 @@
+data modify storage npc:demo davleek set value {}
 # 商人NPC的格式較普通NPC略有差別
 data modify storage npc:demo davleek.Trader set value 1b
 data modify storage npc:demo davleek.NormalRandom set value 1b
@@ -8,7 +9,6 @@ data modify storage npc:demo davleek.Normal append value {Texts:['{"text":"天�
 data modify storage npc:demo davleek.Normal append value {Texts:['{"text":"咳......"}','{"text":"沒事w"}']}
 
 data modify storage npc:demo davleek.TraderNormal set value []
-data modify storage npc:demo davleek.TraderNormal append value {Texts:['{"text":"天天開勳~~"}']}
 
 data modify storage npc:demo davleek.Exit set value {Texts:['{"text":"要再來喔"}']}
 

@@ -10,26 +10,19 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "三明治袋"
-              }
+              "name": {"text": "大型三明治袋", "color": "light_purple", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "被施下了複雜的法術"
-                },
-                {
-                  "color": "gray",
-                  "text": "可以將龐大的三明治隨身攜帶的便利道具"
-                },
-                {
-                  "color": "dark_gray",
-                  "text": "狀態: 裝著三明治驢"
-                }
+                "",
+                {"text": "右鍵召喚三明治驢。", "color": "yellow", "italic": false},
+                {"text": "被施下了複雜的法術，", "color": "gray"},
+                {"text": "可以將龐大的三明治隨身攜帶的便利道具。", "color": "gray"},
+                {"text": "巨大的三明治是真實存在的喔!", "color": "gray"},
+                {"text": "狀態: 裝著三明治驢", "color": "dark_gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
               ]
             },
             {
