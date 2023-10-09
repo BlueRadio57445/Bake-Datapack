@@ -18,7 +18,7 @@
                             "entity": "this",
                             "lore": [
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
-                                {"text": "提升5%移動速度", "color": "yellow", "italic": false},
+                                {"text": "提升15%移動速度", "color": "yellow", "italic": false},
                                 {"text": "據說這是宇宙貓咪所留下的毛毛，", "color": "gray"},
                                 {"text": "純白猶如月光。", "color": "gray"},
                                 "",
@@ -28,7 +28,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"furry_universe\", lvl:1},CustomModelData:8002}"
+                            "tag": "{is_universe:1b,universe:{id:\"furry_universe\", lvl:3},CustomModelData:8002}"
                         }
                     ]
                 }

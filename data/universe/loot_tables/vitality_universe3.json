@@ -11,24 +11,23 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 原味毛毛的宇宙I 🌌", "color": "#ffeeba", "italic": false}
+                            "name": {"text":"🌌 充滿活力的宇宙III 🌌", "color": "red", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
-                                {"text": "提升5%移動速度", "color": "yellow", "italic": false},
-                                {"text": "據說這是宇宙貓咪所留下的毛毛，", "color": "gray"},
-                                {"text": "純白猶如月光。", "color": "gray"},
+                                {"text": "提升更多更多最大生命值", "color": "yellow", "italic": false},
+                                {"text": "「貓咪愛狗，就如宇貓愛著世人。」", "color": "gray"},
+                                {"text": "——《貓砂福音》", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                                
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"furry_universe\", lvl:1},CustomModelData:8002}"
+                            "tag": "{is_universe:1b,universe:{id:\"vitality_universe\", lvl:3},CustomModelData:8000}"
                         }
                     ]
                 }

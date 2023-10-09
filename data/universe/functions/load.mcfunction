@@ -5,6 +5,9 @@ scoreboard objectives add universe.drop_bundle minecraft.dropped:minecraft.bundl
 
 scoreboard objectives add universe.cd.test_universe2 dummy "測試宇宙的冷卻時間"
 
+scoreboard objectives add universe.lvl.vitality_universe dummy "活力宇宙等級"
+scoreboard objectives add universe.lvl.furry_universe dummy "毛毛宇宙等級"
+
 scoreboard objectives add universe.lvl.sword_universe dummy "劍宇宙等級"
 scoreboard objectives add universe.lvl.axe_universe dummy "斧頭宇宙等級"
 scoreboard objectives add universe.lvl.trident_universe dummy "三叉戟宇宙等級"
