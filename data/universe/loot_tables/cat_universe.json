@@ -11,23 +11,24 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 海王星I 🌌", "color": "#baffbc", "italic": false}
+                            "name": {"text":"🌌 充滿貓咪的宇宙 🌌", "color": "gold", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
-                                {"text": "三叉戟近戰加5%傷害", "color": "yellow", "italic": false},
-                                {"text": "「星辰如大海；大海如星辰。」", "color": "gray"},
-                                {"text": "——《宇宙之美》", "color": "gray"},
+                                {"text": "延緩苦力怕爆炸", "color": "yellow", "italic": false},
+                                {"text": "「怎麼會有生物害怕貓咪呢？」", "color": "gray"},
+                                {"text": "——先知howhow", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"trident_universe\", lvl:1},CustomModelData:8001}"
+                            "tag": "{is_universe:1b,universe:{id:\"cat_universe\"},CustomModelData:8003}"
                         }
                     ]
                 }
