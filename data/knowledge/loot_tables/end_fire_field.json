@@ -11,15 +11,14 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "📖 水的Property - 游泳術 📖", "color": "aqua", "italic": false}
+                            "name": {"text": "📖 末火的Lemma - 末火焰領域 📖", "color": "blue", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
-                                {"text": "右鍵能長時間在水中活動。", "color": "yellow", "italic": false},
-                                {"text": "「你只要懂海，海就會幫助你。」", "color": "gray"},
-                                {"text": "  ——海龍王 彼得", "color": "gray"},
+                                {"text": "末天末天", "color": "yellow", "italic": false},
+                                {"text": "將靠近的邪惡焚燒殆盡!", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 30秒", "color": "dark_aqua", "italic": false}
@@ -27,7 +26,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_knowledge:1b,knowledge:{id:\"water_swim\",cooldown:20},on_click:\"function knowledge:on_click/on_click\"}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"end_fire_field\",damage:1,cooldown:600},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }
