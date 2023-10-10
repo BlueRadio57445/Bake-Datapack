@@ -9,7 +9,7 @@
       {
         "op": "replace",
         "source": "LoreDurability",
-        "target": "display.Lore[-3]"
+        "target": "display.Lore[-1]"
       }
     ]
   },
@@ -22,8 +22,8 @@
     "ops": [
       {
         "op": "replace",
-        "source": "Durability",
-        "target": "durability"
+        "source": "Whetstone.tag.durability.current",
+        "target": "durability.current"
       }
     ]
   }
