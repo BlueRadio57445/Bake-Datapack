@@ -1,0 +1,1 @@
+attribute @s[predicate=universe:hold_axe] minecraft:generic.attack_damage modifier add 00000000-0000-0000-0000-000000000801 "axe_universe" 0.05 multiply

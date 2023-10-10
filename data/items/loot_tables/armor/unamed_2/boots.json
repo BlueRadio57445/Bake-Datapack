@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_boots",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 2
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 2.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "armor.default",
+                  "operation": "addition",
+                  "slot": "feet",
+                  "id": "00004208-0000-4208-0000-420800004208"
+                },
+                {
+                  "amount": -0.1,
+                  "attribute": "minecraft:generic.movement_speed",
+                  "name": "movement_speed.body",
+                  "operation": "multiply_base",
+                  "slot": "feet",
+                  "id": "00004209-0000-4209-0000-420900004209"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:5066061},HideFlags:2,LoreUpdate:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

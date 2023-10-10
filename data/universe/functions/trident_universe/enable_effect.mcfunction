@@ -1,0 +1,1 @@
+attribute @s[predicate=universe:hold_trident] minecraft:generic.attack_damage modifier add 00000000-0000-0000-0000-000000000804 "trident_universe" 0.05 multiply

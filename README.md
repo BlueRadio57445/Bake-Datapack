@@ -32,8 +32,6 @@
 
 * 自訂物品NBT之格式: 這部分要衝突到的機率我想是不高，真的發生問題了再說吧(怕...)
 
-另外如果有自訂模型或材質的需求，請去吵收音機，他還沒開資源包的共用
-
 ## 命名空間註冊表
 |ID |namespace          |
 |---|-------------------|
@@ -51,26 +49,49 @@
 |11.|boss               |
 |12.|actionbar          |
 |13.|region             |
+|14.|target             |
+|15.|vehicles           |
 
-## general 命名空間下的實用函數
+## general 命名空間下的實用功能
 
-* player_data/
-  * select: 使用此函數後可呼叫與執行者 (限玩家) 的流水編號 (general.id) 相同 id 的儲存空間，該空間將可使用此路徑存取
+### 強制載入區塊: 主世界 (-1, -1) ~ (0, 0)
+* 主世界座標 0 16 0: 黃色界伏盒，用於玩家物品轉移之中介。
+* 主世界座標 0 0 0: 三角函數專用marker (UUID: 00000000-0000-0000-0000-000000000000)
 
-    `storage general:player_data Data[{selected:1b}]`
-     
-    且可對其內容進行讀取及編輯以處理玩家相關資料
+### general:player_data/
+* command storage
+  * `general:player_data`
+    * `Data` (list): 儲存所有玩家的額外資料，其序數對應到玩家的 `general.id` 記分板(玩家序號)，會在有新玩家登入時自動新增一項。
+      * `Inventory` (component): 玩家的背包內容，每次玩家背包更新後會在#tick函數階段的最後自動同步。意即若玩家的背包有變動，在進度及#tick函數的階段中偵測此項將會是變動前的狀態。
+* functions
+  * `general:player_data/get`: 帶macro的函數，用途為將執行者的資料庫中的指定路徑內容複製到指定的外部位置。引數為 `path` 及 `target`。
+    * `path`: 以 `Data` 中的一項為根目錄，指定此根目錄下的路徑。(若輸入 `path:"temp"`，代表要複製 `Data[$(玩家序號)].temp` 的內容)
+    * `target`: 要複製到的目標路徑，由三個部分組成 (type, source, path)，以空格隔開。 (例: `storage general:temp GotData`, `entity @e[limit=1,type=marker,tag=temp] data.GotData`)
+    * 實例: `function general:player_data/get {path:"temp",target:"storage general:temp GotData"}`
+  * `general:player_data/store`: 帶macro的函數，用途為將指定的外部位置的內容儲存到執行者的資料庫中的指定路徑。引數為 `path` 及 `target`。
+    * `path`: 以 `Data` 中的一項為根目錄，指定此根目錄下的路徑。(若輸入 `path:"temp"`，代表要儲存到 `Data[$(玩家序號)].temp`)
+    * `target`: 欲儲存資料的目標路徑，由三個部分組成 (type, source, path)，以空格隔開。(例: `storage general:temp StoreData`, `entity @e[limit=1,type=marker,tag=temp] data.StoreData`)
+    * 實例: `function general:player_data/store {path:"temp",target:"storage general:temp StoreData"}`
+  * `general:player_data/remove`: 帶macro的函數，用途為將執行者的資料庫中的指定路徑移除。引數為 `path`。
+    * `path`: 以 `Data` 中的一項為根目錄，指定此根目錄下的路徑。(若輸入 `path:"temp"`，代表要移除 `Data[$(玩家序號)].temp`)
+    * 實例: `function general:player_data/remove {path:"temp"}`
+  * `general:player_data/select`: 普通函數，用途為將執行者的資料庫加上一個標籤 `selected:1b`，使外部函數能夠用 `storage general:player_data Data[{selected:1b}]` 指定執行者的資料庫內容。(每次呼叫時會先自動清除所有 `selected:1b` 標籤，此標籤的存在應為唯一。)
 
-    例:
+### general:utils/
+* scoreboard
+  * `$gametime general.utils`: 當前遊戲刻
+  * `$playerOnline general.utils`: 當前線上人數
+* functions
+  * `general:utils/get_holding`: 執行後取得執行玩家的手持物品狀態，輸出位置為 `storage general:utils output`。(若該tick有背包內容變動，則取得的是變動前的狀態。)
+  * `general:utils/on_sticks_click`: 玩家手持胡蘿蔔/扭曲蕈菇右鍵時觸發，自動執行該物品 `on_click` 標籤中儲存的指令。
+  * `general:utils/health_changed`: 於玩家血量數值變動時觸發，可在此函數內新增任何其他函數的執行條件。
+  * `general:utils/hunger_changed`: 於玩家飢餓度數值變動時觸發，可在此函數內新增任何其他函數的執行條件。
+  * `general:utils/selected_slot_changed`: 於玩家快捷欄選擇欄位改變時觸發，可在此函數內新增任何其他函數的執行條件。
 
-        function general:player_data/select
-        data modify storage general:player_data Data[{selected:1b}].tempOffhand set from entity @s Inventory[{Slot:-106b}]
+### general:extra_lore
+[點此跳轉](data/general/functions/extra_lore/README.md)
 
-    註: `storage general:player_data Data[{selected:1b}].Inventory` 常駐儲存著該玩家前一個 tick 的背包狀態
-  
-  * get_holding: 上述功能的應用，執行此函數後會將執行玩家前一個 tick 的主副手狀態儲存到 `storage general:player_data` 中的 `output.mainhand` 及 `output.offhand`
-* gcm -  Generated Commands Manager, 感謝 [__雪色__](https://github.com/xuese0513) 提供此 [project](https://github.com/xuese0513/Generated-Commands-Manager) 內的技術
-  * 此技術可拼接字串、拼接並執行指令、讓指定玩家執行以字串形式儲存的指令等
-  * 若有認為需要使用此技術的功能，請聯絡技術總監進行評估
+## NPC 系統使用說明
+[點此跳轉](data/npc/README.md)
 
 此頁目前由技術總監: [__末天__](https://github.com/muotian) 負責編輯

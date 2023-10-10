@@ -1,2 +1,2 @@
 data modify storage quest:hunger_cave monster.Got_Rope.Options[1] set from storage quest:hunger_cave monster.Alt_Option_1
-data modify entity @e[limit=1,type=minecraft:marker,tag=npc.hunger_cave.monster,tag=npc.common] data.Options[1] set from storage quest:hunger_cave monster.Alt_Option_1
+data modify entity @e[limit=1,type=minecraft:marker,tag=npc.hunger_cave.monster] data.Dialogue.Options[1] set from storage quest:hunger_cave monster.Alt_Option_1

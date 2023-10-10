@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:nautilus_shell",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "§c彩§6虹§e糖", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "為三明治驢附加§a彩§3虹§r特效。", "color": "yellow", "italic": false},
+                {"text": "在空中奔跑的三明治~", "color": "gray"},
+                {"text": "其身後拖著~長長的§9§o彩§5§o虹§r~", "color": "gray"},
+                {"text": "到底哪國的三明治裡會有彩虹?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{sandwich:{rainbow:1b},CustomModelData:4003}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

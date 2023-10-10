@@ -1,0 +1,34 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "weapons:sword"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "blood_sword.Damage",
+        "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "weapons:sword"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "blood_sword.Health",
+        "target": "Health"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LoreUpdate:1b}"
+  }
+]

@@ -1,0 +1,26 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "nbt": "{allium_tuberosum:1b}"
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "weapons:scythe/allium_tuberosum/start"
+    }
+  }
+  
+
+
+
+
+
+

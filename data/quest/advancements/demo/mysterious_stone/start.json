@@ -12,16 +12,6 @@
         },
         "player": [
           {
-            "condition": "minecraft:inverted",
-            "term": {
-              "condition": "minecraft:entity_scores",
-              "scores": {
-                "general.logged_out": 0
-              },
-              "entity": "this"
-            }
-          },
-          {
             "condition": "minecraft:value_check",
             "value": {
               "type": "minecraft:score",

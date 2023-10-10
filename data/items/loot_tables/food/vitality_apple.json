@@ -17,9 +17,12 @@
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
+                                "",
                                 {"text": "吃下去能增加最大生命。", "italic": false, "color": "yellow"},
                                 {"text": "傳說中在米木各的時代能治百病，", "color": "gray"},
-                                {"text": "如今只剩一個效果。", "color": "gray"}
+                                {"text": "如今只剩一個效果。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

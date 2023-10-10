@@ -1,0 +1,61 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 珍珠錘 ≻", "color": "#21de63", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "攻擊100%暴擊，按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "錘地板可以傳送到該處，但是會受到傷害","color": "yellow", "italic": false},
+                                {"text": "「我為甚麼不用真的珍珠就好?」","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 錘子", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊傷害§f 11.0", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 攻擊速度§f 0.8", "color": "dark_aqua", "italic": false}
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_hammer:1b,hammer:{id:\"ender_pearl_hammer\"},CustomModelData:3105,HideFlags:2}"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"marker\",Tags:[\"hammer\",\"hammer.ender_pearl_hammer\"]}}"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 10,
+                                    "attribute": "generic.attack_damage",
+                                    "name": "attack_speed",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "4aaca1e9-a685-4e22-8905-d631575fb08e"
+                                },
+                                {
+                                    "amount": -3.2,
+                                    "attribute": "generic.attack_speed",
+                                    "name": "attack_speed",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "118dc38d-b179-483b-a35e-78db37cf0617"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

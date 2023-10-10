@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "check_universe_bundle": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "items": ["bundle"],
+                        "nbt": "{universe_bundle:1b}"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "universe:system/check_universe"
+    }
+}

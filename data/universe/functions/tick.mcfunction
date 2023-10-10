@@ -3,7 +3,16 @@ scoreboard players remove @a[scores={universe.cd.test_universe2=1..}] universe.c
 
 # 宇宙效果
 
-execute as @a[tag=universe.2,predicate=universe:in_water] run function universe:test_universe2/tick_effect
+execute as @a[tag=universe.water_universe] run function universe:water_universe/tick_effect
+function universe:light_universe/tick_effect
 
-# 苦力怕防爆，晚點補
-#execute as @a[tag=universe.2] at @s run function universe:test_universe2/tick_effect
+# 加攻擊傷害的宇宙(寫得很爛，之後還需要改)
+execute as @a[predicate=universe:hold_sword,tag=universe.sword_universe] run function universe:sword_universe/enable_effect
+execute as @a[predicate=universe:hold_axe,tag=universe.axe_universe] run function universe:axe_universe/enable_effect
+execute as @a[predicate=universe:hold_trident,tag=universe.trident_universe] run function universe:trident_universe/enable_effect
+execute as @a[predicate=universe:hold_hammer,tag=universe.hammer_universe] run function universe:hammer_universe/enable_effect
+
+execute as @a unless entity @s[predicate=universe:hold_sword,tag=universe.sword_universe] run function universe:sword_universe/disable_effect
+execute as @a unless entity @s[predicate=universe:hold_axe,tag=universe.axe_universe] run function universe:axe_universe/disable_effect
+execute as @a unless entity @s[predicate=universe:hold_trident,tag=universe.trident_universe] run function universe:trident_universe/disable_effect
+execute as @a unless entity @s[predicate=universe:hold_hammer,tag=universe.hammer_universe] run function universe:hammer_universe/disable_effect

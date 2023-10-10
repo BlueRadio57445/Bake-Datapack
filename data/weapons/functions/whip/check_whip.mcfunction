@@ -13,5 +13,9 @@ scoreboard players reset $is_selected weapons
 execute store result score $is_selected weapons on origin if predicate weapons:whip/wither_whip/selected
 execute if score $is_selected weapons matches 1 run function weapons:whip/wither_whip/cast
 
+scoreboard players reset $is_selected weapons
+execute store result score $is_selected weapons on origin if predicate weapons:whip/fungus_whip/selected
+execute if score $is_selected weapons matches 1 run function weapons:whip/fungus_whip/cast
+
 execute on origin run tag @s remove origin
 kill @s[tag=whip.kill]

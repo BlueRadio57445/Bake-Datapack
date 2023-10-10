@@ -9,25 +9,17 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "text": "≺ 傳奇腐肉 ≻",
-                "color": "gold",
-                "italic": false
-              }
+              "name": {"text": "≺ 傳奇腐肉 ≻", "color": "gold", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "text": "傳說中超級稀有的腐肉，",
-                  "color": "yellow",
-                  "italic": false
-                },
-                {
-                  "text": "其價值即是稀有本身。",
-                  "color": "yellow",
-                  "italic": false
-                }
+                "",
+                {"text": "食用時，高機率獲得飢餓效果。", "color": "yellow", "italic": false},
+                {"text": "傳說中超級稀有的腐肉，", "color": "gray"},
+                {"text": "其價值即是稀有本身。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
               ]
             }
           ]

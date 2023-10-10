@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "bow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"彈跳弓", "color": "green", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "射出的箭矢會反彈","color": "yellow", "italic": false},
+                                {"text": "雖然會反彈，但還是打不到怪。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 弓", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{bouncing_bow:1b,Unbreakable:1b,CustomModelData:3200}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

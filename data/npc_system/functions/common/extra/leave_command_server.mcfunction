@@ -1,2 +1,1 @@
-data modify storage general:gcm str set from entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Extra.Leave_Command
-function general:gcm/push/server/string
+data modify storage general:utils Execute append from entity @s data.Dialogue.Extra.LeaveCommand

@@ -1,9 +1,5 @@
 scoreboard players set @s npc.state 3
 scoreboard players set @s npc.option 0
 scoreboard players set @s npc.look_option 0
-execute positioned ~ ~1.4 ~ run function npc_system:trader/option/summon_b
-execute positioned ~ ~1.4 ~ run function npc_system:trader/option/summon_s
-execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.this,tag=npc.common] data.TraderNormal[] positioned ~ ~1.1 ~ run function npc_system:trader/option/summon_d
-execute positioned ~ ~0.8 ~ run function npc_system:trader/option/summon_e
-scoreboard players operation @e[tag=npc.option,tag=npc.this] npc.user = @s general.id
+execute as @e[limit=1,type=minecraft:marker,tag=npc.this] run function npc_system:trader/options_1
 function npc_system:actionbar/state_2

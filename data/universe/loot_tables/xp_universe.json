@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text":"🌌 經驗老到的宇宙I 🌌", "color": "#ffeeba", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
+                                {"text": "擊殺怪物獲得更多經驗", "color": "yellow", "italic": false},
+                                {"text": "經驗經驗；", "color": "gray"},
+                                {"text": "驚豔驚豔！", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_universe:1b,universe:{id:\"xp_universe\"},CustomModelData:8002}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

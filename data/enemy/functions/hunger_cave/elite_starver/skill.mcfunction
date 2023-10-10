@@ -1,5 +1,5 @@
 # 這是進度觸發，所以執行者跟執行位置是玩家
-advancement revoke @s only enemy:demo_region/elite_starver/hurt_by_player
+advancement revoke @s only enemy:hunger_cave/elite_starver/hurt_by_player
 
 tag @s add this
 execute at @s as @e[tag=enemy.elite_starver] run function enemy:check_attacker

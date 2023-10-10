@@ -1,0 +1,2 @@
+advancement revoke @s only universe:orichalcum_universe/take_off_armor
+attribute @s[tag=universe.orichalcum_universe] minecraft:generic.armor modifier add 00000000-0000-0000-0000-000000000802 "orichalcum_universe" 6 add

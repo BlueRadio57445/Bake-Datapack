@@ -13,8 +13,8 @@ data modify storage vehicles:sandwich Items set from entity @s Items
 item replace entity @s weapon.mainhand with minecraft:stone
 item modify entity @s weapon.mainhand vehicles:sandwich_items
 
-execute if score @s vehicles.sandwich.speed matches 0 run attribute @s generic.movement_speed base set 0.175
-execute if score @s vehicles.sandwich.speed matches 1 run attribute @s generic.movement_speed base set 0.350
+execute if score @s vehicles.sandwich.speed matches 0 run attribute @s generic.movement_speed base set 0.350
+execute if score @s vehicles.sandwich.speed matches 1 run attribute @s generic.movement_speed base set 0.700
 execute if score @s vehicles.sandwich.jump_boost matches 0 run attribute @s horse.jump_strength base set 0.5
 execute if score @s vehicles.sandwich.jump_boost matches 1 run attribute @s horse.jump_strength base set 0.8
 execute if score @s vehicles.sandwich.health_boost matches 0 run attribute @s generic.max_health base set 20.0

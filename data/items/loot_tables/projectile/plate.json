@@ -10,34 +10,20 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "玻璃盤子"
-              }
+              "name": {"text": "玻璃盤子", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "就是個普通的盤子，"
-                },
-                {
-                  "color": "gray",
-                  "text": "一般用途是盛裝食物。"
-                },
-                {
-                  "color": "gray",
-                  "text": "但有些人卻是拿來舒壓--"
-                },
-                {
-                  "color": "gray",
-                  "text": "摔爛它!"
-                },
-                {
-                  "color": "dark_gray",
-                  "text": "要小心碎片就是了..."
-                }
+                "",
+                {"text": "持續對小範圍的生物造成緩速及出血。", "color": "yellow", "italic": false},
+                {"text": "就是個普通的盤子，", "color": "gray"},
+                {"text": "一般用途是盛裝食物。", "color": "gray"},
+                {"text": "但有些人卻是拿來舒壓--", "color": "gray"},
+                {"text": "摔爛它!", "color": "gray"},
+                {"text": "要小心碎片就是了...", "color": "dark_gray"},
+                "",
+                {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
               ]
             },
             {
