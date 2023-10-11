@@ -14,8 +14,8 @@ execute as @s[predicate=knowledge:hold_mainhand/air_feather] run scoreboard play
 execute as @s[predicate=knowledge:hold_mainhand/air_run] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.air_run
 execute as @s[predicate=knowledge:hold_mainhand/air_cut] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.air_cut
 execute as @s[predicate=knowledge:hold_mainhand/air_tornado] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.air_tornado
-execute as @s[predicate=knowledge:hold_mainhand/end_fire_ball] run scoreboard players operation @s knowledge.cd.offhand = @s knowledge.cd.end_fire_ball
-execute as @s[predicate=knowledge:hold_mainhand/end_fire_fan] run scoreboard players operation @s knowledge.cd.offhand = @s knowledge.cd.end_fire_fan
-execute as @s[predicate=knowledge:hold_mainhand/end_fire_field] run scoreboard players operation @s knowledge.cd.offhand = @s knowledge.cd.end_fire_field
+execute as @s[predicate=knowledge:hold_mainhand/end_fire_ball] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.end_fire_ball
+execute as @s[predicate=knowledge:hold_mainhand/end_fire_fan] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.end_fire_fan
+execute as @s[predicate=knowledge:hold_mainhand/end_fire_field] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.end_fire_field
 execute as @s[predicate=knowledge:hold_mainhand/lightning] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.lightning
 execute as @s[predicate=knowledge:hold_mainhand/lightning_mad] run scoreboard players operation @s knowledge.cd.mainhand = @s knowledge.cd.lightning_mad

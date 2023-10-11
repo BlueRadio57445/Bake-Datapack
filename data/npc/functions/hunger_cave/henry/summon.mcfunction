@@ -1,6 +1,6 @@
 kill @e[tag=npc.hunger_cave.henry]
+
 summon minecraft:armor_stand ~ ~ ~ {Tags:["npc.this","npc.tag","npc.figure","npc.hunger_cave.henry"],Rotation:[0.0f,0.0f],CustomName:'{"text":"咆嘯亨利"}',ShowArms:1b,NoBasePlate:1b,NoGravity:1b,Invulnerable:1b,ArmorItems:[{id:"minecraft:leather_boots",Count:1b,tag:{display:{color:65280},Trim:{material:"minecraft:amethyst",pattern:"minecraft:silence"}}},{id:"minecraft:leather_leggings",Count:1b,tag:{display:{color:255},Trim:{material:"minecraft:amethyst",pattern:"minecraft:dune"}}},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:16777215},Trim:{material:"minecraft:quartz",pattern:"minecraft:eye"}}},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"suehirotaihoku12"}}]}
 summon minecraft:interaction ~ ~-0.05 ~ {Tags:["npc.this","npc.tag","npc.hunger_cave.henry"],width:0.6f,height:2.1f}
 summon minecraft:text_display ~ ~2.475 ~ {Tags:["npc.this","npc.tag","npc.name","npc.hunger_cave.henry"],billboard:"center",background:-1073741825,transformation:{translation:[0.0f,-0.255f,0.0f],left_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[1.0f,1.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f]}}
-data modify storage npc_system:common This set from storage npc:hunger_cave henry
-function npc_system:common/summon
+function npc_system:common/summon {region:"hunger_cave",npc:"henry"}

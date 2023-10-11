@@ -5,4 +5,4 @@ advancement grant @a only quest:hunger_cave/trader_bundle/start
 advancement grant @a only quest:hunger_cave/trader_bundle/finish
 
 clear @s prismarine_crystals{trader_bundle:1b}
-function npc:hunger_cave/pang/dialogues2
+function npc:hunger_cave/pang/dialogues_trader

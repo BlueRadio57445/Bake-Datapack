@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "ghast_spawn_egg",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 橡木錘 ≻", "color": "green", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "攻擊100%暴擊，按右鍵可以錘地板","color": "yellow", "italic": false},
+                                {"text": "錘地板對周圍怪物造成傷害，但會獲得緩速","color": "yellow", "italic": false},
+                                {"text": "經典木錘!","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 錘子", "color": "dark_aqua", "italic": false}
+                                
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_hammer:1b,hammer:{id:\"oak_hammer\"},CustomModelData:3100,HideFlags:2,LoreUpdate:1b}"
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{EntityTag:{id:\"marker\",Tags:[\"hammer\",\"hammer.oak_hammer\"]}}"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 6,
+                                    "attribute": "generic.attack_damage",
+                                    "name": "attack_damage.default",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "4aaca1e9-a685-4e22-8905-d631575fb08e"
+                                },
+                                {
+                                    "amount": -3.2,
+                                    "attribute": "generic.attack_speed",
+                                    "name": "attack_speed.default",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "118dc38d-b179-483b-a35e-78db37cf0617"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

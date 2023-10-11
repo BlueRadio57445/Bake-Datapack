@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text":"🌌 禁言黑洞 🌌", "color": "#baffbc", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
+                                {"text": "手持錘子時增加15%傷害", "color": "yellow", "italic": false},
+                                {"text": "「經過四次的大清洗，」", "color": "gray"},
+                                {"text": "「howhow終成為先知。」", "color": "gray"},
+                                {"text": "——《宇貓教徒歷史：第四章》", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_universe:1b,universe:{id:\"hammer_universe\", lvl:3},CustomModelData:8001}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

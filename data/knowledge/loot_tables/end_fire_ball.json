@@ -1,0 +1,37 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "📖 末火的Example - 末火球 📖", "color": "blue", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "末天末天", "color": "yellow", "italic": false},
+                                {"text": "火焰最簡單的型態。", "color": "gray"},
+                                {"text": "難道還有更複雜的型態?", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"end_fire_ball\",damage:5,cooldown:20},on_click:\"function knowledge:on_click/on_click\"}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

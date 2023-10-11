@@ -1,0 +1,30 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "items:whetstone"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "Weapon.tag.display.Lore",
+        "target": "display.Lore"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "items:whetstone"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "Weapon.tag.sharpened",
+        "target": "sharpened"
+      }
+    ]
+  }
+]

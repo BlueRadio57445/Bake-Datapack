@@ -7,7 +7,7 @@ execute if score $set effects.duration matches 2.. run effect give @s[type=minec
 attribute @s generic.knockback_resistance modifier add 00000C00-0000-0C00-0000-0C0000000C00 "effects:strong_gravity" 0.5 add
 tag @s add effects.strong_gravity
 scoreboard players operation @s effects.strong_gravity.duration = $set effects.duration
-execute store result score @s effects.strong_gravity.check_time run time query gametime
+scoreboard players operation @s effects.strong_gravity.check_time = $gametime general.utils
 scoreboard players add @s effects.strong_gravity.check_time 20
 scoreboard players set @s actionbar.custom_effect 1
 schedule function effects:strong_gravity/check 20t append

@@ -1,0 +1,32 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 割韭菜鐮刀 ≻", "color": "green", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "對人形生物暴頭，可以造成更多傷害","color": "yellow", "italic": false},
+                                {"text": "但是無法連點。","color": "yellow", "italic": false},
+                                {"text": "又到了收割的好季節!~","color":"gray"},
+                                {"text": "這次輪到誰被收割了呢?","color":"gray"}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{allium_tuberosum:1b,CustomModelData:1}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

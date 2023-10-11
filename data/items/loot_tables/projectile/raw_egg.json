@@ -10,18 +10,16 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "生蛋"
-              }
+              "name": {"text": "生蛋", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "噁...蛋清黏黏的..."
-                }
+                "",
+                {"text": "持續對周圍的生物造成緩速效果", "color": "yellow", "italic": false},
+                {"text": "噁...蛋清黏黏的...", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
               ]
             },
             {

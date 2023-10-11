@@ -5,7 +5,7 @@
         "equipment": {
             "offhand": {
                 "items": ["carrot_on_a_stick"],
-                "nbt": "{knowledge:{}}"
+                "nbt": "{is_knowledge:1b}"
             }
         }
     }

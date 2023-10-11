@@ -1,0 +1,3 @@
+execute if data storage knowledge:on_click current_knowledge{id:"fire_ball"} run data modify storage knowledge:on_click current_knowledge.id set value "end_fire_ball"
+execute if data storage knowledge:on_click current_knowledge{id:"fire_fan"} run data modify storage knowledge:on_click current_knowledge.id set value "end_fire_fan"
+execute if data storage knowledge:on_click current_knowledge{id:"fire_field"} run data modify storage knowledge:on_click current_knowledge.id set value "end_fire_field"

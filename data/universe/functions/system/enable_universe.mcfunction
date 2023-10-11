@@ -1,1 +1,2 @@
-execute as @s[tag=universe.1] run function universe:test_universe1/enable_effect
+$tag @s add universe.$(id)
+$execute run function universe:$(id)/enable_effect

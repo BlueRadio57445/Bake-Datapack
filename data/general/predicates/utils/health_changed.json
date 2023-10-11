@@ -1,0 +1,21 @@
+{
+  "condition": "minecraft:inverted",
+  "term": {
+    "condition": "minecraft:entity_scores",
+    "scores": {
+      "general.player.health": {
+        "max": {
+          "type": "minecraft:score",
+          "score": "general.utils.health",
+          "target": "this"
+        },
+        "min": {
+          "type": "minecraft:score",
+          "score": "general.utils.health",
+          "target": "this"
+        }
+      }
+    },
+    "entity": "this"
+  }
+}

@@ -1,5 +1,5 @@
 scoreboard players set $effect.new actionbar.state 0
-execute store success score $effect.new actionbar.state unless data storage actionbar:player Data.PositiveEffects[{Id:16}] run data modify storage actionbar:player Data.PositiveEffects append value {Id:16,custom:0b,Icon:'[{"text":"\\uF800"},{"text":"\\uDAFF\\uDFEA"},{"text":"\\uF810"},{"text":"\\uDB00\\uDC01"}]',IconReverse:'{"text":"\\uDAFF\\uDFE9"}'}
-execute if score $effect.new actionbar.state matches 1 run data remove storage actionbar:player Data.EffectSchedule[{Id:16}]
+execute store success score $effect.new actionbar.state unless data storage actionbar:player Data.positive_effects[{Id:16}] run data modify storage actionbar:player Data.positive_effects append value {Id:16,custom:0b,icon:'[{"text":"\\uF800"},{"text":"\\uDAFF\\uDFEA"},{"text":"\\uF810"},{"text":"\\uDB00\\uDC01"}]',icon_reverse:'{"text":"\\uDAFF\\uDFE9"}'}
+execute if score $effect.new actionbar.state matches 1 run data remove storage actionbar:player Data.effect_schedule[{Id:16}]
 execute if score $effect.new actionbar.state matches 1 run function actionbar:effect/new_timer
-data modify storage actionbar:player Data.PositiveEffects[{Id:16}] merge from storage actionbar:player Effects[0]
+data modify storage actionbar:player Data.positive_effects[{Id:16}] merge from storage actionbar:player Effects[0]

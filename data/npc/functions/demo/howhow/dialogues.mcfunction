@@ -1,3 +1,4 @@
+data modify storage npc:demo howhow set value {}
 # 商人NPC的格式較普通NPC略有差別
 data modify storage npc:demo howhow.Trader set value 1b
 data modify storage npc:demo howhow.Normal set value []
