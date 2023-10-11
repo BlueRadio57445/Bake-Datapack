@@ -117,7 +117,7 @@ NPC的基本函數如下列所示:
     * max (interger) - 隨機數 (uniform) 的上界，應大於min
     * min (interger) - 隨機數 (uniform) 的下界，不得小於0
   * Rest (compound or interger) - 距離下次文字顯示的秒數，格式同Duration
-* SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會撥放的音效，若無此設定則套用預設音效
+* SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會隨機撥放其中一個音效，若無此設定則套用預設音效
   * id (string) - 必填，音效的完整id
   * setting (compound) - 必填，可留空 (`setting:{}` 這樣就是留空)，若留空則套用預設值
     * volume (double) - 音量
