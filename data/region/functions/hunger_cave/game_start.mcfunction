@@ -15,5 +15,5 @@ execute if score $hunger_cave region matches 1 run tp @a[distance=..50] -193 95 
 execute if score $hunger_cave region matches 2 run spawnpoint @a[distance=..50] -339 -21 988
 execute if score $hunger_cave region matches 2 run tp @a[distance=..50] -343 35 971
 
-execute if score $hunger_cave region matches 3 run spawnpoint @a[distance=..50] 125 7 965
-execute if score $hunger_cave region matches 3 run tp @a[distance=..50] 125 7 965
+execute if score $hunger_cave region matches 3 run spawnpoint @a[distance=..50] 123 7 965
+execute if score $hunger_cave region matches 3 run tp @a[distance=..50] 123 7 965
