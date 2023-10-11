@@ -21,3 +21,6 @@ team add npc.trader
 team modify npc.trader collisionRule never
 
 scoreboard players set @e[type=minecraft:marker,tag=npc.idle] npc.idle -1
+
+#declare storage npc_system:common
+#declare storage npc_system:trader

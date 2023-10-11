@@ -7,3 +7,5 @@ data modify storage npc:demo endsky.Normal append value {Texts:['{"text":"開發
 data modify storage npc:demo endsky.Normal append value {Texts:['{"text":"在這個社會上"}','{"text":"錢是很重要的"}','{"text":"比如說新台幣一千元"}','{"text":"在這裡你常常能看到有人提起它"}','{"text":"這件事本身就已經凸顯了錢的重要性"}','{"text":"不過沒人付我薪水就是了"}']}
 data modify storage npc:demo endsky.Normal append value {Texts:['{"text":"天氣真好"}','{"italic":true,"text":"但是好無聊啊~"}','{"text":"其實從我有意識開始"}','{"text":"太陽的位置和天氣就從來沒有變過"}','{"text":"因為有人把日照和天氣循環關了"}']}
 data modify storage npc:demo endsky.Normal append value {Texts:['{"text":"當你聽到這句話的時候——"}','{"text":"欸?"}','{"text":"你說這其實是「看到」?"}','{"text":"等等"}','{"text":"你能§c聽得到§r引號嗎?"}','{"text":"你說紅色?"}','{"text":"我......好像快瘋了"}']}
+
+data modify storage npc:demo endsky.SoundPool set value [{id:"minecraft:entity.pillager.ambient",setting:{}},{id:"minecraft:entity.vindicator.ambient",setting:{}}]
