@@ -4,3 +4,4 @@ effect give @a[scores={knowledge.air_run=1..}] jump_boost 2 3 true
 effect give @a[scores={knowledge.air_run=1..}] speed 2 3 true
 
 execute at @a[scores={knowledge.air_run=1..}] run particle firework ~ ~ ~ 0.1 0.1 0.1 0.1 20
+execute at @a[scores={knowledge.air_run=1..}] run playsound minecraft:block.snow.step master @a[distance=..15] ~ ~ ~
