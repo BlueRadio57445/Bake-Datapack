@@ -57,8 +57,7 @@ scoreboard objectives add knowledge.air_run dummy "風流 持續時間 "
 
 scoreboard objectives add knowledge.object_duration dummy "物件持續時間"
 
-function knowledge:end_fire_schedule
-function knowledge:air_run_schedule
+function knowledge:schedule
 
 scoreboard objectives add knowledge.lightning dummy
 kill @e[type=marker,tag=bolt_dir]
