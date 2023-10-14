@@ -3,3 +3,4 @@ execute positioned ~ ~1.6 ~ as @e[type=item_display,tag=new_air_feather] run tp 
 scoreboard players set @e[type=item_display,tag=new_air_feather] knowledge.object_duration 1200
 schedule function knowledge:air_feather/init_anmition 2t
 tag @e[type=item_display,tag=new_air_feather] remove new_air_feather
+playsound minecraft:entity.arrow.shoot master @a[distance=..15] ^ ^ ^1 1 

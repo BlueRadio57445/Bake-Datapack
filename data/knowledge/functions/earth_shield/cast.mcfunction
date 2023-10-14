@@ -1,3 +1,5 @@
+playsound minecraft:block.deepslate_bricks.place master @a[distance=..15] ~ ~ ~
+playsound minecraft:block.mud_bricks.place master @a[distance=..15] ~ ~ ~
 scoreboard players add @s knowledge.earth_shield 3
 summon item_display ~ ~ ~ {item:{id:"shield",Count:1b,tag:{BlockEntityTag:{id:"banner",Base:12,Patterns:[{Pattern:"tts",Color:5}]}}},transformation:{translation:[0.28f,1.3f,1f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f]},Tags:["earth_shield","new_earth_shield"],Rotation:[0.0f,0.0f]}
 summon item_display ~ ~ ~ {item:{id:"shield",Count:1b,tag:{BlockEntityTag:{id:"banner",Base:12,Patterns:[{Pattern:"tts",Color:5}]}}},transformation:{translation:[0.28f,1.3f,1f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f]},Tags:["earth_shield","new_earth_shield"],Rotation:[120.0f,0.0f]}
