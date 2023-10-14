@@ -52,6 +52,14 @@
 |14.|target             |
 |15.|vehicles           |
 
+## 各命名空間下的註冊表
+
+* [weapons](data/weapons/README.md)
+* [items](data/items/README.md)
+* [quest](data/quest/README.md)
+* [universe](data/universe/README.md)
+* [region](data/region/README.md)
+
 ## general 命名空間下的實用功能
 
 ### 強制載入區塊: 主世界 (-1, -1) ~ (0, 0)
