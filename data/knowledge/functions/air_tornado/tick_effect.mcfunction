@@ -5,6 +5,3 @@ execute as @e[type=#mobs,type=!player,distance=4..8] facing entity @s feet rotat
 execute as @e[type=#mobs,type=!player,distance=..4] positioned as @s run tp @s ~ ~0.1 ~
 
 execute positioned ~-0.5 ~ ~-0.5 as @e[type=#mobs,type=!player,dx=0,dy=5,dz=0] run damage @s 1 player_attack
-
-scoreboard players remove @s knowledge.object_duration 1
-kill @s[scores={knowledge.object_duration=0}]

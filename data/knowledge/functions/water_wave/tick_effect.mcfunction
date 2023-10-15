@@ -1,7 +1,5 @@
 # 執行者、執行位置是海浪的位置
 tp @s ^ ^ ^0.5
-scoreboard players remove @s knowledge.object_duration 1
-kill @s[scores={knowledge.object_duration=..0}]
 
 particle minecraft:falling_dripstone_water ^ ^1 ^2 0.4 0.2 0.4 0.1 40
 particle minecraft:falling_dripstone_water ^1 ^1 ^2 0.4 0.2 0.4 0.1 40
