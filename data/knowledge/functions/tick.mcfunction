@@ -46,3 +46,4 @@ execute as @e[type=interaction,tag=earth_pillar] at @s run function knowledge:ea
 
 execute as @e[type=item_display,tag=air_feather] at @s run function knowledge:air_feather/tick_effect
 execute as @a[scores={knowledge.air_run=1..}] at @s run function knowledge:air_run/tick_effect
+execute as @e[type=marker,tag=air_tornado] at @s run function knowledge:air_tornado/tick_effect
