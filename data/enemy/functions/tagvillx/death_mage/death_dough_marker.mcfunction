@@ -1,4 +1,4 @@
-execute if score @s enemy.death_mage.skill.prepare matches 1.. run scoreboard players remove @s enemy.death_mage.skill.prepare 1
+scoreboard players remove @s[scores={enemy.death_mage.skill.prepare=0..}] enemy.death_mage.skill.prepare 1
 
 particle block sand ~ ~.5 ~ .3 .6 .3 0 20
 particle dust 0.792 0.753 0.494 1 ~ ~.5 ~ .3 .5 .3 0 50
