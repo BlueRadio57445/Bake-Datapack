@@ -17,7 +17,6 @@ scoreboard objectives add knowledge.cd.offhand_sec1 dummy "副手冷卻時間"
 scoreboard objectives add knowledge.cd.mainhand_sec2 dummy "主手冷卻時間"
 scoreboard objectives add knowledge.cd.offhand_sec2 dummy "副手冷卻時間"
 
-scoreboard objectives add knowledge.cd.time_step dummy "冷卻schedule"
 scoreboard objectives add knowledge.cd.fire_ball dummy "火球冷卻時間"
 scoreboard objectives add knowledge.cd.fire_fan dummy "火焰扇冷卻時間"
 scoreboard objectives add knowledge.cd.fire_field dummy "火焰領域冷卻時間"
@@ -56,6 +55,7 @@ scoreboard objectives add knowledge.earth_shield dummy "護盾 充能次數"
 scoreboard objectives add knowledge.air_run dummy "風流 持續時間 "
 
 scoreboard objectives add knowledge.object_duration dummy "物件持續時間"
+scoreboard objectives add knowledge.init_timestamp dummy "初始化的時間戳"
 
 function knowledge:schedule
 
