@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "trident",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 橫掃 ≻", "color": "light_purple", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "聖殿附魔測試", "color": "yellow", "italic": false},
+                                {"text": "橫掃", "color": "yellow", "italic": false},
+                                "",
+                                {"text": " ✒ 物品類型§f 三叉戟", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sanctuary_enchs:[{id:\"sweeping\",lvl:1s}],HideFlags:2,LoreUpdate:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
