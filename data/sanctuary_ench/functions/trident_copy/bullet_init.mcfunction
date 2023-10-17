@@ -1,2 +1,2 @@
 tp @s ^ ^ ^1 ~ ~
-data merge entity @s {Tags:["trident_bullet"],item:{id:"trident",Count:1b},transformation:{translation:[0f,0f,0f],scale:[1f,1f,1f],left_rotation:[0f,0f,0f,1.0f],right_rotation:[ -0.653f, 0.271f, 0.653f, -0.271f]},interpolation_start:-1,interpolation_duration:8}
+#data merge entity @s 
