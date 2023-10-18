@@ -6,7 +6,6 @@ scoreboard objectives add sanctuary_ench dummy "聖殿附魔"
 scoreboard objectives add s_ench.golden_butter dummy "黃金奶油繼承數"
 
 # 增生
-scoreboard objectives add s_ench.trident_copy.drop minecraft.dropped:minecraft.trident "三叉戟丟棄次數 增生"
 
 # 橫掃
 scoreboard objectives add s_ench.trident_sweep.animation dummy "橫掃的動畫時間"
