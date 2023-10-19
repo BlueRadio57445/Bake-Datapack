@@ -32,7 +32,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{mosquito_legacy:1b,HideFlags:2,LoreUpdate:1b}"
+                            "tag": "{mosquito_legacy:1b,Unbreakable:1b,HideFlags:2,LoreUpdate:1b}"
                         }
                     ]
                 }
