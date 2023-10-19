@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "wax_off": {
+            "trigger": "minecraft:item_used_on_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "oak_log",
+                                    "birch_log",
+                                    "spruce_log",
+                                    "jungle_log",
+                                    "acacia_log",
+                                    "dark_oak_log",
+                                    "cherry_log",
+                                    "mangrove_log"
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                            "nbt": "{bark_axe:1b}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:axe/bark_axe"
+    }
+}
