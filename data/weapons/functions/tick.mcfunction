@@ -21,6 +21,7 @@ function weapons:sword/blood_sword/tick
 #function weapons:sword/fat_sword/tick <- 這個也不再需要了
 
 # === 三叉戟 ===
+function weapons:trident/tick
 
 # === 鞭子 ===
 function weapons:whip/tick
