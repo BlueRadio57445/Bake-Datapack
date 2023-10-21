@@ -4,7 +4,7 @@ scoreboard players remove @s[scores={enemy.big_knife.skill.prepare=1..}] enemy.b
 
 #prepare
 execute if score @s enemy.big_knife.skill.cd matches ..0 run function enemy:tagvillx/big_knife/prepare
-tp @s[scores={enemy.big_knife.skill.prepare=11..}] ~ ~ ~ facing entity @p
+tp @s[scores={enemy.big_knife.skill.prepare=5..}] ~ ~ ~ facing entity @p
 
 #cast
 execute if score @s enemy.big_knife.skill.prepare matches ..0 at @s run function enemy:tagvillx/big_knife/cast
