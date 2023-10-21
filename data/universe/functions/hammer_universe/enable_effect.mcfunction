@@ -1,1 +1,1 @@
-attribute @s[predicate=universe:hold_hammer] minecraft:generic.attack_damage modifier add 00000000-0000-0000-0000-000000000805 "hammer_universe" 0.05 multiply
+function universe:hammer_universe/attribite

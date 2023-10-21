@@ -1,1 +1,1 @@
-attribute @s[predicate=universe:hold_scythe] minecraft:generic.attack_damage modifier add 00000000-0000-0000-0000-000000000806 "scythe_universe" 0.05 multiply
+function universe:scythe_universe/attribute

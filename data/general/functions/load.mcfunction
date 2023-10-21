@@ -19,6 +19,10 @@ scoreboard objectives add general.utils.health dummy
 scoreboard objectives add general.utils.food dummy
 scoreboard objectives add general.utils.selected_slot dummy
 
+scoreboard objectives add general.extra_lore dummy
+scoreboard objectives add general.extra_lore.modifier_type dummy
+
+scoreboard players set $-1 general.const -1
 scoreboard players set $0 general.const 0
 scoreboard players set $1 general.const 1
 scoreboard players set $2 general.const 2
@@ -35,12 +39,18 @@ execute unless score $playerCount general.id = $playerCount general.id run score
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0
 
-# 三角函數專用Marker，用完記得tp回0 0 0 (UUID: 00000000-0000-0000-0000-000000000000)
+# 三角函數專用Marker，用完記得tp回0.0 0.0 0.0 (UUID: 00000000-0000-0000-0000-000000000000)
 kill @e[type=marker,tag=tri]
-execute unless entity @e[type=marker,tag=tri] run summon marker 0 0 0 {Tags:["tri"],UUID:[I;0,0,0,0]}
+execute unless entity @e[type=marker,tag=tri] run summon marker 0.0 0.0 0.0 {Tags:["tri"],UUID:[I;0,0,0,0]}
+
+# 留給以後用
+kill 00000000-0000-0000-0000-000000000001
 
 # 放一個界伏盒，用於任何需要替換玩家物品欄內容的場合
 setblock 0 16 0 yellow_shulker_box
+
+# Lore相關功能初始化用資料
+function general:extra_lore/load
 
 # 開發者專用功能: 若於此資料夾新增了需要進行初始化的功能，此分數將被技術總監加1
 scoreboard players set $datapack general.version 2

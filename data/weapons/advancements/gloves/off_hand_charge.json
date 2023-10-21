@@ -1,0 +1,52 @@
+{
+  "rewards": {
+    "function": "weapons:gloves/system/return_arrow"
+  },
+  "criteria": {
+    "off_hand_charged": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "equipment": {
+                "offhand": {
+                  "nbt": "{ChargedProjectiles:[{}],gloves:1b}"
+                }
+              }
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "equipment": {
+                  "offhand": {
+                    "nbt": "{ChargedProjectiles:[{id:\"minecraft:air\"}],gloves:1b}"
+                  }
+                }
+              },
+              "entity": "this"
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "type_specific": {
+                  "type": "player",
+                  "gamemode": "creative"
+                }
+              },
+              "entity": "this"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

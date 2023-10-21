@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "need_update": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{LoreUpdate:1b}"
+          }
+        ]
+      }
+    }
+  }
+}

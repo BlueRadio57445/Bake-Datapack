@@ -18,10 +18,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 "",
-                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false},
-                {"text": " ✒ 護甲值　§f 1.0", "color": "dark_aqua", "italic": false},
-                {"text": "裝備在身上時:", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 傷害加成§f +0.5", "color": "light_purple", "italic": false}
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false}
               ]
             },
             {
@@ -30,7 +27,7 @@
                 {
                   "amount": 1.0,
                   "attribute": "minecraft:generic.armor",
-                  "name": "items:unamed_1_chestplate_armor",
+                  "name": "armor.default",
                   "operation": "addition",
                   "slot": "chest",
                   "id": "00004204-0000-4204-0000-420400004204"
@@ -38,7 +35,7 @@
                 {
                   "amount": 0.5,
                   "attribute": "minecraft:generic.attack_damage",
-                  "name": "items:unamed_1_chestplate_attack_damage",
+                  "name": "attack_damage.body",
                   "operation": "addition",
                   "slot": "chest",
                   "id": "00004205-0000-4205-0000-420500004205"
@@ -47,7 +44,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{display:{color:14680154},HideFlags:2}"
+              "tag": "{display:{color:14680154},HideFlags:2,LoreUpdate:1b}"
             }
           ]
         }
