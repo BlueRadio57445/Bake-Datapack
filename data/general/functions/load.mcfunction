@@ -35,6 +35,7 @@ scoreboard players set $100 general.const 100
 execute unless score $playerCount general.id = $playerCount general.id run scoreboard players set $playerCount general.id 0
 
 # 設定區
+#declare storage general:utils
 
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0
