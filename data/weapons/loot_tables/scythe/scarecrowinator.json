@@ -21,8 +21,15 @@
                             ]
                         },
                         {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "smite":3,
+                                "bane_of_arthropods":3
+                            }
+                        },
+                        {
                             "function": "set_nbt",
-                            "tag": "{sanctuary_enchs:[{id:\"giant\",lvl:1s}]}"
+                            "tag": "{sanctuary_enchs:[{id:\"giant\",lvl:1s}],Unbreakable:1b,HideFlags:2,LoreUpdate:1b}"
                         }
                     ]
                 }
