@@ -1,5 +1,12 @@
-execute positioned ~-.5 ~ ~-.5 run function enemy:tagvillx/big_knife/damage
-scoreboard players reset @s enemy.big_knife.skill.prepare
+#執行者:巨妖刀 位置:巨妖刀
 
 
+#
+effect clear @s resistance
+effect clear @a[distance=..7] resistance
+scoreboard players set @s enemy.big_knife.skill.prepare 40
+data modify entity @s NoAI set value 1
+scoreboard players set @s enemy.big_knife.skill.cd 400
+execute positioned ~ ~2.8 ~ run function enemy:tagvillx/big_knife/summon_knife
 
+tag @s add big_knife

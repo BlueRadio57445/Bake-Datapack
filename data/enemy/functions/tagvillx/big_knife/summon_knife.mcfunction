@@ -1,3 +1,7 @@
+#執行者:巨妖刀 位置:巨妖刀
+
+
+
 summon block_display ~ ~ ~ {Tags:["big_knife_display","new","1"],teleport_duration:1,block_state:{Name:"minecraft:crying_obsidian"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0f,0f,0f],translation:[0.0f,0.0f,0.0f]}}
 summon block_display ~ ~0.5 ~ {Tags:["big_knife_display","new","2"],teleport_duration:1,block_state:{Name:"minecraft:crying_obsidian"},transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],scale:[0f,0f,0f],translation:[0.0f,0.0f,0.0f]}}
 #

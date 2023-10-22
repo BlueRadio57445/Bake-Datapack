@@ -1,3 +1,5 @@
+#執行者:巨妖刀 位置:巨妖刀
+
 #animation
 execute if score @s enemy.big_knife.skill.prepare matches 39 as @e[tag=big_knife_display] run data merge entity @s {interpolation_duration:27,start_interpolation:0,transformation:{translation:[0f,0f,0f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.5f,0.5f,0.5f]}}
 

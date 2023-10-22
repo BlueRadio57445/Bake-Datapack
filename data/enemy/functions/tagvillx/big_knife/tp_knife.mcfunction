@@ -1,3 +1,7 @@
+#執行者:tag=1的妖刀顯示 位置:tag=1的妖刀顯示
+
+
+
 tp @e[tag=big_knife_display,tag=2] ^ ^0.5 ^
 tp @e[tag=big_knife_display,tag=3] ^ ^ ^0.5
 tp @e[tag=big_knife_display,tag=4] ^ ^0.5 ^0.5
