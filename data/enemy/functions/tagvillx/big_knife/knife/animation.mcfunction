@@ -9,6 +9,13 @@ execute if score @s enemy.big_knife.skill.cd matches 20..25 on passengers at @s 
 
 execute if score @s enemy.big_knife.skill.cd matches 33 on passengers run data merge entity @s {block_state:{Name:"minecraft:amethyst_block"}}
 
+execute if score @s enemy.big_knife.skill.cd matches 20 rotated ~ 0 positioned ~ ~-1 ~ run function enemy:tagvillx/big_knife/knife/damage
+
+# 跟隨
+execute on origin run tag @s add this
+data modify entity @s Rotation[0] set from entity @e[limit=1,tag=this,type=#mobs] Rotation[0]
+execute on passengers run data modify entity @s Rotation[0] set from entity @e[limit=1,tag=this,type=#mobs] Rotation[0]
+tag @e[tag=this] remove this
 
 #聲音
 execute if score @s enemy.big_knife.skill.cd matches 55 run playsound minecraft:block.respawn_anchor.charge master @a[distance=..10] ~ ~ ~ 1 0
