@@ -1,5 +1,5 @@
 #執行者:巨妖刀 位置:巨妖刀
-
+say damage
 
 #
 execute positioned ^ ^ ^3 run playsound minecraft:item.trident.thunder master @a[distance=..7] ~ ~ ~ 1 2

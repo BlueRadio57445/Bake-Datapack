@@ -1,6 +1,5 @@
 #執行者:巨妖刀 位置:巨妖刀
 
-
 #
 effect clear @s resistance
 effect clear @a[distance=..7] resistance
