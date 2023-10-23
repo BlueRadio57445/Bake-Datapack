@@ -8,7 +8,7 @@
     "ops": [
       {
         "op": "replace",
-        "source": "Sharpen",
+        "source": "Whetstone.tag.whetstone",
         "target": "sharpened"
       }
     ]
@@ -24,22 +24,18 @@
             "type": "minecraft:fixed",
             "name": "$modifier"
           },
-          "scale": 0.01
+          "scale": 0.010000001
         },
         "attribute": "minecraft:generic.attack_damage",
-        "name": "items:whetstone_attack_damage",
-        "operation": "multiply_total",
+        "name": "attack_damage.whetstone",
+        "operation": "multiply_base",
         "slot": "mainhand",
         "id": "00004900-0000-4900-0000-490000004900"
       }
     ]
   },
   {
-    "function": "minecraft:set_lore",
-    "lore": [
-      {"text": "臨時屬性:", "color": "dark_gray", "italic": false},
-      {"nbt": "LoreModifier", "storage": "items:whetstone", "interpret": true}
-    ],
-    "entity": "this"
+    "function": "minecraft:set_nbt",
+    "tag": "{LoreUpdate:1b}"
   }
 ]

@@ -27,7 +27,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"vitality_universe\"},CustomModelData:8000}"
+                            "tag": "{is_universe:1b,universe:{id:\"vitality_universe\", lvl:1},CustomModelData:8000}"
                         }
                     ]
                 }

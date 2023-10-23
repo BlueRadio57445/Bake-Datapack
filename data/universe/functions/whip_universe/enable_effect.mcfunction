@@ -1,0 +1,1 @@
+function universe:whip_universe/attribute

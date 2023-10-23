@@ -21,9 +21,7 @@
                                 {"text": "那絕美的豔紅之花阿，", "color": "gray"},
                                 {"text": "侍奉你是我的榮幸!", "color": "gray"},
                                 "",
-                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
-                                {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
-                                {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
+                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
@@ -33,8 +31,37 @@
                             }
                         },
                         {
+                          "function": "set_attributes",
+                          "modifiers": [
+                            {
+                                "amount": 3,
+                                "attribute": "generic.attack_damage",
+                                "name": "attack_damage.default",
+                                "operation": "addition",
+                                "slot": "mainhand",
+                                "id": "9b88e1c4-60cf-46a3-8638-109744130736"
+                            },
+                            {
+                                "amount": -2.4,
+                                "attribute": "generic.attack_speed",
+                                "name": "attack_speed.default",
+                                "operation": "addition",
+                                "slot": "mainhand",
+                                "id": "ffd0a4e7-efff-49cc-8274-a6c743fd131e"
+                            },
+                            {
+                                "amount": 0,
+                                "attribute": "generic.attack_damage",
+                                "name": "attack_damage.mainhand",
+                                "operation": "addition",
+                                "slot": "mainhand",
+                                "id": "e31754d6-145c-4fa9-b3f4-aa02ac5088fc"
+                            }
+                          ]
+                        },
+                        {
                             "function": "set_nbt",
-                            "tag": "{blood_sword:1b,Unbreakable:1b,CustomModelData:3001,HideFlags:2}"
+                            "tag": "{blood_sword:1b,Unbreakable:1b,CustomModelData:3001,HideFlags:2,LoreUpdate:1b}"
                         }
                     ]
                 }

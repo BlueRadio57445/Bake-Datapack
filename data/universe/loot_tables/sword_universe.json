@@ -11,7 +11,7 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text":"🌌 噴射中子星 🌌", "color": "#baffbc", "italic": false}
+                            "name": {"text":"🌌 噴射中子星I 🌌", "color": "#baffbc", "italic": false}
                         },
                         {
                             "function": "set_lore",
@@ -27,7 +27,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_universe:1b,universe:{id:\"sword_universe\"},CustomModelData:8001}"
+                            "tag": "{is_universe:1b,universe:{id:\"sword_universe\", lvl:1},CustomModelData:8001}"
                         }
                     ]
                 }
