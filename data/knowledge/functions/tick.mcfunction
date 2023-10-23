@@ -29,10 +29,6 @@ scoreboard players remove @a[scores={knowledge.cd.lightning_mad=1..}] knowledge.
 # 滑鼠滾輪
 execute as @a run function knowledge:cooldown/scroll
 
-# 刪除時間到的物件
-scoreboard players remove @e[scores={knowledge.object_duration=1..}] knowledge.object_duration 1
-execute as @e[scores={knowledge.object_duration=0}] on passengers run kill @s
-kill @e[scores={knowledge.object_duration=..0}]
 
 execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_ball/tick_effect
 execute as @e[type=armor_stand,tag=end_fire_ball] at @s run function knowledge:end_fire_ball/tick_effect

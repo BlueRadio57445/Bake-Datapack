@@ -54,9 +54,6 @@ scoreboard objectives add knowledge.earth_shield dummy "護盾 充能次數"
 
 scoreboard objectives add knowledge.air_run dummy "風流 持續時間 "
 
-scoreboard objectives add knowledge.object_duration dummy "物件持續時間"
-scoreboard objectives add knowledge.init_timestamp dummy "初始化的時間戳"
-
 function knowledge:schedule
 
 scoreboard objectives add knowledge.lightning dummy
