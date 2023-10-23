@@ -22,6 +22,9 @@ scoreboard objectives add general.utils.selected_slot dummy
 scoreboard objectives add general.extra_lore dummy
 scoreboard objectives add general.extra_lore.modifier_type dummy
 
+scoreboard objectives add general.object.duration dummy
+scoreboard objectives add general.object.init_timestamp dummy
+
 scoreboard players set $-1 general.const -1
 scoreboard players set $0 general.const 0
 scoreboard players set $1 general.const 1
