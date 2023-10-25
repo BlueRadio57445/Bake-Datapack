@@ -22,6 +22,9 @@ scoreboard objectives add general.utils.selected_slot dummy
 scoreboard objectives add general.extra_lore dummy
 scoreboard objectives add general.extra_lore.modifier_type dummy
 
+scoreboard objectives add general.object.duration dummy
+scoreboard objectives add general.object.init_timestamp dummy
+
 scoreboard players set $-1 general.const -1
 scoreboard players set $0 general.const 0
 scoreboard players set $1 general.const 1
@@ -35,6 +38,7 @@ scoreboard players set $100 general.const 100
 execute unless score $playerCount general.id = $playerCount general.id run scoreboard players set $playerCount general.id 0
 
 # 設定區
+#declare storage general:utils
 
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0
