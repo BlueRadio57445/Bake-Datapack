@@ -1,0 +1,2 @@
+execute unless block ~ ~-0.1 ~ #no_collision run function knowledge:water_swirl/summon_swirl
+execute if block ~ ~-0.1 ~ #no_collision if entity @s[distance=..30] positioned ~ ~-0.1 ~ run function knowledge:water_swirl/recursion_effect

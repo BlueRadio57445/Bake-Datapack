@@ -8,3 +8,4 @@ execute rotated as 00000000-0000-0000-0000-000000000100 rotated ~180 ~ run parti
 execute rotated as 00000000-0000-0000-0000-000000000100 rotated ~240 ~ run particle flame ^ ^ ^1 ^ ^20000 ^100000 0.000001 0
 execute rotated as 00000000-0000-0000-0000-000000000100 rotated ~300 ~ run particle flame ^ ^ ^1 ^ ^20000 ^100000 0.000001 0
 function knowledge:fire_field/particle
+execute as @e[distance=0.1..3,type=#mobs,type=!player] run data modify entity @s Fire set value 100

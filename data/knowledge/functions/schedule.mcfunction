@@ -1,0 +1,4 @@
+function knowledge:air_run_schedule
+function knowledge:end_fire_schedule
+function knowledge:earth_field_schedule
+schedule function knowledge:schedule 1s replace
