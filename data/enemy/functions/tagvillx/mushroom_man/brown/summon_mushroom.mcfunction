@@ -4,3 +4,4 @@ scoreboard players set @e[tag=mushroom_display,tag=new,type=item_display] enemy.
 
 kill @s
 
+tag @e[tag=mushroom_display,tag=new,type=item_display] remove new
