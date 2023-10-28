@@ -10,10 +10,10 @@ execute if predicate knowledge:hold_knowledge2 run function knowledge:cooldown/o
 scoreboard players operation $current actionbar.cooldown = @s knowledge.cd.mainhand
 execute store result score $length actionbar.cooldown run data get entity @s SelectedItem.tag.knowledge.cooldown
 scoreboard players operation $slot actionbar.cooldown = @s general.player.selected_slot
-execute if score $current actionbar.cooldown matches 1.. run function actionbar:cooldown/hotbar_start
-execute if score $current actionbar.cooldown matches ..0 run function actionbar:cooldown/hotbar_end
+execute if score $current actionbar.cooldown matches 1.. run function actionbar:cooldown/hotbar/start
+execute if score $current actionbar.cooldown matches ..0 run function actionbar:cooldown/hotbar/end
 
 scoreboard players operation $current actionbar.cooldown = @s knowledge.cd.offhand
 execute store result score $length actionbar.cooldown run data get entity @s Inventory[{Slot:-106b}].tag.knowledge.cooldown
-execute if score $current actionbar.cooldown matches 1.. run function actionbar:cooldown/offhand_start
-execute if score $current actionbar.cooldown matches ..0 run function actionbar:cooldown/offhand_end
+execute if score $current actionbar.cooldown matches 1.. run function actionbar:cooldown/offhand/start
+execute if score $current actionbar.cooldown matches ..0 run function actionbar:cooldown/offhand/end

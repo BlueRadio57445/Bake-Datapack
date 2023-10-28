@@ -13,6 +13,14 @@
     {
       "condition": "minecraft:reference",
       "name": "knowledge:hold_knowledge2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "actionbar:cooldown/offhand_cooldown_score"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "actionbar:cooldown/offhand_cooldown_item"
     }
   ]
 }

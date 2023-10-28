@@ -1,6 +1,6 @@
 execute if score @s actionbar.cooldown.offhand_update_time > $gametime general.utils run return 0
 
-execute if score @s actionbar.cooldown.offhand_target_time <= $gametime general.utils run function actionbar:cooldown/offhand_end
+execute if score @s actionbar.cooldown.offhand_target_time <= $gametime general.utils run function actionbar:cooldown/offhand/end
 execute unless score @s actionbar.cooldown.offhand_target_time = @s actionbar.cooldown.offhand_target_time run return 0
 
 function general:player_data/get {path:"Actionbar",target:"storage actionbar:player Data"}
@@ -25,7 +25,7 @@ scoreboard players operation @s actionbar.cooldown.offhand_update_time = $update
 execute store result storage actionbar:player Data.cooldown.offhand.level byte 1 run scoreboard players get $level actionbar.cooldown
 execute store result storage actionbar:player Data.cooldown.offhand.update_time int 1 run scoreboard players get $updateTime actionbar.cooldown
 
-function actionbar:cooldown/offhand_mask with storage actionbar:player Data.cooldown.offhand
+function actionbar:cooldown/offhand/mask with storage actionbar:player Data.cooldown.offhand
 
 function general:player_data/store {path:"Actionbar",target:"storage actionbar:player Data"}
 
