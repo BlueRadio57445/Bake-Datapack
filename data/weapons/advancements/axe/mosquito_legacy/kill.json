@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "kill": {
+            "trigger": "player_killed_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "nbt": "{mosquito_legacy:1b}"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:axe/mosquito_legacy/kill"
+    }
+}
