@@ -27,6 +27,7 @@ scoreboard players set $0 general.const 0
 scoreboard players set $1 general.const 1
 scoreboard players set $2 general.const 2
 scoreboard players set $10 general.const 10
+scoreboard players set $16 general.const 16
 scoreboard players set $20 general.const 20
 scoreboard players set $60 general.const 60
 scoreboard players set $100 general.const 100

@@ -14,3 +14,7 @@ execute if score @s effects.bleed.duration matches 0.. run scoreboard players op
 execute if score @s effects.bleed.duration matches 0.. run schedule function effects:bleed/check 20t
 execute if score @s effects.stun.duration matches 0.. run scoreboard players operation @s effects.stun.check_time = $nextSec actionbar.time
 execute if score @s effects.stun.duration matches 0.. run schedule function effects:stun/check 20t
+
+# Center reset
+
+function general:player_data/remove {path:"Actionbar.center"}
