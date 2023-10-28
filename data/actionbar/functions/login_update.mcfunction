@@ -17,4 +17,4 @@ execute if score @s effects.stun.duration matches 0.. run schedule function effe
 
 # Center reset
 
-function general:player_data/remove {path:"Actionbar.center"}
+function general:player_data/remove {path:"Actionbar.Center"}
