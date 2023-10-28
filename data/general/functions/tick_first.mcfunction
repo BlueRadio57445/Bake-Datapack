@@ -1,3 +1,6 @@
+#declare score_holder $gametime
+#declare score_holder $playerOnline
+
 execute store result score $gametime general.utils run time query gametime
 execute store result score $playerOnline general.utils if entity @a
 execute as @a store result score @s general.player.selected_slot run data get entity @s SelectedItemSlot

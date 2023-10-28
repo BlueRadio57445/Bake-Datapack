@@ -6,8 +6,3 @@ execute if score @s knowledge.end_fire matches 1.. run function knowledge:on_cli
 
 # 檢查 -> 施放 -> 冷卻
 function knowledge:on_click/check with storage knowledge:on_click current_knowledge
-
-# 顯示冷卻時間
-function knowledge:cooldown/cooldown
-
-

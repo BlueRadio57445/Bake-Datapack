@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:value_check",
+  "value": {
+    "type": "minecraft:score",
+    "score": "actionbar.cooldown.hotbar_update_time",
+    "target": "this"
+  },
+  "range": {
+    "max": {
+      "type": "minecraft:score",
+      "score": "general.utils",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "$gametime"
+      }
+    },
+    "min": 1
+  }
+}

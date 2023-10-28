@@ -1,3 +1,5 @@
+execute if score @s actionbar.effect.update_time > $gametime general.utils run return 0
+
 scoreboard players operation $nextSec actionbar.time = $gametime general.utils
 scoreboard players add $nextSec actionbar.time 20
 

@@ -1,6 +1,8 @@
 # 玩家初次進入世界時才會觸發的初始化函式
 advancement revoke @s only general:first_login
 scoreboard players operation @s general.id = $playerCount general.id
+scoreboard players operation @s actionbar.player_mod = @s general.id
+scoreboard players operation @s actionbar.player_mod %= $5 general.const
 
 data modify storage general:player_data Data append value {id:0}
 execute store result storage general:player_data Data[-1].id int 1 run scoreboard players get @s general.id
