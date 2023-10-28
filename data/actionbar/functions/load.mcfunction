@@ -15,6 +15,8 @@ scoreboard objectives add actionbar.cooldown.hotbar_target_time dummy
 scoreboard objectives add actionbar.cooldown.offhand_update_time dummy
 scoreboard objectives add actionbar.cooldown.offhand_target_time dummy
 
+scoreboard objectives add actionbar.player_mod dummy
+
 function actionbar:effect/type_set
 function actionbar:cooldown/table_set
-schedule function actionbar:regular 12t
+function actionbar:regular
