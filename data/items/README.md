@@ -11,6 +11,9 @@ CustomModelData 註冊表
 |4006.  |sandwich/rainbow_gum  |
 |4007.  |magnet                |
 |4008.  |whetstone/basic       |
+|4008.  |whetstone/medium      |
+|4008.  |whetstone/advanced    |
+|4008.  |whetstone/ultra       |
 |       |                      |
 |4250~4499|talisman              |
 |4250.  |flour                 |
