@@ -6,9 +6,9 @@
     },
     "ops": [
         {
-            "op": "replace",
+            "op": "merge",
             "source": "Entity",
-            "target": "EntityTag"
+            "target": "EntityTag.Item.tag.EntityTag"
         }
     ]
 }
