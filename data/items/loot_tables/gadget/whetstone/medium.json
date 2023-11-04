@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {"text": "初階磨刀石", "italic": false}
+              "name": {"text": "中階磨刀石", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
@@ -19,17 +19,17 @@
                 {"text": "長按使用，賦予另一手上的有刃武器：", "color": "yellow", "italic": false},
                 {"text": "有限次數的攻擊傷害增幅，不可疊加", "color": "yellow", "italic": false},
                 {"text": "信奉古神的刀匠打造的磨刀石，", "color": "gray"},
-                {"text": "能夠暫時提升刀刃的強度。", "color": "gray"},
+                {"text": "能夠使刀刃變得異常鋒利。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false},
                 {"text": "使用後將賦予下列屬性：", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 傷害加成§f +5.0% §c(5次使用後消失)", "color": "light_purple", "italic": false},
-                {"translate": "item.durability", "with": [6, 6], "color": "dark_gray", "italic": false}
+                {"text": " 󐀁☬󐀁 傷害加成§f +10.0% §c(7次使用後消失)", "color": "light_purple", "italic": false},
+                {"translate": "item.durability", "with": [12, 12], "color": "dark_gray", "italic": false}
               ]
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{is_whetstone:1b,whetstone:{state:1b,times_left:5,modifier:0.05d},durability:{max:6,current:6},NoStacking:1b,CustomModelData:4008}"
+              "tag": "{is_whetstone:1b,whetstone:{state:1b,times_left:7,modifier:0.10d},durability:{max:12,current:12},NoStacking:1b,CustomModelData:4009}"
             }
           ]
         }
