@@ -1,6 +1,6 @@
 {
   "rewards": {
-    "function": "vehicles:sandwich/summoned"
+    "function": "vehicles:sandwich/cooldown"
   },
   "criteria": {
     "summoned": {
@@ -10,7 +10,7 @@
           {
             "condition": "minecraft:entity_scores",
             "scores": {
-              "vehicles.used_donkey_egg": {
+              "vehicles.used_item_frame": {
                 "min": 1
               }
             },
@@ -20,9 +20,9 @@
             "condition": "minecraft:match_tool",
             "predicate": {
               "items": [
-                "minecraft:donkey_spawn_egg"
+                "minecraft:item_frame"
               ],
-              "nbt": "{sandwich:{bag:1b}}"
+              "nbt": "{sandwich:{bag:1b},cooldown:{mode:\"item\"}}"
             }
           }
         ]

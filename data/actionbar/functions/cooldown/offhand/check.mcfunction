@@ -4,6 +4,7 @@ scoreboard players set $different actionbar.cooldown 0
 scoreboard players set $targetTime actionbar.cooldown 0
 scoreboard players set $current actionbar.cooldown 0
 scoreboard players set $length actionbar.cooldown 0
+scoreboard players set $slot actionbar.cooldown -1
 execute store result score $prevLength actionbar.cooldown run data get storage actionbar:player Data.cooldown.offhand.length
 
 scoreboard players operation $targetTime actionbar.cooldown = $gametime general.utils

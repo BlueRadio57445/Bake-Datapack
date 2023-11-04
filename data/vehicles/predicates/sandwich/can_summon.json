@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "nbt": "{Tags:[\"vehicles.sandwich_spawner\"],Facing:1b}"
+  },
+  "entity": "this"
+}
