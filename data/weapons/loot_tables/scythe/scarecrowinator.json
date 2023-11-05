@@ -1,0 +1,39 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "golden_hoe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 稻草人終結者 ≻", "color": "gold", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "暴擊時能召喚巨大鐮刀攻擊敵人","color": "yellow", "italic": false},
+                                {"text": "據說由杜分舒斯的崇拜者所鑄。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鐮刀", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "smite":3,
+                                "bane_of_arthropods":3
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sanctuary_enchs:[{id:\"giant\",lvl:1s}],Unbreakable:1b,HideFlags:2,LoreUpdate:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,12 @@
 advancement revoke @s only items:gadget/whetstone_sharpened_attack
-data modify storage items:whetstone Weapon set from entity @s SelectedItem
+playsound minecraft:entity.arrow.hit_player player @a ~ ~ ~ 0.1 1.5 0
+tag @s add this
+execute at @s as @e[nbt={HurtTime:10s},type=#mobs] run function enemy:check_attacker
+execute as @e[tag=attacked] at @s anchored eyes run particle minecraft:crit ^ ^ ^ 0.3 0.3 0.3 1 5 normal
+tag @e[tag=attacked] remove attacked
+tag @s remove this
 
+data modify storage items:whetstone Weapon set from entity @s SelectedItem
 scoreboard players set $modifier items.whetstone 0
 scoreboard players set $times items.whetstone 1
 execute store result score $modifier items.whetstone run data get storage items:whetstone Weapon.tag.sharpened.modifier 100

@@ -1,0 +1,1 @@
+execute at @e[type=interaction,tag=earth_field] run effect give @a[distance=..6] regeneration 5 0 false

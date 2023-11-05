@@ -22,11 +22,16 @@ scoreboard objectives add general.utils.selected_slot dummy
 scoreboard objectives add general.extra_lore dummy
 scoreboard objectives add general.extra_lore.modifier_type dummy
 
+scoreboard objectives add general.object.duration dummy
+scoreboard objectives add general.object.init_timestamp dummy
+
 scoreboard players set $-1 general.const -1
 scoreboard players set $0 general.const 0
 scoreboard players set $1 general.const 1
 scoreboard players set $2 general.const 2
+scoreboard players set $5 general.const 5
 scoreboard players set $10 general.const 10
+scoreboard players set $16 general.const 16
 scoreboard players set $20 general.const 20
 scoreboard players set $60 general.const 60
 scoreboard players set $100 general.const 100
@@ -54,5 +59,5 @@ setblock 0 16 0 yellow_shulker_box
 function general:extra_lore/load
 
 # 開發者專用功能: 若於此資料夾新增了需要進行初始化的功能，此分數將被技術總監加1
-scoreboard players set $datapack general.version 2
+scoreboard players set $datapack general.version 3
 execute unless score $world general.version = $datapack general.version run function general:player_reset

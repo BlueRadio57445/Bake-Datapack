@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "高階磨刀石", "color": "aqua", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "長按使用，賦予另一手上的有刃武器：", "color": "yellow", "italic": false},
+                {"text": "有限次數的攻擊傷害增幅，不可疊加", "color": "yellow", "italic": false},
+                {"text": "烙守古神教義的刀匠打造的磨刀石，", "color": "gray"},
+                {"text": "磨過的刀刃似乎散發著妖異的光芒。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false},
+                {"text": "使用後將賦予下列屬性：", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +13.0% §c(8次使用後消失)", "color": "light_purple", "italic": false},
+                {"translate": "item.durability", "with": [16, 16], "color": "dark_gray", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{is_whetstone:1b,whetstone:{state:1b,times_left:8,modifier:0.13d},durability:{max:16,current:16},NoStacking:1b,CustomModelData:4010}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

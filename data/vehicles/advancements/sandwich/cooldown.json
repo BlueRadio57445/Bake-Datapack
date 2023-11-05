@@ -1,0 +1,32 @@
+{
+  "rewards": {
+    "function": "vehicles:sandwich/cooldown"
+  },
+  "criteria": {
+    "summoned": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+              "vehicles.used_item_frame": {
+                "min": 1
+              }
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "minecraft:item_frame"
+              ],
+              "nbt": "{sandwich:{bag:1b},cooldown:{mode:\"item\"}}"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

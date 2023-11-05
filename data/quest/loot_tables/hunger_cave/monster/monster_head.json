@@ -16,7 +16,9 @@
                             "function": "set_lore",
                             "lore": [
                                 {"text": "終於把這禍害除掉了!", "color": "gray"},
-                                {"text": "不知道這顆頭能幹嘛?", "color": "gray"}
+                                {"text": "不知道這顆頭能幹嘛?", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 任務道具", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

@@ -1,0 +1,2 @@
+execute store result score $now s_ench.init_timestamp run time query gametime
+execute as @e[type=item_display,tag=trident_bullet] if score @s s_ench.init_timestamp = $now s_ench.init_timestamp run data merge entity @s {transformation:{translation:[0f,0f,0f],scale:[1f,1f,1f],left_rotation:[0f,0f,0f,1.0f],right_rotation:[ -0.653f, 0.271f, 0.653f, -0.271f]},start_interpolation:0,interpolation_duration:8}

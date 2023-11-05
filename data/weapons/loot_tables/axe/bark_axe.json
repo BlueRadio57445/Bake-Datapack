@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_axe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"餓到啃樹皮", "color": "dark_green", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "",
+                                {"text": "剝皮時獲得短暫回復效果","color": "yellow", "italic": false},
+                                {"text": "上面有餓死鬼抓握的痕跡。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 斧類", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{bark_axe:1b,HideFlags:2,LoreUpdate:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

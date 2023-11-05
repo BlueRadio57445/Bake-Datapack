@@ -6,7 +6,7 @@
       "entries": [
         {
           "type":"minecraft:item",
-          "name": "minecraft:donkey_spawn_egg",
+          "name": "minecraft:item_frame",
           "functions": [
             {
               "function": "minecraft:set_name",
@@ -27,7 +27,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{bag:1b},CustomModelData:4000,EntityTag:{Tags:[\"vehicles.tag\",\"vehicles.sandwich\"],NoAI:1b,Tame:1b,ChestedHorse:1b,Age:2147483647,ForcedAge:-1,CustomName:'{\"text\":\"三明治驢\"}',Health:20.0f,Attributes:[{Name:\"minecraft:generic.max_health\",Base:20.0d}]}}"
+              "tag": "{sandwich:{bag:1b},cooldown:{mode:\"empty\"},CustomModelData:4000,EntityTag:{Tags:[\"vehicles.sandwich_spawner\"],Silent:1b,Invisible:1b,Invulnerable:1b,Item:{id:\"minecraft:donkey_spawn_egg\",Count:1b,tag:{EntityTag:{Tags:[\"vehicles.tag\",\"vehicles.sandwich\"],NoAI:1b,Tame:1b,ChestedHorse:1b,Age:2147483647,ForcedAge:-1,CustomName:'{\"text\":\"三明治驢\"}',Health:20.0f,Attributes:[{Name:\"minecraft:generic.max_health\",Base:20.0d}],DeathLootTable:\"\"}}}}}"
             }
           ]
         }
