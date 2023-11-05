@@ -10,4 +10,4 @@ execute as @a[predicate=general:utils/selected_slot_changed] run function genera
 execute as @a[predicate=general:utils/used_sticks] run function general:utils/on_sticks_click
 
 # 物件隨時間扣分
-scoreboard players remove @e[type=#object,scores={general.object.duration=1..}] general.object.duration 1
+scoreboard players remove @e[scores={general.object.duration=1..}] general.object.duration 1
