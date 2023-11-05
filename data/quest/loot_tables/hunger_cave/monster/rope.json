@@ -17,7 +17,9 @@
                             "lore": [
                                 {"text": "一條很破舊的繩子。", "color": "gray"},
                                 {"text": "旁邊的紙條寫著：", "color": "gray"},
-                                {"text": "「不要...信食%&*魔。」", "color": "gray"}
+                                {"text": "「不要...信食%&*魔。」", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 任務道具", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
