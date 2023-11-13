@@ -1,4 +1,5 @@
 function enemy:tagvillx/load
+function enemy:endsky/load
 
 scoreboard objectives add enemy dummy "怪物算數學"
 
