@@ -103,9 +103,9 @@
   * `general:utils/selected_slot_changed`: 自動觸發函數，於玩家快捷欄選擇欄位改變時觸發，可在此函數內新增任何其他函數的執行條件。
   * 
   * **實體相關功能 (呼叫觸發)**
-  * `general:utils/kill_above`: 刪除所有騎乘於執行者上的實體(及其上的實體騎乘鍊)後，刪除執行者本身。
-  * `general:utils/kill_below`: 刪除執行者所騎乘的實體(及其下的實體騎乘鍊)後，刪除執行者本身。
-  * `general:utils/kill_all`: 刪除執行者所在的整個實體騎乘鍊，並刪除執行者本身。
+  * `general:utils/kill_above`: 刪除所有騎乘於執行者上的實體(及其上的實體騎乘鏈)後，刪除執行者本身。
+  * `general:utils/kill_below`: 刪除執行者所騎乘的實體(及其下的實體騎乘鏈)後，刪除執行者本身。
+  * `general:utils/kill_all`: 刪除執行者所在的整個實體騎乘鏈，並刪除執行者本身。
 
 ### general:extra_lore
 [點此跳轉](data/general/functions/extra_lore/README.md)
