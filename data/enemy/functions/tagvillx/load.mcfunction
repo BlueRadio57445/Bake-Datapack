@@ -15,4 +15,6 @@ execute unless score $index enemy.big_knife.id matches -2147483648..2147483647 r
 scoreboard objectives add enemy.e.coli.shift_key minecraft.custom:sneak_time
 scoreboard objectives add enemy.e.coli.shift_temp dummy
 scoreboard objectives add enemy.e.coli.escape dummy
+#蘑菇怪人
+scoreboard objectives add enemy.mushroom_man.grow dummy
 
