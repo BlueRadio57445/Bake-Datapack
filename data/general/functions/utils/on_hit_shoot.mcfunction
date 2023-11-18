@@ -7,7 +7,7 @@ function general:utils/on_hit_shoot/check with storage general:utils input
 
 tag @s add this
 execute if data storage general:utils Item.id as @e[type=#minecraft:projectiles] run function general:utils/on_hit_shoot/projectile
-tag @s remove rhis
+tag @s remove this
 
 scoreboard players reset @s general.shot_bow
 scoreboard players reset @s general.shot_crossbow
