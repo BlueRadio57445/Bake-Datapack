@@ -12,6 +12,7 @@ data modify storage general:utils input.command set from entity @s SelectedItem.
 execute as @e[tag=attacked] at @s run function general:utils/execute with storage general:utils input
 
 tag @e[tag=attacked] remove attacked
+tag @a[tag=attacked] remove attacked
 tag @s remove this
 
 # 避免循環呼叫(非常重要)
