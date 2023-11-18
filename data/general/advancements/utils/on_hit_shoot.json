@@ -1,0 +1,73 @@
+{
+  "rewards": {
+    "function": "general:utils/on_hit_shoot"
+  },
+  "criteria": {
+    "player_shoot_with_on_hit": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_bow": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_crossbow": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_egg": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_ender_pearl": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_snowball": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_scores",
+                "scores": {
+                  "general.shot_trident": {
+                    "min": 1
+                  }
+                },
+                "entity": "this"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
