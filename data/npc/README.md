@@ -131,12 +131,12 @@ NPC的基本函數如下列所示:
 * TraderNormal (list of compounds) - 選填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
   * 與Normal之內容相同
 * TraderNormalRandom (boolean) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
-* Buy (list of compounds) - 「購入」內的交易選項，基本與村民之交易選項相同
+* Buy (list of compounds) - 「購入」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
   * buy (compound) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
   * buyB (compound) - 玩家應交付的物品，格式同buy
   * sell (compound) - 玩家將獲得的物品，格式同buy
-  * maxUses (int) - 玩家可交易的次數，當前版本填上2147483647就好，因此時並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
-* Sell (list of compounds) - 「售出」內的交易選項，基本與村民之交易選項相同
+  * maxUses (int) - 玩家最多可交易的次數，若填入2147483647則代表可以進行無限次交易
+* Sell (list of compounds) - 「售出」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
   * 格式同Buy
 
 ## 任務流程
