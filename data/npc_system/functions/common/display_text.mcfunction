@@ -1,7 +1,8 @@
 # executed by marker
-execute if data entity @s data.SoundPool[] at @s run function npc_system:common/playsound/process with entity @s data.SoundPool[0]
-execute unless data entity @s data.SoundPool[] at @s run function npc_system:common/playsound/process {id:"minecraft:entity.villager.ambient",setting:{}}
-# setting:{} 至少需要這樣填，內容留空的話代表預設
+execute if score @s npc.count = @s npc.count run scoreboard players add @s npc.count 1
+execute unless score @s npc.count = @s npc.count run scoreboard players set @s npc.count 0
+
+function npc_system:common/playsound/main
 
 data merge entity @e[type=minecraft:text_display,limit=1,tag=npc.text,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"data.Dialogue.Texts[0]","entity":"@e[limit=1,type=minecraft:marker,tag=npc.this]","interpret":true}]}',transformation:{scale:[1.0f,1.0f,1.0f]}}
 data remove entity @s data.Dialogue.Texts[0]
