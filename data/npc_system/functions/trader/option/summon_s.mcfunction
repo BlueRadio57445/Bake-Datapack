@@ -1,6 +1,7 @@
 summon minecraft:villager ~ -64 ~ {Tags:["npc.tag","npc.option","npc.trader_s","npc.this"],Team:"npc.trader",CustomName:'{"text":"售出"}',NoAI:1b,Invulnerable:1b,Silent:1b,active_effects:[{id:"minecraft:resistance",duration:-1,amplifier:4b,show_particles:0b},{id:"minecraft:invisibility",duration:-1,amplifier:0b,show_particles:0b}],VillagerData:{profession:"minecraft:librarian",level:6}}
 data modify entity @e[limit=1,type=minecraft:villager,tag=npc.trader_s,tag=npc.this] Offers.Recipes set from entity @s data.Sell
 data modify entity @e[limit=1,type=minecraft:villager,tag=npc.trader_s,tag=npc.this] Offers.Recipes[].rewardExp set value 0b
+execute as @e[limit=1,type=minecraft:villager,tag=npc.trader_s,tag=npc.this] if data entity @s Offers.Recipes[{maxUses:2147483647}] run data modify entity @s Offers.Recipes[{maxUses:2147483647}].uses set value 0
 scoreboard players set @e[limit=1,type=minecraft:villager,tag=npc.trader_s,tag=npc.this] npc.reset 6
 
 summon minecraft:interaction ^0.75 ^-1.51 ^0.75 {Tags:["npc.tag","npc.option","npc.blocker","npc.trader_s","npc.this"],width:0.625f,height:1.26f}

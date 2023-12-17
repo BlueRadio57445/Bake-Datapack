@@ -98,25 +98,26 @@ NPC的基本函數如下列所示:
         * Type為 "score" 的情況下，以 `{score,target,range}` 的形式填入欲偵測的分數及範圍。其中 `range` 可為單純的整數或是 `"a..b"` 的形式。
         * Type為 "command" 的情況下，以字串的形式填入完整的指令。若指令執行的結果不為0則通過。
     * End (boolean) - 若設為 `1b`，此選項對話結束後將不會回到選項
-    * Extra (compound) - 額外區域，目前用於儲存選項的回呼函數設定，多用於任務系統
-      * StartCommand (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
-      * EndCommand (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
-      * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+    * Extra (compound) - 額外區域，用於儲存選項的回呼函數設定及更多額外設定，詳細內容請見下方同名項目
   * Quest (boolean) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
   * NoExit (boolean) - 選填，若設為 `1b`，進入選項時將不會出現「離開」選項 (選項對話結束時會再次回到選項)。
-  * Extra (compound) - 額外區域，目前用於儲存通常對話的回呼函數設定，多用於任務系統
+  * Extra (compound) - 額外區域，目前用於儲存通常對話的回呼函數設定及更多額外設定
     * StartCommand (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
     * EndCommand (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
     * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+    * SoundOverrides (list of compounds) - 能於指定的對話階段以此設定的內容覆蓋音效池
+      * index (int) - 指定的對話項序數 (0-based)，請依照此項順序填寫 `SoundOverrides` 項目
+      * pool (list of compounds) - 內容同下方 `SoundPool` 項目
 * NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
 * Exit (compound) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
   * Texts (list of json strings) - 包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
 * Idle (list of compounds) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
   * Text (json string) - 顯示的文字
-  * Duration (compound or interger) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
-    * max (interger) - 隨機數 (uniform) 的上界，應大於min
-    * min (interger) - 隨機數 (uniform) 的下界，不得小於0
-  * Rest (compound or interger) - 距離下次文字顯示的秒數，格式同Duration
+  * Duration (compound or int) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
+    * max (int) - 隨機數 (uniform) 的上界，應大於min
+    * min (int) - 隨機數 (uniform) 的下界，不得小於0
+  * Rest (compound or int) - 距離下次文字顯示的秒數，格式同 `Duration`
+  * SoundPool (list of compunds) - 選填，若存在則覆蓋預設的音效池，格式同下
 * SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會隨機撥放其中一個音效，若無此設定則套用預設音效
   * id (string) - 必填，音效的完整id
   * setting (compound) - 必填，可留空 (`setting:{}` 這樣就是留空)，若留空則套用預設值
@@ -130,12 +131,12 @@ NPC的基本函數如下列所示:
 * TraderNormal (list of compounds) - 選填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
   * 與Normal之內容相同
 * TraderNormalRandom (boolean) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
-* Buy (list of compounds) - 「購入」內的交易選項，基本與村民之交易選項相同
+* Buy (list of compounds) - 「購入」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
   * buy (compound) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
   * buyB (compound) - 玩家應交付的物品，格式同buy
   * sell (compound) - 玩家將獲得的物品，格式同buy
-  * maxUses (interger) - 玩家可交易的次數，當前版本填上2147483647就好，因此時並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
-* Sell (list of compounds) - 「售出」內的交易選項，基本與村民之交易選項相同
+  * maxUses (int) - 玩家最多可交易的次數，若填入2147483647則代表可以進行無限次交易
+* Sell (list of compounds) - 「售出」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
   * 格式同Buy
 
 ## 任務流程
