@@ -1,1 +1,1 @@
-summon husk ~ ~ ~ {Tags:["enemy.golden_grapes","new"], active_effects:[{id:"minecraft:invisibility",duration:999999,show_particles:0b}]}
+summon husk ~ ~ ~ {CustomName:'{"text":"金黃葡萄球菌"}',Tags:["enemy.golden_grapes","new"], active_effects:[{id:"minecraft:invisibility",duration:999999,show_particles:0b}]}

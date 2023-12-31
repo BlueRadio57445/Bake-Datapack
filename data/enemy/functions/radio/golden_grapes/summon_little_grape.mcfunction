@@ -1,5 +1,5 @@
 # 執行者、執行位置是金黃葡萄球菌
-summon endermite ~ ~ ~ {Tags:["new","enemy.little_grape"],active_effects:[{id:"invisibility",duration:-1,show_particles:0b}],CustomName:'{"text":"小葡萄球菌"}',Health:1.0f}
+summon endermite ~ ~ ~ {Tags:["new","enemy.little_grape"],active_effects:[{id:"invisibility",duration:-1,show_particles:0b}],CustomName:'{"text":"小葡萄球菌"}',Health:4.0f}
 execute on passengers run tag @s add temp
 tag @e[tag=temp,tag=golden_grapes.decoration,sort=arbitrary,limit=1] add this_grape
 tag @e[tag=this_grape] remove golden_grapes.decoration
