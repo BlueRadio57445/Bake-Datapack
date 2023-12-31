@@ -9,3 +9,4 @@ summon item_display ~ ~ ~ {Tags:["enemy.golden_grapes.7","enemy.decoration","gol
 tag @s add this
 execute as @e[tag=new, tag=enemy.decoration] run ride @s mount @e[limit=1,tag=this]
 tag @s remove this
+tag @e[tag=new] remove new
