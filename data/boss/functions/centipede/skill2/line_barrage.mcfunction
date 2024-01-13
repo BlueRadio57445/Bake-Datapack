@@ -22,16 +22,16 @@ execute as @e[tag=centipede.barrage_datum,tag=line4] at @s run tp @s ^ ^ ^20 fac
 execute as @e[tag=centipede.barrage_datum,tag=line5] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line5,limit=1]
 
 execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 30 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
-execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 30 run function boss:centipede/barrage_damage
+execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 30 run function boss:centipede/skill2/barrage_damage
 execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 40 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
-execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 40 run function boss:centipede/barrage_damage
+execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 40 run function boss:centipede/skill2/barrage_damage
 execute as @e[tag=centipede.line3] at @s if score $line_barrage centipede.ability matches 50 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
-execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 50 run function boss:centipede/barrage_damage
+execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 50 run function boss:centipede/skill2/barrage_damage
 execute as @e[tag=centipede.line4] at @s if score $line_barrage centipede.ability matches 60 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
-execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 60 run function boss:centipede/barrage_damage
+execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 60 run function boss:centipede/skill2/barrage_damage
 execute as @e[tag=centipede.line5] at @s if score $line_barrage centipede.ability matches 70 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
-execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 70 run function boss:centipede/barrage_damage
+execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 70 run function boss:centipede/skill2/barrage_damage
 
 execute if score $line_barrage centipede.ability matches 71.. run tag @e remove centipede.barrage
 execute if score $line_barrage centipede.ability matches 71.. run kill @e[tag=centipede.line_barrage]
-execute if score $line_barrage centipede.ability matches ..70 run schedule function boss:centipede/line_barrage 1t
+execute if score $line_barrage centipede.ability matches ..70 run schedule function boss:centipede/skill2/line_barrage 1t
