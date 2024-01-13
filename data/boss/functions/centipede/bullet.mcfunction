@@ -5,3 +5,4 @@ execute as @e[tag=centipede.bullet] at @s run damage @a[limit=1,sort=nearest,dis
 execute if score $bullet centipede.ability matches 101.. run kill @e[tag=centipede.bullet]
 execute if score $bullet centipede.ability matches ..100 run schedule function boss:centipede/bullet 1t
 execute if score $bullet centipede.ability matches 101.. run scoreboard players set $bullet centipede.ability 0
+execute as @e[tag=centipede.bullet] at @s unless block ~ ~ ~ water run kill @s
