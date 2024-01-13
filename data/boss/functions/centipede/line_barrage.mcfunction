@@ -11,15 +11,15 @@ execute if score $line_barrage centipede.ability matches 40 run summon marker ~ 
 execute if score $line_barrage centipede.ability matches 50 run summon marker ~ ~ ~ {Tags:["centipede.barrage_datum","centipede.line5"],Rotation:[90.0f,90.0f]}
 
 execute as @e[tag=centipede.line_barrage,tag=line1] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line1,limit=1]
-execute as @e[tag=centipede.line_barrage,tag=line2] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line1,limit=1]
+execute as @e[tag=centipede.line_barrage,tag=line2] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line2,limit=1]
 execute as @e[tag=centipede.line_barrage,tag=line3] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line1,limit=1]
-execute as @e[tag=centipede.line_barrage,tag=line4] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line1,limit=1]
-execute as @e[tag=centipede.line_barrage,tag=line5] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line1,limit=1]
+execute as @e[tag=centipede.line_barrage,tag=line4] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line3,limit=1]
+execute as @e[tag=centipede.line_barrage,tag=line5] at @s run tp @s ^ ^ ^-20 facing entity @e[tag=centipede.barrage_datum,tag=line4,limit=1]
 execute as @e[tag=centipede.barrage_datum,tag=line1] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line1,limit=1]
-execute as @e[tag=centipede.barrage_datum,tag=line2] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line1,limit=1]
-execute as @e[tag=centipede.barrage_datum,tag=line3] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line1,limit=1]
-execute as @e[tag=centipede.barrage_datum,tag=line4] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line1,limit=1]
-execute as @e[tag=centipede.barrage_datum,tag=line5] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line1,limit=1]
+execute as @e[tag=centipede.barrage_datum,tag=line2] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line2,limit=1]
+execute as @e[tag=centipede.barrage_datum,tag=line3] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line3,limit=1]
+execute as @e[tag=centipede.barrage_datum,tag=line4] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line4,limit=1]
+execute as @e[tag=centipede.barrage_datum,tag=line5] at @s run tp @s ^ ^ ^20 facing entity @e[tag=centipede.line_barrage,tag=line5,limit=1]
 
 execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 30 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
 execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches 30 run function boss:centipede/barrage_damage
