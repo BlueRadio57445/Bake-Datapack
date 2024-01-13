@@ -56,6 +56,8 @@ bossbar set boss:centipede.bossbar visible true
 
 scoreboard objectives add centipede.damage dummy
 scoreboard players set $health centipede.damage 100
+scoreboard objectives add centipede.cd dummy
+scoreboard objectives add centipede.ability dummy
 
 
 tag @e[tag=centipede.body,limit=1,sort=random,type=guardian] add centipede.can_be_attack
@@ -66,3 +68,4 @@ effect give @e[tag=centipede.can_be_attack] glowing infinite 5 true
 function boss:centipede/connect
 function boss:centipede/health
 function boss:centipede/test_phase
+function boss:centipede/test_ability

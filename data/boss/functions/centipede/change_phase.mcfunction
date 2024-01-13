@@ -1,5 +1,5 @@
-execute as @e[tag=centipede.can_be_attack] at @s run particle smoke ~ ~ ~ 0.05 0.05 0.05 0.1 1000 force
-execute as @e[tag=centipede.can_be_attack] at @s run playsound entity.creeper.primed ambient @a ~ ~ ~ 100 1 1
+execute as @e[tag=centipede.can_be_attack] at @s run particle explosion ~ ~ ~ 0. 0.3 0.3 0.5 100 force
+execute as @e[tag=centipede.can_be_attack] at @s run playsound entity.generic.explode ambient @a ~ ~ ~ 100 1 1
 tag @e remove centipede.can_be_attack
 effect clear @e glowing
 execute as @e[tag=centipede.body] run data modify entity @s Invulnerable set value 1b
