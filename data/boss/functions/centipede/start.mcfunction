@@ -58,6 +58,7 @@ scoreboard objectives add centipede.damage dummy
 scoreboard players set $health centipede.damage 100
 scoreboard objectives add centipede.cd dummy
 scoreboard objectives add centipede.ability dummy
+scoreboard players set $barrage_phase centipede.ability 0
 
 
 tag @e[tag=centipede.body,limit=1,sort=random,type=guardian] add centipede.can_be_attack
