@@ -4,11 +4,22 @@ execute as @a[limit=1,sort=random] at @s if score $line_barrage centipede.abilit
 execute as @a[limit=1,sort=random] at @s if score $line_barrage centipede.ability matches 30 run summon marker ~ ~ ~ {Tags:["centipede.line_barrage","centipede.line3"],Rotation:[0.0f,0.0f]}
 execute as @a[limit=1,sort=random] at @s if score $line_barrage centipede.ability matches 40 run summon marker ~ ~ ~ {Tags:["centipede.line_barrage","centipede.line4"],Rotation:[90.0f,90.0f]}
 execute as @a[limit=1,sort=random] at @s if score $line_barrage centipede.ability matches 50 run summon marker ~ ~ ~ {Tags:["centipede.line_barrage","centipede.line5"],Rotation:[90.0f,90.0f]}
-execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 30 run damage @a[distance=0..1] 5 magic by @s
-execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 40 run damage @a[distance=0..1] 5 magic by @s
-execute as @e[tag=centipede.line3] at @s if score $line_barrage centipede.ability matches 50 run damage @a[distance=0..1] 5 magic by @s
-execute as @e[tag=centipede.line4] at @s if score $line_barrage centipede.ability matches 60 run damage @a[distance=0..1] 5 magic by @s
-execute as @e[tag=centipede.line5] at @s if score $line_barrage centipede.ability matches 70 run damage @a[distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 30 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 40 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line3] at @s if score $line_barrage centipede.ability matches 50 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line4] at @s if score $line_barrage centipede.ability matches 60 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line5] at @s if score $line_barrage centipede.ability matches 70 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 31 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 41 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line3] at @s if score $line_barrage centipede.ability matches 51 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line4] at @s if score $line_barrage centipede.ability matches 61 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line5] at @s if score $line_barrage centipede.ability matches 71 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 32 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 42 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line3] at @s if score $line_barrage centipede.ability matches 52 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line4] at @s if score $line_barrage centipede.ability matches 62 run damage @a[limit=1,distance=0..1] 5 magic by @s
+execute as @e[tag=centipede.line5] at @s if score $line_barrage centipede.ability matches 72 run damage @a[limit=1,distance=0..1] 5 magic by @s
+
 
 execute as @e[tag=centipede.line1] at @s if score $line_barrage centipede.ability matches 30 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
 execute as @e[tag=centipede.line2] at @s if score $line_barrage centipede.ability matches 40 run playsound entity.experience_orb.pickup ambient @a ~ ~ ~ 100 1 1
