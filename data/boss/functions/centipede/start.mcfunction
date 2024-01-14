@@ -43,7 +43,7 @@ summon guardian ~ ~ ~ {Health: 100, Attributes: [{Name: "generic.max_health", Ba
 
 
 effect give 00000000-0000-0000-0000-000000000b00 speed infinite 30 
-
+summon marker -25 -35 184 {Tags:["centipede.barrage_datum"]}
 
 bossbar add boss:centipede.bossbar {"text":"百足川稀","color":"red"}
 bossbar set boss:centipede.bossbar color red
