@@ -43,4 +43,3 @@ execute as @e[tag=centipede.line9] at @s if score $line_barrage centipede.abilit
 execute as @e[tag=centipede.line_barrage] at @s if score $line_barrage centipede.ability matches ..110 run function boss:centipede/skill2/barrage_particle
 execute if score $line_barrage centipede.ability matches ..110 run schedule function boss:centipede/skill2/line_barrage 1t
 execute if score $line_barrage centipede.ability matches 111.. run tag @e remove centipede.barrage
-execute if score $line_barrage centipede.ability matches 111.. run kill @e[tag=centipede.line_barrage]

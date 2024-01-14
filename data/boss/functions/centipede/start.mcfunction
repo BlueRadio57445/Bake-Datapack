@@ -42,7 +42,7 @@ summon guardian ~ ~ ~ {Health: 100, Attributes: [{Name: "generic.max_health", Ba
 summon guardian ~ ~ ~ {Health: 100, Attributes: [{Name: "generic.max_health", Base: 100d}], Invulnerable:1b, NoAI: 1, Silent: 1b, Tags: ["centipede.body"], DeathLootTable: "", UUID:[I;0,0,0,2857],active_effects:[{id:"resistance",amplifier:5,duration:-1}]}
 
 
-effect give 00000000-0000-0000-0000-000000000b00 speed infinite 30 
+effect give 00000000-0000-0000-0000-000000000b00 speed infinite 30
 summon marker -25 -35 184 {Tags:["centipede.barrage_datum"]}
 
 bossbar add boss:centipede.bossbar {"text":"百足川稀","color":"red"}
@@ -70,3 +70,4 @@ function boss:centipede/connect
 function boss:centipede/health
 function boss:centipede/test_phase
 function boss:centipede/test_ability
+function boss:centipede/sound
