@@ -25,7 +25,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_hammer:1b,hammer:{id:\"cursed_pan\"},CustomModelData:3100,HideFlags:2,LoreUpdate:1b}"
+                            "tag": "{is_hammer:1b,hammer:{id:\"cursed_pan\"},CustomModelData:3107,HideFlags:2,LoreUpdate:1b}"
                         },
                         {
                             "function": "set_nbt",
