@@ -1,4 +1,4 @@
-advancement revoke @s only npc:<region_id>/<npc_id>_start
+advancement revoke @s only npc:<region_id>/<npc_id>/start
 
 tag @e[tag=npc.<region_id>.<npc_id>] add npc.this
 function npc_system:common/start

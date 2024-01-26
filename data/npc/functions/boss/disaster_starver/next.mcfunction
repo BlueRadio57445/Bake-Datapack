@@ -1,4 +1,4 @@
-advancement revoke @s only npc:boss/disaster_starver_next
+advancement revoke @s only npc:boss/disaster_starver/next
 
 tag @e[tag=npc.boss.disaster_starver] add npc.this
 function npc_system:common/next

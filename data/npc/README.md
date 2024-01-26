@@ -39,8 +39,8 @@ NPC系統使用了以下四個命名空間:
 
 NPC的基本進度如下列所示:
 
-* `data/npc/advancements/<region_id>/<npc_id>_start.json`
-* `data/npc/advancements/<region_id>/<npc_id>_next.json`
+* `data/npc/advancements/<region_id>/<npc_id>/start.json`
+* `data/npc/advancements/<region_id>/<npc_id>/next.json`
 
 其中 "start" 進度會偵測玩家開始與特定NPC互動，"next" 進度則能偵測所有後續的互動。  
 
@@ -184,8 +184,9 @@ Extra標籤中的StartCommand、EndCommand、LeaveCommand應設為一個合法�
 ### 任務提示
 
 任務進度之提示以「進度」功能達成，預計同一個區域的任務會共用同一個根進度，並且同一個任務的進度提示要串起來，形成明顯的先後關係。  
-任務提示全部設定為隱藏進度 (觸發後才會顯示)，顯示格式待定。  
-(待討論)  
+任務提示全部設定為隱藏進度 (觸發後才會顯示)。  
+另外，我設計了一個方式可以讓剛上線的玩家自動根據任務記分板的數值更新他自身的進度，詳細情形請見任務提示模板。  
+於此提供一個任務提示的[模板](../quest/advancements/template/hint)。  
 
 ### 其他建議
 

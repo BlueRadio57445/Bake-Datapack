@@ -1,4 +1,4 @@
-advancement revoke @s only npc:demo/radio_start
+advancement revoke @s only npc:demo/radio/start
 
 tag @e[tag=npc.demo.radio] add npc.this
 function npc_system:common/start
