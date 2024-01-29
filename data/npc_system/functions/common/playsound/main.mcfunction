@@ -12,6 +12,6 @@ execute as @s[tag=!npc.idle] if data entity @s data{End:1b} run data modify enti
 execute store result storage npc_system:common Sound.pool_size int 1 if data storage npc_system:common SoundPool[]
 execute unless data storage npc_system:common Sound{pool_size:0} unless data storage npc_system:common Sound{pool_size:1} run function npc_system:common/playsound/shuffle with storage npc_system:common Sound
 
+execute if data storage npc_system:common SoundPool[] unless data storage npc_system:common SoundPool[0].setting run data modify storage npc_system:common SoundPool[0].setting set value {}
 execute if data storage npc_system:common SoundPool[] at @s run function npc_system:common/playsound/process with storage npc_system:common SoundPool[0]
 execute unless data storage npc_system:common SoundPool[] at @s run function npc_system:common/playsound/process {id:"minecraft:entity.villager.ambient",setting:{}}
-# setting:{} 至少需要這樣填，內容留空的話代表預設

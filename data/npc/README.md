@@ -106,7 +106,7 @@ NPC的基本函數如下列所示:
     * EndCommand (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
     * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
     * SoundOverrides (list of compounds) - 能於指定的對話階段以此設定的內容覆蓋音效池
-      * index (int) - 指定的對話項序數 (0-based)，請依照此項順序填寫 `SoundOverrides` 項目
+      * index (int) - 指定的對話項序數 (0-based)，`SoundOverrides` 內的項目應依此項數值由小至大排列，否則無法正常運作
       * pool (list of compounds) - 內容同下方 `SoundPool` 項目
 * NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
 * Exit (compound) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
@@ -118,12 +118,12 @@ NPC的基本函數如下列所示:
     * min (int) - 隨機數 (uniform) 的下界，不得小於0
   * Rest (compound or int) - 距離下次文字顯示的秒數，格式同 `Duration`
   * SoundPool (list of compunds) - 選填，若存在則覆蓋預設的音效池，格式同下
-* SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會隨機撥放其中一個音效，若無此設定則套用預設音效
+* SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會隨機撥放其中一個音效，若無此設定則套用默認音效 (村民嘀咕聲)
   * id (string) - 必填，音效的完整id
-  * setting (compound) - 必填，可留空 (`setting:{}` 這樣就是留空)，若留空則套用預設值
-    * volume (double) - 音量
-    * pitch (double) - 音高
-    * minVolume (double) - 最小音量
+  * setting (compound) - 選填，效果同 `/playsound` 指令的選填參數，若無則套用預設參數
+    * volume (float) - 選填，音量，數值應大於或等於0.0
+    * pitch (float) - 選填，音高，數值應包含於0.0至2.0之間，0.0至0.5間的值等同於0.5
+    * minVolume (float) - 選填，最小音量，數值應包含於0.0至1.0之間 (此設定若大於0.0，將使所有玩家皆能聽到此音效)
 
 ### 商店設定
 
