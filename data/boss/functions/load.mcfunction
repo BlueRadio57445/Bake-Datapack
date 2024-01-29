@@ -8,6 +8,9 @@ scoreboard objectives add boss.count_down dummy "Boss倒數計時"
 
 scoreboard objectives add boss.death_in_boss deathCount "在Boss戰之中死亡"
 
+scoreboard objectives add boss.stage dummy "Boss的階段"
+scoreboard objectives add boss.health dummy "Boss生命"
+
 scoreboard objectives add boss.time0 dummy "Boss用的計時器0"
 scoreboard objectives add boss.time1 dummy "Boss用的計時器1"
 scoreboard objectives add boss.time2 dummy "Boss用的計時器2"

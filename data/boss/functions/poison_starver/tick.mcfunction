@@ -8,3 +8,4 @@ execute at @a[gamemode=!spectator,tag=poison_starver.player] if loaded ~ ~ ~ unl
 execute as @e[type=husk,tag=boss.poison_starver] at @s run function boss:poison_starver/ai
 execute as @e[type=#object,tag=poison_starver.spread_spit] at @s run function boss:poison_starver/spread_spit/tick
 execute as @e[type=#object,tag=poison_starver.line_spit] at @s run function boss:poison_starver/line_spit/tick
+execute as @e[type=#object,tag=poison_starver.poison_bubble] at @s run function boss:poison_starver/poison_bubble/tick
