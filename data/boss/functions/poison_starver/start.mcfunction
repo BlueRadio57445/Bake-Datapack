@@ -9,6 +9,7 @@ bossbar set boss:poison_starver max 250
 bossbar set boss:poison_starver visible true
 bossbar set boss:poison_starver players @a[tag=poison_starver.player]
 gamerule doImmediateRespawn true
+data modify storage boss:storage poison_sequence set value []
 
 scoreboard players set $poison_starver boss.count_down 3
 function boss:poison_starver/count_down
