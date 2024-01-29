@@ -1,4 +1,4 @@
-advancement revoke @s only npc:demo/davleek_start
+advancement revoke @s only npc:demo/davleek/start
 
 tag @e[tag=npc.demo.davleek] add npc.this
 function npc_system:common/start

@@ -1,4 +1,4 @@
-advancement revoke @s only npc:hunger_cave/monster_start
+advancement revoke @s only npc:hunger_cave/monster/start
 
 tag @e[tag=npc.hunger_cave.monster] add npc.this
 function npc_system:common/start

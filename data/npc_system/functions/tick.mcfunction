@@ -1,3 +1,4 @@
+execute as @a[scores={npc.state=1..}] at @s unless entity @e[type=minecraft:interaction,tag=npc.tag,scores={npc.occupied=1},distance=..6] run scoreboard players set @s npc.state 0
 execute as @e[tag=npc.figure,scores={npc.user=0..}] at @s run function npc_system:common/figure
 execute as @e[tag=npc.figure,scores={npc.reset=1..}] at @s run function npc_system:common/reset
 scoreboard players operation $current npc.split = $gametime general.utils
