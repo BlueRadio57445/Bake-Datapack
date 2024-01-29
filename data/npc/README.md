@@ -85,6 +85,8 @@ NPC的基本函數如下列所示:
 
 ### 通常設定
 
+此區為所有NPC皆擁有的設定。  
+
 * Normal (list of compounds) - 可儲存多個通常對話，預設按照順序觸發
   * Texts (list of json strings) - 必填，包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
   * Once (boolean) - 選填，若設為 `1b`，此對話觸發後將從 `storage` 中刪除，無法再次顯示
@@ -126,6 +128,8 @@ NPC的基本函數如下列所示:
     * minVolume (float) - 選填，最小音量，數值應包含於0.0至1.0之間 (此設定若大於0.0，將使所有玩家皆能聽到此音效)
 
 ### 商店設定
+
+此區為商店NPC獨有的設定，商店NPC亦適用所有的通常設定。  
 
 * Trader (boolean) - 若設為 `1b`，此NPC將被轉換成商店，並在通常對話結束後進入交易選項
 * TraderNormal (list of compounds) - 選填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
