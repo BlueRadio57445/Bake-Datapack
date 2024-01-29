@@ -1,8 +1,30 @@
 {
   "parent": "quest:hunger_cave/trader_bundle/start",
   "criteria": {
-    "impossible": {
-      "trigger": "minecraft:impossible"
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$hunger_cave.trader_bundle"
+              }
+            },
+            "range": 2
+          }
+        ]
+      }
     }
   },
   "display": {

@@ -10,26 +10,18 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": {
-                "italic": false,
-                "text": "番茄"
-              }
+              "name": {"text": "番茄", "italic": false}
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                {
-                  "color": "gray",
-                  "text": "三明治之中常見的配料"
-                },
-                {
-                  "color": "gray",
-                  "text": "有著清爽的酸甜味"
-                },
-                {
-                  "color": "gray",
-                  "text": "也許世界上有活著的三明治?"
-                }
+                "",
+                {"text": "為三明治驢增加生命上限。", "color": "yellow", "italic": false},
+                {"text": "三明治之中常見的配料，", "color": "gray"},
+                {"text": "清爽的酸甜味使人活力加倍。", "color": "gray"},
+                {"text": "也許世界上有活著的三明治?", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
               ]
             },
             {

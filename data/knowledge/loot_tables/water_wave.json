@@ -11,21 +11,24 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "水的Lemma - 海浪", "color": "aqua", "italic": false}
+                            "name": {"text": "📖 水的Lemma - 海浪 📖", "color": "aqua", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能召喚把敵人推走的海浪。", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間20秒", "color": "yellow", "italic": false},
                                 {"text": "「海浪波動函數會坍縮?假的。」", "color": "gray"},
-                                {"text": "  ——海浪法師", "color": "gray"}
+                                {"text": "  ——海浪法師", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 20秒", "color": "dark_aqua", "italic": false}
+
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"water_wave\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"water_wave\",cooldown:400},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }

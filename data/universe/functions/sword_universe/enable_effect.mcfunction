@@ -1,0 +1,1 @@
+function universe:sword_universe/attribute

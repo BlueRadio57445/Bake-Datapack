@@ -1,0 +1,29 @@
+{
+    "criteria": {
+        "hammer_attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "blocked": false
+                },
+                "player": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": ["ghast_spawn_egg"],
+                                    "nbt": "{is_hammer:1b}"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:hammer/system/hammer_attack"
+    }
+}

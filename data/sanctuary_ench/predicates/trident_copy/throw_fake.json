@@ -1,7 +1,0 @@
-{
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "nbt": "{Trident:{Count:1b,tag:{sanctuary_enchs:[{id:\"copy\"}],state:\"fake\"}}}"
-    }
-}

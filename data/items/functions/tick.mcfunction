@@ -6,5 +6,7 @@ execute as @a[scores={items.used.lingering_potion=1..}] run function items:proje
 
 #gadget
 
+scoreboard players reset @a[scores={items.whetstone.using=1..},advancements={items:gadget/whetstone=false}] items.whetstone.using
+advancement revoke @a[advancements={items:gadget/whetstone=true}] only items:gadget/whetstone
 
-scoreboard players set @a items.used.warped_fungus_on_a_stick 0
+scoreboard players reset @a items.used.warped_fungus_on_a_stick

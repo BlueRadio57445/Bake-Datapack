@@ -11,21 +11,23 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "水的Theorem - 漩渦", "color": "aqua", "italic": false}
+                            "name": {"text": "📖 水的Theorem - 漩渦 📖", "color": "aqua", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵召喚漩渦，能將怪物吸入", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間30秒", "color": "yellow", "italic": false},
                                 {"text": "漩渦中央極限定理，", "color": "gray"},
-                                {"text": "真是個大道致簡的好定理。", "color": "gray"}
+                                {"text": "真是個大道致簡的好定理。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 30秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"water_swirl\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"water_swirl\",damage:1,cooldown:600},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }

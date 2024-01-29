@@ -11,20 +11,22 @@
                         {
                             "function": "set_name",
                             "entity": "this",
-                            "name": {"text": "土的Example - 土盾", "color": "green", "italic": false}
+                            "name": {"text": "📖 土的Example - 土盾 📖", "color": "green", "italic": false}
                         },
                         {
                             "function": "set_lore",
                             "entity": "this",
                             "lore": [
                                 {"text": "右鍵能召喚三個盾牌，盾牌能抵銷一次傷害", "color": "yellow", "italic": false},
-                                {"text": "冷卻時間10秒", "color": "yellow", "italic": false},
-                                {"text": "還沒想到要寫啥", "color": "gray"}
+                                {"text": "還沒想到要寫啥", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
+                                {"text": " ✒ 冷卻時間§f 10秒", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{knowledge:{id:\"earth_shield\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"earth_shield\",cooldown:200},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }

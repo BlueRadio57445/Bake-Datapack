@@ -1,6 +1,6 @@
-scoreboard players set @s npc.look_option 0
-execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] data.Options[0].Condition run function npc_system:common/option/condition/update_a
-execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] data.Options[1].Condition run function npc_system:common/option/condition/update_b
-execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] data.Options[2].Condition run function npc_system:common/option/condition/update_c
-execute if data entity @e[limit=1,type=minecraft:marker,tag=npc.common,tag=npc.this] data.Options[3].Condition run function npc_system:common/option/condition/update_d
-
+scoreboard players set $refresh npc.look_option 0
+execute as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data.Dialogue.Options[0].Condition run function npc_system:common/option/condition/update_a
+execute as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data.Dialogue.Options[1].Condition run function npc_system:common/option/condition/update_b
+execute as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data.Dialogue.Options[2].Condition run function npc_system:common/option/condition/update_c
+execute as @e[limit=1,type=minecraft:marker,tag=npc.this] if data entity @s data.Dialogue.Options[3].Condition run function npc_system:common/option/condition/update_d
+execute if score $refresh npc.look_option matches 1 run scoreboard players set @s npc.look_option 0

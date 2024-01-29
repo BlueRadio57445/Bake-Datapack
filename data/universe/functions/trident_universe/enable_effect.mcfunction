@@ -1,0 +1,1 @@
+function universe:trident_universe/attribute

@@ -17,12 +17,27 @@
                             "entity": "this",
                             "lore": [
                                 {"text": "鞭笞敵人時，使敵人凋零。", "color": "yellow", "italic": false},
-                                {"text": "世界上只有一種玫瑰是黑色的。", "color": "gray"}
+                                {"text": "世界上只有一種玫瑰是黑色的。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鞭子", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{wither_whip:1b,Unbreakable:1b}"
+                            "tag": "{is_whip:1b,wither_whip:1b,Unbreakable:1b,HideFlags:2,LoreUpdate:1b}"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 2,
+                                    "attribute": "generic.attack_damage",
+                                    "name": "attack_damage.default",
+                                    "operation": "addition",
+                                    "slot": "mainhand",
+                                    "id": "4aaca1e9-a685-4e22-8905-d631575fb08e"
+                                }
+                            ]
                         }
                     ]
                 }

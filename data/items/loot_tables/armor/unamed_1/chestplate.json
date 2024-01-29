@@ -1,0 +1,54 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": 1
+              }
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "amount": 1.0,
+                  "attribute": "minecraft:generic.armor",
+                  "name": "armor.default",
+                  "operation": "addition",
+                  "slot": "chest",
+                  "id": "00004204-0000-4204-0000-420400004204"
+                },
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "name": "attack_damage.body",
+                  "operation": "addition",
+                  "slot": "chest",
+                  "id": "00004205-0000-4205-0000-420500004205"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{color:14680154},HideFlags:2,LoreUpdate:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

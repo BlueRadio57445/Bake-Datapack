@@ -1,0 +1,33 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "trident",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"九叉戟", "color": "dark_aqua", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                "",
+                                {"text": "投擲時會丟出三發三叉戟","color": "yellow", "italic": false},
+                                {"text": "還沒想好~~","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 三叉戟", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{novemdent:1b,HideFlags:2,LoreUpdate:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

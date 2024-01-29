@@ -1,0 +1,20 @@
+{
+  "rewards": {
+    "function": "items:gadget/whetstone/attacked"
+  },
+  "criteria": {
+    "sharpened_attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": {
+          "equipment": {
+            "mainhand": {
+              "tag": "minecraft:edged_weapons",
+              "nbt": "{sharpened:{state:1b}}"
+            }
+          }
+        }
+      }
+    }
+  }
+}

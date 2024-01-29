@@ -1,0 +1,37 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text":"🌌 毛拳之星II 🌌", "color": "#baffbc", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
+                                {"text": "手持拳套時增加10%傷害", "color": "yellow", "italic": false},
+                                {"text": "「這個星座就像拍動的小貓掌。」", "color": "gray"},
+                                {"text": "——《宇宙之美》", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_universe:1b,universe:{id:\"gloves_universe\", lvl:2},CustomModelData:8001}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

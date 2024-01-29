@@ -1,22 +1,53 @@
 {
   "parent": "quest:hunger_cave/monster/start",
   "criteria": {
-    "impossible": {
+    "killed": {
       "trigger": "minecraft:player_killed_entity",
       "conditions": {
-          "entity": [
-              {
-                  "condition": "entity_properties",
-                  "entity": "this",
-                  "predicate": {
-                      "type": "zombie",
-                      "nbt": "{Tags:[\"quest.hunger_cave.monster\"]}"
-                  }
+        "entity": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "zombie",
+              "nbt": "{Tags:[\"quest.hunger_cave.monster\"]}"
+            }
+          }
+        ]
+      }
+    },
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$hunger_cave.monster"
               }
-          ]
+            },
+            "range": 3
+          }
+        ]
       }
     }
   },
+  "requirements": [
+    [
+      "killed",
+      "check"
+    ]
+  ],
   "display": {
     "icon": {
       "item": "minecraft:player_head",

@@ -1,2 +1,3 @@
-data modify storage general:gcm str set from entity @e[limit=1,type=minecraft:marker,tag=npc.this] data.Extra.Leave_Command
-function general:gcm/push/player/string
+data modify storage general:utils input set value {}
+data modify storage general:utils input.command set from entity @s data.Dialogue.Extra.LeaveCommand
+execute as @a[limit=1,tag=npc.user] run function general:utils/execute with storage general:utils input

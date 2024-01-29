@@ -1,0 +1,2 @@
+execute as @e[type=#arrows,tag=arrow.bouncing_bow,predicate=!weapons:bow/in_ground] run function weapons:bow/bouncing_bow/store_motion
+execute as @e[type=#arrows,tag=arrow.bouncing_bow,predicate=weapons:bow/in_ground] at @s run function weapons:bow/bouncing_bow/bounce

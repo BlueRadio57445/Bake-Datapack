@@ -9,12 +9,12 @@
             {
                 "op": "replace",
                 "source": "fat_sword.Amount[0]",
-                "target": "AttributeModifiers[{Name:\"fat_sword\"}].Amount"
+                "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
             }
         ]
     },
     {
         "function": "set_nbt",
-        "tag": "{CustomModelData:3000}"
+        "tag": "{CustomModelData:3000,LoreUpdate:1b}"
     }
 ]

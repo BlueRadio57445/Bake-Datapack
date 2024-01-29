@@ -1,0 +1,11 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": ["wooden_hoe","stone_hoe","iron_hoe","golden_hoe","diamond_hoe","netherite_hoe"]
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+function universe:hammer_universe/attribite

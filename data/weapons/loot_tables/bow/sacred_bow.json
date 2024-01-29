@@ -16,7 +16,9 @@
                             "lore": [
                                 {"text": "拉弓越久，傷害越高。","color": "yellow", "italic": false},
                                 {"text": "由神聖麵包樹的枝條與無數麵包蟲吐出的絲線製成，","color":"gray"},
-                                {"text": "已經失傳的古老神秘技術使其得以儲存巨大的能量。","color":"gray"}
+                                {"text": "已經失傳的古老神秘技術使其得以儲存巨大的能量。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 弓", "color": "dark_aqua", "italic": false}
                             ]
                         },
                         {

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "wear_armor": {
+            "trigger": "inventory_changed",
+            "conditions": {
+                "player": [
+                    {
+                        "condition": "reference",
+                        "name": "universe:no_armor"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "universe:orichalcum_universe/take_off_armor"
+    }
+}

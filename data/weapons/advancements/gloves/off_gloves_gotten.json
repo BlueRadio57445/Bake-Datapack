@@ -23,7 +23,7 @@
                         "condition": "minecraft:inverted",
                         "term": {
                             "condition": "minecraft:reference",
-                            "name": "weapons:gloves/hold_main_gloves"
+                            "name": "weapons:gloves/system/hold_main_gloves"
                         }
                     }
                 ]
@@ -50,11 +50,11 @@
                     },
                     {
                         "condition": "minecraft:reference",
-                        "name": "weapons:gloves/hold_main_gloves"
+                        "name": "weapons:gloves/system/hold_main_gloves"
                     },
                     {
                         "condition": "minecraft:reference",
-                        "name": "weapons:gloves/hold_off_gloves"
+                        "name": "weapons:gloves/system/hold_off_gloves"
                     }
                 ]
             }
@@ -67,6 +67,6 @@
         ]
     ],
     "rewards": {
-        "function": "weapons:gloves/clear_off_gloves"
+        "function": "weapons:gloves/system/clear_off_gloves"
     }
 }
