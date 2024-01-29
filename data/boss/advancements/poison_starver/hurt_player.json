@@ -12,6 +12,6 @@
         }
     },
     "rewards": {
-        "function": "boss:poison_starver/skill6/hurt_player"
+        "function": "boss:poison_starver/skill1/hurt_player"
     }
 }

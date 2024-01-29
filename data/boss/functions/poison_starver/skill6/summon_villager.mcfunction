@@ -6,4 +6,4 @@ summon minecraft:villager ~ ~-3 ~ {Tags:["poison_starver.villager"],Team:"boss.n
 execute as @e[type=minecraft:villager,tag=poison_starver.villager] run tp @s ^ ^ ^1
 # tp 是為了抵銷隱形的閃一下
 
-function boss:poison_starver/skill4/villager_attack
+function boss:poison_starver/skill6/villager_attack

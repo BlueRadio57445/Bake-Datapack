@@ -1,0 +1,16 @@
+execute facing entity @s eyes run particle totem_of_undying ^0.5 ^0.0 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.461 ^0.191 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.353 ^0.353 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.191 ^0.461 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.0 ^0.5 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.192 ^0.461 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.354 ^0.353 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.462 ^0.191 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.5 ^0.0 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.462 ^-0.192 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.354 ^-0.354 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.192 ^-0.462 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^-0.001 ^-0.5 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.191 ^-0.462 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.353 ^-0.354 ^ 0 -100 0 10 0 normal @s
+execute facing entity @s eyes run particle totem_of_undying ^0.461 ^-0.192 ^ 0 -100 0 10 0 normal @s
