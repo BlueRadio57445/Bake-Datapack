@@ -81,7 +81,7 @@ NPC的基本函數如下列所示:
 
 所有跟NPC互動時的對話、選項等，可在 "dialogue" 函數中設定，設定方法為對該NPC所擁有的「指令空間 (command storage)」進行編輯。  
 (因此請先確保自己能夠操作 `/data modify` 指令的相關基礎功能再來喔。)  
-每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 標籤，這些位置底下的元素會影響該NPC的行為，以下將列出有效的子標籤。  
+每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 標籤，這些位置底下的子標籤會影響該NPC的行為，以下將列出有效的子標籤。  
 
 ### 通常設定
 
@@ -113,6 +113,7 @@ NPC的基本函數如下列所示:
 * NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
 * Exit (compound) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
   * Texts (list of json strings) - 包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
+  * Extra (compound) - 額外區域，用於儲存結束對話的回呼函數設定及更多額外設定，詳細內容請見上方同名項目
 * Idle (list of compounds) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
   * Text (json string) - 顯示的文字
   * Duration (compound or int) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
