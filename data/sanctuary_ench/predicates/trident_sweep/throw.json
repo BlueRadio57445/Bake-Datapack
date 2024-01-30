@@ -2,6 +2,6 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{Trident:{tag:{sanctuary_enchs:[{id:\"sweeping\"}]}}}"
+        "nbt": "{item:{tag:{sanctuary_enchs:[{id:\"sweeping\"}]}}}"
     }
 }
