@@ -1,6 +1,8 @@
 # executed by and at marker
 execute if predicate enemy:out_of_world run kill @s
 execute if predicate enemy:out_of_world run return 0
+execute at @p if predicate enemy:endsky/reviving/despawn run kill @s
+execute at @p if predicate enemy:endsky/reviving/despawn run return 0
 
 tag @s remove enemy.no_exp
 tag @s add enemy.reviving.core

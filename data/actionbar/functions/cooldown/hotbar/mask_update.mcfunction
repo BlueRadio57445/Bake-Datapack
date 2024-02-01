@@ -1,5 +1,6 @@
 execute if score @s actionbar.cooldown.hotbar_update_time > $gametime general.utils run return 0
 
+scoreboard players operation $slot actionbar.cooldown = @s general.player.selected_slot
 execute if score @s actionbar.cooldown.hotbar_target_time <= $gametime general.utils run function actionbar:cooldown/hotbar/end
 execute unless score @s actionbar.cooldown.hotbar_target_time = @s actionbar.cooldown.hotbar_target_time run return 0
 

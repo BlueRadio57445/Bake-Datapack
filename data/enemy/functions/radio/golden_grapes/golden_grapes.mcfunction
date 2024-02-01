@@ -4,5 +4,8 @@
 execute if entity @s[tag=new] run function enemy:radio/golden_grapes/summon_decoration
 tag @s[tag=new] remove new
 
+# 如果沒有葡萄，就殺死自己
+execute unless predicate enemy:golden_grapes/has_grapes run kill @s
+
 # 常駐粒子效果
 particle dust_color_transition 1 0.929 0.290 1 1 0.380 0.019 ~ ~1 ~ 0.15 0.5 0.15 0.01 10

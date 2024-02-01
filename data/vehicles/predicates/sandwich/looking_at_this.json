@@ -1,0 +1,13 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "type_specific": {
+      "type": "player",
+      "looking_at": {
+        "type": "minecraft:donkey",
+        "nbt": "{Tags:[\"vehicles.sandwich\",\"vehicles.this\"]}"
+      }
+    }
+  },
+  "entity": "this"
+}

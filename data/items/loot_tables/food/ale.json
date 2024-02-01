@@ -1,0 +1,35 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "麥酒","italic": false, "color": "gold"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                "",
+                                {"text": "稀糊的特產，又香又醇", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{ale:1b,CustomPotionColor:16154653,custom_potion_effects:[{id:\"nausea\",duration:140},{id:\"strength\",duration:400}]}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

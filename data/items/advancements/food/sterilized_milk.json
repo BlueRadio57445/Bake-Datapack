@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "eat_apple": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{sterilized_milk:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "items:food/sterilized_milk"
+    }
+}

@@ -4,6 +4,7 @@ loot replace block 0 16 0 container.1 loot items:gadget/sandwich/bag_stuffed
 data modify storage vehicles:sandwich Item.Slot set value 0b
 data remove storage vehicles:sandwich Item.tag.sandwich.unfolded
 data modify storage vehicles:sandwich Item.tag.display.Lore set from block 0 16 0 Items[{Slot:1b}].tag.display.Lore
+data modify storage vehicles:sandwich Item.tag.CustomModelData set from block 0 16 0 Items[{Slot:1b}].tag.CustomModelData
 data modify block 0 16 0 Items append from storage vehicles:sandwich Item
 execute if score $temp vehicles.state matches 0 run item replace entity @s container.0 from block 0 16 0 container.0
 execute if score $temp vehicles.state matches 1 run item replace entity @s container.1 from block 0 16 0 container.0

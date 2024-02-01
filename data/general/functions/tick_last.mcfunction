@@ -4,3 +4,5 @@ execute as @a[advancements={general:inventory_changed=true}] run function genera
 
 execute as @e[scores={general.object.duration=0}] on passengers run kill @s
 kill @e[scores={general.object.duration=..0}]
+
+execute if data storage general:utils Execute[1] run function general:utils/execute_server

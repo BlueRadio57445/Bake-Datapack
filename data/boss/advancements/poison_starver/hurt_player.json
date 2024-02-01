@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "hurt_player": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "source_entity": {
+                        "nbt": "{Tags:[\"boss.poison_starver\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "boss:poison_starver/skill1/hurt_player"
+    }
+}

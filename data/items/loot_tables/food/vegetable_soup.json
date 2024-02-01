@@ -1,0 +1,36 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "beetroot_soup",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "麵包碗蔬菜濃湯","italic": false, "color": "gold"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                "",
+                                {"text": "美味的蔬菜濃湯，", "color": "gray"},
+                                {"text": "喝完湯連碗都可以順便吃掉。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{bread_bowl:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "condition": "minecraft:entity_properties",
+  "predicate": {
+    "distance": {
+      "absolute": {
+        "min": 128
+      } 
+    },
+    "nbt": "{data:{entity:{PersistenceRequired:0b}}}"
+  },
+  "entity": "this"
+}
