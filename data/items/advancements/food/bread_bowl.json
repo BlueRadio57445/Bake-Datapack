@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "eat_apple": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{bread_bowl:1b}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "items:food/bread_bowl/eat"
+    }
+}
