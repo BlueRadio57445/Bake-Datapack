@@ -47,6 +47,7 @@ execute unless score $playerCount general.id = $playerCount general.id run score
 
 # 設定區
 #declare storage general:utils
+data modify storage general:utils Execute set value [""]
 
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0
