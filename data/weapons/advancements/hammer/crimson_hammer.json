@@ -8,7 +8,7 @@
                         "condition": "match_tool",
                         "predicate": {
                             "items": ["ghast_spawn_egg"],
-                            "nbt": "{is_hammer:1b,hammer:{id:\"crimson_hammer\"}}"
+                            "nbt": "{is_hammer:1b,hammer:{id:\"crimson_hammer\"},cooldown:{mode:\"empty\"}}"
                         }
                     }
                 ]
