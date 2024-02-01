@@ -1,5 +1,5 @@
 data modify entity @s NoAI set value 1b
-data remove entity @s Owner
+data modify entity @s Owner set value [I;0,0,0,0]
 item replace entity @s horse.saddle with air
 scoreboard players set @s vehicles.descending 0
 scoreboard players set @s vehicles.x_mot 0
