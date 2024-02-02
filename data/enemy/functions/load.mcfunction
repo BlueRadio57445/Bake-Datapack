@@ -11,6 +11,8 @@ scoreboard objectives add enemy.elite_axolotl.time dummy "波瀾蠑螈計時(正
 
 # ==== 結晶沙灘 ==== #
 
+scoreboard objectives add enemy.crab dummy "螃蟹技能(正數)"
+
 # ==== 酵菌蕈島 ==== #
 schedule function enemy:radio/golden_grapes/schedule_effect 1t
 data remove storage enemy:data grapes_rotations

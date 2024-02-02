@@ -12,3 +12,4 @@ execute as @e[type=minecraft:marker,tag=enemy.death_detect,predicate=!enemy:vehi
 
 execute as @e[type=#object,tag=enemy.decoration,predicate=!enemy:vehicle] run kill @s
 function enemy:radio/golden_grapes/tick
+execute as @e[tag=enemy.crab,type=#mobs] at @s run function enemy:crystal_beach/crab/crab
