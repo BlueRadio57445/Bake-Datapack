@@ -5,5 +5,5 @@ execute if entity @s[tag=new] run function enemy:crystal_beach/crab/summon_decor
 tag @s[tag=new] remove new
 
 scoreboard players add @s enemy.crab 1
-execute as @s[scores={enemy.crab=300..}] run function enemy:crystal_beach/crab/skill_on
+execute as @s[scores={enemy.crab=300}] run function enemy:crystal_beach/crab/skill_on
 execute as @s[scores={enemy.crab=400..}] run function enemy:crystal_beach/crab/skill_off
