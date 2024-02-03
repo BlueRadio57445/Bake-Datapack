@@ -11,5 +11,6 @@ tag @e[tag=enemy.no_exp] remove enemy.no_exp
 execute as @e[type=minecraft:marker,tag=enemy.death_detect,predicate=!enemy:vehicle] run function enemy:system/vehicle_died
 
 execute as @e[type=#object,tag=enemy.decoration,predicate=!enemy:vehicle] run kill @s
+execute as @e[type=#object,tag=enemy.decoration.facing] run function enemy:decoration_facing
 function enemy:radio/golden_grapes/tick
 execute as @e[tag=enemy.crab,type=#mobs] at @s run function enemy:crystal_beach/crab/crab
