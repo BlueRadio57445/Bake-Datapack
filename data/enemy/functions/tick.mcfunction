@@ -18,6 +18,7 @@ execute as @e[tag=enemy.crab,type=#mobs] at @s run function enemy:crystal_beach/
 execute as @e[tag=enemy.crystal_blaze,type=blaze] at @s run function enemy:crystal_beach/crystal_blaze/crystal_blaze
 # ==== 酵菌蕈島 ==== #
 function enemy:radio/golden_grapes/tick
+execute as @e[tag=enemy.albicans] at @s run function enemy:radio/albicans/albicans
 # ==== 稀糊 ==== #
 
 # ==== 學海無崖 ==== #
