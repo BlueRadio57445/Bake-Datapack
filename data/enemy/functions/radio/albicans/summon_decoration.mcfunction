@@ -13,3 +13,4 @@ tag @e[tag=new] remove new
 tag @e[tag=new2] remove new2
 tag @e[tag=new3] remove new3
 tag @e[tag=new4] remove new4
+tag @e[tag=new_decoration] remove new_decoration
