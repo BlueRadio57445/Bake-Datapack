@@ -8,6 +8,9 @@
       "conditions": {
         "damage": {
           "type": {
+            "direct_entity": {
+              "nbt": "{Tags:[\"effects.fire.set_fire\"]}"
+            },
             "tags": [
               {
                 "expected": true,

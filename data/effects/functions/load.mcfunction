@@ -13,6 +13,7 @@ scoreboard objectives add effects.stun.check_time dummy
 scoreboard objectives add effects.fire.duration dummy
 scoreboard objectives add effects.fire.check_time dummy
 scoreboard objectives add effects.fire.added_max_health dummy
+scoreboard objectives add effects.fire.prev_duration dummy
 
 scoreboard objectives add effects.strong_gravity.duration dummy
 scoreboard objectives add effects.strong_gravity.check_time dummy
