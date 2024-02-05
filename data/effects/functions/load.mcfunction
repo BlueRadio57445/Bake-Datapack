@@ -10,6 +10,10 @@ scoreboard objectives add effects.bleed.applied dummy
 scoreboard objectives add effects.stun.duration dummy
 scoreboard objectives add effects.stun.check_time dummy
 
+scoreboard objectives add effects.fire.duration dummy
+scoreboard objectives add effects.fire.check_time dummy
+scoreboard objectives add effects.fire.added_max_health dummy
+
 scoreboard objectives add effects.strong_gravity.duration dummy
 scoreboard objectives add effects.strong_gravity.check_time dummy
 scoreboard objectives add effects.strong_gravity.pos_y dummy

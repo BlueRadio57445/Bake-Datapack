@@ -1,0 +1,22 @@
+{
+  "rewards": {
+    "function": "effects:fire/reset_health"
+  },
+  "criteria": {
+    "set_fire": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:sets_fire"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
