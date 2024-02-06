@@ -1,5 +1,5 @@
 execute at @s if predicate effects:fire/is_immune_to_fire run return 0
-scoreboard players operation @s effects.fire.duration = $set effects.duration
+$scoreboard players set @s effects.fire.duration $(duration)
 execute if entity @s[type=#minecraft:mobs_without_player] run function effects:fire/nonplayer
 execute if entity @s[type=#minecraft:mobs_without_player] run return 0
 scoreboard players operation @s effects.fire.check_time = $gametime general.utils
