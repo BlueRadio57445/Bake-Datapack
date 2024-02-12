@@ -1,0 +1,16 @@
+{
+  "rewards": {
+    "function": "enemy:endsky/reviving/interrupted"
+  },
+  "criteria": {
+    "reviving_interrupted": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": "{Tags:[\"enemy.reviving.hitbox\"]}"
+        }
+      }
+    }
+  }
+}

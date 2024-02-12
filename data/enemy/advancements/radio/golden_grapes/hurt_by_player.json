@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "hury_by_player": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:[\"enemy.golden_grapes\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "enemy:radio/golden_grapes/hurt_by_player"
+    }
+}

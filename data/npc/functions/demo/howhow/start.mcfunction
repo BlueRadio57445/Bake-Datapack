@@ -1,4 +1,4 @@
-advancement revoke @s only npc:demo/howhow_start
+advancement revoke @s only npc:demo/howhow/start
 
 tag @e[tag=npc.demo.howhow] add npc.this
 function npc_system:common/start

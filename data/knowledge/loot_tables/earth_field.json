@@ -27,7 +27,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{is_knowledge:1b,knowledge:{id:\"earth_field\",lvl:1}}"
+                            "tag": "{is_knowledge:1b,knowledge:{id:\"earth_field\",cooldown:700},on_click:\"function knowledge:on_click/on_click\"}"
                         }
                     ]
                 }

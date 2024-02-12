@@ -13,6 +13,9 @@ data modify storage npc:demo howhow.TraderNormal append value {Texts:['{"text":"
 
 data modify storage npc:demo howhow.Buy set value []
 data modify storage npc:demo howhow.Buy append value {buy:{Name:"items:demo/demo_currency",Count:1b},sell:{Name:"items:demo/sus_mysterious_stone",Count:1b},maxUses:2147483647}
+data modify storage npc:demo howhow.Buy append value {buy:{Name:"items:demo/demo_currency",Count:1b},sell:{Name:"items:talisman/test",Count:1b},maxUses:2147483647}
+data modify storage npc:demo howhow.Buy append value {buy:{Name:"items:demo/demo_currency",Count:32b},sell:{Name:"weapons:hammer/cursed_pan",Count:1b},maxUses:1}
+data modify storage npc:demo howhow.Buy append value {buy:{Name:"items:demo/demo_currency",Count:64b},sell:{Name:"weapons:misc/lily_pad",Count:1b},maxUses:1}
 
 data modify storage npc:demo howhow.Sell set value []
 data modify storage npc:demo howhow.Sell append value {buy:{Name:"items:demo/not_so_mysterious_stone",Count:64b},sell:{Name:"items:demo/demo_currency",Count:3b},maxUses:2147483647}

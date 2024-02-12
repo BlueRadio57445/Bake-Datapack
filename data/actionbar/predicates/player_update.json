@@ -1,0 +1,26 @@
+{
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "score": "actionbar.player_mod",
+      "target": "this"
+    },
+    "range": {
+      "max": {
+        "type": "minecraft:score",
+        "score": "actionbar.player_mod",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$system"
+        }
+      },
+      "min": {
+        "type": "minecraft:score",
+        "score": "actionbar.player_mod",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "$system"
+        }
+      }
+    }
+}

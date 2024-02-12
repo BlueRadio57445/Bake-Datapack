@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "attack": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": "{Tags:[\"centipede.body\"]}"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "boss:centipede/hurt_centipede"
+    }
+}

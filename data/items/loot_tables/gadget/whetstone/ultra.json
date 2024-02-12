@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:ender_eye",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "終極磨刀石", "color": "dark_purple", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "",
+                {"text": "長按使用，賦予另一手上的有刃武器：", "color": "yellow", "italic": false},
+                {"text": "有限次數的攻擊傷害增幅，不可疊加", "color": "yellow", "italic": false},
+                {"text": "向古神獻上了一切的刀匠所打造的磨刀石，", "color": "gray"},
+                {"text": "當你揮動刀刃，空間彷彿隨時都會被劃開。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false},
+                {"text": "使用後將賦予下列屬性：", "color": "dark_gray", "italic": false},
+                {"text": " 󐀁☬󐀁 傷害加成§f +15.0% §c(9次使用後消失)", "color": "light_purple", "italic": false},
+                {"translate": "item.durability", "with": [18, 18], "color": "dark_gray", "italic": false}
+              ]
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{is_whetstone:1b,whetstone:{state:1b,times_left:9,modifier:0.15d},durability:{max:18,current:18},NoStacking:1b,Enchantments:[{}],CustomModelData:4011}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

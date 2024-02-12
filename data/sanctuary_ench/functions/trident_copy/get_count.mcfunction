@@ -1,0 +1,1 @@
+$execute store result score $copy_count sanctuary_ench run data get storage sanctuary_ench:data copy_id[$(copy_id)]

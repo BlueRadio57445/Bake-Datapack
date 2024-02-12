@@ -4,7 +4,6 @@ execute store success score @s vehicles.sandwich.health_boost if data entity @s 
 execute store success score @s vehicles.sandwich.fly if data entity @s Items[{tag:{sandwich:{fly:1b}}}]
 
 # 由於某種特性，直接修改驢子身上的物品資料會造成玩家GUI關閉，因此使用物品修飾器來繞過
-execute if data entity @s SaddleItem unless data entity @s SaddleItem.tag{vehicle_binded:1b} at @s run give @p minecraft:saddle
 item replace entity @s horse.saddle with minecraft:air
 item replace entity @s weapon.mainhand with minecraft:air
 execute if data entity @s Items[{tag:{sandwich:{unfolded:1b}}}] run function vehicles:sandwich/update

@@ -27,15 +27,16 @@ scoreboard players remove @a[scores={knowledge.cd.lightning=1..}] knowledge.cd.l
 scoreboard players remove @a[scores={knowledge.cd.lightning_mad=1..}] knowledge.cd.lightning_mad 1
 
 # 滑鼠滾輪
-execute as @a run function knowledge:cooldown/scroll
+#execute as @a run function knowledge:cooldown/scroll
+
 
 execute as @e[type=armor_stand,tag=fire_ball] at @s run function knowledge:fire_ball/tick_effect
 execute as @e[type=armor_stand,tag=end_fire_ball] at @s run function knowledge:end_fire_ball/tick_effect
-execute as @a[scores={knowledge.fire_field=1..}] at @s run function knowledge:fire_field/tick_effect
+execute as @e[type=#mobs,scores={knowledge.fire_field=1..}] at @s run function knowledge:fire_field/tick_effect
 execute as @a[scores={knowledge.end_fire_field=1..}] at @s run function knowledge:end_fire_field/tick_effect
 
 execute as @e[type=marker,tag=water_bubble] at @s run function knowledge:water_bubble/tick_effect
-execute as @e[type=armor_stand,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
+execute as @e[type=marker,tag=water_swirl] at @s run function knowledge:water_swirl/tick_effect
 execute as @e[type=marker,tag=water_wave] at @s run function knowledge:water_wave/tick_effect
 
 execute as @a[scores={knowledge.earth_shield=1..}] at @s run function knowledge:earth_shield/tick_effect
@@ -46,3 +47,4 @@ execute as @e[type=interaction,tag=earth_pillar] at @s run function knowledge:ea
 
 execute as @e[type=item_display,tag=air_feather] at @s run function knowledge:air_feather/tick_effect
 execute as @a[scores={knowledge.air_run=1..}] at @s run function knowledge:air_run/tick_effect
+execute as @e[type=marker,tag=air_tornado] at @s run function knowledge:air_tornado/tick_effect

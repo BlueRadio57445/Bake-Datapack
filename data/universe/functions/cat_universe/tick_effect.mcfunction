@@ -1,0 +1,1 @@
+execute at @a[tag=universe.cat_universe] as @e[distance=..10,type=creeper] run data merge entity @s {Fuse:80s}

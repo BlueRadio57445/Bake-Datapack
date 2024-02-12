@@ -1,0 +1,19 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "predicate": {
+        "nbt": "{Tags:[\"vehicles.sandwich_spawner\"]}"
+      },
+      "entity": "this"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:reference",
+        "name": "vehicles:sandwich/can_summon"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "rewards": {
+    "function": "general:utils/on_mobs_hit"
+  },
+  "criteria": {
+    "mobs_hit_with_on_hit": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "#minecraft:mobs_without_player",
+            "equipment": {
+              "mainhand": {
+                "nbt": "{on_hit:{}}"
+              }
+            }
+          },
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

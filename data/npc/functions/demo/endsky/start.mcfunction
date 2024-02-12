@@ -1,4 +1,4 @@
-advancement revoke @s only npc:demo/endsky_start
+advancement revoke @s only npc:demo/endsky/start
 
 tag @e[tag=npc.demo.endsky] add npc.this
 function npc_system:common/start

@@ -1,0 +1,1 @@
+execute summon minecraft:item_display run function sanctuary_ench:giant/axe_init

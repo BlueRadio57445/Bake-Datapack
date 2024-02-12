@@ -1,0 +1,26 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_scores",
+      "scores": {
+        "actionbar.cooldown.offhand_target_time": {
+          "min": 1
+        }
+      },
+      "entity": "this"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "knowledge:hold_knowledge2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "actionbar:cooldown/offhand_cooldown_score"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "actionbar:cooldown/offhand_cooldown_item"
+    }
+  ]
+}

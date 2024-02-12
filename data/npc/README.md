@@ -39,8 +39,8 @@ NPC系統使用了以下四個命名空間:
 
 NPC的基本進度如下列所示:
 
-* `data/npc/advancements/<region_id>/<npc_id>_start.json`
-* `data/npc/advancements/<region_id>/<npc_id>_next.json`
+* `data/npc/advancements/<region_id>/<npc_id>/start.json`
+* `data/npc/advancements/<region_id>/<npc_id>/next.json`
 
 其中 "start" 進度會偵測玩家開始與特定NPC互動，"next" 進度則能偵測所有後續的互動。  
 
@@ -81,55 +81,67 @@ NPC的基本函數如下列所示:
 
 所有跟NPC互動時的對話、選項等，可在 "dialogue" 函數中設定，設定方法為對該NPC所擁有的「指令空間 (command storage)」進行編輯。  
 (因此請先確保自己能夠操作 `/data modify` 指令的相關基礎功能再來喔。)  
-每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 標籤，這些位置底下的元素會影響該NPC的行為，以下將列出有效的子標籤。  
+每個NPC都有其獨立的 `storage`，位置為 `npc:<region_id>` 中的 `<npc_id>` 標籤，這些位置底下的子標籤會影響該NPC的行為，以下將列出有效的子標籤。  
 
 ### 通常設定
 
-* Normal (list of components) - 可儲存多個通常對話，預設按照順序觸發
+此區為所有NPC皆擁有的設定。  
+
+* Normal (list of compounds) - 可儲存多個通常對話，預設按照順序觸發
   * Texts (list of json strings) - 必填，包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
   * Once (boolean) - 選填，若設為 `1b`，此對話觸發後將從 `storage` 中刪除，無法再次顯示
-  * Options (list of components) - 選填，於通常對話或選項對話結束後將會進入選項階段，最多四個選項 (會多顯示一個「離開」選項)
+  * Options (list of compounds) - 選填，於通常對話或選項對話結束後將會進入選項階段，最多四個選項 (會多顯示一個「離開」選項)
     * Option (json string) - 顯示於選項之文字
     * React (list of json strings) - 包含多個 "json string" 的列表，該選項對話之多行內容，按順序觸發 (同Texts之寫法)
-    * Condition (component) - 選項條件，若玩家不符合條件將無法觸發該選項(以下皆以觸發玩家為執行者及執行位置)
+    * Condition (compound) - 選項條件，若玩家不符合條件將無法觸發該選項(以下皆以觸發玩家為執行者及執行位置)
       * Type (string) 條件種類，可為 "item"、"score" 或是 "command"
       * Value
         * Type為 "item" 的情況下，以 `{id,Count(,tag)}` 的形式填入欲偵測的物品。`Count` 為數量下限，若有多餘的資料會影響判斷。
         * Type為 "score" 的情況下，以 `{score,target,range}` 的形式填入欲偵測的分數及範圍。其中 `range` 可為單純的整數或是 `"a..b"` 的形式。
         * Type為 "command" 的情況下，以字串的形式填入完整的指令。若指令執行的結果不為0則通過。
     * End (boolean) - 若設為 `1b`，此選項對話結束後將不會回到選項
-    * Extra (component) - 額外區域，目前用於儲存選項的回呼函數設定，多用於任務系統
-      * StartCommand (string) - 合法指令的字串，將於選項被選中時額外執行此指令，執行者為對話中的玩家
-      * EndCommand (string) - 合法指令的字串，將於選項對話正常結束時額外執行此指令，執行者為對話中的玩家
-      * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+    * Extra (compound) - 額外區域，用於儲存選項的回呼函數設定及更多額外設定，詳細內容請見下方同名項目
   * Quest (boolean) - 選填，任務選項模式，於Options存在時才有效果。若設為 `1b`，進入選項時將不會出現「離開」選項，且選項對話結束時亦不會再次進入選項
   * NoExit (boolean) - 選填，若設為 `1b`，進入選項時將不會出現「離開」選項 (選項對話結束時會再次回到選項)。
-  * Extra (component) - 額外區域，目前用於儲存通常對話的回呼函數設定，多用於任務系統
+  * Extra (compound) - 額外區域，目前用於儲存通常對話的回呼函數設定及更多額外設定
     * StartCommand (string) - 合法指令的字串，將於對話開始時額外執行此指令，執行者為對話中的玩家
     * EndCommand (string) - 合法指令的字串，將於對話正常結束時額外執行此指令，執行者為對話中的玩家
     * LeaveCommand (string) - 合法指令的字串，將於玩家離開對話距離或登出導致對話結束時額外執行此指令，執行者為對話中的玩家，若玩家登出則會由伺服器執行
+    * SoundOverrides (list of compounds) - 能於指定的對話階段以此設定的內容覆蓋音效池
+      * index (int) - 指定的對話項序數 (0-based)，`SoundOverrides` 內的項目應依此項數值由小至大排列，否則無法正常運作
+      * pool (list of compounds) - 內容同下方 `SoundPool` 項目
 * NormalRandom (boolean) - 選填，若設為 `1b`，多個通常對話將以隨機序列被觸發
-* Exit (component) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
+* Exit (compound) - 於Options存在或Trader為`1b`時才有效果，將於點選「離開」選項後觸發此處的對話
   * Texts (list of json strings) - 包含多個 "json string" 的列表，該對話之多行內容，按順序觸發
-* Idle (list of components) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
+  * Extra (compound) - 額外區域，用於儲存結束對話的回呼函數設定及更多額外設定，詳細內容請見上方同名項目
+* Idle (list of compounds) - 選填，NPC閒置 (不在與玩家互動) 時，若此列表有內容，將會以設定的時長與間隔顯示文字於NPC頭上
   * Text (json string) - 顯示的文字
-  * Duration (component or interger) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
-    * max (interger) - 隨機數 (uniform) 的上界，應大於min
-    * min (interger) - 隨機數 (uniform) 的下界，不得小於0
-  * Rest (component or interger) - 距離下次文字顯示的秒數，格式同Duration
+  * Duration (compound or int) - 文字顯示的秒數，可為固定值 (整數) 或浮動值 (見下列標籤)
+    * max (int) - 隨機數 (uniform) 的上界，應大於min
+    * min (int) - 隨機數 (uniform) 的下界，不得小於0
+  * Rest (compound or int) - 距離下次文字顯示的秒數，格式同 `Duration`
+  * SoundPool (list of compunds) - 選填，若存在則覆蓋預設的音效池，格式同下
+* SoundPool (list of compounds) - 選填，內容為玩家觸發對話時會隨機撥放其中一個音效，若無此設定則套用默認音效 (村民嘀咕聲)
+  * id (string) - 必填，音效的完整id
+  * setting (compound) - 選填，效果同 `/playsound` 指令的選填參數，若無則套用預設參數
+    * volume (float) - 選填，音量，數值應大於或等於0.0
+    * pitch (float) - 選填，音高，數值應包含於0.0至2.0之間，0.0至0.5間的值等同於0.5
+    * minVolume (float) - 選填，最小音量，數值應包含於0.0至1.0之間 (此設定若大於0.0，將使所有玩家皆能聽到此音效)
 
 ### 商店設定
 
+此區為商店NPC獨有的設定，商店NPC亦適用所有的通常設定。  
+
 * Trader (boolean) - 若設為 `1b`，此NPC將被轉換成商店，並在通常對話結束後進入交易選項
-* TraderNormal (list of components) - 選填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
+* TraderNormal (list of compounds) - 選填，可儲存多個商店對話，於交易選項中選擇「交談」後顯示，預設按照順序觸發，單個對話結束後將回到交易選項
   * 與Normal之內容相同
 * TraderNormalRandom (boolean) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
-* Buy (list of components) - 「購入」內的交易選項，基本與村民之交易選項相同
-  * buy (component) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
-  * buyB (component) - 玩家應交付的物品，格式同buy
-  * sell (component) - 玩家將獲得的物品，格式同buy
-  * maxUses (interger) - 玩家可交易的次數，當前版本填上2147483647就好，因此時並未寫上能限制購買次數的功能，每次重新召喚村民時此數字都會重置
-* Sell (list of components) - 「售出」內的交易選項，基本與村民之交易選項相同
+* Buy (list of compounds) - 「購入」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
+  * buy (compound) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
+  * buyB (compound) - 玩家應交付的物品，格式同buy
+  * sell (compound) - 玩家將獲得的物品，格式同buy
+  * maxUses (int) - 玩家最多可交易的次數，若填入2147483647則代表可以進行無限次交易
+* Sell (list of compounds) - 「售出」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
   * 格式同Buy
 
 ## 任務流程
@@ -177,8 +189,9 @@ Extra標籤中的StartCommand、EndCommand、LeaveCommand應設為一個合法�
 ### 任務提示
 
 任務進度之提示以「進度」功能達成，預計同一個區域的任務會共用同一個根進度，並且同一個任務的進度提示要串起來，形成明顯的先後關係。  
-任務提示全部設定為隱藏進度 (觸發後才會顯示)，顯示格式待定。  
-(待討論)  
+任務提示全部設定為隱藏進度 (觸發後才會顯示)。  
+另外，我設計了一個方式可以讓剛上線的玩家自動根據任務記分板的數值更新他自身的進度，詳細情形請見任務提示模板。  
+於此提供一個任務提示的[模板](../quest/advancements/template/hint)。  
 
 ### 其他建議
 
