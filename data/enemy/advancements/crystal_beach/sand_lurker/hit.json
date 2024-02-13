@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "nbt": "{Tags:[\"lurkering\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "enemy:crystal_beach/sand_lurker/hit_sound"
+      }
+  }
+  

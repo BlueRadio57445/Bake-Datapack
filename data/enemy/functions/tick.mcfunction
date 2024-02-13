@@ -16,6 +16,7 @@ execute as @e[type=axolotl,tag=enemy.elite_axolotl] at @s run function enemy:hun
 # ==== 結晶沙灘 ==== #
 execute as @e[tag=enemy.crab,type=#mobs] at @s run function enemy:crystal_beach/crab/crab
 execute as @e[tag=enemy.crystal_blaze,type=blaze] at @s run function enemy:crystal_beach/crystal_blaze/crystal_blaze
+execute as @e[type=piglin_brute,tag=enemy.sand_lurker] at @s run function enemy:crystal_beach/sand_lurker/ifearthed
 # ==== 酵菌蕈島 ==== #
 function enemy:radio/golden_grapes/tick
 execute as @e[tag=enemy.albicans] at @s run function enemy:radio/albicans/albicans
