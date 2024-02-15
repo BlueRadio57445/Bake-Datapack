@@ -7,8 +7,8 @@ CustomModelData 註冊表
 |8003.  |water_universe         |
 |8004.  |mg_universe            |
 |8005.  |xp_universe            |
-|       |                       |
-|       |                       |
+|8006.  |mythril_universe       |
+|8007.  |adamantine_universe    |
 |       |                       |
 |       |                       |
 |       |                       |
@@ -27,5 +27,5 @@ attack damage UUID 的註冊表
 |whip    |00000000-0000-0000-0000-000000000807    |
 |gloves  |00000000-0000-0000-0000-000000000808    |
 |others  |00000000-0000-0000-0000-000000000809    |
-|        |                                        |
+|精金    |00000000-0000-0000-0000-00000000080a    |
 |        |                                        |

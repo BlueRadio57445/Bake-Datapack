@@ -13,6 +13,6 @@
         }
     },
     "rewards": {
-        "function": "universe:orichalcum_universe/take_off_armor"
+        "function": "universe:armor/take_off_armor"
     }
 }
