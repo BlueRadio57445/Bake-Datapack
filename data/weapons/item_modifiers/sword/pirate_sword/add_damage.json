@@ -9,7 +9,7 @@
       {
         "op": "replace",
         "source": "pirate_sword.Damage",
-        "target": "AttributeModifiers[{AttributeName:\"generic.attack_damage\"}].Amount"
+        "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
       }
     ]
   },
