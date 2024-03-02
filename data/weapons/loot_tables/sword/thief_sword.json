@@ -61,7 +61,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{pirate_sword:1b}"
+                            "tag": "{thief_sword:1b}"
                         }
                     ]
                 }

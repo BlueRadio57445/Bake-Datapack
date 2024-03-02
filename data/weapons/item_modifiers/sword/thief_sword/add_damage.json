@@ -8,13 +8,13 @@
     "ops": [
       {
         "op": "replace",
-        "source": "pirate_sword.Damage",
+        "source": "thief_sword.Damage",
         "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
       }
     ]
   },
   {
     "function": "minecraft:set_nbt",
-    "tag": "{LoreUpdate:1b}"
+    "tag": "{LoreUpdate:1b,thief_sword.used_skill:1b}"
   }
 ]

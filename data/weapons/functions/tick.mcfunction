@@ -18,7 +18,8 @@ function weapons:scythe/tick
 
 # === 劍 ===
 function weapons:sword/blood_sword/tick
-function weapons:sword/pirate_sword/tick
+function weapons:sword/thief_sword/tick
+function weapons:sword/great_crystal_sword/tick
 #function weapons:sword/fat_sword/tick <- 這個也不再需要了
 
 # === 三叉戟 ===
