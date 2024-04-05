@@ -38,3 +38,5 @@ execute as @e[tag=enemy.albicans] at @s run function enemy:radio/albicans/albica
 function enemy:tagvillx/tick
 # ==== 末天測試 ==== #
 function enemy:endsky/tick
+# ==== 收音機測 ==== #
+function enemy:radio/lightning_fists/tick

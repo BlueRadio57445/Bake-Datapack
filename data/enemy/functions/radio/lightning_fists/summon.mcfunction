@@ -1,0 +1,1 @@
+summon pillager ~ ~ ~ {Health:30f,Tags:["enemy","enemy.lightning_fists", "new"],CustomName:'{"text":"好雷拳師","color":"yellow"}',Attributes:[{Name:"generic.max_health",Base:30},{Name:"generic.attack_damage",Base:8}]}
