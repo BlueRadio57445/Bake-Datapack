@@ -12,6 +12,7 @@ function weapons:bow/bouncing_bow/tick
 # === 拳套 ===
 function weapons:gloves/tick
 function weapons:gloves/heavy_gloves/tick
+function weapons:gloves/lightning_gloves/tick
 
 # === 鐮刀 ===
 function weapons:scythe/tick

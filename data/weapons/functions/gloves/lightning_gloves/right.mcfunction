@@ -6,3 +6,5 @@
 advancement revoke @s only weapons:gloves/lightning_gloves/right
 kill @e[type=#arrows,sort=nearest,limit=1]
 
+scoreboard players set @s weapons.gloves.lightning_duration 20
+

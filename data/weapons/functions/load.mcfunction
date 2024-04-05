@@ -15,6 +15,7 @@ function weapons:bow/sacred_bow/load
 
 # === 拳套 ===
 function weapons:gloves/load
+scoreboard objectives add weapons.gloves.lightning_duration dummy "雷電雙拳右鍵的技能持續時間"
 
 # === 鐮刀 ===
 scoreboard objectives add scythe dummy "鐮刀算數學"
