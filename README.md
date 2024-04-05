@@ -90,14 +90,22 @@
   * `$gametime general.utils`: 當前遊戲刻
   * `$playerOnline general.utils`: 當前線上人數
 * functions
+  * **玩家相關功能 (呼叫觸發)**
   * `general:utils/get_holding`: 普通函數，執行後取得執行玩家的手持物品狀態，輸出位置為 `storage general:utils output`。(若該tick有背包內容變動，則取得的是變動前的狀態。)
   * `general:utils/damage_item`: 帶macro的函數，用途為扣除指定欄位中物品的耐久度，可控制要扣除的量。
     * `slot`: 要扣耐久的物品欄位，應填入`/item`指令中的欄位格式 (如 `"weapon.mainhand"`, `"container.0"` 等)
     * `damage`: 要扣的耐久數量
+  * 
+  * **玩家相關功能 (自動觸發)**
   * `general:utils/on_sticks_click`: 自動觸發函數，玩家手持胡蘿蔔/扭曲蕈菇右鍵時觸發，自動執行該物品 `on_click` 標籤中儲存的指令。
   * `general:utils/health_changed`: 自動觸發函數，於玩家血量數值變動時觸發，可在此函數內新增任何其他函數的執行條件。
   * `general:utils/hunger_changed`: 自動觸發函數，於玩家飢餓度數值變動時觸發，可在此函數內新增任何其他函數的執行條件。
   * `general:utils/selected_slot_changed`: 自動觸發函數，於玩家快捷欄選擇欄位改變時觸發，可在此函數內新增任何其他函數的執行條件。
+  * 
+  * **實體相關功能 (呼叫觸發)**
+  * `general:utils/kill_above`: 刪除所有於執行者上的實體騎乘鏈後，刪除執行者本身 (不刪除玩家)。
+  * `general:utils/kill_below`: 刪除執行者下的實體騎乘鏈後，刪除執行者本身 (不刪除玩家)。
+  * `general:utils/kill_all`: 刪除執行者所在的整個實體騎乘鏈，並刪除執行者本身 (不刪除玩家)。
 
 ### general:extra_lore
 [點此跳轉](data/general/functions/extra_lore/README.md)

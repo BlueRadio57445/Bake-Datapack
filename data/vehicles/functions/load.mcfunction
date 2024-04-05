@@ -2,6 +2,7 @@ scoreboard objectives add vehicles.id dummy
 scoreboard objectives add vehicles.const dummy
 scoreboard objectives add vehicles.state dummy
 scoreboard objectives add vehicles.rider dummy
+scoreboard objectives add vehicles.user dummy
 scoreboard objectives add vehicles.calc dummy
 scoreboard objectives add vehicles.prev_x_rot dummy
 scoreboard objectives add vehicles.x_mot dummy

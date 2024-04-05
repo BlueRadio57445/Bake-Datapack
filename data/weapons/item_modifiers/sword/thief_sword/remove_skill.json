@@ -1,0 +1,20 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "weapons:sword"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "thief_sword.Damage",
+        "target": "AttributeModifiers[{Name:\"attack_damage.mainhand\"}].Amount"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{LoreUpdate:1b,thief_sword.used_skill:0b}"
+  }
+]

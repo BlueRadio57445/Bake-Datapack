@@ -1,4 +1,4 @@
-advancement revoke @s only npc:demo/howhow_next
+advancement revoke @s only npc:demo/howhow/next
 
 tag @e[tag=npc.demo.howhow] add npc.this
 function npc_system:common/next

@@ -1,0 +1,41 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "crossbow",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 雷電雙拳 ≻", "color": "yellow", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {"text": "長按右鍵蓄力","color": "yellow", "italic": false},
+                                {"text": "蓄力後左鍵，對單體施放雷電","color": "yellow", "italic": false},
+                                {"text": "蓄力後右鍵，範圍隨機雷電","color": "yellow", "italic": false},
+                                {"text": "「電神！教嗎？」","color":"gray"},
+                                {"text": "「不要，你很雷欸。」","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 拳套", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "sharpness":2
+                            }
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{gloves:1b,gloves_id:\"lightning_gloves\",CustomModelData:3800,Unbreakable:1b}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

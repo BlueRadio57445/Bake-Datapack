@@ -1,0 +1,51 @@
+{
+  "rewards": {
+    "function": "general:utils/on_player_attack"
+  },
+  "criteria": {
+    "player_attack_with_on_attack": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:air"
+                    ]
+                  }
+                }
+              },
+              "entity": "this"
+            }
+          },
+          {
+            "condition": "minecraft:entity_properties",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "nbt": "{on_attack:{}}"
+                }
+              }
+            },
+            "entity": "this"
+          }
+        ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_melee"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

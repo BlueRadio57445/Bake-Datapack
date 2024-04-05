@@ -14,6 +14,12 @@ scoreboard objectives add general.player.selected_slot dummy
 
 scoreboard objectives add general.used_carrot_stick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add general.used_fungus_stick minecraft.used:minecraft.warped_fungus_on_a_stick
+scoreboard objectives add general.shot_bow minecraft.used:minecraft.bow
+scoreboard objectives add general.shot_crossbow minecraft.used:minecraft.crossbow
+scoreboard objectives add general.shot_egg minecraft.used:minecraft.egg
+scoreboard objectives add general.shot_ender_pearl minecraft.used:minecraft.ender_pearl
+scoreboard objectives add general.shot_snowball minecraft.used:minecraft.snowball
+scoreboard objectives add general.shot_trident minecraft.used:minecraft.trident
 
 scoreboard objectives add general.utils.health dummy
 scoreboard objectives add general.utils.food dummy
@@ -41,6 +47,9 @@ execute unless score $playerCount general.id = $playerCount general.id run score
 
 # 設定區
 #declare storage general:utils
+data modify storage general:utils Execute set value [""]
+data modify storage general:utils Cooldown.Item set value {mode:"item",length:0,target_time:0,command:"function general:utils/cooldown_item_end"}
+data modify storage general:utils Cooldown.Empty set value {mode:"empty",length:0}
 
 # 強制載入 (-1, -1) ~ (0, 0) 共四個區塊，要注意別把需要使用的方塊或實體放到 (-16, -16) ~ (15, 15) 以外的區域喔，因為很可能會偵測不到
 forceload add -1 -1 0 0

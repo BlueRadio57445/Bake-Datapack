@@ -1,0 +1,1 @@
+execute store result bossbar boss:poison_starver value run data get entity @e[tag=boss.poison_starver,limit=1] Health

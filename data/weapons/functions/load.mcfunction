@@ -15,6 +15,7 @@ function weapons:bow/sacred_bow/load
 
 # === 拳套 ===
 function weapons:gloves/load
+scoreboard objectives add weapons.gloves.lightning_duration dummy "雷電雙拳右鍵的技能持續時間"
 
 # === 鐮刀 ===
 scoreboard objectives add scythe dummy "鐮刀算數學"
@@ -23,6 +24,9 @@ scoreboard objectives add scythe.id dummy "鐮刀用的ID"
 
 # === 劍 ===
 scoreboard objectives add weapons.sword dummy "劍也要算數學"
+scoreboard objectives add weapons.sword.thief_sword minecraft.used:minecraft.carrot_on_a_stick "海盜短劍右鍵"
+scoreboard objectives add weapons.sword.thief_sword.mob dummy "偵測盜賊短劍附近的人數"
+scoreboard objectives add weapons.sword.thief_sword.duration dummy "盜賊短劍持續時間"
 #declare storage weapons:sword
 data merge storage weapons:sword {fat_sword:{Amount:[1.0d, 0.0d]}}
 

@@ -1,5 +1,6 @@
 execute if score @s actionbar.cooldown.offhand_update_time > $gametime general.utils run return 0
 
+scoreboard players set $slot actionbar.cooldown -1
 execute if score @s actionbar.cooldown.offhand_target_time <= $gametime general.utils run function actionbar:cooldown/offhand/end
 execute unless score @s actionbar.cooldown.offhand_target_time = @s actionbar.cooldown.offhand_target_time run return 0
 

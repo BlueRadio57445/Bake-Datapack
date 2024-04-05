@@ -2,6 +2,6 @@
     "condition": "entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{Trident:{tag:{novemdent:1b}}}"
+        "nbt": "{item:{tag:{novemdent:1b}}}"
     }
 }

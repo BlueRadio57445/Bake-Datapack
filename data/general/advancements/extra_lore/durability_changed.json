@@ -8,6 +8,25 @@
           "nbt": "{DurabilityUpdate:1b}"
         }
       }
+    },
+    "trident_pickup": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:trident"
+            ],
+            "nbt": "{DurabilityUpdate:1b}"
+          }
+        ]
+      }
     }
-  }
+  },
+  "requirements": [
+    [
+      "durability_changed",
+      "trident_pickup"
+    ]
+  ]
 }

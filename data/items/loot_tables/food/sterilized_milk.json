@@ -1,0 +1,37 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "potion",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "殺菌牛乳","italic": false, "color": "white"}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                "",
+                                {"text": "只清除負面效果，正面效果則會保留。", "italic": false, "color": "yellow"},
+                                {"text": "完全消滅酵菌蕈島上面的微生物，", "color": "gray"},
+                                {"text": "，只剩下最純粹的牛奶。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{sterilized_milk:1b,CustomPotionColor:16381916}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -8,6 +8,7 @@ scoreboard players operation $duration npc.timer *= $20 general.const
 scoreboard players operation @s npc.timer = $gametime general.utils
 scoreboard players operation @s npc.timer += $duration npc.timer
 scoreboard players set @s npc.idle 1
+function npc_system:common/playsound/main
 data merge entity @e[limit=1,type=minecraft:text_display,tag=npc.name,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"CustomName","entity":"@e[limit=1,tag=npc.figure,tag=npc.this]","interpret":true},{"text":":"}]}',start_interpolation:0,interpolation_duration:2,transformation:{translation:[0.0f,0.355f,0.0f]}}
 data merge entity @e[limit=1,type=minecraft:text_display,tag=npc.text,tag=npc.this] {text:'{"color":"black","text":"","extra":[{"nbt":"data.Idle[0].Text","entity":"@e[limit=1,type=minecraft:marker,tag=npc.this]","interpret":true}]}',transformation:{scale:[1.0f,1.0f,1.0f]}}
 tag @e[tag=npc.this] remove npc.this
