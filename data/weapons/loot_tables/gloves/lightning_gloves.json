@@ -31,7 +31,7 @@
                         },
                         {
                             "function": "set_nbt",
-                            "tag": "{gloves:1b,gloves_id:\"lightning_gloves\",CustomModelData:3800,Unbreakable:1b}"
+                            "tag": "{gloves:1b,gloves_id:\"lightning_gloves\",CustomModelData:3801,Unbreakable:1b}"
                         }
                     ]
                 }
