@@ -12,12 +12,15 @@ function weapons:bow/bouncing_bow/tick
 # === 拳套 ===
 function weapons:gloves/tick
 function weapons:gloves/heavy_gloves/tick
+function weapons:gloves/lightning_gloves/tick
 
 # === 鐮刀 ===
 function weapons:scythe/tick
 
 # === 劍 ===
 function weapons:sword/blood_sword/tick
+function weapons:sword/thief_sword/tick
+function weapons:sword/great_crystal_sword/tick
 #function weapons:sword/fat_sword/tick <- 這個也不再需要了
 
 # === 三叉戟 ===
