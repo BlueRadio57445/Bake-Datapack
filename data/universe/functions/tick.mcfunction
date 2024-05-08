@@ -10,7 +10,7 @@ execute as @a[tag=universe.water_universe] run function universe:water_universe/
 function universe:light_universe/tick_effect
 function universe:cat_universe/tick_effect
 
-# 加攻擊傷害的宇宙(寫得很爛，之後還需要改)
+# 加攻擊傷害的宇宙(寫得很爛，之後還需要改)(算了，還是不改了，反正他會動)
 execute as @a[predicate=universe:hold_sword,tag=universe.sword_universe] run function universe:sword_universe/enable_effect
 execute as @a[predicate=universe:hold_axe,tag=universe.axe_universe] run function universe:axe_universe/enable_effect
 execute as @a[predicate=universe:hold_trident,tag=universe.trident_universe] run function universe:trident_universe/enable_effect

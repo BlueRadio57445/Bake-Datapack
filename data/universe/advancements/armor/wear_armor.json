@@ -16,6 +16,6 @@
         }
     },
     "rewards": {
-        "function": "universe:orichalcum_universe/wear_armor"
+        "function": "universe:armor/wear_armor"
     }
 }

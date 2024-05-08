@@ -1,0 +1,38 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "nautilus_shell",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text":"🌌 秘銀的宇宙I 🌌", "color": "#d683de", "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore": [
+                                {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
+                                {"text": "如果沒有穿裝備，增加20%移動速度", "color": "yellow", "italic": false},
+                                {"text": "並且能夠自動上樓", "color": "yellow", "italic": false},
+                                {"text": "「人會犯錯，貓不會。」", "color": "gray"},
+                                {"text": "——《宇貓聖典》", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
+                            ]
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{is_universe:1b,universe:{id:\"mythril_universe\"},CustomModelData:8006}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
