@@ -1,17 +1,5 @@
 {
-    "function": "minecraft:set_count",
-    "count": -1,
-    "add": true,
-    "conditions": [
-        {
-            "condition": "minecraft:entity_properties",
-            "predicate": {
-                "type_specific": {
-                    "type": "player",
-                    "gamemode": "creative"
-                }
-            },
-            "entity": "this"
-        }
-    ]
+  "function": "minecraft:set_count",
+  "count": -1,
+  "add": true
 }
