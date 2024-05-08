@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "functions": [
+            {
+              "function": "minecraft:set_stew_effect",
+              "effects": [
+                {
+                  "type": "minecraft:instant_health",
+                  "duration": {
+                    "type": "minecraft:binomial",
+                    "n": {
+                      "type": "minecraft:score",
+                      "score": "general.extra_lore",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$durability.damage"
+                      }
+                    },
+                    "p": {
+                      "type": "minecraft:score",
+                      "score": "general.extra_lore",
+                      "target": {
+                        "type": "minecraft:fixed",
+                        "name": "$durability.simulate"
+                      },
+                      "scale": 0.00000001
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

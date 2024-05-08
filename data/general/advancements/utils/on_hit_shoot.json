@@ -65,6 +65,33 @@
                 "entity": "this"
               }
             ]
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "nbt": "{on_hit:{}}"
+                    }
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "nbt": "{on_hit:{}}"
+                    }
+                  }
+                },
+                "entity": "this"
+              }
+            ]
           }
         ]
       }
@@ -136,6 +163,33 @@
                 "scores": {
                   "general.shot_trident": {
                     "min": 1
+                  }
+                },
+                "entity": "this"
+              }
+            ]
+          },
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:entity_properties",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "nbt": "{on_hit:{}}"
+                    }
+                  }
+                },
+                "entity": "this"
+              },
+              {
+                "condition": "minecraft:entity_properties",
+                "predicate": {
+                  "equipment": {
+                    "offhand": {
+                      "nbt": "{on_hit:{}}"
+                    }
                   }
                 },
                 "entity": "this"
