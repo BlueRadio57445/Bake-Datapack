@@ -1,7 +1,7 @@
 {
+  "replace": true,
   "values": [
-    "effects:bleed",
-    "weapons:scythe",
+    "minecraft:sonic_boom",
     "minecraft:unattributed_fireball"
   ]
 }

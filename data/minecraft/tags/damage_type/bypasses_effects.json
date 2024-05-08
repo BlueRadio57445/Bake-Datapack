@@ -1,5 +1,7 @@
 {
-    "values": [
-        "effects:bleed"
-    ]
+  "replace": true,
+  "values": [
+    "effects:bleed",
+    "minecraft:starve"
+  ]
 }
