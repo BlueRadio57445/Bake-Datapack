@@ -4,8 +4,16 @@
       "trigger": "minecraft:item_durability_changed",
       "conditions": {
         "item": {
-          "tag": "minecraft:has_durability",
-          "nbt": "{DurabilityUpdate:1b}"
+          "predicates": {
+            "minecraft:damage": {
+              "durability": {
+                "min": 1
+              }
+            },
+            "minecraft:custom_data": {
+              "durability_update": {}
+            }
+          }
         }
       }
     },
@@ -17,7 +25,16 @@
             "items": [
               "minecraft:trident"
             ],
-            "nbt": "{DurabilityUpdate:1b}"
+            "predicates": {
+              "minecraft:damage": {
+                "durability": {
+                  "min": 1
+                }
+              },
+              "minecraft:custom_data": {
+                "durability_update": {}
+              }
+            }
           }
         ]
       }

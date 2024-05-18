@@ -1,7 +1,10 @@
 {
   "replace": true,
   "values": [
-    "effects:bleed",
+    {
+      "id": "effects:bleed",
+      "required": false
+    },
     "minecraft:starve"
   ]
 }

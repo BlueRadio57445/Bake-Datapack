@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:set_attributes",
+  "modifiers": [
+    {
+      "amount": 0.0,
+      "attribute": "minecraft:generic.luck",
+      "name": "dummy",
+      "operation": "add_value",
+      "slot": "mainhand"
+    }
+  ],
+  "replace": false
+}

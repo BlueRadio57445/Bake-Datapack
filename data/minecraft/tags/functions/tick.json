@@ -1,17 +1,56 @@
 {
     "values": [
-        "general:tick_first",
-        "npc_system:tick",
-        "effects:tick",
-        "sanctuary_ench:tick",
-        "knowledge:tick",
-        "weapons:tick",
-        "items:tick",
-        "vehicles:tick",
-        "universe:tick",
-        "enemy:tick",
-        "region:tick",
-        "actionbar:tick",
-        "general:tick_last"
+        {
+            "id": "general:tick_first",
+            "required": false
+        },
+        {
+            "id": "npc_system:tick",
+            "required": false
+        },
+        {
+            "id": "effects:tick",
+            "required": false
+        },
+        {
+            "id": "sanctuary_ench:tick",
+            "required": false
+        },
+        {
+            "id": "knowledge:tick",
+            "required": false
+        },
+        {
+            "id": "weapons:tick",
+            "required": false
+        },
+        {
+            "id": "items:tick",
+            "required": false
+        },
+        {
+            "id": "vehicles:tick",
+            "required": false
+        },
+        {
+            "id": "universe:tick",
+            "required": false
+        },
+        {
+            "id": "enemy:tick",
+            "required": false
+        },
+        {
+            "id": "region:tick",
+            "required": false
+        },
+        {
+            "id": "actionbar:tick",
+            "required": false
+        },
+        {
+            "id": "general:tick_last",
+            "required": false
+        }
     ]
 }

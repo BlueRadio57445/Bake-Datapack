@@ -5,7 +5,11 @@
       "conditions": {
         "items": [
           {
-            "nbt": "{LoreUpdate:1b}"
+            "predicates": {
+              "minecraft:custom_data": {
+                "lore_update": {}
+              }
+            }
           }
         ]
       }

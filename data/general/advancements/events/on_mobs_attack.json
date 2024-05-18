@@ -1,0 +1,34 @@
+{
+  "rewards": {
+    "function": "general:events/on_mobs_attack"
+  },
+  "criteria": {
+    "mobs_attack_with_on_attack": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "#minecraft:mobs_without_player",
+            "equipment": {
+              "mainhand": {
+                "precidates": {
+                  "minecraft:custom_data": {
+                    "on_attack": {}
+                  }
+                }
+              }
+            }
+          },
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_melee"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

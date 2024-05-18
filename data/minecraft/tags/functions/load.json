@@ -1,20 +1,68 @@
 {
     "values": [
-        "general:load",
-        "npc_system:load",
-        "quest_system:load",
-        "effects:load",
-        "sanctuary_ench:load",
-        "knowledge:load",
-        "weapons:load",
-        "items:load",
-        "vehicles:load",
-        "universe:load",
-        "damage:load",
-        "enemy:load",
-        "boss:load",
-        "region:load",
-        "actionbar:load",
-        "target:load"
+        {
+            "id": "general:load",
+            "required": false
+        },
+        {
+            "id": "npc_system:load",
+            "required": false
+        },
+        {
+            "id": "quest_system:load",
+            "required": false
+        },
+        {
+            "id": "effects:load",
+            "required": false
+        },
+        {
+            "id": "sanctuary_ench:load",
+            "required": false
+        },
+        {
+            "id": "knowledge:load",
+            "required": false
+        },
+        {
+            "id": "weapons:load",
+            "required": false
+        },
+        {
+            "id": "items:load",
+            "required": false
+        },
+        {
+            "id": "vehicles:load",
+            "required": false
+        },
+        {
+            "id": "universe:load",
+            "required": false
+        },
+        {
+            "id": "damage:load",
+            "required": false
+        },
+        {
+            "id": "enemy:load",
+            "required": false
+        },
+        {
+            "id": "boss:load",
+            "required": false
+        },
+        {
+            "id": "region:load",
+            "required": false
+        },
+        {
+            "id": "actionbar:load",
+            "required": false
+        },
+        {
+            "id": "target:load",
+            "required": false
+        }
     ]
 }

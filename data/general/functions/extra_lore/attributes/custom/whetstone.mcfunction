@@ -5,7 +5,7 @@ data modify storage general:extra_lore Modifier.text set from storage general:ex
 $function general:extra_lore/attributes/custom/times_left {time:"$(times_left)"}
 data modify storage general:extra_lore Modifier.extra_text set from storage general:extra_lore attribute_extra
 
-execute store result score $modifier.amount general.extra_lore run data get storage general:extra_lore Item.tag.sharpened.modifier 10000
+execute store result score $modifier.amount general.extra_lore run data get storage general:extra_lore Item.components."minecraft:custom_data".sharpened.modifier 10000
 execute if score $modifier.amount general.extra_lore matches ..-1 run scoreboard players add $modifier.amount general.extra_lore 1
 scoreboard players operation $modifier.amount general.extra_lore /= $10 general.const
 execute if score $modifier.amount general.extra_lore matches ..-1 run data modify storage general:extra_lore Modifier.amount_sign set value "-"
@@ -20,7 +20,7 @@ execute if score $modifier.amount general.extra_lore matches ..-1 if score $modi
 execute if score $modifier.amount general.extra_lore matches ..-1 run scoreboard players operation $modifier.amount_int general.extra_lore *= $-1 general.const
 execute store result storage general:extra_lore Modifier.amount_int int 1 run scoreboard players get $modifier.amount_int general.extra_lore
 execute store result storage general:extra_lore Modifier.amount_dec int 1 run scoreboard players get $modifier.amount_dec general.extra_lore
-execute store result storage general:extra_lore Item.tag.sharpened.lore_index int 1 if data storage general:extra_lore Item.tag.display.Lore[]
+execute store result storage general:extra_lore Item.components."minecraft:custom_data".sharpened.lore_index int 1 if data storage general:extra_lore Item.components."minecraft:lore"[]
 
 execute if score $modifier.positive general.extra_lore matches 0 run function general:extra_lore/attributes/addition_negative with storage general:extra_lore Modifier
 execute if score $modifier.positive general.extra_lore matches 1 run function general:extra_lore/attributes/addition_positive with storage general:extra_lore Modifier 

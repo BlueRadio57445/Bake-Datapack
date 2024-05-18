@@ -1,7 +1,13 @@
 {
   "values": [
-    "effects:bleed",
-    "weapons:scythe",
+    {
+      "id": "effects:bleed",
+      "required": false
+    },
+    {
+      "id": "weapons:scythe",
+      "required": false
+    },
     "minecraft:unattributed_fireball"
   ]
 }

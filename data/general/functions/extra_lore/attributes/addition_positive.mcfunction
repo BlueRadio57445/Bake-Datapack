@@ -1,1 +1,1 @@
-$data modify storage general:extra_lore Item.tag.display.Lore append value '{"italic":false,"color":"light_purple","text":"$(text)§f$(amount_sign)$(amount_int).$(amount_dec)$(amount_suf)$(extra_text)"}'
+$data modify storage general:extra_lore Item.components."minecraft:lore" append value '{"italic":false,"color":"light_purple","text":"$(text)§f$(amount_sign)$(amount_int).$(amount_dec)$(amount_suf)$(extra_text)"}'

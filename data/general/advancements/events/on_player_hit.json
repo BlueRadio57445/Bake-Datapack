@@ -1,0 +1,27 @@
+{
+  "rewards": {
+    "function": "general:events/on_player_hit"
+  },
+  "criteria": {
+    "player_hit_with_on_hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "damage": {
+          "type": {
+            "direct_entity": {
+              "passenger": {
+                "nbt": "{Tags:[\"general.on_hit\"]}"
+              }
+            },
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_projectile"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

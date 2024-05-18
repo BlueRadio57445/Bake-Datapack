@@ -1,7 +1,10 @@
 {
   "replace": true,
   "values": [
-    "effects:bleed",
+    {
+      "id": "effects:bleed",
+      "required": false
+    },
     "minecraft:on_fire",
     "minecraft:in_wall",
     "minecraft:cramming",
