@@ -1,4 +1,4 @@
 {
   "function": "minecraft:set_custom_data",
-  "tag": "{LoreUpdate:1b}"
+  "tag": "{lore_update:{}}"
 }
