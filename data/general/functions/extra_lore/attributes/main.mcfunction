@@ -31,7 +31,7 @@ execute if data storage general:extra_lore Item.components."minecraft:attribute_
 execute if data storage general:extra_lore Item.components."minecraft:attribute_modifiers".modifiers[{name:"knockback_resistance.mainhand"}] run function general:extra_lore/attributes/set {name:"knockback_resistance",type:"mainhand"}
 execute if data storage general:extra_lore Item.components."minecraft:attribute_modifiers".modifiers[{name:"movement_speed.mainhand"}] run function general:extra_lore/attributes/set {name:"movement_speed",type:"mainhand"}
 
-execute if data storage general:extra_lore Item.tag.sharpened run function general:extra_lore/attributes/custom/whetstone with storage general:extra_lore Item.components."minecraft:custom_data".sharpened
+execute if data storage general:extra_lore Item.components."minecraft:custom_data".sharpened run function general:extra_lore/attributes/custom/whetstone with storage general:extra_lore Item.components."minecraft:custom_data".sharpened
 
 execute if data storage general:extra_lore Item.components."minecraft:attribute_modifiers".modifiers[{name:"max_health.offhand"}] run function general:extra_lore/attributes/set {name:"max_health",type:"offhand"}
 execute if data storage general:extra_lore Item.components."minecraft:attribute_modifiers".modifiers[{name:"attack_damage.offhand"}] run function general:extra_lore/attributes/set {name:"attack_damage",type:"offhand"}

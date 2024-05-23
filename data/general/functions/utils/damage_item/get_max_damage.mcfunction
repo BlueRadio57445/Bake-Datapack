@@ -1,0 +1,1 @@
+$execute store success score $item_mode general.utils run data modify storage general:extra_lore Item.components."minecraft:max_damage" set from storage general:extra_lore equipments[{id:"$(id)"}].components."minecraft:damage"
