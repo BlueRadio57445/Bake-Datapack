@@ -10,7 +10,7 @@ execute store result score $prevSlot actionbar.cooldown run data get storage act
 
 scoreboard players operation $targetTime actionbar.cooldown = $gametime general.utils
 execute as @s[predicate=knowledge:hold_knowledge1] run function actionbar:cooldown/hotbar/check_knowledge
-execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_score] run function actionbar:cooldown/hotbar/check_score with entity @s SelectedItem.tag.cooldown
+execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_score] run function actionbar:cooldown/hotbar/check_score with entity @s SelectedItem.components."minecraft:custom_data".cooldown
 execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_item] run function actionbar:cooldown/hotbar/check_item
 
 execute unless score $targetTime actionbar.cooldown = @s actionbar.cooldown.hotbar_target_time run scoreboard players set $different actionbar.cooldown 1

@@ -3,7 +3,13 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "nbt": "{cooldown:{mode:\"item\"}}"
+        "predicates": {
+          "minecraft:custom_data": {
+            "cooldown": {
+              "mode": "item"
+            }
+          }
+        }
       }
     }
   },

@@ -8,8 +8,8 @@ scoreboard players set $slot actionbar.cooldown -1
 execute store result score $prevLength actionbar.cooldown run data get storage actionbar:player Data.cooldown.offhand.length
 
 scoreboard players operation $targetTime actionbar.cooldown = $gametime general.utils
-execute if predicate knowledge:hold_knowledge2 run function actionbar:cooldown/offhand/check_knowledge
-execute as @s[predicate=actionbar:cooldown/offhand_cooldown_score] run function actionbar:cooldown/offhand/check_score with entity @s Inventory[{Slot:-106b}].tag.cooldown
+#execute if predicate knowledge:hold_knowledge2 run function actionbar:cooldown/offhand/check_knowledge
+execute as @s[predicate=actionbar:cooldown/offhand_cooldown_score] run function actionbar:cooldown/offhand/check_score with entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".cooldown
 execute as @s[predicate=actionbar:cooldown/offhand_cooldown_item] run function actionbar:cooldown/offhand/check_item
 
 execute unless score $targetTime actionbar.cooldown = @s actionbar.cooldown.offhand_target_time run scoreboard players set $different actionbar.cooldown 1

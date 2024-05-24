@@ -3,6 +3,6 @@ scoreboard players reset @s actionbar.cooldown.hotbar_update_time
 
 function general:player_data/remove {path:"Actionbar.cooldown.hotbar"}
 
-execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_item] if data entity @s SelectedItem.tag.cooldown.command run function general:utils/execute with entity @s SelectedItem.tag.cooldown
+execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_item] run function general:utils/cooldown_item/end_mainhand
 
 function actionbar:update
