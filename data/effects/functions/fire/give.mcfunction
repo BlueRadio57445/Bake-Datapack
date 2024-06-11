@@ -1,3 +1,5 @@
+say wait for 1.21, will use custom enchantment to do this
+return 0
 execute at @s if predicate effects:fire/is_immune_to_fire run return 0
 $scoreboard players set @s effects.fire.duration $(duration)
 execute if entity @s[type=#minecraft:mobs_without_player] run function effects:fire/nonplayer

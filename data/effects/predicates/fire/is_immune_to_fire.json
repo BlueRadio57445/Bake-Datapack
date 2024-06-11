@@ -5,7 +5,11 @@
       "condition": "minecraft:entity_properties",
       "predicate": {
         "effects": {
-          "minecraft:fire_resistance": {}
+          "minecraft:fire_resistance": {
+            "duration": {
+              "min": 0
+            }
+          }
         }
       },
       "entity": "this"
@@ -14,7 +18,7 @@
       "condition": "minecraft:location_check",
       "predicate": {
         "fluid": {
-          "tag": "minecraft:water"
+          "fluids": "#minecraft:water"
         }
       }
     }
