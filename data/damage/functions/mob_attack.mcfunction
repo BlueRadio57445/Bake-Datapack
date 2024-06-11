@@ -1,1 +1,0 @@
-execute as @e[type=#mobs,tag=damage.mob_attack] run function damage:as/_mob_attack

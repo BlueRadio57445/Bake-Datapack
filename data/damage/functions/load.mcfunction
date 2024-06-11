@@ -1,1 +1,0 @@
-scoreboard objectives add damage dummy "傷害"

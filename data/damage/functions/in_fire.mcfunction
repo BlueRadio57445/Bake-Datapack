@@ -1,1 +1,0 @@
-execute as @e[type=#mobs,tag=damage.in_fire] run function damage:as/_in_fire
