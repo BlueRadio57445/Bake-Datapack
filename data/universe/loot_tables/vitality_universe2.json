@@ -16,14 +16,15 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "提升更多最大生命值", "color": "yellow", "italic": false},
                                 {"text": "「貓咪愛狗，就如宇貓愛著世人。」", "color": "gray"},
                                 {"text": "——《貓砂福音》", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

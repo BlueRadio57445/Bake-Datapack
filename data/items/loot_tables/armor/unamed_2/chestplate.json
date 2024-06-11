@@ -16,10 +16,11 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": " ✒ 物品類型§f 防具", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "minecraft:set_attributes",
@@ -28,7 +29,7 @@
                   "amount": 5.0,
                   "attribute": "minecraft:generic.armor",
                   "name": "armor.default",
-                  "operation": "addition",
+                  "operation": "add_value",
                   "slot": "chest",
                   "id": "00004212-0000-4212-0000-421200004212"
                 },
@@ -36,15 +37,24 @@
                   "amount": -0.1,
                   "attribute": "minecraft:generic.movement_speed",
                   "name": "movement_speed.body",
-                  "operation": "multiply_base",
+                  "operation": "add_multiplied_base",
                   "slot": "chest",
                   "id": "00004213-0000-4213-0000-421300004213"
                 }
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{display:{color:5066061},HideFlags:2,LoreUpdate:1b}"
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:dyed_color": {
+                  "rgb": 5066061,
+                  "show_in_tooltip": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{lore_update:{}}"
             }
           ]
         }

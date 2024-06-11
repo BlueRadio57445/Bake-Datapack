@@ -1,36 +1,42 @@
 {
-    "type": "command",
-    "pools": [
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "bread",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": {"text": "麵包碗與濃湯殘渣","italic": false, "color": "gold"}
-                        },
-                        {
-                            "function": "set_lore",
-                            "entity": "this",
-                            "lore": [
-                                "",
-                                {"text": "曾經裝著美味濃湯的麵包，", "color": "gray"},
-                                {"text": "與其重複利用不如吞下肚！", "color": "gray"},
-                                "",
-                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
-                            ]
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{}"
-                        }
-                    ]
+          "type": "item",
+          "name": "bowl",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {"text": "麵包碗與濃湯殘渣","italic": false, "color": "gold"}
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {"text": "曾經裝著美味濃湯的麵包，", "color": "gray"},
+                {"text": "與其重複利用不如吞下肚！", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "food": {
+                  "nutrition": 5,
+                  "saturation": 6.0
                 }
-            ]
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

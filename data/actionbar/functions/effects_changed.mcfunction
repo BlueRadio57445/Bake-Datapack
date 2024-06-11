@@ -1,4 +1,4 @@
-advancement revoke @s only actionbar:effects_changed
+advancement revoke @s only actionbar:effects_changed effects_changed
 scoreboard players operation $nextSec actionbar.time = $gametime general.utils
 scoreboard players add $nextSec actionbar.time 20
 

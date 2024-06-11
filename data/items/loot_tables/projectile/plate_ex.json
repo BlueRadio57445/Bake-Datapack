@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "持續對中等範圍的生物造成緩速及出血。", "color": "yellow", "italic": false},
                 {"text": "精美而珍貴的盤子，", "color": "gray"},
@@ -24,11 +24,25 @@
                 {"text": "碎片似乎會飛挺遠的...", "color": "dark_gray"},
                 "",
                 {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{plate:1b,upgrade:1b,CustomPotionColor:16382457,HideFlags:32,CustomModelData:4502}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{plate:{upgraded:1b}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4502
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:potion_contents": {
+                  "custom_color": 16382457
+                },
+                "minecraft:hide_additional_tooltip": {}
+              }
             }
           ]
         }

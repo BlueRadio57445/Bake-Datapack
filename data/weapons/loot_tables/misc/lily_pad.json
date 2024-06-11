@@ -13,7 +13,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "按右鍵可以投擲荷葉","color": "yellow", "italic": false},
                                 {"text": "會自動回到玩家手中","color": "yellow", "italic": false},
                                 {"text": "惡名昭彰的荷葉。","color":"gray"},
@@ -23,7 +23,8 @@
                                 {"text": "它下定決心此生要再闖盪一番!","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 其他武器", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",
@@ -36,11 +37,17 @@
                                 "attribute": "minecraft:generic.attack_damage",
                                 "name": "attack_damage.default",
                                 "amount": 10,
-                                "operation": "addition",
+                                "operation": "add_value",
                                 "id": "ffffcfb5-0000-3e55-0002-cfbcffff8356",
                                 "slot": "mainhand"
                               }
                             ]
+                        },
+                        {
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                              "attribute_modifiers": false
+                            }
                         }
                     ]
                 }

@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "為三明治驢增加生命上限。", "color": "yellow", "italic": false},
                 {"text": "三明治之中常見的配料，", "color": "gray"},
@@ -22,11 +22,16 @@
                 {"text": "也許世界上有活著的三明治?", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{health_boost:1b},CustomModelData:4002}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{sandwich:{health_boost:1b}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4002
             }
           ]
         }

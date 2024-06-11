@@ -16,14 +16,15 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "末天末天", "color": "yellow", "italic": false},
                                 {"text": "火焰最簡單的型態。", "color": "gray"},
                                 {"text": "難道還有更複雜的型態?", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

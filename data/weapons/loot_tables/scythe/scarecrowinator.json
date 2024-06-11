@@ -13,12 +13,13 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "暴擊時能召喚巨大鐮刀攻擊敵人","color": "yellow", "italic": false},
                                 {"text": "據說由杜分舒斯的崇拜者所鑄。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 鐮刀", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

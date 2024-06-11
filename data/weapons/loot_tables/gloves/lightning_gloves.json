@@ -13,7 +13,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "長按右鍵蓄力","color": "yellow", "italic": false},
                                 {"text": "蓄力後左鍵，對單體施放雷電","color": "yellow", "italic": false},
                                 {"text": "蓄力後右鍵，範圍隨機雷電","color": "yellow", "italic": false},
@@ -21,7 +21,8 @@
                                 {"text": "「不要，你很雷欸。」","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 拳套", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

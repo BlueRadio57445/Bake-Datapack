@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "提升10%移動速度", "color": "yellow", "italic": false},
                                 {"text": "據說這是宇宙貓咪所留下的毛毛，", "color": "gray"},
@@ -24,7 +24,9 @@
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
                                 
-                            ]
+                            ],
+                                
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

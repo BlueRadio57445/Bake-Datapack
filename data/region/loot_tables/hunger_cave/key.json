@@ -15,10 +15,11 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放在展示框上以開啟大門", "color": "yellow", "italic": false},
                                 {"text": "好像能開啟某處的大門?", "color": "gray"}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

@@ -10,7 +10,11 @@
           "items": [
             "minecraft:ender_eye"
           ],
-          "nbt": "{is_whetstone:1b}"
+          "predicates": {
+            "minecraft:custom_data": {
+              "whetstone": {}
+            }
+          }
         },
         "player": [
           {
@@ -24,7 +28,7 @@
                     "predicate": {
                       "equipment": {
                         "mainhand": {
-                          "tag": "minecraft:edged_weapons"
+                          "items": "#minecraft:edged_weapons"
                         }
                       }
                     },
@@ -37,7 +41,11 @@
                       "predicate": {
                         "equipment": {
                           "mainhand": {
-                            "nbt": "{sharpened:{state:1b}}"
+                            "predicates": {
+                              "minecraft:custom_data": {
+                                "sharpened": {}
+                              }
+                            }
                           }
                         }
                       },
@@ -54,7 +62,7 @@
                     "predicate": {
                       "equipment": {
                         "offhand": {
-                          "tag": "minecraft:edged_weapons"
+                          "items": "#minecraft:edged_weapons"
                         }
                       }
                     },
@@ -67,7 +75,11 @@
                       "predicate": {
                         "equipment": {
                           "offhand": {
-                            "nbt": "{sharpened:{state:1b}}"
+                            "predicates": {
+                              "minecraft:custom_data": {
+                                "sharpened": {}
+                              }
+                            }
                           }
                         }
                       },

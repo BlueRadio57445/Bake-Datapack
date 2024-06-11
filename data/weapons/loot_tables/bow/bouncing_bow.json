@@ -13,12 +13,13 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "射出的箭矢會反彈","color": "yellow", "italic": false},
                                 {"text": "雖然會反彈，但還是打不到怪。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 弓", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

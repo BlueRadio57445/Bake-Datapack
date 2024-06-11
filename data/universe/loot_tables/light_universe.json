@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "手持火把時會發光", "color": "yellow", "italic": false},
                                 {"text": "當我手持火把時，宇貓就在身邊。", "color": "gray"},
@@ -25,7 +25,9 @@
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
                                 
-                            ]
+                            ],
+                                
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

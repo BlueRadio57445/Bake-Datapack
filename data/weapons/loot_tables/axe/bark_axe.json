@@ -13,13 +13,14 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 "",
                                 {"text": "剝皮時獲得短暫回復效果","color": "yellow", "italic": false},
                                 {"text": "上面有餓死鬼抓握的痕跡。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 斧類", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

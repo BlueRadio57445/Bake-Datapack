@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "用來展示物品的格式，實際並無任何功能。", "color": "yellow", "italic": false},
                 {"text": "從前從前，末天花了三分鐘的時間，", "color": "gray"},
@@ -23,7 +23,8 @@
                 {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false},
                 {"text": " ✒ 攻擊傷害§f 4.0", "color": "dark_aqua", "italic": false},
                 {"text": " ✒ 攻擊速度§f 1.6", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "set_enchantments",

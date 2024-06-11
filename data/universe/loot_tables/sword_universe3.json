@@ -16,14 +16,15 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "手持劍時增加15%傷害", "color": "yellow", "italic": false},
                                 {"text": "「吃我宇宙至聖斬拉！」", "color": "gray"},
                                 {"text": "——博德之門3成癮的宇貓教徒", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

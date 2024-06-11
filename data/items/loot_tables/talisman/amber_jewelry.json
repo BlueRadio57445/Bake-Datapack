@@ -14,14 +14,15 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "隱約散發著溫暖能量的首飾。", "color": "gray"},
                 {"text": "「琥珀象徵耐心及熱情」", "color": "gray"},
                 {"text": "其背面所黏著的紙條上寫了這些。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "set_attributes",
@@ -30,7 +31,7 @@
                   "amount": 3.0,
                   "attribute": "minecraft:generic.max_health",
                   "name": "max_health.hand",
-                  "operation": "addition",
+                  "operation": "add_value",
                   "slot": "mainhand",
                   "id": "00004008-0000-4008-0000-400800004008"
                 },
@@ -38,15 +39,19 @@
                   "amount": 3.0,
                   "attribute": "minecraft:generic.max_health",
                   "name": "max_health.hand",
-                  "operation": "addition",
+                  "operation": "add_value",
                   "slot": "offhand",
                   "id": "00004009-0000-4009-0000-400900004009"
                 }
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:4254,HideFlags:2,LoreUpdate:1b}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{lore_update:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4254
             }
           ]
         }

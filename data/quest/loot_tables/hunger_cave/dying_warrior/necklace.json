@@ -17,12 +17,13 @@
               },
               {
                 "function": "minecraft:set_lore",
-                "lore": [
+                "lore":[
                   {"color": "gray", "text": "好像對某個人很重要，"},
                   {"color": "gray", "text": "或許該物歸原主。"},
                   "",
                   {"text": " ✒ 物品類型§f 任務道具", "color": "dark_aqua", "italic": false}
-                ]
+                ],
+                "mode": "replace_all"
               },
               {
                 "function": "minecraft:set_nbt",

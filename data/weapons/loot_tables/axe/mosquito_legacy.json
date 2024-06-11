@@ -13,7 +13,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 "",
                                 {"text": "剝皮時獲得立即治療I","color": "yellow", "italic": false},
                                 {"text": "殺死怪物時獲得短暫回復","color": "yellow", "italic": false},
@@ -21,7 +21,8 @@
                                 {"text": "無論是樹的樹汁，還是人的血液。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 斧類", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

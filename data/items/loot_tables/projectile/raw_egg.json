@@ -14,17 +14,22 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "持續對周圍的生物造成緩速效果", "color": "yellow", "italic": false},
                 {"text": "噁...蛋清黏黏的...", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{raw_egg:1b,CustomModelData:4503}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{raw_egg:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4503
             }
           ]
         }

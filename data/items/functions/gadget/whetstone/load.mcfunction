@@ -1,1 +1,0 @@
-#declare storage items:whetstone

@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "點擊收納三明治驢。", "color": "yellow", "italic": false},
                 {"text": "被施下了複雜的法術，", "color": "gray"},
@@ -23,11 +23,67 @@
                 {"text": "狀態: 開啟", "color": "dark_gray"},
                 "",
                 {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{sandwich:{bag:1b,unfolded:1b},cooldown:{mode:\"empty\"},CustomModelData:4001,EntityTag:{Tags:[\"vehicles.sandwich_spawner\"],Silent:1b,Invisible:1b,Invulnerable:1b,Item:{id:\"minecraft:donkey_spawn_egg\",Count:1b,tag:{EntityTag:{Tags:[\"vehicles.tag\",\"vehicles.sandwich\"],NoAI:1b,Tame:1b,ChestedHorse:1b,Age:2147483647,ForcedAge:-1,Items:[{id:\"minecraft:item_frame\",tag:{sandwich:{bag:1b,unfolded:1b}},Count:1b,Slot:16b}],CustomName:'{\"text\":\"三明治驢\"}',Health:20.0f,Attributes:[{Name:\"minecraft:generic.max_health\",Base:20.0d}],DeathLootTable:\"\"}}}}}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{sandwich:{bag:1b,unfolded:1b},cooldown:{mode:\"empty\"}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4001
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:item_frame",
+                  "Tags": ["vehicles.sandwich_spawner"],
+                  "Silent": true,
+                  "Invisible": true,
+                  "Invulnerable": true,
+                  "Item": {
+                    "id": "minecraft:donkey_spawn_egg",
+                    "count": 1,
+                    "components": {
+                      "minecraft:entity_data": {
+                        "id": "minecraft:donkey",
+                        "Tags": ["vehicles.tag", "vehicles.sandwich"],
+                        "NoAI": true,
+                        "Tame": true,
+                        "ChestedHorse": true,
+                        "Age": 2147483647,
+                        "ForcedAge": -1,
+                        "CustomName": "{\"text\":\"三明治驢\"}",
+                        "Health": 20.0,
+                        "Attributes": [
+                          {
+                            "Name": "minecraft:generic.max_health",
+                            "Base": 20.0
+                          }
+                        ],
+                        "DeathLootTable": "",
+                        "Items": [
+                          {
+                            "id": "minecraft:item_frame",
+                            "count": 1,
+                            "components": {
+                              "minecraft:custom_data": {
+                                "sandwich": {
+                                  "bag": true,
+                                  "unfolded": true
+                                }
+                              }
+                            },
+                            "Slot": 0
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
             }
           ]
         }

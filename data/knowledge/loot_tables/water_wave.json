@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "右鍵能召喚把敵人推走的海浪。", "color": "yellow", "italic": false},
                                 {"text": "「海浪波動函數會坍縮?假的。」", "color": "gray"},
                                 {"text": "  ——海浪法師", "color": "gray"},
@@ -24,7 +24,9 @@
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 20秒", "color": "dark_aqua", "italic": false}
 
-                            ]
+                            ],
+
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

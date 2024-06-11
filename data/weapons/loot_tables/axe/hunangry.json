@@ -13,13 +13,14 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 "",
                                 {"text": "受到飢餓效果時，獲得力量I。","color": "yellow", "italic": false},
                                 {"text": "聽說人餓肚子的時候都會很易怒？","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 斧類", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

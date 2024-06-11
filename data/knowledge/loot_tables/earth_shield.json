@@ -16,13 +16,14 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "右鍵能召喚三個盾牌，盾牌能抵銷一次傷害", "color": "yellow", "italic": false},
                                 {"text": "還沒想到要寫啥", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 10秒", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

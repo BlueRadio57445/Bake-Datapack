@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "長按", "color": "yellow", "italic": false, "extra": [{"keybind": "key.use"}, {"text": "以吸引附近的物品。"}]},
                 {"text": "依照一張古老的藍圖所製成，", "color": "gray"},
@@ -22,11 +22,22 @@
                 {"text": "其精妙的設計據稱出自麵包仙人之手。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{magnet:1b,HideFlags:2,no_stacking:1b,CustomModelData:4007}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{magnet:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4007
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_stack_size": 1
+              }
             }
           ]
         }

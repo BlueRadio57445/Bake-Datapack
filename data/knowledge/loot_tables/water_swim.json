@@ -16,14 +16,15 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "右鍵能長時間在水中活動。", "color": "yellow", "italic": false},
                                 {"text": "「你只要懂海，海就會幫助你。」", "color": "gray"},
                                 {"text": "  ——海龍王 彼得", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 30秒", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

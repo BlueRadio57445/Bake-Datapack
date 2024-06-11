@@ -14,7 +14,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "長按使用，賦予另一手上的有刃武器：", "color": "yellow", "italic": false},
                 {"text": "有限次數的攻擊傷害增幅，不可疊加", "color": "yellow", "italic": false},
@@ -23,13 +23,25 @@
                 "",
                 {"text": " ✒ 物品類型§f 道具", "color": "dark_aqua", "italic": false},
                 {"text": "使用後將賦予下列屬性：", "color": "dark_gray", "italic": false},
-                {"text": " 󐀁☬󐀁 傷害加成§f +15.0% §c(9次使用後消失)", "color": "light_purple", "italic": false},
-                {"translate": "item.durability", "with": [18, 18], "color": "dark_gray", "italic": false}
-              ]
+                {"text": " 󐀁☬󐀁 傷害加成§f +15.0% §c(9次使用後消失)", "color": "light_purple", "italic": false}
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{is_whetstone:1b,whetstone:{state:1b,times_left:9,modifier:0.15d},durability:{max:18,current:18},NoStacking:1b,Enchantments:[{}],CustomModelData:4011}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{whetstone:{times_left:9,modifier:0.15d},lore_update:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4011
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:max_damage": 18,
+                "minecraft:max_stack_size": 1,
+                "minecraft:enchantment_glint_override": true 
+              }
             }
           ]
         }

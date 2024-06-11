@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:armor/unamed_1/helmet"
+          "value": "items:armor/unamed_1/helmet"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:armor/unamed_1/chestplate"
+          "value": "items:armor/unamed_1/chestplate"
         }
       ]
     },
@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:armor/unamed_1/leggings"
+          "value": "items:armor/unamed_1/leggings"
         }
       ]
     },
@@ -33,7 +33,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:armor/unamed_1/boots"
+          "value": "items:armor/unamed_1/boots"
         }
       ]
     }

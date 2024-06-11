@@ -6,7 +6,11 @@
         "items": [
           "minecraft:ender_eye"
         ],
-        "nbt": "{is_whetstone:1b}"
+        "predicates": {
+          "minecraft:custom_data": {
+            "whetstone": {}
+          }
+        }
       }
     }
   },

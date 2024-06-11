@@ -16,12 +16,13 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "一個神奇的袋子，貌似只有主人能使用。", "italic": false, "color": "gray"},
                                 {"text": "不知道是哪個商人遺留下來的?", "italic": false, "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 任務道具", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

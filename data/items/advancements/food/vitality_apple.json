@@ -1,15 +1,19 @@
 {
-    "criteria": {
-        "eat_apple": {
-            "trigger": "consume_item",
-            "conditions": {
-                "item": {
-                    "nbt": "{vitality_apple:1b}"
-                }
+  "criteria": {
+    "eat_apple": {
+      "trigger": "consume_item",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "vitality_apple": {}
             }
+          }
         }
-    },
-    "rewards": {
-        "function": "items:food/vitality_apple/eat"
+      }
     }
+  },
+  "rewards": {
+    "function": "items:food/vitality_apple/eat"
+  }
 }

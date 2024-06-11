@@ -13,12 +13,13 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "對人形生物暴頭，可以造成更多傷害","color": "yellow", "italic": false},
                                 {"text": "但是無法連點。","color": "yellow", "italic": false},
                                 {"text": "又到了收割的好季節!~","color":"gray"},
                                 {"text": "這次輪到誰被收割了呢?","color":"gray"}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:demo/not_so_mysterious_stone",
+          "value": "items:demo/not_so_mysterious_stone",
           "functions": [
             {
               "function": "minecraft:set_count",

@@ -14,13 +14,14 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "目前是用來測試的護符，", "color": "gray"},
                 {"text": "之後應該會被其他護符取代。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
               "function": "set_attributes",
@@ -29,7 +30,7 @@
                   "amount": -0.125,
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "attack_damage.hand",
-                  "operation": "multiply_base",
+                  "operation": "add_multiplied_base",
                   "slot": "mainhand",
                   "id": "00004012-0000-4012-0000-401200004012"
                 },
@@ -37,7 +38,7 @@
                   "amount": -0.125,
                   "attribute": "minecraft:generic.attack_damage",
                   "name": "attack_damage.hand",
-                  "operation": "multiply_base",
+                  "operation": "add_multiplied_base",
                   "slot": "offhand",
                   "id": "00004013-0000-4013-0000-401300004013"
                 },
@@ -45,23 +46,27 @@
                   "amount": 0.1,
                   "attribute": "minecraft:generic.movement_speed",
                   "name": "movement_speed.hand",
-                  "operation": "multiply_total",
+                  "operation": "add_multiplied_total",
                   "slot": "mainhand",
-                  "id": "00004012-0000-4012-0000-401200004012"
+                  "id": "00004014-0000-4014-0000-401400004014"
                 },
                 {
                   "amount": 0.1,
                   "attribute": "minecraft:generic.movement_speed",
                   "name": "movement_speed.hand",
-                  "operation": "multiply_total",
+                  "operation": "add_multiplied_total",
                   "slot": "offhand",
-                  "id": "00004013-0000-4013-0000-401300004013"
+                  "id": "00004015-0000-4015-0000-401500004015"
                 }
               ]
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{CustomModelData:4256,HideFlags:2,LoreUpdate:1b}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{lore_update:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4256
             }
           ]
         }

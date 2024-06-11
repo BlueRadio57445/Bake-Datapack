@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "手持錘子時增加15%傷害", "color": "yellow", "italic": false},
                                 {"text": "「經過四次的大清洗，」", "color": "gray"},
@@ -24,7 +24,8 @@
                                 {"text": "——《宇貓教徒歷史：第四章》", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

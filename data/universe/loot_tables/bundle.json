@@ -15,13 +15,14 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "容量由宇貓價值所決定","color": "yellow", "italic": false},
                                 {"text": "能夠容納許多宇宙，","color": "gray"},
                                 {"text": "並讓宇宙發揮效果。","color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙袋", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

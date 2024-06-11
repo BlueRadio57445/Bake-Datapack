@@ -13,12 +13,13 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "鐮刀可以連點，無視紅紅的無敵時間。","color": "yellow", "italic": false},
                                 {"text": "一把普通的鐮刀，會把使用者的手操廢。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 鐮刀", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

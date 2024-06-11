@@ -16,13 +16,14 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "右鍵能招喚閃電", "color": "yellow", "italic": false},
                                 {"text": "收音機生氣的時候才會使出的招式。", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 1秒", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

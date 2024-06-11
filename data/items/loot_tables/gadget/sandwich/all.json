@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/bag_stuffed"
+          "value": "items:gadget/sandwich/bag_stuffed"
         }
       ]
     },
@@ -15,7 +15,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/tomato"
+          "value": "items:gadget/sandwich/tomato"
         }
       ]
     },
@@ -24,7 +24,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/cheese"
+          "value": "items:gadget/sandwich/cheese"
         }
       ]
     },
@@ -33,7 +33,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/fried_chicken"
+          "value": "items:gadget/sandwich/fried_chicken"
         }
       ]
     },
@@ -42,7 +42,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/mayo"
+          "value": "items:gadget/sandwich/mayo"
         }
       ]
     },
@@ -51,7 +51,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:gadget/sandwich/rainbow_gum"
+          "value": "items:gadget/sandwich/rainbow_gum"
         }
       ]
     }

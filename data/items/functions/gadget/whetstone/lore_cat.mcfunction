@@ -1,1 +1,1 @@
-$data modify storage items:whetstone Weapon.tag.display.Lore[$(index)] set value '$(front)$(time)$(back)'
+$data modify storage items:whetstone weapon.components.minecraft:lore[$(index)] set value '$(front)$(time)$(back)'

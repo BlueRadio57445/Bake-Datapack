@@ -15,11 +15,12 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "把三個鑰匙碎片按Q丟在地上", "color": "yellow", "italic": false},
                                 {"text": "就能合成出一把完整的鑰匙", "color": "yellow", "italic": false},
                                 {"text": "好像是完整鑰匙的一部分。", "color": "gray"}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

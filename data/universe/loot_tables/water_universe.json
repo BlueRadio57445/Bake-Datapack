@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "在水中獲得夜視、挖掘加速效果", "color": "yellow", "italic": false},
                                 {"text": "貓咪的眼如水面般清澈；", "color": "gray"},
@@ -24,7 +24,9 @@
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
 
-                            ]
+                            ],
+
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

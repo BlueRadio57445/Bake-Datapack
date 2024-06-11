@@ -15,13 +15,14 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "鞭笞敵人時，使敵人中毒。", "color": "yellow", "italic": false},
                                 {"text": "一把惡毒的鞭子，", "color": "gray"},
                                 {"text": "上頭沾滿了猛烈的毒藥。", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 鞭子", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",
@@ -34,7 +35,7 @@
                                     "amount": 2,
                                     "attribute": "generic.attack_damage",
                                     "name": "attack_damage.default",
-                                    "operation": "addition",
+                                    "operation": "add_value",
                                     "slot": "mainhand",
                                     "id": "4aaca1e9-a685-4e22-8905-d631575fb08e"
                                 }

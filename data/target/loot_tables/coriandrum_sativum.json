@@ -16,11 +16,12 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "目標物 - 香菜", "color": "green", "italic": false},
                                 {"text": "還沒想好的文字，", "color": "gray"},
                                 {"text": "還沒想好~~。", "color": "gray"}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

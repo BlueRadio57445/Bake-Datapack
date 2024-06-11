@@ -16,13 +16,14 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "右鍵發動，站在羽毛和你中間的怪物會被切割。", "color": "yellow", "italic": false},
                                 {"text": "切割切割切割切割!~", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 知識", "color": "dark_aqua", "italic": false},
                                 {"text": " ✒ 冷卻時間§f 4秒", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

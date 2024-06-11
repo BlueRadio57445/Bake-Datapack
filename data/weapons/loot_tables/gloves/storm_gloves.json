@@ -13,14 +13,15 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "長按右鍵蓄力","color": "yellow", "italic": false},
                                 {"text": "蓄力後左鍵，對單體施放風暴","color": "yellow", "italic": false},
                                 {"text": "蓄力後右鍵，對群體施放風暴","color": "yellow", "italic": false},
                                 {"text": "據說是來自史東威爾的拳套。","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 拳套", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

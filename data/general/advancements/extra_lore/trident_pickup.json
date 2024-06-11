@@ -1,13 +1,21 @@
 {
   "criteria": {
-    "need_update": {
+    "trident_pickup": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
+            "items": [
+              "minecraft:trident"
+            ],
             "predicates": {
+              "minecraft:damage": {
+                "durability": {
+                  "min": 1
+                }
+              },
               "minecraft:custom_data": {
-                "lore_update": {}
+                "durability_update": {}
               }
             }
           }
@@ -20,7 +28,7 @@
   },
   "requirements": [
     [
-      "need_update"
+      "trident_pickup"
     ],
     [
       "log_suppresor"

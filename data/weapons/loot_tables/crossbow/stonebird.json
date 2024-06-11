@@ -13,12 +13,13 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
                                 {"text": "裝填時，附近的怪物獲得緩速II。","color": "yellow", "italic": false},
                                 {"text": "現在沒有人可以阻止你裝填箭矢了！","color":"gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 弩", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_enchantments",

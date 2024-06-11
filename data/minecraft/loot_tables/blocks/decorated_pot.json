@@ -35,7 +35,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "items:food/legendary_rotten_flesh"
+          "value": "items:food/legendary_rotten_flesh"
         },
         {
           "type": "minecraft:item",

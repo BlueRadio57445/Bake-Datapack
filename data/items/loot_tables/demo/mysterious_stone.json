@@ -18,7 +18,7 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 {
                   "color": "gray",
                   "text": "某種神奇的石頭"
@@ -27,11 +27,12 @@
                   "color": "gray",
                   "text": "或許有驚為天人的用途"
                 }
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{mysterious_stone:1b}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{mysterious_stone:{}}"
             }
           ]
         }

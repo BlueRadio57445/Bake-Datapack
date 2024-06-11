@@ -16,14 +16,15 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "手持劍時增加5%傷害", "color": "yellow", "italic": false},
                                 {"text": "「中子星，就像光劍一樣。」", "color": "gray"},
                                 {"text": "——《宇宙之美》", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

@@ -10,7 +10,11 @@
           "items": [
             "minecraft:ender_eye"
           ],
-          "nbt": "{magnet:1b}"
+          "predicates": {
+            "minecraft:custom_data": {
+              "magnet": {}
+            }
+          }
         }
       }
     }

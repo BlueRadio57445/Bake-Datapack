@@ -15,12 +15,13 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 "",
                                 {"text": "丟擲使用","color": "yellow", "italic": false},
                                 {"text": "在落地點招喚大樹並擊飛範圍內的生物","color": "yellow", "italic": false},
                                 {"text": "樹的生長高度會依場地高度有所變化","color": "yellow", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",
@@ -33,11 +34,17 @@
                                 "attribute": "minecraft:generic.attack_damage",
                                 "name": "attack",
                                 "amount": -10,
-                                "operation": "addition",
+                                "operation": "add_value",
                                 "id": "ffffcfb5-0000-3e55-0002-cfbcffff8356",
                                 "slot": "mainhand"
                               }
                             ]
+                        },
+                        {
+                            "function": "minecraft:toggle_tooltips",
+                            "toggles": {
+                              "attribute_modifiers": false
+                            }
                         }
                     ]
                 }

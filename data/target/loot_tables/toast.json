@@ -16,11 +16,12 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "目標物 - 白吐司", "color": "green", "italic": false},
                                 {"text": "災厄餓死鬼的寶物，", "color": "gray"},
                                 {"text": "因為沒有抹醬，所以捨不得吃。", "color": "gray"}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

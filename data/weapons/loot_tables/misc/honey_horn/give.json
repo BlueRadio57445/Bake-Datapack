@@ -22,7 +22,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
 
                                 {
                                     "text": "鼓舞之蜜發出的香氣可以鼓舞人心",
@@ -48,7 +48,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "mode": "replace_all"
         },
         {
             "rolls": 1,
@@ -71,7 +72,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
 
                                 {
                                     "text": "香甜的滋味令人元氣滿滿",
@@ -97,7 +98,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "mode": "replace_all"
         },
         {
             "rolls": 1,
@@ -120,7 +122,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
 
                                 {
                                     "text": "夢幻的力量提升隊友的士氣",
@@ -146,7 +148,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "mode": "replace_all"
         },
         {
             "rolls": 1,
@@ -169,7 +172,7 @@
                         },
                         {
                             "function": "set_lore",
-                            "lore": [
+                            "lore":[
 
                                 {
                                     "text": "香甜的味道令人飽足",
@@ -195,7 +198,8 @@
                         }
                     ]
                 }
-            ]
+            ],
+            "mode": "replace_all"
         },
         
         {

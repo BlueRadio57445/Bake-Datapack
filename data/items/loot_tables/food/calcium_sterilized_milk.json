@@ -1,36 +1,51 @@
 {
-    "type": "command",
-    "pools": [
+  "type": "command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
         {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "item",
-                    "name": "potion",
-                    "functions": [
-                        {
-                            "function": "set_name",
-                            "entity": "this",
-                            "name": {"text": "高鈣殺菌牛乳","italic": false, "color": "white"}
-                        },
-                        {
-                            "function": "set_lore",
-                            "entity": "this",
-                            "lore": [
-                                "",
-                                {"text": "只清除負面效果，正面效果則會保留。", "italic": false, "color": "yellow"},
-                                {"text": "在最純粹的牛奶之中添加鈣質，骨頭都變硬了。", "color": "gray"},
-                                "",
-                                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
-                            ]
-                        },
-                        {
-                            "function": "set_nbt",
-                            "tag": "{sterilized_milk:1b,CustomPotionColor:16711422,custom_potion_effects:[{id:\"resistance\",duration:400,amplifier:0b}]}"
-                        }
-                    ]
+          "type": "item",
+          "name": "potion",
+          "functions": [
+            {
+              "function": "set_name",
+              "entity": "this",
+              "name": {"text": "高鈣殺菌牛乳","italic": false, "color": "white"}
+            },
+            {
+              "function": "set_lore",
+              "entity": "this",
+              "lore": [
+                "",
+                {"text": "只清除負面效果，正面效果則會保留。", "italic": false, "color": "yellow"},
+                {"text": "在最純粹的牛奶之中添加鈣質，骨頭都變硬了。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_custom_data",
+              "tag": "{sterilized_milk:{}}"
+            },
+            {
+              "function": "set_components",
+              "components": {
+                "potion_contents": {
+                  "custom_color": 16711422,
+                  "custom_effects": [
+                    {
+                      "id": "resistance",
+                      "duration": 400
+                    }
+                  ]
                 }
-            ]
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

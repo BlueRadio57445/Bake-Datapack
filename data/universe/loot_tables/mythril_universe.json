@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "如果沒有穿裝備，增加20%移動速度", "color": "yellow", "italic": false},
                                 {"text": "並且能夠自動上樓", "color": "yellow", "italic": false},
@@ -24,7 +24,8 @@
                                 {"text": "——《宇貓聖典》", "color": "gray"},
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

@@ -16,12 +16,13 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "聖殿附魔測試", "color": "yellow", "italic": false},
                                 {"text": "巨化", "color": "yellow", "italic": false},
                                 "",
                                 {"text": " ✒ 物品類型§f 斧", "color": "dark_aqua", "italic": false}
-                            ]
+                            ],
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

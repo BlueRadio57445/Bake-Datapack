@@ -20,7 +20,8 @@
                 {"text": "其價值即是稀有本身。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 食物", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             }
           ]
         }

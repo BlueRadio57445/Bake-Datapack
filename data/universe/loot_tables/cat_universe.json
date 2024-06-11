@@ -16,7 +16,7 @@
                         {
                             "function": "set_lore",
                             "entity": "this",
-                            "lore": [
+                            "lore":[
                                 {"text": "放入宇宙袋使用", "color": "yellow", "italic": false},
                                 {"text": "延緩苦力怕爆炸", "color": "yellow", "italic": false},
                                 {"text": "「怎麼會有生物害怕貓咪呢？」", "color": "gray"},
@@ -24,7 +24,9 @@
                                 "",
                                 {"text": " ✒ 物品類型§f 宇宙", "color": "dark_aqua", "italic": false}
 
-                            ]
+                            ],
+
+                            "mode": "replace_all"
                         },
                         {
                             "function": "set_nbt",

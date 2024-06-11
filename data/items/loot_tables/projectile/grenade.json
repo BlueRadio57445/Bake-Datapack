@@ -14,18 +14,23 @@
             },
             {
               "function": "minecraft:set_lore",
-              "lore": [
+              "lore":[
                 "",
                 {"text": "擲出滿三秒後將會爆炸。", "color": "yellow", "italic": false},
                 {"text": "如果一顆解決不了問題--", "color": "gray"},
                 {"text": "就再丟一顆。", "color": "gray"},
                 "",
                 {"text": " ✒ 物品類型§f 投擲物", "color": "dark_aqua", "italic": false}
-              ]
+              ],
+              "mode": "replace_all"
             },
             {
-              "function": "minecraft:set_nbt",
-              "tag": "{grenade:1b,CustomModelData:4500}"
+              "function": "minecraft:set_custom_data",
+              "tag": "{grenade:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4500
             }
           ]
         }

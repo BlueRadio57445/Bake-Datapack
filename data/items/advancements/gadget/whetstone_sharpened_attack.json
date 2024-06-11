@@ -9,8 +9,12 @@
         "player": {
           "equipment": {
             "mainhand": {
-              "tag": "minecraft:edged_weapons",
-              "nbt": "{sharpened:{state:1b}}"
+              "items": "#minecraft:edged_weapons",
+              "predicates": {
+                "minecraft:custom_data": {
+                  "sharpened": {}
+                }
+              }
             }
           }
         }
