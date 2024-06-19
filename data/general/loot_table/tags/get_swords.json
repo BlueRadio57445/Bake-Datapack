@@ -1,0 +1,15 @@
+{
+  "type": "empty",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:swords",
+          "expand": false
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "empty",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:foot_armor",
+          "expand": false
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

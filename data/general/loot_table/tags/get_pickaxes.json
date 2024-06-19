@@ -1,0 +1,15 @@
+{
+  "type": "empty",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:pickaxes",
+          "expand": false
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

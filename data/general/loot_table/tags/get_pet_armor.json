@@ -1,0 +1,15 @@
+{
+  "type": "empty",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "minecraft:pet_armor",
+          "expand": false
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}
