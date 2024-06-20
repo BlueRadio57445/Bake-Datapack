@@ -4,6 +4,8 @@ $data modify storage general:extra_lore Modifier.text set from storage general:e
 execute if score $modifier.amount general.extra_lore matches ..-1 run data modify storage general:extra_lore Modifier.amount_sign set value "-"
 execute if score $modifier.operation general.extra_lore matches 0 run scoreboard players operation $modifier.amount general.extra_lore /= $100 general.const
 execute store success score $modifier.positive general.extra_lore if score $modifier.amount general.extra_lore matches 1..
+$execute if data storage general:extra_lore neutral[{name:"$(name)"}] run scoreboard players set $modifier.positive general.extra_lore 1
+$execute if data storage general:extra_lore reversed[{name:"$(name)"}] store success score $modifier.positive general.extra_lore if score $modifier.positive general.extra_lore matches 0
 execute if score $modifier.operation general.extra_lore matches 1 run data modify storage general:extra_lore Modifier.amount_suf set value "%"
 execute if score $modifier.operation general.extra_lore matches 2 run scoreboard players operation $modifier.amount general.extra_lore /= $100 general.const
 execute if score $modifier.operation general.extra_lore matches 2 run scoreboard players add $modifier.amount general.extra_lore 10
