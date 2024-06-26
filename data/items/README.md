@@ -20,7 +20,7 @@ CustomModelData 註冊表
 |4251.  |hope_flower           |
 |4252.  |glowing_stone         |
 |4253.  |broken_armor          |
-|4254.  |amber_jewelry         |
+|4254.  |crystal_jewelry_health|
 |4255.  |breeze_feather        |
 |       |                      |
 |4500~4749|projectile            |

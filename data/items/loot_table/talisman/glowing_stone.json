@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "發光石頭", "color": "#abab80", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore":[
+                "",
+                {"text": "散發微弱光芒的石頭。", "color": "gray"},
+                {"text": "據說在稀湖那混濁不已的水中，", "color": "gray"},
+                {"text": "這種毫不起眼的光芒卻能起到引導的作用。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": 0.5,
+                  "attribute": "minecraft:generic.attack_speed",
+                  "operation": "add_value",
+                  "slot": "hand",
+                  "id": "items:attack_speed.glowing_stone"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{lore_update:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4252
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

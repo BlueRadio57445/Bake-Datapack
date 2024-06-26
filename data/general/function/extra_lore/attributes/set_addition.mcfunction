@@ -3,6 +3,7 @@ $execute unless data storage general:extra_lore Attributes[] run data modify sto
 data modify storage general:extra_lore Modifier set value {name:"",type:"addition",text:"",operation:"",amount_sign:"+",amount_int:0,amount_dec:0,amount_suf:"",extra_text:""}
 data modify storage general:extra_lore Modifier.name set string storage general:extra_lore Attributes[0].type 10
 data modify storage general:extra_lore Modifier.operation set from storage general:extra_lore Attributes[0].operation
+data modify storage general:extra_lore Modifier.extra_text set from storage general:extra_lore Attributes[0].extra_text
 scoreboard players set $modifier.operation general.extra_lore 0
 execute if data storage general:extra_lore Modifier{operation:"add_multiplied_base"} run scoreboard players set $modifier.operation general.extra_lore 1
 execute if data storage general:extra_lore Modifier{operation:"add_multiplied_total"} run scoreboard players set $modifier.operation general.extra_lore 2

@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type":"minecraft:item",
+          "name": "minecraft:prismarine_shard",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": {"text": "佔位符", "color": "white", "italic": false}
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore":[
+                "",
+                {"text": "目前是用來測試的護符，", "color": "gray"},
+                {"text": "之後應該會被其他護符取代。", "color": "gray"},
+                "",
+                {"text": " ✒ 物品類型§f 護符", "color": "dark_aqua", "italic": false}
+              ],
+              "mode": "replace_all"
+            },
+            {
+              "function": "set_attributes",
+              "modifiers": [
+                {
+                  "amount": -0.125,
+                  "attribute": "minecraft:generic.attack_damage",
+                  "operation": "add_multiplied_base",
+                  "slot": "hand",
+                  "id": "items:attack_damage.test"
+                },
+                {
+                  "amount": 0.1,
+                  "attribute": "minecraft:generic.movement_speed",
+                  "operation": "add_multiplied_total",
+                  "slot": "mainhand",
+                  "id": "items:movement_speed.test"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{lore_update:{}}"
+            },
+            {
+              "function": "minecraft:set_custom_model_data",
+              "value": 4256
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

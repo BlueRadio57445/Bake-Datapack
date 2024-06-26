@@ -14,9 +14,10 @@ execute if data storage general:extra_lore AttributeModifiers[{slot:"legs"}] run
 execute if data storage general:extra_lore AttributeModifiers[{slot:"feet"}] run data modify storage general:extra_lore AttributeModifiers[{slot:"feet"}].slot set value "armor"
 execute if data storage general:extra_lore AttributeModifiers[{slot:"body"}] run data modify storage general:extra_lore AttributeModifiers[{slot:"body"}].slot set value "any"
 
+execute if data storage general:extra_lore Item.components."minecraft:custom_data".sharpened run function general:extra_lore/attributes/custom/whetstone with storage general:extra_lore Item.components."minecraft:custom_data".sharpened
+
 execute if data storage general:extra_lore AttributeModifiers[{slot:"hand"}] run function general:extra_lore/attributes/set_addition {slot:"hand"}
 execute if data storage general:extra_lore AttributeModifiers[{slot:"mainhand"}] run function general:extra_lore/attributes/set_addition {slot:"mainhand"}
-execute if data storage general:extra_lore Item.components."minecraft:custom_data".sharpened run function general:extra_lore/attributes/custom/whetstone with storage general:extra_lore Item.components."minecraft:custom_data".sharpened
 execute if data storage general:extra_lore AttributeModifiers[{slot:"offhand"}] run function general:extra_lore/attributes/set_addition {slot:"offhand"}
 execute if data storage general:extra_lore AttributeModifiers[{slot:"armor"}] run function general:extra_lore/attributes/set_addition {slot:"armor"}
 execute if data storage general:extra_lore AttributeModifiers[{slot:"any"}] run function general:extra_lore/attributes/set_addition {slot:"any"}

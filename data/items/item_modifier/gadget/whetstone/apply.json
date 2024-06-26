@@ -1,0 +1,47 @@
+[
+  {
+    "function": "minecraft:copy_custom_data",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "items:whetstone"
+    },
+    "ops": [
+      {
+        "op": "replace",
+        "source": "attribute",
+        "target": "sharpened"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_attributes",
+    "modifiers": [
+      {
+        "amount": {
+          "type": "minecraft:score",
+          "score": "items.whetstone",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$modifier"
+          },
+          "scale": 0.0010000001
+        },
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "add_multiplied_base",
+        "slot": "mainhand",
+        "id": "items:attack_damage.whetstone"
+      }
+    ],
+    "replace": false
+  },
+  {
+    "function": "minecraft:toggle_tooltips",
+    "toggles": {
+      "attribute_modifiers": false
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{lore_update:{}}"
+  }
+]

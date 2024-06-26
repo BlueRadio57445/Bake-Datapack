@@ -22,5 +22,7 @@ execute if score $modifier.amount general.extra_lore matches ..-1 run scoreboard
 execute store result storage general:extra_lore Modifier.amount_int int 1 run scoreboard players get $modifier.amount_int general.extra_lore
 execute store result storage general:extra_lore Modifier.amount_dec int 1 run scoreboard players get $modifier.amount_dec general.extra_lore
 
+execute if data storage general:extra_lore Attributes[0].extra_command run function general:extra_lore/attributes/run_command
+
 execute if score $modifier.positive general.extra_lore matches 0 run function general:extra_lore/attributes/addition_negative with storage general:extra_lore Modifier
 execute if score $modifier.positive general.extra_lore matches 1 run function general:extra_lore/attributes/addition_positive with storage general:extra_lore Modifier 
