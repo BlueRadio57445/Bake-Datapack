@@ -41,6 +41,7 @@ scoreboard players set $16 general.const 16
 scoreboard players set $20 general.const 20
 scoreboard players set $60 general.const 60
 scoreboard players set $100 general.const 100
+scoreboard players set $255 general.const 255
 
 # 若此記分板為空值，將其設為0
 execute unless score $playerCount general.id = $playerCount general.id run scoreboard players set $playerCount general.id 0

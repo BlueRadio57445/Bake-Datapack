@@ -3,6 +3,7 @@
   "terms": [
     {
       "condition": "minecraft:entity_properties",
+      "entity": "this",
       "predicate": {
         "effects": {
           "minecraft:fire_resistance": {
@@ -11,8 +12,14 @@
             }
           }
         }
-      },
-      "entity": "this"
+      }
+    },
+    {
+      "condition": "minecraft:entity_scores",
+      "entity": "this",
+      "scores": {
+        "effects.true_fire.burning_time": 0
+      }
     },
     {
       "condition": "minecraft:location_check",

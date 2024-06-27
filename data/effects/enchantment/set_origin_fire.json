@@ -1,0 +1,53 @@
+{
+  "anvil_cost": 0,
+  "description": "effects.set_owner_fire",
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 255,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:ignite",
+          "duration": {
+            "type": "linear",
+            "base": 1.0,
+            "per_level_above_first": 1.0
+          }
+        },
+        "enchanted": "attacker"
+      },
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "effects:true_fire/dummy_delete"
+        },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:mob_experience": [
+      {
+        "effect": {
+          "type": "minecraft:set",
+          "value": -1
+        }
+      }
+    ]
+  }
+}
