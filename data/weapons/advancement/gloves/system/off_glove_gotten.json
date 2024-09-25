@@ -1,0 +1,76 @@
+{
+  "criteria": {
+    "wrong_time": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:arrow",
+            "predicates": {
+              "minecraft:custom_data": {
+                "gloves": {}
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+            "weapons.gloves.holding": 0
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "weapons:gloves/system/holding_main_glove"
+            }
+          }
+        ]
+      }
+    },
+    "wrong_place": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:arrow",
+            "predicates": {
+              "minecraft:custom_data": {
+                "gloves": {}
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "scores": {
+            "weapons.gloves.holding": 1
+            },
+            "entity": "this"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "weapons:gloves/system/holding_main_glove"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "weapons:gloves/system/holding_off_glove"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "wrong_place",
+      "wrong_time"
+    ]
+  ],
+  "rewards": {
+    "function": "weapons:gloves/system/clear_off_glove"
+  }
+}

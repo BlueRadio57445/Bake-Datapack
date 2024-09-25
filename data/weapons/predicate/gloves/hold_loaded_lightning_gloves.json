@@ -1,0 +1,19 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "crossbow",
+                "predicates": {
+                    "custom_data": {
+                        "gloves": {
+                            "id": "lightning_gloves",
+                            "charged": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

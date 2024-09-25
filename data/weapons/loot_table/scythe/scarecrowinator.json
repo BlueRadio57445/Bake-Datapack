@@ -1,0 +1,76 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "golden_hoe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 稻草人終結者 ≻", "color": "gold", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":[
+                                {"translate": "enchantment.minecraft.smite", "color": "gray", "italic": false, "extra": [" ", {"translate": "enchantment.level.3"}]},
+                                {"translate": "enchantment.minecraft.bane_of_arthropods", "color": "gray", "italic": false, "extra": [" ", {"translate": "enchantment.level.3"}]},
+                                "",
+                                {"text": "暴擊時能召喚巨大鐮刀攻擊敵人","color": "yellow", "italic": false},
+                                {"text": "據說由杜分舒斯的崇拜者所鑄。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鐮刀", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "smite": 3,
+                                "bane_of_arthropods": 3,
+                                "weapons:scythe": 1
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 0,
+                                    "attribute": "minecraft:generic.attack_damage",
+                                    "id": "minecraft:base_attack_damage",
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "amount": 16,
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "id": "minecraft:base_attack_speed",
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{sanctuary_enchs:[{id:\"giant\",lvl:1s}],lore_update:{}}"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "unbreakable": {},
+                                "enchantment_glint_override": false
+                            }
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "enchantments": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

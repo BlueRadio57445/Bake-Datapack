@@ -64,3 +64,8 @@ data modify storage general:tags attribute_tools append from storage general:tag
 data modify storage general:tags attribute_tools append from storage general:tags pickaxes[]
 data modify storage general:tags attribute_tools append from storage general:tags axes[]
 data modify storage general:tags attribute_tools append from storage general:tags hoes[]
+data modify storage general:tags attribute_tools append value {id:"minecraft:carrot_on_a_stick"}
+data modify storage general:tags attribute_tools append value {id:"minecraft:fishing_rod"}
+data modify storage general:tags attribute_tools append value {id:"minecraft:mace"}
+data modify storage general:tags attribute_tools append value {id:"minecraft:trident"}
+data modify storage general:tags attribute_tools append value {id:"minecraft:warped_fungus_on_a_stick"}

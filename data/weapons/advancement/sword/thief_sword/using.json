@@ -1,0 +1,33 @@
+{
+  "criteria": {
+    "using_thief_sword": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:iron_sword",
+          "predicates": {
+            "minecraft:custom_data": {
+              "thief_sword": {}
+            }
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "weapons:sword/thief_sword/selected"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:reference",
+              "name": "weapons:sword/thief_sword/skill"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:sword/thief_sword/using"
+  }
+}

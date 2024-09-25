@@ -7,7 +7,6 @@
     {
       "id": "weapons:scythe",
       "required": false
-    },
-    "minecraft:unattributed_fireball"
+    }
   ]
 }

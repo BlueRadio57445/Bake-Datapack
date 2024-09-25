@@ -1,0 +1,18 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": "minecraft:honeycomb",
+        "predicates": {
+          "minecraft:custom_data": {
+            "honey": {
+              "id": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

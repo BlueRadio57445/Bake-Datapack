@@ -5,4 +5,5 @@ function general:player_data/remove {path:"Actionbar.cooldown.hotbar"}
 
 execute as @s[predicate=actionbar:cooldown/hotbar_cooldown_item] run function general:utils/cooldown_item/end_mainhand
 
+function general:events/cooldown_ended_mainhand
 function actionbar:update

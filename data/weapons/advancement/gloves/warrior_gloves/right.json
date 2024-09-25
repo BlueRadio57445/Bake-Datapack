@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "gloves":{
+            "trigger": "shot_crossbow",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "gloves": {
+                                "id": "warrior_gloves",
+                                "charged": true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:gloves/warrior_gloves/right"
+    }
+}

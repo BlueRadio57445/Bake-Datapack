@@ -1,0 +1,36 @@
+[
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "mainhand": {
+          "items": "minecraft:crossbow",
+          "predicates": {
+            "custom_data": {
+              "gloves": {
+                "charted": true
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "condition": "minecraft:inverted",
+    "term": {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "equipment": {
+          "mainhand": {
+            "components": {
+              "minecraft:charged_projectiles": []
+            }
+          }
+        }
+      }
+    }
+  }
+]

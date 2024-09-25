@@ -5,4 +5,5 @@ function general:player_data/remove {path:"Actionbar.cooldown.offhand"}
 
 execute as @s[predicate=actionbar:cooldown/offhand_cooldown_item] run function general:utils/cooldown_item/end_offhand
 
+function general:events/cooldown_ended_offhand
 function actionbar:update

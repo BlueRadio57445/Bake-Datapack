@@ -1,7 +1,6 @@
 {
   "replace": true,
   "values": [
-    "minecraft:sonic_boom",
-    "minecraft:unattributed_fireball"
+    "minecraft:sonic_boom"
   ]
 }

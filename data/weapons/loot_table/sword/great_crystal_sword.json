@@ -1,0 +1,61 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 戰士結晶巨劍 ≻", "color": "#ff0000", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore":[
+                                "",
+                                {"text": "待補", "color": "yellow", "italic": false},
+                                {"text": "待補", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                          "function": "set_attributes",
+                          "modifiers": [
+                            {
+                                "amount": 3,
+                                "attribute": "generic.attack_damage",
+                                "operation": "add_value",
+                                "slot": "mainhand",
+                                "id": "minecraft:base_attack_damage"
+                            },
+                            {
+                                "amount": -2.4,
+                                "attribute": "generic.attack_speed",
+                                "operation": "add_value",
+                                "slot": "mainhand",
+                                "id": "minecraft:base_attack_speed"
+                            }
+                          ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{great_crystal_sword:{},lore_update:{}}"
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:unbreakable": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

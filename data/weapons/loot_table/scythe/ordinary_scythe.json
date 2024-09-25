@@ -1,0 +1,71 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_hoe",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "name": {"text":"≺ 普通鐮刀 ≻", "color": "white", "italic": false, "bold": true}
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore":[
+                                "",
+                                {"text": "鐮刀可以連點，無視紅紅的無敵時間。","color": "yellow", "italic": false},
+                                {"text": "一把普通的鐮刀，會把使用者的手操廢。","color":"gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鐮刀", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 0,
+                                    "attribute": "minecraft:generic.attack_damage",
+                                    "id": "minecraft:base_attack_damage",
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "amount": 16,
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "id": "minecraft:base_attack_speed",
+                                    "operation": "add_value",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "weapons:scythe": 1
+                            }
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "enchantment_glint_override": false
+                            }
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{lore_update:{}}"
+                        },
+                        {
+                            "function": "toggle_tooltips",
+                            "toggles": {
+                                "enchantments": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

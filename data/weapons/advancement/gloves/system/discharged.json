@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:shot_crossbow",
+      "conditions": {
+        "item": {
+          "predicates": {
+            "custom_data": {
+              "gloves": {
+                "charged": true
+              }
+            }
+          }
+        }
+      }
+    },
+    "left_click": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "weapons:gloves/system/holding_main_glove"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "right_click",
+      "left_click"
+    ]
+  ],
+  "rewards": {
+    "function": "weapons:gloves/system/discharged"
+  }
+}

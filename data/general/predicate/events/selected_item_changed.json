@@ -11,7 +11,9 @@
         "type_specific": {
           "type": "player",
           "advancements": {
-            "general:inventory_changed": true
+            "general:inventory_changed": {
+              "inventory_changed": true
+            }
           }
         }
       },

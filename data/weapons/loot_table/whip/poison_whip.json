@@ -1,0 +1,66 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "fishing_rod",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 劇毒鈎鞭 ≻", "color": "green", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore":[
+                                {"text": "鞭笞敵人時，使敵人中毒。", "color": "yellow", "italic": false},
+                                {"text": "一把惡毒的鞭子，", "color": "gray"},
+                                {"text": "上頭沾滿了猛烈的毒藥。", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 鞭子", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "whip": {
+                                    "id": "poison_whip"
+                                },
+                                "lore_update": {}
+                            }
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "amount": 2,
+                                    "attribute": "generic.attack_damage",
+                                    "operation": "add_value",
+                                    "slot": "mainhand",
+                                    "id": "minecraft:base_attack_damage"
+                                },
+                                {
+                                    "amount": 0,
+                                    "attribute": "generic.attack_speed",
+                                    "operation": "add_value",
+                                    "slot": "mainhand",
+                                    "id": "minecraft:base_attack_speed"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "minecraft:unbreakable": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

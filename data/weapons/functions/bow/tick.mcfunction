@@ -1,1 +1,0 @@
-execute as @e[type=#arrows,predicate=!weapons:bow/has_been_shot] run function weapons:bow/check_bow

@@ -1,0 +1,50 @@
+{
+  "anvil_cost": 0,
+  "description": "weapons.light_arrow",
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "slots": [
+    "hand"
+  ],
+  "supported_items": [
+    "minecraft:bow",
+    "minecraft:crossbow"
+  ],
+  "weight": 1,
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:replace_block",
+          "block_state": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "minecraft:fire"
+            }
+          },
+          "predicate": {
+            "type": "minecraft:matching_block_tag",
+            "tag": "minecraft:can_burn"
+          }
+        },
+        "enchanted": "attacker"
+      }
+    ],
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "weapons:bow/light_bow/setblock"
+        }
+      }
+    ]
+  }
+}

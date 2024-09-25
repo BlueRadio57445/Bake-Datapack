@@ -1,0 +1,7 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{weapon:{components:{\"minecraft:custom_data\":{sacred_bow:{}}}}}"
+  }
+}

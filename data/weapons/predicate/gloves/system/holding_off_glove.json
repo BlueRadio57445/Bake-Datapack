@@ -1,0 +1,16 @@
+{
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "equipment": {
+      "offhand": {
+        "items": "minecraft:arrow",
+        "predicates": {
+          "minecraft:custom_data": {
+            "gloves": {}
+          }
+        }
+      }
+    }
+  }
+}

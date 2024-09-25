@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "gloves":{
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "crossbow",
+                            "predicates": {
+                                "custom_data": {
+                                    "gloves": {
+                                        "id": "lightning_gloves",
+                                        "charged": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:gloves/lightning_gloves/left"
+    }
+}

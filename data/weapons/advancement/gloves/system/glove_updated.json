@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "glove_added": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:crossbow",
+            "predicates": {
+              "minecraft:custom_data": {
+                "gloves": {}
+              }
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:reference",
+                "name": "weapons:gloves/system/holding_charged_glove"
+              },
+              {
+                "condition": "minecraft:reference",
+                "name": "weapons:gloves/system/holding_discharged_glove"
+              }
+            ]
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:any_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "weapons.gloves.suppressing": 1
+                  }
+                },
+                {
+                  "condition": "minecraft:reference",
+                  "name": "weapons:gloves/system/swapping_main_glove"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:gloves/system/glove_updated"
+  }
+}

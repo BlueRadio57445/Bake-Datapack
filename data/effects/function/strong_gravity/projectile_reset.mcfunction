@@ -1,4 +1,6 @@
-execute on origin unless score @s effects.strong_gravity.duration matches 1.. run return 0
+scoreboard players set $temp effects.state 0
+execute on origin if score @s effects.strong_gravity.duration matches 1.. run scoreboard players set $temp effects.state 1
+execute unless score $temp effects.state matches 1 run return 0
 execute unless data entity @s {HasBeenShot:0b} run return 0
 data modify entity @s Motion[1] set value 0d
 execute as 00000000-0000-0000-0000-000000000000 positioned as @s run tp @s ^ ^ ^1

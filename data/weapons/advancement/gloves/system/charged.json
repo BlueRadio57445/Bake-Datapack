@@ -1,0 +1,56 @@
+{
+  "criteria": {
+    "charged_gloves": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "weapons:gloves/system/holding_main_glove"
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:crossbow",
+                    "components": {
+                      "minecraft:charged_projectiles": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": "minecraft:crossbow",
+                    "predicates": {
+                      "minecraft:custom_data": {
+                        "gloves": {
+                          "charged": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "weapons:gloves/system/charged"
+  }
+}

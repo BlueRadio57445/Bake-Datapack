@@ -1,0 +1,28 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "player": {
+            "equipment": {
+              "mainhand": {
+                "predicates": {
+                  "custom_data": "{rainbow_crystal_sword:{}}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "weapons:sword/rainbow_crystal_sword/cast"
+    }
+  }
+  
+
+
+
+
+
+

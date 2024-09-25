@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "stonebird": {
+            "trigger": "using_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": "{stonebird:{}}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "weapons:crossbow/stonebird"
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "wooden_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 造木者 ≻", "color": "#4CFF00", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore":[
+                                "",
+                                {"text": "丟擲使用","color": "yellow", "italic": false},
+                                {"text": "在落地點招喚大樹並擊飛範圍內的生物","color": "yellow", "italic": false},
+                                {"text": "樹的生長高度會依場地高度有所變化","color": "yellow", "italic": false},
+                                "",
+                                {"text": " ✒ 物品類型§f 奇異武器", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": "{tree:{},lore_update:{}}"
+                        },
+                        {
+                            "function": "set_custom_model_data",
+                            "value": 0
+                        },
+                        {
+                            "function": "set_attributes",
+                            "modifiers": [
+                                {
+                                    "attribute": "minecraft:generic.attack_damage",
+                                    "amount": -10,
+                                    "operation": "add_value",
+                                    "id": "minecraft:base_attack_damage",
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "!minecraft:max_damage": {}
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "iron_sword",
+                    "functions": [
+                        {
+                            "function": "set_name",
+                            "entity": "this",
+                            "name": {"text": "≺ 盜賊短劍 ≻", "color": "#ff0000", "bold": true, "italic": false}
+                        },
+                        {
+                            "function": "set_lore",
+                            "entity": "this",
+                            "lore":[
+                                "",
+                                {"text": "待補", "color": "yellow", "italic": false},
+                                {"text": "待補", "color": "gray"},
+                                "",
+                                {"text": " ✒ 物品類型§f 劍類", "color": "dark_aqua", "italic": false}
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "set_enchantments",
+                            "enchantments": {
+                                "unbreaking": 3
+                            }
+                        },
+                        {
+                          "function": "set_attributes",
+                          "modifiers": [
+                            {
+                                "amount": 3,
+                                "attribute": "generic.attack_damage",
+                                "operation": "add_value",
+                                "slot": "mainhand",
+                                "id": "minecraft:base_attack_damage"
+                            },
+                            {
+                                "amount": -2.0,
+                                "attribute": "generic.attack_speed",
+                                "operation": "add_value",
+                                "slot": "mainhand",
+                                "id": "minecraft:base_attack_speed"
+                            },
+                            {
+                                "amount": 0,
+                                "attribute": "generic.attack_damage",
+                                "operation": "add_value",
+                                "slot": "mainhand",
+                                "id": "weapons:thief_sword"
+                            }
+                          ]
+                        },
+                        {
+                            "function": "set_custom_data",
+                            "tag": {
+                                "thief_sword": {},
+                                "lore_update": {},
+                                "cooldown": {
+                                    "mode": "empty",
+                                    "length": 140,
+                                    "end_command": "function weapons:sword/thief_sword/remove_skill"
+                                }
+                            }
+                        },
+                        {
+                            "function": "reference",
+                            "name": "general:utils/can_use"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
