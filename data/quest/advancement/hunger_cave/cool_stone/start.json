@@ -1,0 +1,55 @@
+{
+  "parent": "quest:hunger_cave/root",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$hunger_cave.cool_stone"
+              }
+            },
+            "range": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:prismarine_crystals",
+      "components": {
+        "minecraft:custom_model_data": 6000
+      }
+    },
+    "title": "咆嘯亨利的酷石頭-任務開始",
+    "description": {
+      "text": "追尋奇怪的知識?\n",
+      "color": "gray",
+      "extra": [
+        {
+          "color": "dark_gray",
+          "text": "提示：石頭長得像貓咪"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}

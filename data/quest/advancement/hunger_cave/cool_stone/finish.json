@@ -1,0 +1,53 @@
+{
+  "parent": "quest:hunger_cave/cool_stone/start",
+  "criteria": {
+    "check": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "minecraft:unluck": {
+            "amplifier": 0,
+            "visible": false
+          }
+        },
+        "player": [
+          {
+            "condition": "minecraft:value_check",
+            "value": {
+              "type": "minecraft:score",
+              "score": "quest.state",
+              "target": {
+                "type": "minecraft:fixed",
+                "name": "$hunger_cave.cool_stone"
+              }
+            },
+            "range": 3
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "minecraft:nautilus_shell",
+      "components": {
+        "minecraft:custom_model_data": 8002
+      }
+    },
+    "title": "咆嘯亨利的酷石頭-任務完成",
+    "description": {
+      "text": "宇宙貓貓教團?\n真是奇怪的組織\n",
+      "color": "gray",
+      "extra": [
+        {
+          "text": "獎勵：宇宙袋x1、水清目明的宇宙x1",
+          "color": "dark_gray"
+        }
+      ]
+    },
+    "announce_to_chat": false,
+    "frame": "goal",
+    "hidden": true,
+    "show_toast": true
+  }
+}

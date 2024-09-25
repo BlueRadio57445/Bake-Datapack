@@ -96,7 +96,7 @@ NPC的基本函數如下列所示:
     * Condition (compound) - 選項條件，若玩家不符合條件將無法觸發該選項(以下皆以觸發玩家為執行者及執行位置)
       * Type (string) 條件種類，可為 "item"、"score" 或是 "command"
       * Value
-        * Type為 "item" 的情況下，以 `{id,Count(,tag)}` 的形式填入欲偵測的物品。`Count` 為數量下限，若有多餘的資料會影響判斷。
+        * Type為 "item" 的情況下，以 `{id,count(,tests)}` 的形式填入欲偵測的物品。`count` 為數量下限。`tests` 為物品偵測相關指令中的測試條件，不包含方括號。
         * Type為 "score" 的情況下，以 `{score,target,range}` 的形式填入欲偵測的分數及範圍。其中 `range` 可為單純的整數或是 `"a..b"` 的形式。
         * Type為 "command" 的情況下，以字串的形式填入完整的指令。若指令執行的結果不為0則通過。
     * End (boolean) - 若設為 `1b`，此選項對話結束後將不會回到選項
@@ -137,7 +137,7 @@ NPC的基本函數如下列所示:
   * 與Normal之內容相同
 * TraderNormalRandom (boolean) - 選填，若設為 `1b`，多個商店對話將以隨機序列被觸發
 * Buy (list of compounds) - 「購入」內的交易選項，除了些許細部調整外，其餘基本與村民之交易選項相同
-  * buy (compound) - 玩家應交付的物品，可為 `{id, tag, Count}` 格式或 `{Name, Count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
+  * buy (compound) - 玩家應交付的物品，可為 `{id, components, count}` 格式或 `{Name, count}` 格式，其中 `Name` 為字串，應填入戰利品表路徑 (如同在 `/loot` 指令中打的那樣)
   * buyB (compound) - 玩家應交付的物品，格式同buy
   * sell (compound) - 玩家將獲得的物品，格式同buy
   * maxUses (int) - 玩家最多可交易的次數，若填入2147483647則代表可以進行無限次交易
